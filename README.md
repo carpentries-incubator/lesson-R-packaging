@@ -18,7 +18,7 @@ here are a few things we recommend you do:
 * [ ] Decide on a title for your new lesson!
   Once you've chosen a new title, you can set the value for `lesson_title`
   in [`_config.yml`](_config.yml)
-* [ ] Add the URL to your built lesson pages to the repository description\*
+* [x] Add the URL to your built lesson pages to the repository description\*
 * [ ] Fill in the fields marked `FIXME` in:
   * this README
   * [`_config.yml`](_config.yml)
@@ -60,10 +60,9 @@ Look for the tag ![good_first_issue](https://img.shields.io/badge/-good%20first%
 
 Current maintainers of this lesson are
 
-* FIXME
-* FIXME
-* FIXME
-
+* Barbara Vreede [@bvreede](https://github.com/bvreede)
+* Johan Hidding [@jhidding](https://github.com/jhidding)
+* Pablo Rodríguez-Sánchez [@PabRod](https://github.com/PabRod/)
 
 ## Authors
 
