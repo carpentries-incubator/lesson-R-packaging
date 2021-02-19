@@ -19,7 +19,7 @@ here are a few things we recommend you do:
   Once you've chosen a new title, you can set the value for `lesson_title`
   in [`_config.yml`](_config.yml)
 * [x] Add the URL to your built lesson pages to the repository description\*
-* [ ] Fill in the fields marked `FIXME` in:
+* [x] Fill in the fields marked `FIXME` in:
   * this README
   * [`_config.yml`](_config.yml)
 * [x] If you're going to be developing lesson material for the first time
