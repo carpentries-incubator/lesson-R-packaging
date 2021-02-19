@@ -1,4 +1,4 @@
-# FIXME Lesson title
+# Packaging with R
 
 [![Create a Slack Account with us](https://img.shields.io/badge/Create_Slack_Account-The_Carpentries-071159.svg)](https://swc-slack-invite.herokuapp.com/)
 
@@ -15,17 +15,17 @@ and make sure you have everything you need to begin developing your new lesson.
 Before you begin developing your new lesson,
 here are a few things we recommend you do:
 
-* [ ] Decide on a title for your new lesson!
+* [x] Decide on a title for your new lesson!
   Once you've chosen a new title, you can set the value for `lesson_title`
   in [`_config.yml`](_config.yml)
 * [x] Add the URL to your built lesson pages to the repository description\*
 * [ ] Fill in the fields marked `FIXME` in:
   * this README
   * [`_config.yml`](_config.yml)
-* [ ] If you're going to be developing lesson material for the first time
+* [x] If you're going to be developing lesson material for the first time
   according to our design principles,
   consider reading the [Carpentries Curriculum Development Handbook][cdh]
-* [ ] Consult the [Lesson Example][lesson-example] website to find out more about
+* [x] Consult the [Lesson Example][lesson-example] website to find out more about
   working with the lesson template
 * [ ] If you are planning to write your lesson in RMarkdown,
   [create a `main` branch and set this as the default branch in your repository settings][change-default-branch]
@@ -49,7 +49,7 @@ We'd like to ask you to familiarize yourself with our [Contribution Guide](CONTR
 the [more detailed guidelines][lesson-example] on proper formatting, ways to render the lesson locally, and even
 how to write new episodes.
 
-Please see the current list of [issues][FIXME] for ideas for contributing to this
+Please see the current list of [issues](https://github.com/escience-academy/lesson-R-packaging/issues) for ideas for contributing to this
 repository. For making your contribution, we use the GitHub flow, which is
 nicely explained in the chapter [Contributing to a Project](http://git-scm.com/book/en/v2/GitHub-Contributing-to-a-Project) in Pro Git
 by Scott Chacon.
