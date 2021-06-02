@@ -1,7 +1,7 @@
 ---
 title: "Accessing packages"
 teaching: 0
-exercises: 3
+exercises: 5
 questions:
 - "How do I use my package?"
 - "How do I use someone else's package?"
@@ -68,12 +68,32 @@ After installing, the new package should appear in the _Packages_ tab.
 > We'll go back to this in chapter TODO.
 {: .callout}
 
-
 ## Install a package from source
 
 What if the package is only available in your computer?
 This is the case of the one we are building during this lesson.
 
+The easiest way to install a package from source is by opening the package project and using the _Build_ tab:
+
+![Build](../fig/build.png)
+
+By pressing _Install and restart_ three things will happen:
+
+1. The package will be, indeed, installed.
+2. The R session will be restarted.
+3. The package will be loaded.
+
+> ## Why would you want to load a package from source
+> Can you think of a situation where you'll need to install and load a package from source?
+> > ## Solution
+> > The most common situation is while you are developing a package.
+> > Every now and then, you'll want to re-install and re-load it to check that everything is working as expected.
+> >
+> > Loading from source can be also useful if you want to use a colleague's package.
+> > But we warned here.
+> > In the next session we'll learn a much better way of sharing packages among your colleagues using GitHub.
+> {: .solution}
+{: .challenge}
 ## Install a package from GitHub
 
 Not all publicly available packages are available in CRAN.
@@ -82,12 +102,16 @@ Not all publicly available packages are available in CRAN.
 ## Loading an installed package
 
 In order to use an installed package, you need to load it into workspace.
-This means that its functions and data will become available in your working session.
+This means that its functions and data will become available in your working session, so you can use them in your console and your scripts.
 
 The easiest way to load an installed package is by using the _Packages_ tab.
 If you click on the package's name, the package's help menu will open.
-If you click on the checkbox by the package's name, the package will be loaded.
+If you click on the checkbox by the package's name (see figure below), the package will be loaded.
 
+![](../fig/loaded.png)
+
+The figure above shows that the package `testthat` is installed and loaded.
+Other packages, such as `stringi`, `stringr` or `svglite`, are installed but not loaded.
 > ## What if we want to load a package from the console?
 > How would you load an installed R package using the console?
 >
@@ -98,7 +122,7 @@ If you click on the checkbox by the package's name, the package will be loaded.
 {: .challenge}
 
 > ## Using a function without loading the package
-> Some advanced users may be interested in loading individual functions from a given package, but not the package itself.
+> Some advanced users may want to load individual functions from a given package, but not the package itself.
 > This can be done using the syntax: `<package>::<function>`.
 >
 > For instance, if we want to use the function `filter` from the package `dplyr` we can call it directly as:
