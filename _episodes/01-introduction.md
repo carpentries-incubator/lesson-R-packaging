@@ -31,6 +31,7 @@ Let me ask you a few questions:
 - Did you ever have problems running research software written by a colleague?
 - Did you ever have problems running your own software?
 - Are you slightly scared of editing your code, just in case you "break" it?
+- Did you ever have to re-do all the figures in your paper manually?
 - Do you suspect that some parts of your code may not be working as you want them to?
 - Do you feel that you are losing control about how your code is growing?
 
@@ -44,13 +45,14 @@ Doesn't sound very impressive, but don't let the simplicity of the idea deceive 
 We'll see that structuring our projects as packages have several advantages, such as increased:
 
 - Robustness
+- Reproducibility
 - Shareability
 - Usability
 
 And after all, you need a folder structure anyways.
 Why not use one of proven quality?
 
-> ## A reflection about standards
+> ## A thought about standards
 > Standards are more valuable that you may think.
 >
 > The fact that you are reading this guide now, for instance, rests on the assumption that you can read English.
@@ -59,10 +61,17 @@ Why not use one of proven quality?
 > And all of this rests on the fact that English is, nowadays, the standard language of science (as previously was Latin).
 >
 > Something similar happens with R packages.
-> Structuring your R projects as an R package is a way of making it available to a huge pool of people who speak R.
+> Structuring your R projects as an R package is a way of making it available to a huge pool of people who "speak" R.
 >
 > And the communication goes both ways.
 > Other developers or collaborators can use your software easier, but you can also use theirs.
+>
+> Indeed, most likely you are already part of this "conversation".
+> Did you ever used a library (such as `knitr`, `lubridate` or `stringi`)?
+> If the answer is yes, you are already using packages.
+> Packages written by someone else.
+>
+> In this lesson we'll show you how to write your own, so you can participate actively in the R community.
 {: .callout}
 
 > ## Why R?
