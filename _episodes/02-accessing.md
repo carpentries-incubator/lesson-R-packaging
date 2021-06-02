@@ -1,7 +1,7 @@
 ---
 title: "Accessing packages"
 teaching: 0
-exercises: 0
+exercises: 3
 questions:
 - "How do I use my package?"
 - "How do I use someone else's package?"
@@ -78,5 +78,37 @@ This is the case of the one we are building during this lesson.
 
 Not all publicly available packages are available in CRAN.
 ...
+
+## Loading an installed package
+
+In order to use an installed package, you need to load it into workspace.
+This means that its functions and data will become available in your working session.
+
+The easiest way to load an installed package is by using the _Packages_ tab.
+If you click on the package's name, the package's help menu will open.
+If you click on the checkbox by the package's name, the package will be loaded.
+
+> ## What if we want to load a package from the console?
+> How would you load an installed R package using the console?
+>
+> Tip: As always with RStudio, it is a good idea to look at the console while we are performing operations in the graphical user interface.
+> > ## Solution
+> > Use `library(<package name>)`.
+> {: .solution}
+{: .challenge}
+
+> ## Using a function without loading the package
+> Some advanced users may be interested in loading individual functions from a given package, but not the package itself.
+> This can be done using the syntax: `<package>::<function>`.
+>
+> For instance, if we want to use the function `filter` from the package `dplyr` we can call it directly as:
+>
+> ```r
+> dplyr::filter()
+> ```
+> Keep in mind that for this to work, `dplyr` has to be installed.
+>
+> We are not going to do this during the present course, but you may find code out there that does.
+{: .callout}
 
 {% include links.md %}
