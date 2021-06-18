@@ -68,6 +68,17 @@ After installing, the new package should appear in the _Packages_ tab.
 > We'll go back to this in chapter TODO.
 {: .callout}
 
+## Install a package from GitHub
+
+Although CRAN is the official repository for R packages, it is not the only one.
+As we've seen / we'll see in chapter TODO, GitHub, is the most popular open code repository.
+We can use GitHub to find packages or to make our owns publicly available.
+
+Let's imagine we want to install a package that is not available on CRAN, such as https://github.com/RETURN-project/BenchmarkRecovery TODO: find a better example.
+
+In section TODO you learned / you'll learn how to publish your package on GitHub.
+
+
 ## Install a package from source
 
 What if the package is only available in your computer?
@@ -94,10 +105,6 @@ By pressing _Install and restart_ three things will happen:
 > > In the next session we'll learn a much better way of sharing packages among your colleagues using GitHub.
 > {: .solution}
 {: .challenge}
-## Install a package from GitHub
-
-Not all publicly available packages are available in CRAN.
-...
 
 ## Attaching an installed package
 
