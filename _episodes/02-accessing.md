@@ -1,6 +1,6 @@
 ---
 title: "Accessing packages"
-teaching: 0
+teaching: 20
 exercises: 5
 questions:
 - "How do I use my package?"
@@ -11,7 +11,8 @@ objectives:
 - "Install packages from GitHub"
 - "Install packages from CRAN"
 keypoints:
-- "First key point. Brief Answer to questions. (FIXME)"
+- "To use a package you have to install and attach it"
+- "There are several ways of installing a package"
 ---
 
 One of the advantages of packages is that they can be **installed**.
@@ -65,7 +66,7 @@ After installing, the new package should appear in the _Packages_ tab.
 
 > ## Can I publish my package in CRAN?
 > The answer is yes, and it is easier than you may think.
-> We'll go back to this in chapter TODO.
+> We'll go back to this in chapter FIXME.
 {: .callout}
 
 In the sections below we'll see how to install a package from other sources than CRAN.
@@ -124,7 +125,7 @@ Other packages, such as `stringi`, `stringr` or `svglite`, are installed but not
 ## Install a package from GitHub
 
 Although CRAN is the official repository for R packages, it is not the only one you can use.
-As we've seen / we'll see in chapter TODO, GitHub, is the most popular open code repository.
+As we've seen / we'll see in chapter FIXME, GitHub, is the most popular open code repository.
 We can use GitHub to find packages or to make our own packages publicly available.
 Contrary to CRAN, packages in GitHub are not reviewed.
 This has an advantage: you can have your package published there in no time.
@@ -136,7 +137,7 @@ The package we installed before, `devtools`, allows us to install easily using:
 devtools::install_github("PabRod/kinematics")
 ```
 
-In section TODO you'll learn how to publish your package on GitHub.
+In section FIXME you'll learn how to publish your package on GitHub.
 
 > ## Why would you want to install a package from GitHub?
 > Can you think of a situation where you'll rather install from GitHub than from CRAN?
@@ -167,7 +168,7 @@ By pressing _Install and restart_ three things will happen:
 
 1. The package will be, indeed, installed.
 2. The R session will be restarted.
-3. The package will be loaded (TODO: check if loaded or attached).
+3. The package will be loaded (FIXME: check if loaded or attached).
 
 > ## Why would you want to load a package from source
 > Can you think of a situation where you'll need to install and attach a package from source?
