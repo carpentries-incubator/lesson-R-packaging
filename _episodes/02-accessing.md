@@ -68,45 +68,9 @@ After installing, the new package should appear in the _Packages_ tab.
 > We'll go back to this in chapter TODO.
 {: .callout}
 
-## Install a package from GitHub
-
-Although CRAN is the official repository for R packages, it is not the only one.
-As we've seen / we'll see in chapter TODO, GitHub, is the most popular open code repository.
-We can use GitHub to find packages or to make our owns publicly available.
-
-Let's imagine we want to install a package that is not available on CRAN, such as https://github.com/RETURN-project/BenchmarkRecovery TODO: find a better example.
-
-In section TODO you learned / you'll learn how to publish your package on GitHub.
-
-
-## Install a package from source
-
-What if the package is only available in your computer?
-This is the case of the one we are building during this lesson.
-
-The easiest way to install a package from source is by opening the package project and using the _Build_ tab:
-
-![Build](../fig/build.png)
-
-By pressing _Install and restart_ three things will happen:
-
-1. The package will be, indeed, installed.
-2. The R session will be restarted.
-3. The package will be loaded (TODO: check if loaded or attached).
-
-> ## Why would you want to load a package from source
-> Can you think of a situation where you'll need to install and attach a package from source?
-> > ## Solution
-> > The most common situation is while you are developing a package.
-> > Every now and then, you'll want to re-install and re-load it to check that everything is working as expected.
-> >
-> > Loading from source can be also useful if you want to use a colleague's package.
-> > But we warned here.
-> > In the next session we'll learn a much better way of sharing packages among your colleagues using GitHub.
-> {: .solution}
-{: .challenge}
-
-## Attaching an installed package
+In the sections below we'll see how to install a package from other sources than CRAN.
+But first, let's see how can we actually use our freshly installed package!
+## Using an installed package
 
 In order to use an installed package, you need to load it into workspace.
 Typically, you'll do it via attaching the package.
@@ -148,6 +112,7 @@ Other packages, such as `stringi`, `stringr` or `svglite`, are installed but not
 > Do you have any idea why?
 > > ## Solution
 > > The dependencies of a package can become tricky.
+> > A common problem is that two packages contain two functions with the same name.
 > > The more explicit the naming, the better.
 > >
 > > Additionally, we have to keep our potential users in mind.
@@ -155,4 +120,65 @@ Other packages, such as `stringi`, `stringr` or `svglite`, are installed but not
 > > Using `library(<package>)` inside the package will permanently alter the search path.
 > {: .solution}
 {: .discussion}
+
+## Install a package from GitHub
+
+Although CRAN is the official repository for R packages, it is not the only one you can use.
+As we've seen / we'll see in chapter TODO, GitHub, is the most popular open code repository.
+We can use GitHub to find packages or to make our own packages publicly available.
+Contrary to CRAN, packages in GitHub are not reviewed.
+This has an advantage: you can have your package published there in no time.
+
+Let's imagine we want to install a package from GitHub, such as https://github.com/PabRod/kinematics.
+The package we installed before, `devtools`, allows us to install easily using:
+
+```r
+devtools::install_github("PabRod/kinematics")
+```
+
+In section TODO you'll learn how to publish your package on GitHub.
+
+> ## Why would you want to install a package from GitHub?
+> Can you think of a situation where you'll rather install from GitHub than from CRAN?
+> > ## Solution
+> > There are two common situations where you'll want to use GitHub instead of CRAN:
+> >
+> > The first and most obvious one is when **the package you want doesn't exist on CRAN**.
+> > This can happen for many reasons.
+> > Maybe the package is still work in progress, or doesn't pass the CRAN quality checklist.
+> > Or perhaps the authors just don't want to publish it on CRAN.
+> >
+> > The second situation is when **you need a cutting edge version of the package**.
+> > R developers usually use GitHub for their everyday work, and only apply to CRAN when they have accumulated changes enough.
+> > If you need a very particular version of the package, usually GitHub is the place to go.
+> {: .solution}
+{: .challenge}
+
+## Install a package from source
+
+What if the package is only available in your computer?
+This is the case of the one we are building during this lesson.
+
+The easiest way to install a package from source is by opening the package project and using the _Build_ tab:
+
+![Build](../fig/build.png)
+
+By pressing _Install and restart_ three things will happen:
+
+1. The package will be, indeed, installed.
+2. The R session will be restarted.
+3. The package will be loaded (TODO: check if loaded or attached).
+
+> ## Why would you want to load a package from source
+> Can you think of a situation where you'll need to install and attach a package from source?
+> > ## Solution
+> > The most common situation is while you are developing a package.
+> > Every now and then, you'll want to re-install and re-load it to check that everything is working as expected.
+> >
+> > Loading from source can be also useful if you want to use a colleague's package.
+> > But we warned here.
+> > In the next session we'll learn a much better way of sharing packages among your colleagues using GitHub.
+> {: .solution}
+{: .challenge}
+
 {% include links.md %}
