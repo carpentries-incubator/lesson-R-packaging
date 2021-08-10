@@ -34,4 +34,27 @@ Notice that:
 
 Now we are ready to press `Create Project`.
 
+> ## What did just happen?
+> After pressing `Create Project`, a new `RStudio` window should have appeared.
+> The working folder should be `mysterycoffee`, and it should already have some contents:
+> 
+> ![New project menu](../fig/contents.png)
+>
+> Also, the file `./R/hello.R` would appear open in the editor.
+> This is an example file that will help you writing your first packaged R functions.
+{: .callout}
+
+> ## The `hello.R` file
+> Take a look at the `hello.R` file.
+> You'll see that it contains a tiny function and some comments.
+> The comments are actually more important that the function itself.
+> They contain very useful tips about how to install, check and test the package.
+{: .callout}
+> ## The `DESCRIPTION` file
+> Open the `DESCRIPTION` file.
+> What do you see here?
+>
+> Take 5 minutes to edit this file with the information it asks.
+{: .callout}
+
 {% include links.md %}
