@@ -96,4 +96,67 @@ Please note that, before pressing `Code > Insert Roxygen skeleton` your cursor h
 >
 {: .callout}
 
+## Writing our own functions
+
+At the moment our package is quite useless.
+It contains only one example function.
+
+
+> ## Customize `hello`
+> Let's edit the `hello` function to do something slightly more interesting: accept a name as an input, and customize the greeting.
+> For instance, if we enter:
+>
+> ~~~r
+> hello("Pablo")
+> ~~~
+> {: .source}
+> 
+> we want the output:
+>
+> ~~~r
+> # Hello, Pablo!
+> ~~~
+> {: .output}
+>
+> > ## Solution
+> > This will do:
+> > ~~~r
+> > hello <- function(name) {
+> >  print(paste("Hello, ", name, "!", sep = ""))
+> > }
+> > ~~~
+> > {: .source}
+> {: .solution}
+{: .challenge}
+
+We changed the function, and we should change the documentation accordingly.
+Let's do it.
+
+> ## Keeping the documentation updated
+> Set your cursor inside the function you just edited.
+> Go to `Code > Insert Roxygen skeleton` as we did in section _'Using `roxygen2` for the first time'_.
+>
+> Notice that a new field `@param` appeared.
+> Can you explain it?
+> Can you fill it?
+> > ## Solution
+> > The `@param` field expects you to describe the meaning of your input parameter.
+> > When filled, it should look as something like:
+> >
+> > ~~~r
+> > #' Hello world function
+> > #'
+> > #' @param name Name of the person to greet
+> > #'
+> > #' @return Nothing, just greets
+> > #' @export
+> > #'
+> > hello <- function(name) {
+> >   print(paste("Hello, ", name, "!", sep = ""))
+> > }
+> > ~~~
+> > {: .source}
+> {: .solution}
+{: .challenge}
+
 {% include links.md %}
