@@ -34,40 +34,6 @@ where:
 - The `DESCRIPTION` file contains information about the package itself (more on chapter FIXME).
 - The `NAMESPACE` file is automatically generated and tells R which functions can be accessed (more on chapter FIXME).
 
-> ## More advanced folder structures
-> In this course we will show you how to unleash the full power of packaging.
-> In order to do so, we will use some optional folders.
-> You can see an overview below
-> 
-> ~~~sh
-> .
-> ├── R
-> │   └── <R functions>
-> ├── data (optional)
-> │   └── <data>
-> ├── tests (optional)
-> │   ├── testthat.R
-> │   └── testthat
-> │       └── <tests>
-> ├── vignettes (optional)
-> │   └── <Rmd vignettes>
-> ├── inst (optional)
-> │   └── <any other files>
-> ├── README.md
-> ├── LICENSE
-> ├── DESCRIPTION
-> └── NAMESPACE
-> ~~~
-> {: .source}
-> 
-> where:
-> 
-> - The `data` folder contains, as the name suggests, data (more on chapter FIXME).
-> - The `tests` folder contains unit tests, that will be very useful for making our package robust and mantainable (more on chapter FIXME).
-> - The `vignettes` folder contains documentation in `Rmd` format. As we'll see, this is a very suitable format for your reports and publications (more on > chapter FIXME).
-> - The `inst` folder contains any extra file you may want to include (more on chapter FIXME).
-{: .callout}
-
 ## A minimal package
 
 The menus in `RStudio` will help us greatly, also for creating a package.
@@ -136,5 +102,39 @@ it should print:
 # Hello, world!
 ~~~
 {: .output}
+
+
+## More advanced folder structures
+In this course we will show you how to unleash the full power of packaging.
+In order to do so, we will use some optional folders.
+You can see an overview below
+
+~~~sh
+.
+├── R
+│   └── <R functions>
+├── data (optional)
+│   └── <data>
+├── tests (optional)
+│   ├── testthat.R
+│   └── testthat
+│       └── <tests>
+├── vignettes (optional)
+│   └── <Rmd vignettes>
+├── inst (optional)
+│   └── <any other files>
+├── README.md
+├── LICENSE
+├── DESCRIPTION
+└── NAMESPACE
+~~~
+{: .source}
+
+where:
+
+- The `data` folder contains, as the name suggests, data (more on chapter FIXME).
+- The `tests` folder contains unit tests, that will be very useful for making our package robust and mantainable (more on chapter FIXME).
+- The `vignettes` folder contains documentation in `Rmd` format. As we'll see, this is a very suitable format for your reports and publications (more on > chapter FIXME).
+- The `inst` folder contains any extra file you may want to include (more on chapter FIXME).
 
 {% include links.md %}
