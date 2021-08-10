@@ -12,10 +12,24 @@ keypoints:
 - "Roxygen helps us with the otherwise tedious process of documenting"
 ---
 
+## Why documenting?
+
+Your code is going to be read by people, for instance:
+
+- People interested in your research.
+- Potential users of your code.
+- Colleagues and collaborators.
+- Yourself, in the future, after you forgot all the tiny details.
+
+For this and other reasons, it is a very good idea to invest some time in writing good documentation.
+The most practical way of doing this is by integrating the documentation writing as part of the functions.
+This is exactly what the package `roxygen2` helps us with.
+
 ## `roxygen2`
 
 `roxygen2` is a package that makes writing packages much easier.
-In particular, `roxygen2` takes care of your functions' documentation and the `NAMESPACE` file.
+In particular, `roxygen2` takes care of your functions' documentation.
+As a bonus, it also takes care of the `NAMESPACE` file.
 If you don't have it installed (you can check by trying `library(roxygen2)`), please do it now (`install.packages("roxygen2")`).
 
 Unfortunately, using it requires manually configuring a few things.
