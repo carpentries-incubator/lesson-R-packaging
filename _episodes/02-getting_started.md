@@ -114,4 +114,27 @@ Now we are ready to press `Create Project`.
 > Take 5 minutes to edit this file with the information it asks.
 {: .callout}
 
+## Play with the package
+
+Believe it or not, this package is ready to be installed.
+Just go to the upper right corner and press `Build > Install and Restart`.
+
+![Install and restart](../fig/install-and-restart.gif)
+
+This will install and attach the package.
+Now, you can use `hello`, the only function that this package contains so far.
+If you try it by using:
+
+~~~r
+hello()
+~~~
+{: .source}
+
+it should print:
+
+~~~r
+# Hello, world!
+~~~
+{: .output}
+
 {% include links.md %}
