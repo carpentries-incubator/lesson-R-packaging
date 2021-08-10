@@ -39,6 +39,59 @@ We'll see that structuring our projects as packages have several advantages, suc
 And after all, you need a folder structure anyways.
 Why not use one of proven quality?
 
+## How does a package look?
+
+The minimal folder structure of a package looks like this
+
+```sh
+.
+├── R
+│   └── <R functions>
+├── README.md
+├── LICENSE
+├── DESCRIPTION
+└── NAMESPACE
+```
+
+where:
+
+- The folder `R` contains all the `R` code (more on chapter FIXME).
+- The `README.md` file contains human-readable information about the package (more on chapter FIXME).
+- The `LICENSE` contains information about who and how can use this package (more on chapter FIXME).
+- The `DESCRIPTION` file contains information about the package itself (more on chapter FIXME).
+- The `NAMESPACE` file is automatically generated and tells R which functions can be accessed (more on chapter FIXME).
+
+In this course we will show you how to unleash the full power of packaging.
+In order to do so, we will use some optional folders.
+You can see an overview below
+
+```sh
+.
+├── R
+│   └── <R functions>
+├── data (optional)
+│   └── <data>
+├── tests (optional)
+│   ├── testthat.R
+│   └── testthat
+│       └── <tests>
+├── vignettes (optional)
+│   └── <Rmd vignettes>
+├── inst (optional)
+│   └── <any other files>
+├── README.md
+├── LICENSE
+├── DESCRIPTION
+└── NAMESPACE
+```
+
+where:
+
+- The `data` folder contains, as the name suggests, data (more on chapter FIXME).
+- The `tests` folder contains unit tests, that will be very useful for making our package robust and mantainable (more on chapter FIXME).
+- The `vignettes` folder contains documentation in `Rmd` format. As we'll see, this is a very suitable format for your reports and publications (more on chapter FIXME).
+- The `inst` folder contains any extra file you may want to include (more on chapter FIXME).
+
 > ## A thought about standards
 > Standards are more valuable that you may think.
 >
