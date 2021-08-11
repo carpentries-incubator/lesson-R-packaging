@@ -73,12 +73,6 @@ Now we are ready to press `Create Project`.
 > The comments are actually more important that the function itself.
 > They contain very useful tips about how to install, check and test the package.
 {: .callout}
-> ## The `DESCRIPTION` file
-> Open the `DESCRIPTION` file.
-> What do you see here?
->
-> Take 5 minutes to edit this file with the information it asks.
-{: .callout}
 
 ## Play with the package
 
