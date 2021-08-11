@@ -162,13 +162,13 @@ This is the case of the one we are building during this lesson.
 
 The easiest way to install a package from source is by opening the package project and using the _Build_ tab:
 
-![Build](../fig/build.png)
+![Build](../fig/install-and-restart.gif)
 
 By pressing _Install and restart_ three things will happen:
 
 1. The package will be, indeed, installed.
 2. The R session will be restarted.
-3. The package will be loaded (FIXME: check if loaded or attached).
+3. The package will be attached.
 
 > ## Why would you want to load a package from source
 > Can you think of a situation where you'll need to install and attach a package from source?
