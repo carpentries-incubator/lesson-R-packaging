@@ -18,9 +18,15 @@ Right?
 If the answer is yes, congratulations!
 You already know the very basics of testing!
 
-The main lesson we'll get out of this episode is that those kind of tests are extremely valuable.
+The main lesson we'll get out of this episode is that those tiny tests are extremely valuable.
 So much, that they deserve more than just be typed on the console and be forgotten forever.
 Tests deserve to be saved, and even more, rerun often.
+
+## Testing our functions
+
+Now, let's take a look at the function we have written.
+How can we check that it works as expected?
+FIXME: continue here after working out specific example in the previous episodes.
 
 ## Why shall I store my tests?
 
