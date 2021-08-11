@@ -25,7 +25,7 @@ Tests deserve to be saved, and even more, rerun often.
 ## Why shall I store my tests?
 
 The vast majority of people needs to try their scripts and functions in order to make sure they work fine.
-And we do it.
+And we try them indeed.
 What is the added value of storing those tests?
 > ## What is the added value of storing my tests?
 > Storing tests in the form of a script takes a bit more time and effort than just running them interactively in the console.
