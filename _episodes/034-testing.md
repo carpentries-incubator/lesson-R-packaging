@@ -33,7 +33,9 @@ For instance:
 library(mysterycoffee)
 
 names <- c("Luke", "Vader", "Leia", "Chewbacca", "Solo", "R2D2")
-make_groups(names)
+grouped_names <- make_groups(names)
+
+print(grouped_names)
 ~~~
 {: .source}
 
@@ -48,7 +50,7 @@ The output should look similar to this:
 {: .output}
 
 By naked eye, we notice that everything went fine.
-Actually, we are receiving a lot of information from a single sight.
+Actually, we are receiving a lot of information just by looking at it.
 For instance, we notice that:
 
 - All names appear once and only once.
@@ -127,15 +129,15 @@ Most assertions are contained in the `testthat` package, and have names starting
 > You can use it as a template for writing your own tests.
 > Take 10 minutes to:
 > 1. Figure out what is happening inside this test. Can you understand it?
-> 2. Write another two tests, just below this one, that checks that addition and subtraction also work. Tip: you can copy-paste the current test.
+> 2. Write another test, just below this one, that checks that addition also works. Tip: you can copy-paste and edit the current test.
 >
 > > ## Solution
 > > 
 > > The test is checking that 2 times 2 equals 4.
 > > This may sound silly, but actually something quite interesting is happening.
-> > The test checks that the `*` operator in _R_ works as expected.
+> > The test checks that the `*` operator in _R_ works and your human interpretation of multiplication are aligned.
 > >
-> > Regarding the tests for addition and subtraction, a possible solution would be:
+> > Regarding the test for addition, a possible solution would be:
 > >
 > > ~~~r
 > > test_that("multiplication works", {
@@ -145,15 +147,96 @@ Most assertions are contained in the `testthat` package, and have names starting
 > > test_that("addition works", {
 > >   expect_equal(2 + 3, 5)
 > > })
-> > 
-> > test_that("subtraction works", {
-> >   expect_equal(2 - 3, -1)
-> > })
 > > ~~~
 > > {: .source}
 > >
-> > Notice that the _assertions_ often look like: `expect_equal(<actual result>, <expected result>)`.
-> > Where the actual result is obtained using software, and the expected result is provided via expert knowledge.
+> {: .solution}
+{: .challenge}
+
+> ## Expectations vs results
+> Notice that the _assertions_, also known in R as _expect functions_ often look like: 
+>
+> ~~~r
+> expect_equal(<actual result>, <expected result>)
+> ~~~
+> {: .source}
+>
+> Where the actual result is obtained using software, and the expected result is provided via expert knowledge.
+>
+> Other common _expect functions_ are:
+>
+> ~~~r
+> expect_true(<statement we expect to be true>)
+> expect_false(<statement we expect to be false>)
+> expect_error(<code we expect to fail>)
+> ~~~
+> {: .source}
+>
+> Please refer to [`testthat` documentation](https://testthat.r-lib.org/reference/index.html) for a thorough list of _expect functions_.
+{: .callout}
+
+## A real test
+
+So, we just used tests to convince ourselves that `R` can multiply and add numbers.
+But this is not our original goal.
+What we would want to do is to write an automated test that checks that our function `make_groups` works as expected.
+In order to do this, it will be useful to create a new testing file:
+
+~~~r
+usethis::use_test('make_groups')
+~~~
+{: .source}
+
+This will create a test file in `tests/testthat/test-make_groups.R`.
+It will contain an example test that we can delete.
+
+What can we test now?
+For instance, the test below will check that the number of elements in the output equals 6:
+
+~~~r
+test_that("number of elements", {
+  names <- c("Luke", "Vader", "Leia", "Chewbacca", "Solo", "R2D2")
+  grouped_names <- make_groups(names)
+
+  expect_equal(length(grouped_names), 6)
+})
+~~~
+{: .source}
+
+> ## Automated vs manual testing
+> Take a look at the test above, and compare it to the manual test we did at the beginning of this episode.
+> What differences do you see?
+>
+> > ## Solution
+> > There are two main differences.
+> > 
+> > One is small: we don't have to attach the library.
+> > The file `tests/testthat.R` takes care of this automatically for us.
+> >
+> > The other is more important: we are not checking by looking at the result.
+> > Instead, we have to write down an assertion.
+> > In our case, we instruct `R` to expect that the number of elements of our ouput should be 6.
+> > (Remember the structure `expect_equal(<actual result>, <expected result>)`)
+> {: .solution}
+{: .challenge}
+
+> ## Test shape
+> Now it is your turn to write a test.
+> Using the same input as in the previous examples, I want you to check that the output is a matrix with 3 rows and 2 columns.
+> Tip 1: tests can contain multiple assertions.
+> Tip 2: the functions `nrow` and `ncol` may come in handy.
+> > ## Solution
+> > The new test should look similar to:
+> > ~~~r
+> > test_that("shape", {
+> >   names <- c("Luke", "Vader", "Leia", "Chewbacca", "Solo", "R2D2")
+> >   grouped_names <- make_groups(names)
+> > 
+> >   expect_equal(nrow(grouped_names), 3)
+> >   expect_equal(ncol(grouped_names), 2)
+> > })
+> > ~~~
+> > {: .source}
 > {: .solution}
 {: .challenge}
 
@@ -168,13 +251,18 @@ The menu will also show you the hotkey, typically `Ctrl / Cmd + Alt + T`.
 After the tests are performed, a handy summary table will be displayed:
 
 ~~~
+==> devtools::test()
+
 ℹ Loading mysterycoffee
 ℹ Testing mysterycoffee
 ✓ |  OK F W S | Context
-✓ |   3       | functions                                    
+✓ |   2       | functions                                    
+✓ |   3       | make_groups                                  
 
 ══ Results ══════════════════════════════════════════════════
-[ FAIL 0 | WARN 0 | SKIP 0 | PASS 3 ]
+[ FAIL 0 | WARN 0 | SKIP 0 | PASS 5 ]
+
+Nice code.
 ~~~
 {:. source}
 
