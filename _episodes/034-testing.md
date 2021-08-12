@@ -22,7 +22,7 @@ The main lesson we'll get out of this episode is that those tiny tests are extre
 So much, that they deserve more than just be typed on the console and be forgotten forever.
 Tests deserve to be saved, and even more, rerun often.
 
-## Testing our function
+## Manual tests
 
 Now, let's take a look at the function we have written.
 How can we check that it works as expected?
