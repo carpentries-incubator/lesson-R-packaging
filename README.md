@@ -51,6 +51,7 @@ Source [here](https://drive.google.com/file/d/1v4s5pZE6unPlrqsB5DLN1kGLkrVNBX8e/
     - Add a _what to do next_ section
     - Add this _Activity log_
 - Add `_meta` files
+    - And create a related pull request in [next-lesson-template](https://github.com/esciencecenter-digital-skills/next-lesson-template/pull/4).
 
 ### Kick-off 2021
 31 May - 4 June 2021. Pablo Rodríguez-Sánchez, Barbara Vreede, Mateusz Kuzak
