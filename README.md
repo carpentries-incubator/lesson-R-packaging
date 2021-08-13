@@ -21,9 +21,9 @@ Source [here](https://drive.google.com/file/d/1v4s5pZE6unPlrqsB5DLN1kGLkrVNBX8e/
 Before you begin developing your new lesson,
 here are a few things we recommend you do:
 
-* [] Find reviewers.
-* [] Decide if _Getting started_ shall precede _Accessing package_.
-* [] Decide about possible side topics.
+* [ ] Find reviewers.
+* [ ] Decide if _Getting started_ shall precede _Accessing package_.
+* [ ] Decide about possible side topics.
 
 ## Contributing
 
