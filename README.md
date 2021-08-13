@@ -22,8 +22,15 @@ Before you begin developing your new lesson,
 here are a few things we recommend you do:
 
 * [ ] Find reviewers.
+* [ ] Think about the two problems our example has:
+    1. It doesn't require dependencies.
+    2. The vignette will look like a manual, not like research.
 * [ ] Decide if _Getting started_ shall precede _Accessing package_.
+* [ ] Consider adding a _Developing workflow_ episode after _Documenting with roxygen2_ episode.
+    * To show that code is alive.
+    * To show how testing helps us finding new desirable features.
 * [ ] Decide about possible side topics.
+    * Do we want to teach git here or in an independent module?
 
 ## Contributing
 
