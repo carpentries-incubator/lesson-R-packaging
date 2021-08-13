@@ -18,10 +18,8 @@ Source [here](https://drive.google.com/file/d/1v4s5pZE6unPlrqsB5DLN1kGLkrVNBX8e/
 
 ## What to do next
 
-Before you begin developing your new lesson,
-here are a few things we recommend you do:
-
-* [ ] Find reviewers.
+* [ ] Keep writing content.
+* [ ] Find reviewers to curate content.
 * [ ] Think about the two problems our example has:
     1. It doesn't require dependencies.
     2. The vignette will look like a manual, not like research.
@@ -31,6 +29,39 @@ here are a few things we recommend you do:
     * To show how testing helps us finding new desirable features.
 * [ ] Decide about possible side topics.
     * Do we want to teach git here or in an independent module?
+
+## Activity log
+
+### Summer sprint
+9-13 August 2021
+Pablo Rodríguez-Sánchez
+Lieke de Boer
+
+- Write 6 episodes
+    - Introduction
+    - Accessing packages
+    - Getting started
+    - Writing our own functions
+    - Testing
+    - Documenting your package
+- Include figures and animations generated with [Peek](https://github.com/phw/peek)
+- Start merging contents into main branch
+    - The one chapter - one branch approach proved to not be a good idea
+- Adapt initial plans to challenges discovered while writing and trying
+- Use `README` for keeping members updated
+    - Draw a _Current Status_ diagram
+    - Add a _what to do next_ section
+    - Add this _Activity log_
+- Add `_meta` files
+
+### Kick-off 2021
+31 May - 4 June 2021
+Pablo Rodríguez-Sánchez
+Barbara Vreede
+Mateusz Kuzak
+
+- Brainstorm and plan the tentative structure
+- Read the materials
 
 ## Contributing
 
