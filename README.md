@@ -33,9 +33,7 @@ Source [here](https://drive.google.com/file/d/1v4s5pZE6unPlrqsB5DLN1kGLkrVNBX8e/
 ## Activity log
 
 ### Summer sprint
-9-13 August 2021
-Pablo Rodríguez-Sánchez
-Lieke de Boer
+9-13 August 2021. Pablo Rodríguez-Sánchez, Lieke de Boer
 
 - Write 6 episodes
     - Introduction
@@ -55,10 +53,7 @@ Lieke de Boer
 - Add `_meta` files
 
 ### Kick-off 2021
-31 May - 4 June 2021
-Pablo Rodríguez-Sánchez
-Barbara Vreede
-Mateusz Kuzak
+31 May - 4 June 2021. Pablo Rodríguez-Sánchez, Barbara Vreede, Mateusz Kuzak
 
 - Brainstorm and plan the tentative structure
 - Read the materials
