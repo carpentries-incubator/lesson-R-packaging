@@ -32,6 +32,8 @@ Source [here](https://drive.google.com/file/d/1v4s5pZE6unPlrqsB5DLN1kGLkrVNBX8e/
 
 ## Activity log
 
+### Early autumn sprint
+20-23 September 2021. Pablo Rodríguez-Sánchez, Mateusz Kuzak
 ### Summer sprint
 9-13 August 2021. Pablo Rodríguez-Sánchez, Lieke de Boer
 
