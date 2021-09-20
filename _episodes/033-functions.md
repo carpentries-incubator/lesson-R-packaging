@@ -7,6 +7,7 @@ questions:
 objectives:
 - "Create a custom package"
 keypoints:
+- "It is important to think about **what** we want our package to do (_design_) and **how** to do it (_implementation_). We also want to know **why** we need a new package (_avoid reinventing the wheel_)"
 - "Functions have to be written in R files in the R folder"
 ---
 

@@ -23,7 +23,7 @@ Your code is going to be read by people, for instance:
 - Yourself, in the future, after you forgot all the tiny details.
 
 For this and other reasons, it is a very good idea to invest some time in writing good documentation.
-The most practical way of doing this is by integrating the documentation writing as part of the functions.
+The most practical way of doing this is by integrating the documentation as part of the functions.
 This is exactly what the package `roxygen2` helps us with.
 
 ## `roxygen2`
@@ -104,6 +104,10 @@ Let's take a look at the _skeleton_. It contains:
 > > }
 > > ~~~
 > > {: .source}
+> >
+> > Please note that the documentation is even longer than the code.
+> > There is nothing wrong about this, to the contrary.
+> > If you have to choose between too few and too much documentation, go for too much without hesitation.
 > {: .solution}
 {: .challenge}
 

@@ -19,7 +19,7 @@ If the answer is yes, congratulations!
 You already know the very basics of testing!
 
 The main lesson we'll get out of this episode is that those tiny tests are extremely valuable.
-So much, that they deserve more than just be typed on the console and be forgotten forever.
+So much, that they deserve more than just being typed on the console and be forgotten forever.
 Tests deserve to be saved, and even more, rerun often.
 
 ## Manual tests
@@ -58,7 +58,9 @@ For instance, we notice that:
 - Actually three groups of two people have been made.
 - The output is a matrix of strings.
 
-All of this is excellent, but as we'll see, we can do it even better.
+All of this is excellent, but these tests pose a practical problem: if we test by looking, **someone** has to be there to look.
+Is there a way of avoiding this?
+The answer is yes, and it is known as automated tests.
 
 ## Automated tests
 
@@ -268,10 +270,13 @@ Nice code.
 
 The table above tells us that all the three tests passed successfully.
 
-## Why shall I store my tests?
+## What are tests good for?
 
-What is the added value of storing my tests?
-> ## What is the added value of storing my tests?
+In this episode we learned how to create, store and run automated tests.
+But an even more important question is: why do we want tests for?
+Let's reflect for five minutes about this relevant topic.
+
+> ## What is the added value of automated testing?
 > Storing tests in the form of a script takes a bit more time and effort than just running them interactively in the console.
 > 
 > Do you have any idea about why is it worth the effort?

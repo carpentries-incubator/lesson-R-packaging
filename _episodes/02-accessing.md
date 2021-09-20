@@ -20,7 +20,7 @@ This allows us to use the functions contained in the package from anywhere.
 
 There are many ways of accessing a package in order to start using it.
 In this section, we will study the most common ones.
-At the end, we'll describe briefly other alternatives that may be useful in some cases.
+At the end, we'll describe briefly some alternatives that may be useful in some cases.
 ## Install a package from CRAN
 
 [CRAN](https://cran.r-project.org/) is the official repository for R Packages.
@@ -74,7 +74,7 @@ But first, let's see how can we actually use our freshly installed package!
 ## Using an installed package
 
 In order to use an installed package, you need to load it into workspace.
-Typically, you'll do it via attaching the package.
+In `R` jargon this is known as _attaching_ the package.
 This means that its functions and data will become available in your working session, so you can use them in your console and your scripts.
 Additionally, the functions in your package will be added to the search path.
 
@@ -91,7 +91,7 @@ Other packages, such as `stringi`, `stringr` or `svglite`, are installed but not
 >
 > Tip: As always with RStudio, it is a good idea to look at the console while we are performing operations in the graphical user interface.
 > > ## Solution
-> > Use `library(<package name>)`.
+> > Use `library(<package name>)`
 > {: .solution}
 {: .challenge}
 
@@ -113,7 +113,7 @@ Other packages, such as `stringi`, `stringr` or `svglite`, are installed but not
 > Do you have any idea why?
 > > ## Solution
 > > The dependencies of a package can become tricky.
-> > A common problem is that two packages contain two functions with the same name.
+> > A common problem is that two packages may contain two functions with the same name.
 > > The more explicit the naming, the better.
 > >
 > > Additionally, we have to keep our potential users in mind.
@@ -128,9 +128,9 @@ Although CRAN is the official repository for R packages, it is not the only one 
 As we've seen / we'll see in chapter FIXME, GitHub, is the most popular open code repository.
 We can use GitHub to find packages or to make our own packages publicly available.
 Contrary to CRAN, packages in GitHub are not reviewed.
-This has an advantage: you can have your package published there in no time.
+This has an advantage: you can have your package published there immediately.
 
-Let's imagine we want to install a package from GitHub, such as https://github.com/PabRod/kinematics.
+Let's imagine we want to install a package from GitHub, such as [github.com/PabRod/kinematics](https://github.com/PabRod/kinematics).
 The package we installed before, `devtools`, allows us to install easily using:
 
 ```r
@@ -176,9 +176,6 @@ By pressing _Install and restart_ three things will happen:
 > > The most common situation is while you are developing a package.
 > > Every now and then, you'll want to re-install and re-load it to check that everything is working as expected.
 > >
-> > Loading from source can be also useful if you want to use a colleague's package.
-> > But we warned here.
-> > In the next session we'll learn a much better way of sharing packages among your colleagues using GitHub.
 > {: .solution}
 {: .challenge}
 

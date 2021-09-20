@@ -27,7 +27,7 @@ The answer is yes, and the way is by structuring our work as a software package.
 
 A package is no more and no less than a standard way of structuring your project.
 Doesn't sound very impressive, but don't let the simplicity of the idea deceive you.
-We'll see that structuring our projects as packages have several advantages, such as increased:
+We'll see that structuring our projects as packages has several advantages, such as increased:
 
 - Robustness
 - Reproducibility

@@ -36,8 +36,9 @@ where:
 
 ## A minimal package
 
-The menus in `RStudio` will help us greatly, also for creating a package.
-If you open `RStudio`, look at the upper left corner and press `File > New project > New directory`, you'll see a menu like this:
+The menus in `RStudio` will help us greatly.
+Now we'll open `RStudio` and look at the upper left corner.
+Let's press `File > New project > New directory`, and we'll see a menu like this:
 
 ![New project menu](../fig/new-project.png)
 
