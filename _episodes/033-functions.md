@@ -102,7 +102,7 @@ make_groups <- function(names) {
   names_shuffled <- sample(names)
 
   # Arrange it as a two-columns matrix
-  names_coupled <- matrix(names, ncol = 2)
+  names_coupled <- matrix(names_shuffled, ncol = 2)
 
   return(names_coupled)
 }
