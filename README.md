@@ -34,10 +34,12 @@ Source [here](https://drive.google.com/file/d/1v4s5pZE6unPlrqsB5DLN1kGLkrVNBX8e/
 
 ### Early autumn sprint
 20-23 September 2021. Pablo Rodríguez-Sánchez, Mateusz Kuzak
+- Write 1 draft episode
+    - Dependencies
 ### Summer sprint
 9-13 August 2021. Pablo Rodríguez-Sánchez, Lieke de Boer
 
-- Write 6 episodes
+- Write 6 draft episodes
     - Introduction
     - Accessing packages
     - Getting started
