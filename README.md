@@ -18,17 +18,19 @@ Source [here](https://drive.google.com/file/d/1v4s5pZE6unPlrqsB5DLN1kGLkrVNBX8e/
 
 ## What to do next
 
-* [ ] Keep writing content.
-* [ ] Find reviewers to curate content.
-* [ ] Think about the two problems our example has:
-    1. It doesn't require dependencies.
-    2. The vignette will look like a manual, not like research.
+* [ ] Plan a one-week sprint.
+    1. Most likely the last one.
+* [ ] Write last chapter on vignettes.
+    1. And drop the side topics in favor of modularity.
 * [ ] Decide if _Getting started_ shall precede _Accessing package_.
+* [ ] Find reviewers to curate content.
+    1. After reordering chapters.
 * [ ] Consider adding a _Developing workflow_ episode after _Documenting with roxygen2_ episode.
     * To show that code is alive.
     * To show how testing helps us finding new desirable features.
-* [ ] Decide about possible side topics.
+* [x] Decide about possible side topics.
     * Do we want to teach git here or in an independent module?
+    * The answer is no.
 
 ## Activity log
 
@@ -37,6 +39,7 @@ Source [here](https://drive.google.com/file/d/1v4s5pZE6unPlrqsB5DLN1kGLkrVNBX8e/
 - Write 2 draft episodes
     - Dependencies
     - Data
+- Strategic planning with Mateusz
 ### Summer sprint
 9-13 August 2021. Pablo Rodríguez-Sánchez, Lieke de Boer
 
