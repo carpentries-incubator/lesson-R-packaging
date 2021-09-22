@@ -98,4 +98,10 @@ We'll save this text in `R/example_names.R`, and we are ready to go.
 > Tip: if not, make sure that you activated `Generate documentation with Roxygen` in the `Build/More/Configure build tools` tab.
 {: .callout}
 
+## A note about raw data
+
+It should be noted that the way of dealing with data we just described will **only** work with _R_ data files, that is, those with `.rda` or `.RData` extensions.
+
+If you need to include raw data inside your package, please take a look at section [14.3 of the excellent R Packages tutorial](https://r-pkgs.org/data.html) by Hadley Wickham.
+
 {% include links.md %}
