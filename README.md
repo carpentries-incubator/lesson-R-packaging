@@ -34,6 +34,9 @@ Source [here](https://drive.google.com/file/d/1v4s5pZE6unPlrqsB5DLN1kGLkrVNBX8e/
 
 ## Activity log
 
+### Late autumn sprint
+6-10 December 2021. Pablo Rodríguez-Sánchez, Lieke de Boer
+- Write draft episode about vignettes
 ### Early autumn sprint
 20-23 September 2021. Pablo Rodríguez-Sánchez, Mateusz Kuzak
 - Write 2 draft episodes
