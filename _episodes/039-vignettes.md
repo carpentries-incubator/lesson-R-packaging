@@ -72,26 +72,34 @@ The name is self-descriptive: it is a file that combines **code** (in `R`) and *
 {: .callout}
 
 We can easily create our first vignette using the RStudio menus.
-See steps below:
+Click on `File/New file/R Markdown`, and you'll see a window like the one below:
 
-TODO: animated figure
+![New R markdown](../fig/new_rmd.png)
 
+Fill in the field `Title` with the text: "Examples of usage", and press `OK`.
+
+A new file will appear.
+Before going further, let's save it.
+Create a folder inside your project with the name `vignettes`, and save it there with the name `examples.Rmd`.
+
+Now, let's take a look at the file.
 Notice that the new file is not empty.
 This is great!
 RStudio created an example for us!
-Let's take a look at it.
 
-TODO: figure?
+![R markdown template](../fig/template_rmd.png)
 
+As always, it is instructive to read the message (in this case, the file) that RStudio generated for us.
 We realize that:
 - Several formatting options are present as examples (so we don't have to remember them!).
 - Code blocks are surrounded by the symbol \`\`\`{r} and end with \`\`\`.
+- There is something called **knit** that seems to be important.
 
-The process of generating a reader-friendly document is known as _"knitting"_.
+_"Knitting"_ is the process of generating a reader-friendly document.
 And RStudio has a button for that.
 Let's press it and see what happens.
 
-TODO: animated figure
+![Knitting](../fig/knit.gif)
 
 Great, isn't it?
 
