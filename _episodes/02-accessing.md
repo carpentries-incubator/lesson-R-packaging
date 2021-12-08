@@ -13,6 +13,7 @@ objectives:
 keypoints:
 - "To use a package you have to install and attach it"
 - "There are several ways of installing a package"
+- "The best way of installing packages is dependent on the developer and user needs"
 ---
 
 One of the advantages of packages is that they can be **installed**.
