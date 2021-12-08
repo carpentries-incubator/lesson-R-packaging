@@ -92,7 +92,7 @@ RStudio created an example for us!
 As always, it is instructive to read the message (in this case, the file) that RStudio generated for us.
 We realize that:
 - Several formatting options are present as examples (so we don't have to remember them!).
-- Code blocks are surrounded by the symbol \`\`\`{r} and end with \`\`\`.
+- Code blocks are surrounded by the symbol \`\`\`{r <name>, <optional parameters>} and end with \`\`\`.
 - There is something called **knit** that seems to be important.
 
 _"Knitting"_ is the process of generating a reader-friendly document.
@@ -113,5 +113,93 @@ Great, isn't it?
 > Yes, although this is advanced material that we'll not cover in detail in this course.
 >
 {: .callout}
+
+## Our vignette
+
+The template vignette we just created works fine, but it doesn't give any useful information about our package.
+In this section we'll fix that.
+We will create a report including some examples to show how great our package is!
+
+> ## A vignette about `mysterycoffee`
+> Open the default vignette we created in the previous section.
+> Use it as a template (for instance, editing and removing parts of it) to turn it into a vignette about `mysterycoffee`, the package we created during this course.
+>
+> What can you write?
+> Just let me give you a few suggestions:
+>
+> What about beginning with a tiny **introduction** section?
+> If you don't feel creative, you can write something along the lines of: _"Working from home can be boring. Luckily, `mysterycoffee` is here to help"_.
+>
+> Now, a **how to use it** section will be ideal.
+> It will require some code chunks:
+> A chunk to attach the package, a chunk to load some names and a chunk to make the groups.
+> Don't forget to insert explanatory text in between the chunks.
+>
+> We may also need a chunk to actually display the groups formed after knitting.
+> > ## Solution
+> > This is what I wrote.
+> > Of course, your text, and even your code, will most likely be different.
+> > ~~~markdown
+> > ---
+> > title: "Example of usage"
+> > author: "Pablo Rodriguez"
+> > date: "12/8/2021"
+> > output: html_document
+> > ---
+> > ## Introduction
+> > 
+> > Working from home can be lonely. Do you miss the random chats at the coffee machine? Certainly we do!
+> > 
+> > Luckily, our R package `mysterycoffee` is here to help.
+> > 
+> > ## How to use it
+> >
+> > Well, first you'll have to attach the package.
+> > 
+> > ```{r install}
+> > library(mysterycoffee)
+> > ```
+> > 
+> > Afterwards, the package will need the names of your colleagues. These are mine:
+> > 
+> > ```{r names}
+> > names <- c("Pablo Rodríguez", 
+> >            "Lieke de Boer", 
+> >            "Barbara Vreede", 
+> >            "President Obama", 
+> >            "General Sun Tzu", 
+> >            "Pharaoh Hatshepsut")
+> > ```
+> > 
+> > Now we just have to use the function `make_groups` to assign the random coffee partners:
+> > 
+> > ```{r assign}
+> > groups <- make_groups(names)
+> > ```
+> > 
+> > And here you have the result!
+> > 
+> > ```{r print, echo=FALSE}
+> > print(groups)
+> > ```
+> > ~~~
+> > {: .code}
+> {: .solution}
+{: .challenge}
+
+> ## Hiding chunks
+> Sometimes you don't want the content of the code chunk to be printed in the knitted document, but only its results.
+> How can you control this?
+>
+> Hint: take a look at the menu that appears at the right upper corner of each chunk.
+> > ## Solution
+> > The menu in the upper corner of each chunk allows you to do multiple things.
+> > Among them, it allows you to fine-control what will happen to every chunk.
+> > You can comfortably choose among a combination of execute or not execute the chunk, display the code, the output, or nothing.
+> > 
+> > By the way, did you notice the effect of choosing one of these options in the file itself?
+> > When yoy choose, for instance, _show output only_, the parameter `echo=FALSE` will be added to the chunk header.
+> {: .solution}
+{: .challenge}
 
 {% include links.md %}
