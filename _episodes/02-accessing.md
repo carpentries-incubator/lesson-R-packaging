@@ -31,6 +31,8 @@ Installing a package from CRAN is particularly easy.
 Let's imagine we need to install a package with tools for R developers.
 We can start by browsing to our favorite search engine, and make a search like: _R developers tools_.
 It will point us to a package called `devtools`.
+This package contains, among other things, functions to easily install from sources other than CRAN.
+It will be useful in the next section.
 The package can be installed by opening RStudio and browsing to the _Packages_ tab:
 
 ![Packages tab](../fig/packages.png)
@@ -118,7 +120,8 @@ Other packages, such as `stringi`, `stringr` or `svglite`, are installed but not
 > >
 > > Additionally, we have to keep our potential users in mind.
 > > We want our package to do its work and leave no trace behind.
-> > Using `library(<package>)` inside the package will permanently alter the search path.
+> > Using `library(<package>)` inside the package will attach the package without you realizing.
+> > And when you're finished with your function, the package will still be attached.
 > {: .solution}
 {: .discussion}
 
