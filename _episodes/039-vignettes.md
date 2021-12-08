@@ -47,6 +47,63 @@ The resulting document would be a human readable website, pdf file or even Micro
 > It can be argued that non-reproducible results are literally not scientific.
 {: .callout}
 
-## My first vignette
+## `Rmarkdown` files
+
+In `R`, vignettes are typically written using `.Rmd` (a shortening of `Rmarkdown`) files.
+The name is self-descriptive: it is a file that combines **code** (in `R`) and **text** (in `markdown`).
+
+> ## What is markdown?
+> Markdown is a way of creating formatted text using a plain-text editor.
+> Actually, it looks a lot like plain text, but with some special symbols every now and then indicating aesthetic details such as bold typeface, links, tables, ...
+> Markdown files can be rendered to reading-friendly formats, such as `html` or `pdf`.
+> 
+> This website is written in markdown.
+> Below you can the source for the last paragraph of the previous section.
+> 
+> ~~~markdown
+> In `R`, vignettes are typically written using `.Rmd` (a shortening of `Rmarkdown`) files.
+> The name is self-descriptive: it is a file that combines **code** (in `R`) and **text** (in `markdown`).
+> ~~~
+> {: .code}
+> 
+> The good news is you don't have to learn by hearth all these symbols.
+> As we'll see below, RStudio is going to help you a lot in this regard.
+> Additionally, there are lots of good [cheat sheets](https://www.markdownguide.org/cheat-sheet/) available online.
+{: .callout}
+
+We can easily create our first vignette using the RStudio menus.
+See steps below:
+
+TODO: animated figure
+
+Notice that the new file is not empty.
+This is great!
+RStudio created an example for us!
+Let's take a look at it.
+
+TODO: figure?
+
+We realize that:
+- Several formatting options are present as examples (so we don't have to remember them!).
+- Code blocks are surrounded by the symbol \`\`\`{r} and end with \`\`\`.
+
+The process of generating a reader-friendly document is known as _"knitting"_.
+And RStudio has a button for that.
+Let's press it and see what happens.
+
+TODO: animated figure
+
+Great, isn't it?
+
+> ## Can I knit markdown files to other formats than html?
+> Yes, and surprisingly easy indeed.
+> Just take a look a the expanded menu of the knitting button.
+>
+> Be warned, anyways, that some output formats may require installing additional packages.
+{: .callout}
+> ## Can I use vignettes with other language than R?
+> Yes, although this is advanced material that we'll not cover in detail in this course.
+>
+{: .callout}
 
 {% include links.md %}
