@@ -108,12 +108,15 @@ Other packages, such as `stringi`, `stringr` or `svglite`, are installed but not
 > dplyr::filter()
 > ```
 > Keep in mind that for this to work, `dplyr` has to be installed.
+>
+> **Note**: We'll learn more about packages that depend on other packages on a later chapter (FIXME).
 {: .callout}
 
-> ## To attach nor not to attach?
+> ## To attach or not to attach?
 > If you are developing a package that depends on other packages, it is strongly recommended to call functions on the other packages using the syntax `<package>::<function>`. Conversely, it is strongly advised to not use `library(<package>)` inside a package.
 > 
 > Do you have any idea why?
+> 
 > > ## Solution
 > > The dependencies of a package can become tricky.
 > > A common problem is that two packages may contain two functions with the same name.
