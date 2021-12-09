@@ -8,9 +8,11 @@ questions:
 objectives:
 - "Understand what is a package"
 - "Understand why a package is useful"
+- "Understand the tools are about to use"
 keypoints:
 - "Folder structure"
 - "The value of standards"
+- "RStudio will help us"
 ---
 
 Picture yourself starting a new programming project.
