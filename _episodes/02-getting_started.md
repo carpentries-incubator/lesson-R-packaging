@@ -8,7 +8,7 @@ objectives:
 - "Create a minimal package"
 keypoints:
 - "A package is no more and no less than a folder structure"
-- "The editor can help you"
+- "RStudio can help you"
 ---
 
 ## How does a package look?
