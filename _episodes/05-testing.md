@@ -8,8 +8,10 @@ objectives:
 - "Understand why tests are useful"
 - "Learn how to create a battery of basic tests"
 - "Learn how to run the tests"
+- "Learn to not panic if a test fails"
 keypoints:
-- "FIXME"
+- "Tests help you write a reliable package"
+- "A failing test provides a lot of valuable information"
 ---
 
 What is the first thing you do after writing a function or another piece of code?
@@ -270,6 +272,80 @@ Nice code.
 
 The table above tells us that all the three tests passed successfully.
 
+## What to do if a test fails?
+
+When writing tests, you are allowed to think a bit evil.
+Actually, you are encouraged to.
+It is a good idea to think of the many ways the package may fail, and try them.
+
+I think I figured out one: what if we want to use `make_groups` with an uneven number of names?
+Let's write a test for testing that.
+
+> ## Uneven mysterycoffee
+> Write new a test that passes an uneven number of names to `make_groups`.
+> Run the tests again.
+> What happened?
+> > ## Solution
+> > We can add a seventh, annoying and troublemaking character, to our list.
+> > Note that we gave this test a descriptive name of what we are testing: _"uneven number of elements"._
+> >
+> > ~~~r
+> > test_that("uneven number of elements", {
+> >  names <- c("Luke", "Vader", "Leia", "Chewbacca", "Solo", "R2D2", "Jar Jar Binks")
+> >  grouped_names <- make_groups(names)
+> > })
+> > ~~~
+> > {: .source}
+> > 
+> > After we run the test, we get an ugly message:
+> > 
+> > ~~~r
+> > ℹ Loading mysterycoffee
+> > ℹ Testing mysterycoffee
+> > ✓ |  OK F W S | Context
+> > ✓ |   2       | functions                  
+> > ✓ |   3   1   | make_groups                
+> > ───────────────────────────────────────────
+> > Warning (test-make_groups.R:18:3): uneven number of elements
+> > data length [7] is not a sub-multiple or multiple of the number of rows [4]
+> > Backtrace:
+> >  1. mysterycoffee::make_groups(names) test-make_groups.R:18:2
+> >  2. base::matrix(names_shuffled, ncol = 2) ./R/mysterycoffee/R/functions.R:16:2
+> > ───────────────────────────────────────────
+> >
+> > ══ Results ════════════════════════════════
+> > [ FAIL 0 | WARN 1 | SKIP 0 | PASS 5 ]
+> > ~~~
+> > {: .source}
+> > 
+> > Don't let the ugliness of the panel intimidate you.
+> > As usual, we have a lot of high-quality information here.
+> >
+> > To begin with, we got a warning and not an error.
+> > This means that the code ran, but it may not behave as expected.
+> > 
+> > Additionally, we get a human-readable description of what went wrong: the length of the data is 7, and that's not a sub-multiple of the number of rows, which is 4.
+> >
+> > It even gives us a backtrace, that points to the exact files and lines in those files where something went wrong.
+> > 
+> {: .solution}
+>
+{: .challenge}
+
+> ## What shall we do now?
+> So, thanks to our test, we discovered a possible problem in our function.
+> What shall we do now?
+> 
+> There are several possibilities.
+> We can leave the function just as it is, and modify the test to assert that a warning is thrown.
+> We can forbid the user to introduce any number that is not even, and throw an error otherwise.
+> Maybe we can come up with an improved function that fixes this.
+>
+> All of them are reasonable possibilities.
+> Just keep one thing in mind: whatever change we make, it ideally shouldn't affects the tests that we already wrote!
+>
+> What would be your preferred solution?
+{: .discussion}
 ## What are tests good for?
 
 In this episode we learned how to create, store and run automated tests.
