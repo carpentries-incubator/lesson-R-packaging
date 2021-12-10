@@ -65,14 +65,18 @@ Now we are ready to press `Create Project`.
 > ![New project menu](../fig/contents.png)
 >
 > Also, the file `./R/hello.R` would appear open in the editor.
-> This is an example file that will help you writing your first packaged R functions.
+> This is an example file that contains a toy function.
+> Its only functionality is to, well, to say _"hello"_.
+> This may sound silly, but it will help you writing your first packaged R functions.
 {: .callout}
 
 > ## The `hello.R` file
-> Take a look at the `hello.R` file.
+> Let's take a look at the `hello.R` file.
 > You'll see that it contains a tiny function and some comments.
 > The comments are actually more important that the function itself.
 > They contain very useful tips about how to install, check and test the package.
+>
+> As a rule of thumb: always read the contents of the example files RStudio creates for you.
 {: .callout}
 
 ## Play with the package
@@ -98,6 +102,19 @@ it should print:
 ~~~
 {: .output}
 
+> ## Tell me how you load your functions
+> There are many ways of using functions, but all of them involve loading them into the workspace.
+> We just learned how to do that using a package.
+>
+> **How do you usually work with functions?**
+> Perhaps you source them from an external file?
+> Do you usually work on a single, long script?
+>
+> **Can you think of any advantage of using packages instead?**
+> Don't worry if the answer is no.
+> This is actually a difficult question at this stage.
+> We'll show the full power of packages along the course.
+{: .discussion}
 
 ## More advanced folder structures
 In this course we will show you how to unleash the full power of packaging.
