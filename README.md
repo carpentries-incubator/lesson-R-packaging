@@ -18,25 +18,16 @@ Source [here](https://drive.google.com/file/d/1v4s5pZE6unPlrqsB5DLN1kGLkrVNBX8e/
 
 ## What to do next
 
-* [ ] Plan a one-week sprint.
-    1. Most likely the last one.
-* [ ] Write last chapter on vignettes.
-    1. And drop the side topics in favor of modularity.
-* [ ] Decide if _Getting started_ shall precede _Accessing package_.
-* [ ] Find reviewers to curate content.
-    1. After reordering chapters.
-* [ ] Consider adding a _Developing workflow_ episode after _Documenting with roxygen2_ episode.
-    * To show that code is alive.
-    * To show how testing helps us finding new desirable features.
-* [x] Decide about possible side topics.
-    * Do we want to teach git here or in an independent module?
-    * The answer is no.
+* [ ] Plan a last, polishing sprint.
 
 ## Activity log
 
 ### Late autumn sprint
 6-10 December 2021. Pablo Rodríguez-Sánchez, Lieke de Boer
 - Write draft episode about vignettes
+- Start reviewing the whole course.
+- Polished several minor issues.
+- We have a beta!
 ### Early autumn sprint
 20-23 September 2021. Pablo Rodríguez-Sánchez, Mateusz Kuzak
 - Write 2 draft episodes
@@ -90,10 +81,8 @@ Look for the tag ![good_first_issue](https://img.shields.io/badge/-good%20first%
 
 Current maintainers of this lesson are
 
-* Barbara Vreede [@bvreede](https://github.com/bvreede)
-* Johan Hidding [@jhidding](https://github.com/jhidding)
 * Pablo Rodríguez-Sánchez [@PabRod](https://github.com/PabRod/)
-
+* Lieke de Boer [@liekelotte](https://github.com/liekelotte)
 ## Authors
 
 A list of contributors to the lesson can be found in [AUTHORS](AUTHORS)
