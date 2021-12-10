@@ -13,7 +13,7 @@ keypoints:
 ## What are dependencies?
 
 Very often, our own code uses functions from a different package.
-For instance, we used some functions from the package `testthat` in a previous episode (FIXME).
+For instance, we used some functions from the package `testthat` in our previous [episode about testing](../05-testing).
 When that's the case, we need the potential users of our package to, at least, have those other packages also installed in their machines.
 The, so to say, sub-packages, are the dependencies of our package.
 
@@ -45,7 +45,7 @@ Suggests:
 
 The most important keywords to declare dependencies are:
 
-- `Suggests`: for **recommended** dependencies, such as the ones required for testing, creating vignettes (see episode FIXME) or plotting.
+- `Suggests`: for **recommended** dependencies, such as the ones required for testing, creating vignettes (see [episode 9](../09-vignettes)) or plotting.
 - `Imports`: for **mandatory** dependencies, that is, required for the basic functionality of the package.
 
 As we can see in our `DESCRIPTION` file, the last two lines already contain a dependency statement.

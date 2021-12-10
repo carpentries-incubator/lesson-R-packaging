@@ -38,9 +38,8 @@ The very first step is to answer three very important questions:
 > In the next sections we'll write an R function that does exactly this.
 >
 > Later on we'll see that our original design may face unexpected challenges.
-> For instance, what happens if the number of employees is odd?
+> For instance, what happens if the number of employees is odd? FIXME
 > 
-> FIXME: a diagram / figure can be of great help here
 {: .callout}
 
 > ## Are we reinventing the wheel?

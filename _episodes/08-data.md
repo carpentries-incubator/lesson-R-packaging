@@ -24,16 +24,15 @@ This can be very useful to ship the data together with the package, in an easy t
 > ## Is your data too big?
 > Packages are typically not larger than a few megabytes.
 >
-> If you need to deal with large datasets, adding it to the package is not an advisable solution.
->
-> FIXME: propose a decent alternative. Figshare?
+> If you need to deal with large datasets, adding them to the package is not an advisable solution.
+> Instead, consider using [Figshare](https://figshare.com/) or similar services.
 {: .callout}
 
 ## The `data` folder
 
 ### Step 0: create the `data` folder
 
-As we saw in episode FIXME, packages have an optional `data` folder.
+As we saw in [episode 3](../03-getting_started), packages have an optional `data` folder.
 As perhaps you can guess, we will use this folder to store data.
 
 To begin with, let's create the `data` folder:
@@ -72,7 +71,7 @@ We can save the variable `example_names` inside the `data` folder as `example_na
 Everything you put inside your package needs some documentation.
 Data is no exception.
 But, how to document it?
-The answer is easy: not very differently as did with functions in episode FIXME.
+The answer is easy: not very differently as did with functions in [episode 6](../06-documentation).
 
 An example documentation string for our data could be:
 

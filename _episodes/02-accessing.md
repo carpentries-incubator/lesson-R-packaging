@@ -69,7 +69,8 @@ After installing, the new package should appear in the _Packages_ tab.
 
 > ## Can I publish my package in CRAN?
 > The answer is yes, and it is easier than you may think.
-> We'll go back to this in chapter FIXME.
+> Most developers of CRAN packages are R users just like you and me.
+> If you have a package you are proud of, and you think it may be useful for someone else, consider [submitting it](https://cran.r-project.org/web/packages/submission_checklist.html).
 {: .callout}
 
 In the sections below we'll see how to install a package from other sources than CRAN.
@@ -109,7 +110,7 @@ Other packages, such as `stringi`, `stringr` or `svglite`, are installed but not
 > ```
 > Keep in mind that for this to work, `dplyr` has to be installed.
 >
-> **Note**: We'll learn more about packages that depend on other packages on a later chapter (FIXME).
+> **Note**: We'll learn more about packages that depend on other packages on a [later episode](../07-dependencies).
 {: .callout}
 
 > ## To attach or not to attach?
@@ -132,7 +133,7 @@ Other packages, such as `stringi`, `stringr` or `svglite`, are installed but not
 ## Install a package from GitHub
 
 Although CRAN is the official repository for R packages, it is not the only one you can use.
-As we've seen / we'll see in chapter FIXME, GitHub, is the most popular open code repository.
+A very interesting alternative is GitHub, the most popular open code repository.
 We can use GitHub to find packages or to make our own packages publicly available.
 Contrary to CRAN, packages in GitHub are not reviewed.
 This has an advantage: you can have your package published there immediately.
@@ -144,7 +145,8 @@ The package we installed before, `devtools`, allows us to install easily using:
 devtools::install_github("PabRod/kinematics")
 ```
 
-In section FIXME you'll learn how to publish your package on GitHub.
+Learning how to publish your package on GitHub is out of the scope of the present course.
+But, if you are interested, we encourage you to take the course on [Version control with Git and GitHub](https://swcarpentry.github.io/git-novice/).
 
 > ## Why would you want to install a package from GitHub?
 > Can you think of a situation where you'll rather install from GitHub than from CRAN?

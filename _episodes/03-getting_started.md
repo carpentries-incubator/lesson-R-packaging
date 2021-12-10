@@ -28,11 +28,11 @@ The minimal folder structure of a package looks like this
 
 where:
 
-- The folder `R` contains all the `R` code (more on chapter FIXME).
-- The `README.md` file contains human-readable information about the package (more on chapter FIXME).
-- The `LICENSE` contains information about who and how can use this package (more on chapter FIXME).
-- The `DESCRIPTION` file contains information about the package itself (more on chapter FIXME).
-- The `NAMESPACE` file is automatically generated and tells R which functions can be accessed (more on chapter FIXME).
+- The folder `R` contains all the `R` code (more on [episode 4](../04-functions)).
+- The `README.md` file contains human-readable information about the package (more on [episode 4](../04-functions)).
+- The `LICENSE` contains information about who and how can use this package (more below).
+- The `DESCRIPTION` file contains information about the package itself (more information on the [episode 7](../07-dependencies)).
+- The `NAMESPACE` file is automatically generated and tells R which functions can be accessed (more on [episode 6](../06-documentation)).
 
 ## A minimal package
 
@@ -144,9 +144,9 @@ You can see an overview below
 
 where:
 
-- The `data` folder contains, as the name suggests, data (more on chapter FIXME).
-- The `tests` folder contains unit tests, that will be very useful for making our package robust and mantainable (more on chapter FIXME).
-- The `vignettes` folder contains documentation in `Rmd` format. As we'll see, this is a very suitable format for your reports and publications (more on > chapter FIXME).
-- The `inst` folder contains any extra file you may want to include (more on chapter FIXME).
+- The `data` folder contains, as the name suggests, data (more on [episode 8](../data)).
+- The `tests` folder contains unit tests, that will be very useful for making our package robust and mantainable (more on [episode 5](../05-testing)).
+- The `vignettes` folder contains documentation in `Rmd` format. As we'll see, this is a very suitable format for your reports and publications (more on [episode 9](../09-vignettes)).
+- The `inst` folder contains any extra file you may want to include (more on [episode 8](../data)).
 
 {% include links.md %}
