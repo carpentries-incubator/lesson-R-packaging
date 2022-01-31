@@ -52,7 +52,7 @@ Notice that:
 
 - We gave the package a name: `mysterycoffee`.
 - I created my package on my `~/Desktop` folder, but you can use another location if you prefer.
-- We ticked `Create git repository`. We'll be back to `git` on episode FIXME.
+- We left `Create git repository` unticked. If you want to know more about `git`, please refer to our courses on [Version control](https://swcarpentry.github.io/git-novice/).
 - We left `Use renv with this project unticked`.
 - We ticked `Open in new session`.
 
