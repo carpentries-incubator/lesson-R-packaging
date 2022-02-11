@@ -23,6 +23,7 @@ You already know the very basics of testing!
 The main lesson we'll get out of this episode is that those tiny tests are extremely valuable.
 So much, that they deserve more than just being typed on the console and be forgotten forever.
 Tests deserve to be saved, and even more, rerun often.
+As we will see now, tests can actually be a built-in part of your package!
 
 ## Manual tests
 
@@ -51,22 +52,22 @@ The output should look similar to this:
 ~~~
 {: .output}
 
-By naked eye, we notice that everything went fine.
-Actually, we are receiving a lot of information just by looking at it.
+From what has been printed to the console, we can tell that everything went fine.
+And not just that: We are receiving a lot of information just by looking at how the function did its job.
 For instance, we notice that:
 
 - All names appear once and only once.
 - The names have been randomly reordered.
-- Actually three groups of two people have been made.
+- The function created three pairs of names.
 - The output is a matrix of strings.
 
-All of this is excellent, but these tests pose a practical problem: if we test by looking, **someone** has to be there to look.
+All of this is excellent, but these tests pose a practical problem: if we test by looking at the output of the function, **someone** has to be there to check it went fine.
 Is there a way of avoiding this?
-The answer is yes, and it is known as automated tests.
+The answer is yes. We can use **automated tests** to do this for us.
 
 ## Automated tests
 
-Automated tests are tiny scripts that do exactly what we did: check that everything is fine.
+Automated tests are tiny scripts that do exactly what we just did: check that everything is fine.
 In R packages, R tests are expected to live inside the `tests/testthat/` folder.
 The easiest way to start writing tests is by asking the `usethis` package to create the folder structure for us:
 
@@ -116,6 +117,7 @@ Once again, very useful information will be printed in the console:
 
 Automated tests are very similar to testing directly in the console, but differ in a crucial aspect: they need to contain _assertions_.
 An assertion is a line of code that, typically, warns us if a function behaves in an unexpected manner.
+You could say that the assertions take the place of the observer, and check that the function is behaving in the expected way.
 Most assertions are contained in the `testthat` package, and have names starting by `expect_`, such as `expect_equal`, `expect_true`, and so on.
 > ## Write your own test
 > Let's follow the advice printed in the console and modify the file `tests/testthat/test-functions.R`.
@@ -137,7 +139,8 @@ Most assertions are contained in the `testthat` package, and have names starting
 >
 > > ## Solution
 > > 
-> > The test is checking that 2 times 2 equals 4.
+> > The first argument to `test_that` is simply the name of your test, that you choose. 
+> > Beyond that, the test is checking that 2 times 2 equals 4.
 > > This may sound silly, but actually something quite interesting is happening.
 > > The test checks that the `*` operator in _R_ works and your human interpretation of multiplication are aligned.
 > >
@@ -182,8 +185,8 @@ Most assertions are contained in the `testthat` package, and have names starting
 ## A real test
 
 So, we just used tests to convince ourselves that `R` can multiply and add numbers.
-But this is not our original goal.
-What we would want to do is to write an automated test that checks that our function `make_groups` works as expected.
+But this was not our original goal.
+What we would like to do is to write an automated test that checks that our function `make_groups` works as expected.
 In order to do this, it will be useful to create a new testing file:
 
 ~~~r
