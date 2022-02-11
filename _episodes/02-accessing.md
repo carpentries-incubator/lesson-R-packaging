@@ -20,8 +20,9 @@ One of the advantages of packages is that they can be **installed**.
 This allows us to use the functions contained in the package from anywhere.
 
 There are many ways of accessing a package in order to start using it.
-In this section, we will study the most common ones.
-At the end, we'll describe briefly some alternatives that may be useful in some cases.
+In this section, we will look at the most common ones. It's very likely that you already know at least one of these methods if you are a regular R users.
+
+At the end of this episode, we'll describe briefly some alternatives that may be useful in some cases.
 ## Install a package from CRAN
 
 [CRAN](https://cran.r-project.org/) is the official repository for R Packages.
@@ -77,7 +78,7 @@ In the sections below we'll see how to install a package from other sources than
 But first, let's see how can we actually use our freshly installed package!
 ## Using an installed package
 
-In order to use an installed package, you need to load it into workspace.
+If you have used packages before, you may know that installing the package is not enough to start using it immediately. In order to use an installed package, you need to load it into workspace.
 In `R` jargon this is known as _attaching_ the package.
 This means that its functions and data will become available in your working session, so you can use them in your console and your scripts.
 Additionally, the functions in your package will be added to the search path.
@@ -114,7 +115,7 @@ Other packages, such as `stringi`, `stringr` or `svglite`, are installed but not
 {: .callout}
 
 > ## To attach or not to attach?
-> If you are developing a package that depends on other packages, it is strongly recommended to call functions on the other packages using the syntax `<package>::<function>`. Conversely, it is strongly advised to not use `library(<package>)` inside a package.
+> If you are developing a package that depends on other packages, it means you need to call functions from other packages. These will be used in the functions of your own package. When you do this, it is strongly recommended to call functions from the other packages using the syntax `<package>::<function>`. Conversely, it is strongly advised to not use `library(<package>)` inside a package.
 > 
 > Do you have any idea why?
 > 
