@@ -10,9 +10,9 @@ objectives:
 - "Understand why a package is useful"
 - "Understand the tools are about to use"
 keypoints:
-- "Folder structure"
-- "The value of standards"
-- "RStudio will help us"
+- "An R package is a research project in a specific folder structure"
+- "The value of packages is in applying a standard to this folder structure"
+- "RStudio is a useful IDE that helps you package your project"
 ---
 
 Picture yourself starting a new programming project.
