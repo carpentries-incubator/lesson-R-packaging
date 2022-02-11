@@ -16,7 +16,7 @@ keypoints:
 ---
 
 Picture yourself starting a new programming project.
-Most likely, your first step will consist on creating a new folder, a folder that later you'll populate with files.
+Most likely, your first step will consist of creating a new folder, a folder that later you'll populate with files.
 If the project is long and complex, you'll need several files and also some subfolders.
 The folder structure can eventually become pretty complex and difficult to maintain, specially if your project has multiple authors.
 
@@ -62,20 +62,21 @@ Why not use one of proven quality?
 > In this lesson we'll show you how to write your own, so you can participate actively in the R community.
 {: .callout}
 
-## How can this course help me?
+> ## How can this course help me?
+> 
+> As we'll see during this course, the apparently dull objective of working on a tidier environment comes with several unexpected perks.
+> Let me ask you a few questions:
+> 
+> - Did you ever have problems running research software written by a colleague?
+> - Did you ever have problems running your own software?
+> - Are you sometimes scared of editing your code, just in case you "break" it?
+> - Did you ever have to re-do all the figures in your paper manually?
+> - Do you suspect that some parts of your code may not be working as you want them to?
+> - Do you feel that you are losing control about how your code is growing?
 
-As we'll see during this course, the apparently dull objective of working on a tidier environment comes with several unexpected perks.
-Let me ask you a few questions:
-
-- Did you ever have problems running research software written by a colleague?
-- Did you ever have problems running your own software?
-- Are you sometimes scared of editing your code, just in case you "break" it?
-- Did you ever have to re-do all the figures in your paper manually?
-- Do you suspect that some parts of your code may not be working as you want them to?
-- Do you feel that you are losing control about how your code is growing?
-
-If your answer to any of the previous questions is yes, stay with us.
-You may not know it yet, but software packaging can make your life easier.
+> Can anyone give an example of these things happening to them in their work? If your answer to any of the previous questions is yes, stay with us.
+> You may not know it yet, but software packaging can make your life easier.
+{: .discussion}
 
 > ## Prerequisites
 > Have you ever written an `R` function?
