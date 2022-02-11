@@ -11,7 +11,7 @@ keypoints:
 - "RStudio can help you"
 ---
 
-## How does a package look?
+## What does a package look like?
 
 The minimal folder structure of a package looks like this
 
@@ -28,23 +28,23 @@ The minimal folder structure of a package looks like this
 
 where:
 
-- The folder `R` contains all the `R` code (more on [episode 4](../04-functions)).
-- The `README.md` file contains human-readable information about the package (more on [episode 4](../04-functions)).
+- The folder `R` contains all the `R` code (more on this in [episode 4](../04-functions)).
+- The `README.md` file contains human-readable information about the package (more on this in [episode 4](../04-functions)).
 - The `LICENSE` contains information about who and how can use this package (more below).
 - The `DESCRIPTION` file contains information about the package itself (more information on the [episode 7](../07-dependencies)).
 - The `NAMESPACE` file is automatically generated and tells R which functions can be accessed (more on [episode 6](../06-documentation)).
 
 ## A minimal package
 
-The menus in `RStudio` will help us greatly.
-Now we'll open `RStudio` and look at the upper left corner.
-Let's press `File > New project > New directory`, and we'll see a menu like this:
+The menus in `RStudio` will help us in creating the most minimal of packages.
+Let's open `RStudio` and look at the upper left corner.
+We will press `File > New project > New directory`, and see a menu like this:
 
 ![New project menu](../fig/new-project.png)
 
-As you can guess, now we'll press `R package`.
-The new menu asks us to fill some information.
-For the moment, just stay with me and fill it like this:
+As you can guess, we'll now press `R package`.
+The new menu asks us to fill in some information.
+For the moment, bear with me and fill in the following:
 
 ![New project menu](../fig/create-package.png)
 
@@ -52,13 +52,13 @@ Notice that:
 
 - We gave the package a name: `mysterycoffee`.
 - I created my package on my `~/Desktop` folder, but you can use another location if you prefer.
-- We left `Create git repository` unticked. If you want to know more about `git`, please refer to our courses on [Version control](https://swcarpentry.github.io/git-novice/).
+- We left `Create git repository` unticked. If you want to know more about `git`, please refer to our courses on [Version control](https://swcarpentry.github.io/git-novice/). Integrating packages with Git is very useful, but we will not talk about it in this lesson. 
 - We left `Use renv with this project unticked`.
 - We ticked `Open in new session`.
 
 Now we are ready to press `Create Project`.
 
-> ## What did just happen?
+> ## What just happened?
 > After pressing `Create Project`, a new `RStudio` window should have appeared.
 > The working folder should be `mysterycoffee`, and it should already have some contents:
 > 
