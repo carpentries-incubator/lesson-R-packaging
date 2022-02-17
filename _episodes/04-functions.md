@@ -13,7 +13,7 @@ keypoints:
 
 So far, we have been playing with the example package that is built-in in `RStudio`.
 It only contains a function that says `Hello, world!`.
-This is extremely useful that we have an example that gets us started, but this package is not very interesting yet.
+It is extremely useful that we have an example that gets us started, but this package is not very interesting yet.
 In this and the next episodes, we will create our own customized package, which in the previous episode we gave the name of `mysterycoffee`.
 
 ## `mysterycoffee`, our virtual coffee room
