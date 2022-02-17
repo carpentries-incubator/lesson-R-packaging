@@ -12,7 +12,7 @@ objectives:
 keypoints:
 - "An R package is a research project in a specific folder structure"
 - "The value of packages is in applying a standard to this folder structure"
-- "RStudio is a useful IDE that helps you package your project"
+- "RStudio is a useful editor that helps you package your project"
 ---
 
 Picture yourself starting a new programming project.
