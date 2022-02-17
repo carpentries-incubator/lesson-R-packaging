@@ -20,7 +20,7 @@ One of the advantages of packages is that they can be **installed**.
 This allows us to use the functions contained in the package from anywhere.
 
 There are many ways of accessing a package in order to start using it.
-In this section, we will look at the most common ones. It's very likely that you already know at least one of these methods if you are a regular R users.
+In this section, we will look at the most common ones. It's very likely that you already know at least one of these methods if you are a regular R user.
 
 At the end of this episode, we'll describe briefly some alternatives that may be useful in some cases.
 ## Install a package from CRAN
