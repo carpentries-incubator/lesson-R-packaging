@@ -8,23 +8,22 @@ objectives:
 - "Create a custom package"
 keypoints:
 - "It is important to think about **what** we want our package to do (_design_) and **how** to do it (_implementation_). We also want to know **why** we need a new package (_avoid reinventing the wheel_)"
-- "Functions have to be written in R files in the R folder"
+- "Functions have to be saved in `.R` files in the R folder"
 ---
 
 So far, we have been playing with the example package that is built-in in `RStudio`.
 It only contains a function that says `Hello, world!`.
-This is extremely useful to get started, but not very interesting.
+It is extremely useful that we have an example that gets us started, but this package is not very interesting yet.
 In this and the next episodes, we will create our own customized package, which in the previous episode we gave the name of `mysterycoffee`.
 
 ## `mysterycoffee`, our virtual coffee room
 
 Our package will try to mitigate a practical problem: social isolation in remote working environments.
-We want to create a software solution that simulates the random encounters at the office's coffee machine... when there is no office.
+We want to create a software solution that simulates random encounters at the office's coffee machine... when there is no office.
 The very first step is to answer three very important questions:
 
 > ## What will our package do?
-> We already answered this.
-> Our package will simulate random encounters between employees.
+> As we said, our package will simulate random encounters between employees.
 {: .callout}
 > ## How will we do it?
 > After some thinking, we figured out that we can have a function that has the following input and output:
@@ -37,14 +36,14 @@ The very first step is to answer three very important questions:
 > So this will be our starting point.
 > In the next sections we'll write an R function that does exactly this.
 >
-> Later on we'll see that our original design may face unexpected challenges.
+> Later on, we'll see that our original design may face unexpected challenges.
 > For instance, what happens if the number of employees is odd? FIXME
 > 
 {: .callout}
 
 > ## Are we reinventing the wheel?
-> This is also an important question worth investing some time in.
-> Can solve our problem with a software solution that someone else already wrote?
+> This is also an important question worth investing some time in when creating new functions or packages.
+> Can we solve our problem with a software solution that someone else already wrote?
 >
 > Well... if our problem really was to simulate random encounters, the answer is yes.
 > There are already solutions for this.
