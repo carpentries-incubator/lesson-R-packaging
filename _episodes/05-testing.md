@@ -345,7 +345,7 @@ Let's write a test for testing that.
 > Maybe we can come up with an improved function that fixes this.
 >
 > All of them are reasonable possibilities.
-> Just keep one thing in mind: whatever change we make, it ideally shouldn't affects the tests that we already wrote!
+> Just keep one thing in mind: whatever change we make, it ideally shouldn't affect the tests that we already wrote!
 >
 > What would be your preferred solution?
 {: .discussion}

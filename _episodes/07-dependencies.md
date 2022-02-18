@@ -52,6 +52,12 @@ As we can see in our `DESCRIPTION` file, the last two lines already contain a de
 Under the category `Suggests` we can see the package `testthat`.
 More specifically, we can see that a version equal or higher than `3.0.0` is suggested.
 
+> ## What do you mean mandatory?
+> Please note that, even if we tag a dependency as **mandatory** using the `Imports` key, it will never be automatically installed by our new package.
+> We have to do install it ourselves.
+> What is then the use of tagging it as **mandatory**?
+> That now our package is aware that the dependency **should be** installed, and it is going to throw an error if that's not the case.
+{: .callout}
 > ## Add some dependencies
 > Let's add some dependencies to this list.
 > Particularly, we want you to add:
@@ -81,7 +87,7 @@ More specifically, we can see that a version equal or higher than `3.0.0` is sug
 > > ~~~
 > > {: .source}
 > > If you prefer, you can also add the dependencies by directly editing the `DESCRIPTION` file.
-> > But using `usethis::use_package()` is recommended.
+> > But using `usethis::use_package()` is handy!
 > {: .solution}
 {: .challenge}
 
