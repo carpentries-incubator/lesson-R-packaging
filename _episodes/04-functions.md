@@ -65,8 +65,13 @@ Now that we know what our package is expected to do, it is a perfect moment to e
 > What do you see here?
 >
 > Take 5 minutes to edit this file with the information it asks.
-> Ignore the `License` field.
-> We'll go back to that on episode FIXME.
+> In particular, edit the following fields (when needed):
+> - `Title`
+> - `Version`
+> - `Author`
+> - `Maintainer`
+> - `Description`
+> For now, ignore the rest.
 > > ## Solution
 > > After editing, your `DESCRIPTION` file should look similar to:
 > >
@@ -89,6 +94,25 @@ Now that we know what our package is expected to do, it is a perfect moment to e
 > > {: .source}
 > {: .solution}
 {: .challenge}
+
+> ## More on `DESCRIPTION`
+> In the previous exercise we deliberately ignored some of the fields in the `DESCRIPTION` file.
+> Two of them are particularly relevant, the `Version` and the `License` fields.
+>
+> The `Version` field helps you and your users keep track of the package version.
+> It is advisable to use [_semantic versioning_](https://semver.org/).
+> In a nutshell, _semantic versioning_ means using a `MAJOR.MINOR.PATCH` structure for naming your versions.
+> If your new version only fixes some bugs, increase the `PATCH` by one.
+> If your new version includes new features, increase the `MINOR` by one.
+> If your new version includes new features that are not backwards compatible, increase `MAJOR` by one.
+>
+> Regarding the `License`: software licensing is a large and complicated field which lies at the intersection of programming and law.
+> Its intricacies are far beyond the aim of this course.
+> The good news is that, most likely, most of your research code can be released under a _permissive_ license, typically _MIT_ or _Apache_.
+> If you want to know more, please take a look at [these materials](https://r-pkgs.org/license.html#license).
+>
+> For more, detailed information about `DESCRIPTION` files, see [R Packages documentation](https://r-pkgs.org/description.html).
+{: .callout}
 
 ### Third step: create a function
 
