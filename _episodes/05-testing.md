@@ -98,6 +98,30 @@ usethis::use_testthat()
 > {: .solution}
 {: .discussion}
 
+> ## Why are we not attaching `usethis`?
+> In the example above, we used: 
+>
+> > ~~~r
+> > usethis::use_testthat() # Recommended
+> > ~~~
+> {: .code}
+>
+> but we could have also used:
+> > ~~~r
+> > library(usethis)
+> > use_testthat() # Correct, but not recommended
+> > ~~~
+> {: .code}
+> 
+> Do you have any idea why? Are the two code snippets above not equivalent?
+>
+> > ## Solution
+> > When we are developing a package, we'd like to keep our working space as clean and isolated as possible.
+> > The first, recommended snippet, is bringing exactly one function from the `usethis` package to our environment. 
+> > The second one, on the contrary, is bringing **each and every** function contained in `usethis` to our environment.
+> {: .solution}
+{: .discussion}
+
 ### Our first test
 
 Let's follow the advice printed in the console and invoke the `use_test()` function:
