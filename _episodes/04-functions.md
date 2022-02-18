@@ -134,4 +134,17 @@ make_groups <- function(names) {
 Please, open an editor, copy the function above and save it as `R/functions.R`.
 All the functions of the package have to be in `R` files inside the `R/` folder.
 
+> ## On the art of being tidy
+> So far, our package only has one function, and we have chosen a very boring name for the file where it is stored (`R/functions.R`).
+>
+> In the future, keep in mind that you can use any valid filename for storing your functions.
+> Additionally, such a file can contain one or many functions, and you can use multiple files if you want.
+> Indeed, using multiple files with descriptive filenames is a good idea.
+> 
+> For instance, if your package has some functions for doing input, output and parsing of data, it could be a good idea to store those as `R/io.R`.
+> You can later put your analysis functions in `R/analysis.R`, and the plotting ones under `R/plotting.R`.
+>
+> Be creative and informative! The only rule is that your `.R` files should "live" inside the `R/` folder.
+{: .callout}
+
 {% include links.md %}
