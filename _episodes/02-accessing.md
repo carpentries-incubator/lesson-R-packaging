@@ -7,11 +7,13 @@ questions:
 - "How do I use someone else's package?"
 - "What is the difference between installing and attaching?"
 objectives:
-- "Install and attach your own packages"
-- "Install packages from GitHub"
-- "Install packages from CRAN"
+- "Build, install and attach your own packages"
+- "Install and attach packages from GitHub"
+- "Install and attach packages from CRAN"
 keypoints:
 - "To use a package you have to install and attach it"
+- "To use a homemade package, you also have to build it"
+- "The (build,) install and attach process is usually automated by RStudio"
 - "There are several ways of installing a package"
 - "The best way of installing packages is dependent on the developer and user needs"
 ---
@@ -188,5 +190,15 @@ By pressing _Install and restart_ three things will happen:
 > >
 > {: .solution}
 {: .challenge}
+
+> ## A short glossary
+> It is useful to keep in mind these three concepts:
+>
+> 1. **Build**: converts a local package into an installable package.
+> 2. **Install**: adds the packages to your local library, so it is ready to be _attached_ when desired.
+> 3. **Attach**: loads the package's functions to your workspace, making them ready to be used.
+>
+> When you press _Install and restart_, the three events happen in sequence.
+{: .callout}
 
 {% include links.md %}
