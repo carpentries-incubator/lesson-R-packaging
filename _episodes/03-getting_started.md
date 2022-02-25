@@ -1,7 +1,7 @@
 ---
 title: "Getting started"
-teaching: 0
-exercises: 0
+teaching: 15
+exercises: 10
 questions:
 - "I want to write a package. Where should I start?"
 objectives:

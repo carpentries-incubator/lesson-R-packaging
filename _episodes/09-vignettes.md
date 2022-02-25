@@ -1,7 +1,7 @@
 ---
 title: "Vignettes"
-teaching: 10
-exercises: 5
+teaching: 15
+exercises: 15
 questions:
 - "How can I use R packages to write my research?"
 objectives:

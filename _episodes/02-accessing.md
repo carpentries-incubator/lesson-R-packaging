@@ -1,7 +1,7 @@
 ---
 title: "Accessing packages"
 teaching: 20
-exercises: 5
+exercises: 10
 questions:
 - "How do I use my package?"
 - "How do I use someone else's package?"

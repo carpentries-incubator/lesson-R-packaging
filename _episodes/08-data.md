@@ -1,7 +1,7 @@
 ---
 title: "Data"
-teaching: 10
-exercises: 5
+teaching: 15
+exercises: 10
 questions:
 - "How can I include data in my package?"
 objectives:

@@ -1,7 +1,7 @@
 ---
 title: "Writing our own functions"
-teaching: 0
-exercises: 0
+teaching: 15
+exercises: 15
 questions:
 - "How can I add functionality to my package"
 objectives:
