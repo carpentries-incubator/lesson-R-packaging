@@ -6,4 +6,3 @@
 - Testing packages
 - Documenting packages
 - Writing vignettes
-- Publishing and sharing packages
