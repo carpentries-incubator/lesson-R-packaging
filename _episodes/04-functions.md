@@ -66,11 +66,7 @@ Now that we know what our package is expected to do, it is a perfect moment to e
 >
 > Take 5 minutes to edit this file with the information it asks.
 > In particular, edit the following fields (when needed):
-> - `Title`
-> - `Version`
-> - `Author`
-> - `Maintainer`
-> - `Description`
+> `Title`, `Version`, `Author`, `Maintainer`, `Description`.
 > For now, ignore the rest.
 > > ## Solution
 > > After editing, your `DESCRIPTION` file should look similar to:
