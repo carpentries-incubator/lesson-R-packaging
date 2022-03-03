@@ -74,8 +74,10 @@ Why not use one of proven quality?
 > - Do you suspect that some parts of your code may not be working as you want them to?
 > - Do you feel that you are losing control about how your code is growing?
 >
-> Can anyone give an example of these things happening to them in their work? If your answer to any of the previous questions is yes, stay with us.
+> If your answer to any of the previous questions is yes, stay with us.
 > You may not know it yet, but software packaging can make your life easier.
+>
+> Can anyone give an example of these things happening to them in their work?
 {: .discussion}
 
 > ## Prerequisites

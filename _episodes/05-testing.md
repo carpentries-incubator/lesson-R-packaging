@@ -254,7 +254,9 @@ test_that("number of elements", {
 > ## Test shape
 > Now it is your turn to write a test.
 > Using the same input as in the previous examples, I want you to check that the output is a matrix with 3 rows and 2 columns.
+>
 > Tip 1: tests can contain multiple assertions.
+>
 > Tip 2: the functions `nrow` and `ncol` may come in handy.
 > > ## Solution
 > > The new test should look similar to:
