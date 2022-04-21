@@ -16,11 +16,13 @@ and make sure you have everything you need to begin developing your new lesson.
 
 Source [here](https://drive.google.com/file/d/1v4s5pZE6unPlrqsB5DLN1kGLkrVNBX8e/view?usp=sharing).
 
-## What to do next
-
-* [ ] Plan a last, polishing sprint.
 
 ## Activity log
+
+### April 2022
+- Transfer the materials to the [Carpentries Incubator](https://github.com/carpentries-incubator/lesson-R-packaging).
+### March 2022
+22-24 March, [pilot online lesson](https://esciencecenter-digital-skills.github.io/2022-03-22-ds-rpackaging/) at the Netherlands eScience Center.
 
 ### Late autumn sprint
 6-10 December 2021. Pablo Rodríguez-Sánchez, Lieke de Boer
