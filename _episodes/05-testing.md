@@ -1,7 +1,7 @@
 ---
 title: "Testing"
-teaching: 30
-exercises: 20
+teaching: 60
+exercises: 30
 questions:
 - "How can I know that my package works as expected?"
 objectives:
