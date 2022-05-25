@@ -5,13 +5,16 @@ exercises: 20
 questions:
 - "How can I make my package understandable and reusable?"
 objectives:
+- "Write a readme"
 - "Use roxygen2 for creating documentation"
 - "Use roxygen2 for managing the NAMESPACE file"
 keypoints:
 - "Documentation is not optional"
+- "All coding projects need a readme file"
 - "roxygen2 helps us with the otherwise tedious process of documenting"
 - "roxygen2 also takes care of NAMESPACE"
 ---
+
 
 ## Why documenting?
 
@@ -23,10 +26,37 @@ Your code is going to be read by people, for instance:
 - Yourself, in the future, after you forgot all the tiny details.
 
 For this and other reasons, it is a very good idea to invest some time in writing good documentation.
-The most practical way of doing this is by integrating the documentation as part of the functions.
-This is exactly what the package `roxygen2` helps us with.
 
-## `roxygen2`
+## The readme
+
+The first, and perhaps most important document of any coding project is the readme file.
+This file typically has the name `README.md` and is located at the root folder, just at the same level as `DESCRIPTION` or `NAMESPACE`.
+
+The readme file provides the very first contact with your code to potential users.
+
+> ## What do you want to tell your potential users?
+> Try to set yourself in the shoes of your potential users.
+> They can be collaborators, people who found you code on the internet, ...
+> 
+> What do you think they would like to know?
+>
+> With the results of this discussion, write a short readme file for our package.
+{: .discussion}
+
+> ## (Optional) Readme rendering
+> One of the advantages of having a `README.md` is that most code repositories render this file as a nicely-formatted reader-friendly text.
+> See, for instance, the "main page" of the `kinematics` package on GitHub ([link](https://github.com/PabRod/kinematics)).
+> In GitHub, you can even create a [readme about yourself](https://github.com/PabRod)!
+>
+> If you want to know more about GitHub, please take a look at the Software Carpentries' [lesson on Version Control](https://swcarpentry.github.io/git-novice/).
+{: .callout}
+
+## Documenting your functions with `roxygen2`
+
+As we saw, the purpose of the readme is to _welcome_ whoever happens to be looking at your project.
+This means that it is rarely the place for very technical information, such as the one describing the way your functions work.
+The most practical way of documenting your functions is by integrating the documents as part of the functions.
+This is exactly what the package `roxygen2` helps us with.
 
 `roxygen2` is a package that makes writing packages much easier.
 In particular, `roxygen2` takes care of your functions' documentation.
