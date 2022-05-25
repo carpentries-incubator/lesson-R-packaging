@@ -51,7 +51,7 @@ The readme file provides the very first contact with your code to potential user
 > If you want to know more about GitHub, please take a look at the Software Carpentries' [lesson on Version Control](https://swcarpentry.github.io/git-novice/).
 {: .callout}
 
-## `roxygen2`
+## Documenting your functions with `roxygen2`
 
 As we saw, the purpose of the readme is to _welcome_ whoever happens to be looking at your project.
 This means that it is rarely the place for very technical information, such as the one describing the way your functions work.
