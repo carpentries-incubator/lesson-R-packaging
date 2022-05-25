@@ -9,9 +9,11 @@ objectives:
 - "Learn how to create a battery of basic tests"
 - "Learn how to run the tests"
 - "Learn to not panic if a test fails"
+- "Optional: Learn how to perform a code check"
 keypoints:
 - "Tests help you write a reliable package"
 - "A failing test provides a lot of valuable information"
+- "Checking goes deeper than testing"
 ---
 
 What is the first thing you do after writing a function or another piece of code?
@@ -392,6 +394,42 @@ Let's reflect for five minutes about this relevant topic.
 > > - **Code is alive**. What works today may fail tomorrow. Keeping the tests will help us identifying future failures.
 > > - **Tests can be used as supporting documentation**. As we'll see soon, tests are often use examples. This can be very valuable for users.
 > > - **Your tests can be run by a colleague**. For instance, in a different computer. If some installation or dependency problem appears, the tests will help discovering it.
+> {: .solution}
+{: .discussion}
+
+## Checking (optional)
+
+Also in the build tab there is a button with the text `Check` on it.
+
+![Check package](../fig/check.gif)
+
+This button can be understood as an extended version of testing. When pressed, several things will happen:
+
+- It will attach the package.
+- It will check that all dependencies are installed.
+- It will check that the documentation can be generated.
+- It will perform the tests.
+- And most importantly, it will show an error with a descriptive message if something failed.
+
+> ## Let's check!
+> Press check, and discuss what happens.
+>
+> Do not worry at all if you get some warnings and errors.
+> Actually, most likely you'll get some.
+> And we'll explain you why that is good news.
+{: .callout}
+
+> ## Checking vs testing
+> When we check we perform the tests, and much more.
+> In that sense, we can say that checking is better than testing.
+> Why would you want to test instead?
+> When would you test, and when would you check?
+> > ## Solution
+> > Checking is usually significantly slower than testing.
+> > For small changes in the code, it is usually a good idea to test.
+> > For larger changes, or an accumulation of several small ones, it is a good idea to check.
+> >
+> > Rule of thumb: test often, check every now and then.
 > {: .solution}
 {: .discussion}
 
