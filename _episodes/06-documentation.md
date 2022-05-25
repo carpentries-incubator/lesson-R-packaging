@@ -1,6 +1,6 @@
 ---
 title: "Documenting your package"
-teaching: 20
+teaching: 40
 exercises: 20
 questions:
 - "How can I make my package understandable and reusable?"
