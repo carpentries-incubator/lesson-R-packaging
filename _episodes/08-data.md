@@ -28,43 +28,46 @@ This can be very useful to ship the data together with the package, in an easy t
 > Instead, consider using [Figshare](https://figshare.com/) or similar services.
 {: .callout}
 
-## The `data` folder
+## Adding data
 
-### Step 0: create the `data` folder
+### Step 1: let R know that you'll use data
 
-As we saw in [episode 3](../03-getting_started), packages have an optional `data` folder.
-As perhaps you can guess, we will use this folder to store data.
-
-To begin with, let's create the `data` folder:
-
-![Data folder](../fig/data_folder.gif)
-
-### Step 1: store some data
-
-Now, we need some data to be saved.
-Let's imagine we want to save an example dataset including some names.
-Particularly, these ones:
+The easiest way of adding data to our project is by letting the package `usethis` help us.
+In the snippet below we generate some data, and then we use `usethis` to store it as part of the package:
 
 ~~~r
 example_names <- c("Luke", "Vader", "Leia", "Chewbacca", "Solo", "R2D2")
-~~~
-{: .code}
 
-We can save the variable `example_names` inside the `data` folder as `example_names.RData`.
+usethis::use_data(example_names)
+~~~ 
+{:. code}
 
-![Data storage](../fig/save_data.gif)
-
-> ## Data and `usethis`
->
-> For the most console-oriented users, it can be good to know that what we did is equivalent to:
->
-> ~~~r
-> example_names <- c("Luke", "Vader", "Leia", "Chewbacca", "Solo", "R2D2")
-> usethis::use_data(example_names)
-> ~~~
-> {:. code}
->
-{: .callout}
+> ## What happened?
+> Type and execute in your console the code we just showed.
+> What does it do?
+> Does it require any further action from our side?
+> > ## Solution
+> > It provides a very informative output.
+> > Probably you'll see something like this:
+> > ~~~
+> > ✔ Setting active project to '<working folder>/mysterycoffee'
+> > ✔ Saving 'example_names' to 'data/example_names.rda'
+> > • Document your data (see 'https://r-pkgs.org/data.html')
+> > ~~~
+> > {: .code}
+> >
+> >
+> > So, what happened is that it created the file `example_names.rda` inside the `data` folder.
+> > Additionally, it activated the project, but that's not very relevant because most likely the project was already active.
+> >
+> > The last element in the list shows something that **didn't** happen: the data documentation.
+> > Actually, we are asked to do it ourselves.
+> > `usethis` is kind enough to provide us with a link with further information, in case we need it.
+> >
+> > So let's move to the second (and last) step, and document our data.
+> > 
+> {: .solution}
+{: .challenge}
 
 ### Step 2: document your data
 
@@ -101,6 +104,6 @@ We'll save this text in `R/example_names.R`, and we are ready to go.
 
 It should be noted that the way of dealing with data we just described will **only** work with _R_ data files, that is, those with `.rda` or `.RData` extensions.
 
-If you need to include raw data inside your package, please take a look at section [14.3 of the excellent R Packages tutorial](https://r-pkgs.org/data.html) by Hadley Wickham.
+If you need to include raw data inside your package, please take a look at [section 14.3](https://r-pkgs.org/data.html) of the excellent [R Packages tutorial](https://r-pkgs.org/index.html) by Hadley Wickham.
 
 {% include links.md %}
