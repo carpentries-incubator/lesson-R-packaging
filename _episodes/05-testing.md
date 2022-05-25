@@ -129,7 +129,7 @@ usethis::use_testthat()
 Let's follow the advice printed in the console and invoke the `use_test()` function:
 
 ~~~r
-usethis::use_test()
+usethis::use_test('functions')
 ~~~
 {: .source}
 
@@ -140,6 +140,14 @@ Once again, very useful information will be printed in the console:
 • Modify 'tests/testthat/test-functions.R'
 ~~~
 {: .output}
+
+> ## Use smart names
+> `usethis::use_test(<name>)` will generate the test file `tests/testthat/test-<name>.R`.
+> Our functions live in a file called `functions.R`, so choosing `functions` as the name for the tests file is a good idea.
+>
+> Don't forget that projects may grow, and in the future perhaps you'll have several files containing different functions (for instance, one containing the input/output functions, another containing functions used for analysis and a last one containing the plotting ones).
+> In such a situation, it will be advisable to have three test files, each of them with the corresponding name.
+{: .callout}
 
 Automated tests are very similar to testing directly in the console, but differ in a crucial aspect: they need to contain _assertions_.
 An assertion is a line of code that, typically, warns us if a function behaves in an unexpected manner.
