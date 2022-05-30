@@ -37,7 +37,7 @@ The very first step is to answer three very important questions:
 > In the next sections we'll write an R function that does exactly this.
 >
 > Later on, we'll see that our original design may face unexpected challenges.
-> For instance, what happens if the number of employees is odd? FIXME
+> For instance, what happens [if the number of employees not even](https://carpentries-incubator.github.io/lesson-R-packaging/05-testing/index.html#what-to-do-if-a-test-fails)?
 > 
 {: .callout}
 
