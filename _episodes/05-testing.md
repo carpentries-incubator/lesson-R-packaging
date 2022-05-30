@@ -322,16 +322,23 @@ Let's write a test for testing that.
 
 > ## Uneven mysterycoffee
 > Write new a test that passes an uneven number of names to `make_groups`.
+>
+> You can use our previous test, the one we called _"number of elements"_, as a template, and adapt it to accept a list with one more name.
+> This should be a new, additional test, so please copypaste it, don't delete it.
+>
 > Run the tests again.
 > What happened?
 > > ## Solution
 > > We can add a seventh, annoying and troublemaking character, to our list.
+> > The test will look as below.
 > > Note that we gave this test a descriptive name of what we are testing: _"uneven number of elements"._
 > >
 > > ~~~r
 > > test_that("uneven number of elements", {
 > >  names <- c("Luke", "Vader", "Leia", "Chewbacca", "Solo", "R2D2", "Jar Jar Binks")
 > >  grouped_names <- make_groups(names)
+> >
+> >  expect_equal(length(grouped_names), 7)
 > > })
 > > ~~~
 > > {: .source}
