@@ -34,40 +34,35 @@ Permissive licenses are similarly open, but they do not restrict the way in whic
 ## How do I decide what license to use?
 First, ask a few important questions:
 
-- Is there code you use in your project which is already licensed? If so, does this license require that I
+- Is there code you use in your project which is already licensed? If so, what are their requirements?
 - Is there an official policy from my employer that informs my license choice?
 
+> ## Copyleft and dependencies in R
+>
+> R is licensed with the copyleft license GPL. Does this mean that every package in R requires a GPL license?
+> Fortunately, the GPL is not that strict. Because of the way the R language works, you are not
+> required to license your R package with GPL. This is also the case when other libraries that your package imports
+> (your so-called dependencies) are GPL licensed: you are not shipping that code directly with your package, so, you are not
+> required to adhere to the copyleft policy.
+>
+> However, if you copy code from another project and paste it to yours, then that project's license does
+> become relevant. Be sure to consult it when choosing a license for your own work.
+>
+{: .callout}
 
-
-## When should I add a license?
-
-What situation invokes these license conditions? This is more complex. The way that the licensed conditions come into play. Is not. More complex. What do you think the way that the viral conditions come into play?
-
-It's not always easy to to figure out. With R packages, however. If you are using another package in your code. You do not need to adhere to their license. Nor do you need to adhere to the license of the R code itself, which is GPU. Licensed GPL licensed. Uhm, GPU jianu GPL. It's all very confusing. Nor do you need to adhere to the R license itself. You do. This can be different. This is certainly different if you are. Actually copying code. From other packages. In this case you will need to adhere to a viral license if it exists. Another flavor of open source licensing is called a permissive license and permissive licenses. In R. If you want to choose a license for your work, there's a couple things you have to. To keep into account. First of all. In what way are you using other people code if you are?
-
-Simply loading importing. Another R package, or if you're working in R itself, those are not. Those are not. If you are simply importing another package. This will not. Require you to adhere to the license. Of that package, however. As mentioned before, if you are copying their code. Then this is a reason for you to take into account that license. The same may hold if you are using C code which needs to compile. There's a different I don't even know what the real the real rules are here. But I should look into that.
-The second, the further things you need to keep in to take into account, is in what way do you want others to use their code.
-This is a decision that is up to you and other copyright holders. You can use this tool choosealicense.com. Figure out what license fits your purposes best. Once you've made this decision.
+Then, head to [choosealicense.com](https://choosealicense.com/), and choose a license. Make sure that all copyright holders for your package agree with your choice.
 
 ## How do I add a license to my R package?
-Anyway, once you've made this decision. It is easy to apply your license using dev tools. ``` usethis::apply_apache_license()```
-
-Let's apply the Apache license to our. OK. CRAN requires a license. Even if you do not want to use, if you do not want to use an open source license. You can start a license file like this:
+It is easy to apply your license using the `usethis` package.
 
 ~~~r
-usethis::use_apache_license()
+usethis::apply_apache_license()
 ~~~
 {: .source}
 
-Your license, Oh yeah. Once you've run this command. When you run this command. First, the DESCRIPTION and 2nd the license.MD file in the root of the package, always the if you. Are looking for. If you do not, if you want to do something else. If you want to use an alternative license, you can do so like this. Or a proprietary license.
+Two files are edited with this command:
+- `DESCRIPTION`
+- `license.MD`
 
-
- Things to make sure that they are in this file. So this is about. Understanding what kinds of licenses the goals are understanding, what kinds of licenses exist?
- Knowing how to apply a license, knowing where to find another license, find where to find the license of another package. You can ask. There's a command that you can use to check the license of a package. And how to amend it?
-
-Uhm, also, if you want to submit your package to Cron that it requires a license. What the license of R itself is?
-
-Uhm, and that they know choosealicense.com is important. And I think this is that's it really yeah?
 
 {% include links.md %}
-
