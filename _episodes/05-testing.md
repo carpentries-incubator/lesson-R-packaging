@@ -412,6 +412,17 @@ Let's reflect for five minutes about this relevant topic.
 > {: .solution}
 {: .discussion}
 
+## Some caveats
+> ## Testing plotting functions
+> Very often, research packages contain plotting functions.
+> The way to manually check that these functions work correctly is, usually, to create the plots and look at them.
+> But this cannot be considered automated testing!
+>
+> There are, nevertheles, a few things that you can test on a plotting function.
+> For instance, you can check that it doesn't crash.
+> Or that it produces a plot object... even if nobody checks if it looks nice.
+{: .callout}
+
 ## Checking (optional)
 
 Also in the build tab there is a button with the text `Check` on it.
