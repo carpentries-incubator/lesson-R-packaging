@@ -32,14 +32,14 @@ Version: 0.1.0
 Author: Pablo Rodriguez-Sanchez
 Maintainer: Pablo Rodriguez-Sanchez <p.rodriguez-sanchez@esciencecenter.nl>
 Description: Simulates random encounters between couples of persons
-    This package was inspired by the need to mitigate social isolation in remote 
+    This package was inspired by the need to mitigate social isolation in remote
     working environments. The idea is to simulate random encounters at the office's
     coffee machine... when there is no such an office.
 License: What license is it under?
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 7.1.1
-Suggests: 
+Suggests:
     testthat (>= 3.0.0)
 ~~~
 
@@ -62,28 +62,26 @@ More specifically, we can see that a version equal or higher than `3.0.0` is sug
 > Let's add some dependencies to this list.
 > Particularly, we want you to add:
 >
-> - `knitr` as an recommended dependency.
-> - `kableExtra` as a mandatory dependency.
->
-> It will become aparent later why we chose those packages.
+> - `knitr` as an mandatory dependency.
+> - `tidyr` as a recommended dependency.
 >
 > Tip: take a look at the help menu of `usethis::use_package()`.
 >
 > > ## Solution
 > > We can add the new dependencies by:
 > > > ~~~r
-> > > usethis::use_package("knitr", type = "Suggests")
-> > > usethis::use_package("kableExtra", type = "Imports")
+> > > usethis::use_package("knitr", type = "Imports")
+> > > usethis::use_package("tidyr", type = "Suggests")
 > > > ~~~
 > > {: .source}
 > >
 > > Please notice how the `DESCRIPTION` file changed:
 > > > ~~~txt
-> > > Suggests: 
-> > >   knitr,
+> > > Suggests:
+> > >   tidyr,
 > > >   testthat (>= 3.0.0)
-> > > Imports: 
-> > >   kableExtra
+> > > Imports:
+> > >   knitr
 > > ~~~
 > > {: .source}
 > > If you prefer, you can also add the dependencies by directly editing the `DESCRIPTION` file.
