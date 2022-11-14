@@ -15,6 +15,8 @@ keypoints:
 - "RStudio is a useful editor that helps you package your project"
 ---
 
+This lesson will teach you how to reproducibly work with R packages. 
+
 Picture yourself starting a new programming project.
 Most likely, your first step will consist of creating a new folder, a folder that later you'll populate with files.
 If the project is long and complex, you'll need several files and also some subfolders.
