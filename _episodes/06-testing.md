@@ -311,6 +311,33 @@ Nice code.
 
 The table above tells us that all the three tests passed successfully.
 
+## Test coverage
+Test coverage is an indirect method to assess the quality of your package: As a rule of thumb, the higher the test coverage, the more you can be confident that your package is working as expected. It works by measuring the amount of lines of code in your package that have been tested by your test set. For example, let's say that we have written 100 lines of code. The number of lines executed via our tests is 30, then my test coverage is `30%`:
+
+~~~r
+(30 / 100) * 100
+~~~
+{: .source}
+
+You can measure automatically your test coverage by using the `covr` package via its `report()` function.
+
+~~~r
+library(covr)
+report()
+~~~
+{: .source}
+
+`report()` provides a nice table summarising the coverage of the functions in your package.
+
+### Why measuring tests' coverage?
+Having an idea of how many lines of code you have effectively tested can help you identify what conditions, decision points (i.e., if/else scenario) and thus portions of the code you may have left out from your tests, perhaps because you haven't thought about it.
+
+For more information about how `covr` works:
+
+~~~r
+vignette("how_it_works", package = "covr")
+~~~
+
 ## What to do if a test fails?
 
 When writing tests, you are allowed to think a bit evil.
