@@ -157,8 +157,7 @@ This has an advantage: you can have your package published there immediately.
 {: .challenge}
 
 Learning how to publish your package on GitHub is out of the scope of the present course.
-But, if you are interested, we encourage you to take the course on [Version control with Git and GitHub](https://swcarpentry.github.io/git-novice/).
-
+But, if you are interested, we encourage you to take the courses on [Version control with Git and GitHub](https://swcarpentry.github.io/git-novice/) and on [Introduction to Reproducible Publications with RStudio](https://carpentries-incubator.github.io/Reproducible-Publications-with-RStudio/) (see the chapter on [Collaborating via Github](https://carpentries-incubator.github.io/Reproducible-Publications-with-RStudio/10-github/index.html)).
 > ## Why would you want to install a package from GitHub?
 > Can you think of a situation where you'll rather install from GitHub than from CRAN?
 > > ## Solution
