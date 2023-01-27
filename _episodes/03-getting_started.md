@@ -82,7 +82,7 @@ Now we are ready to press `Create Project`.
 ## Play with the package
 
 Believe it or not, this package is ready to be installed.
-Just go to the upper right corner and press `Build > Install and Restart`. # TODO: not sure this has changed? In my console, I see `Build > Install`.
+Just go to the upper right corner and press `Build > Install and Restart` (or, in newer versions of RStudio, press `Build > Install > Clean and install`).
 
 ![Install and restart](../fig/install-and-restart.gif)
 
