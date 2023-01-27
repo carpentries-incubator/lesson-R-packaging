@@ -149,7 +149,9 @@ This has an advantage: you can have your package published there immediately.
 > > ## Solution
 > > ```
     devtools::install_github("PabRod/kinematics")
-    devtools::install_git("https://gitlab.com/r-packages/psyverse")
+    devtools::install_gitlab("r-packages/psyverse")
+    # or
+    devtools::install_git("https://gitlab.com/r-packages/psyverse") 
     ```
 > {: .solution}
 {: .challenge}
