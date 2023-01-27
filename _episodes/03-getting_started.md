@@ -99,7 +99,7 @@ This will install and attach the package. The package contains only one function
 > >    {: .source}
 > > 
 > >    ~~~r
-> >    # Hello, world!
+> >    [1] Hello, world!
 > >    ~~~
 > >    {: .output}
 > > 
