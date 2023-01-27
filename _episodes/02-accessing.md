@@ -144,7 +144,7 @@ This has an advantage: you can have your package published there immediately.
 
 > ## Find a package on github, bitbucket, or gitlab and install it with devtools.
 > If you have trouble finding a package, try [github.com/PabRod/kinematics](https://github.com/PabRod/kinematics).
-> If you know how to install from github already, try a package from gitlab. For instance, try [psyverse](https://gitlab.com/r-packages/psyverse)
+> If you know how to install from github already, try a package from gitlab. For instance, try [gitlab.com/r-packages/psyverse](https://gitlab.com/r-packages/psyverse).
 >
 > > ## Solution
 > > ```
