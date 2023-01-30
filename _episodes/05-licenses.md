@@ -73,7 +73,7 @@ It is easy to apply your license using the `usethis` package.
 > > ~~~
 > > {: .source}
 > > 
-> > 2. The command edits two files. The full text in `LICENSE.md` changed. And the used license reported in `DESCRIPTION.md` changed.
+> > 2. The function `usethis::use_apache_license()` edits two files. The full text in `LICENSE.md` changed. And the used license reported in `DESCRIPTION.md` changed.
 > {: .solution}
 {: .challenge}
 
