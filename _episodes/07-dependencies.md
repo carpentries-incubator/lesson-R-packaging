@@ -90,4 +90,64 @@ More specifically, we can see that a version equal or higher than `3.0.0` is sug
 {: .challenge}
 
 
+> ## Using and running `devtools::check()` for dependencies
+>
+> `devtools::check()` checks for many different things, but here we want to see it in action for dependencies. 
+>
+> For this exercise, start with either your own package, or make the `mysterycoffee` package depend on some more things, as follows:
+> 
+>~~~r
+> usethis::use_r("reshape_groups")
+>~~~
+> {: .code}
+>
+> Then add the following function to the file `reshape_groups.R`:
+>
+>~~~r
+> reshape_groups <- function(names) {
+>  df <- data.frame(make_groups(names))
+>  names(df) <- c("group1", "group2")
+>  out <- df %>% tidyr::pivot_longer(cols = tidyselect::starts_with("group"))
+>  return(out)
+>}
+>~~~
+> {: .code}
+> 
+> With this in place, or with your own package, do the following.
+> Run `devtools::check()` (or `Build > Check`). Report in the collaborative document the messages you receive about dependencies. Address the messages by fixing the code, and re-run `devtools::check()`. Iterate until there are no more messages about dependencies.
+> > ## Solution
+> > From running `devtools::check()` we get:
+> >~~~r
+> > '::' or ':::' imports not declared from:
+> >  ‘tidyr’ ‘tidyselect’
+> > 
+> > checking R code for possible problems ... NOTE
+> > reshape_groups: no visible global function definition for ‘%>%’
+> > Undefined global functions or variables:
+> >   %>%
+> >~~~
+> > 
+> > We first add the `tidyr` dependency with `usethis::use_package("tidyr", type = "imports")`, and do the same for `tidyselect`. We can verify that the `DESCRIPTION` is updated.
+> >
+> > One way to resolve the missing import for `%>%` is with `usethis::use_pipe()`---this creates a new file `R/utils-pipe.R`. Another way, if using `roxygen`, is to declare `magrittr` in the `Imports`, and declare `@importFrom magrittr "%>%"` as follows:
+> >
+> >~~~r
+> >#' reshape groups
+> >#'
+> >#' @param names person names
+> >#' @importFrom magrittr "%>%"
+> >#' @return a dataframe with two columns: group membership and person name
+> > reshape_groups <- function(names) {
+> >  df <- data.frame(make_groups(names))
+> >  names(df) <- c("group1", "group2")
+> >  out <- df %>% tidyr::pivot_longer(cols = tidyselect::starts_with("group"))
+> >  return(out)
+> >}
+> >~~~
+> {: .source}
+> >
+> {: .solution}
+{: .challenge}
+
+
 {% include links.md %}
