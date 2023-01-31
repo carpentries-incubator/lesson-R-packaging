@@ -129,7 +129,7 @@ More specifically, we can see that a version equal or higher than `3.0.0` is sug
 > > 
 > > We first add the `tidyr` dependency with `usethis::use_package("tidyr", type = "imports")`, and do the same for `tidyselect`. We can verify that the `DESCRIPTION` is updated.
 > >
-> > One way to resolve the missing import for `%>%` is with `usethis::use_pipe()`---this creates a new file `R/utils-pipe.R`. Another way, if using `roxygen`, is to declare `magrittr` in the `Imports`, and declare `@importFrom magrittr "%>%"` as follows:
+> > One way to resolve the missing import for `%>%` is with `usethis::use_pipe()`---this creates a new file `R/utils-pipe.R`. Another way, if using `roxygen`, is to declare `magrittr` in the `Imports`, and declare `@importFrom magrittr "%>%"` in the file `reshape_groups.R` as follows:
 > >
 > >~~~r
 > >#' reshape groups
