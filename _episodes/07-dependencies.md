@@ -98,19 +98,35 @@ More specifically, we can see that a version equal or higher than `3.0.0` is sug
 > We use `usethis::use_r()` to initiate a file for this function:
 > 
 >~~~r
-> usethis::use_r("reshape_groups")
+> usethis::use_r("make_groups_and_time")
 >~~~
 > {: .code}
 >
-> Then add the following function to the file `reshape_groups.R`:
->
+> Then add the following function to the file `make_groups_and_time.R`:
 >~~~r
-> reshape_groups <- function(names) {
->  df <- data.frame(make_groups(names))
->  names(df) <- c("group1", "group2")
->  out <- df %>% tidyr::pivot_longer(cols = tidyselect::starts_with("group"))
->  return(out)
->}
+> #' Make groups of 2 persons and coffee time
+> #'
+> #' Randomly arranges a vector of names into a data frame with
+> #' 3 columns and whatever number of rows is required. The first
+> #' two columns are the two persons that meet for the coffee; 
+> #' the last column is the randomly sampled time at which they meet.
+> #'
+> #' @param names The vector of names
+> #'
+> #'
+> #' @return A data frame with re-arranged names in groups and assigned coffee time.
+> #' @export
+> #'
+> make_groups_and_time <- function(names) {
+>   groups <- data.frame(make_groups(names))
+>   names(groups) <- c("person1", "person2")
+>   possible_times <- c("09:30", "10:00", "15:15", "15:45")
+>   groups_and_time <- dplyr::mutate(
+>     groups,
+>     coffee_time = sample(possible_times, size = nrow(df), replace = TRUE)
+>   )
+>   return(groups_and_time)
+> }
 >~~~
 > {: .code}
 > 
