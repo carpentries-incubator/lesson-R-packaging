@@ -115,7 +115,8 @@ More specifically, we can see that a version equal or higher than `3.0.0` is sug
 > {: .code}
 > 
 > With this in place, or with your own package, do the following.
-> Run `devtools::check()` (or `Build > Check`). Report in the collaborative document the messages you receive about dependencies. Address the messages by fixing the code, and re-run `devtools::check()`. Iterate until there are no more messages about dependencies.
+> Run `devtools::check()` (or `Build > Check`). What messages do you get about dependencies?
+> Optionally, you can address the messages by changing the code, and re-run `devtools::check()` to see if you were successful. 
 > > ## Solution
 > > From running `devtools::check()` we get:
 > >~~~r
