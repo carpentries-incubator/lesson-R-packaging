@@ -45,6 +45,8 @@ The readme file provides the very first contact with your code to potential user
 > What subjects are addressed in this README? As a potential user, is there anything that you miss?
 > 
 > With the results of this discussion, write a short readme file for our package.
+>
+> Get started with `usethis::use_readme_md()` to generate a default README.md file.
 {: .discussion}
 
 
