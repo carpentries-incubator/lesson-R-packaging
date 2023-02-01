@@ -35,13 +35,20 @@ This file typically has the name `README.md` and is located at the root folder, 
 The readme file provides the very first contact with your code to potential users.
 
 > ## What do you want to tell your potential users?
-> Try to set yourself in the shoes of your potential users.
+> Try to put yourself in the shoes of your potential users.
 > They can be collaborators, people who found you code on the internet, ...
 > 
 > What do you think they would like to know?
->
+> 
+> Now, take a look at the [README from github.com/PabRod/kinematics](https://github.com/PabRod/kinematics).
+> 
+> What subjects are addressed in this README? As a potential user, is there anything that you miss?
+> 
 > With the results of this discussion, write a short readme file for our package.
+>
+> Get started with `usethis::use_readme_md()` to generate a default README.md file.
 {: .discussion}
+
 
 > ## (Optional) Readme rendering
 > One of the advantages of having a `README.md` is that most code repositories render this file as a nicely-formatted reader-friendly text.
