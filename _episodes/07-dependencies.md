@@ -94,7 +94,8 @@ More specifically, we can see that a version equal or higher than `3.0.0` is sug
 >
 > `devtools::check()` checks for many different things, but here we want to see it in action for dependencies. 
 >
-> For this exercise, start with either your own package, or make the `mysterycoffee` package depend on some more things, as follows:
+> Let's start by adding a function that depends on another package.
+> We use `usethis::use_r()` to initiate a file for this function:
 > 
 >~~~r
 > usethis::use_r("reshape_groups")
