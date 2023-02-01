@@ -34,8 +34,8 @@ This file typically has the name `README.md` and is located at the root folder, 
 
 The readme file provides the very first contact with your code to potential users.
 
-> ## What do you want to tell your potential users? What is in a README?
-> Try to set yourself in the shoes of your potential users.
+> ## What do you want to tell your potential users?
+> Try to put yourself in the shoes of your potential users.
 > They can be collaborators, people who found you code on the internet, ...
 > 
 > What do you think they would like to know?
