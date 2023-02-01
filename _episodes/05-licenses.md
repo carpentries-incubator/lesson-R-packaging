@@ -61,13 +61,29 @@ Then, head to [choosealicense.com](https://choosealicense.com/), and choose a li
 It is easy to apply your license using the `usethis` package.
 
 ~~~r
-usethis::apply_apache_license()
+usethis::use_apache_license()
 ~~~
 {: .source}
 
 Two files are edited with this command:
 - `DESCRIPTION`
 - `license.MD`
+
+> ## Adding and changing the license of the package
+> 1. Using the `usethis` package, apply an Apache license to your package. For help, see [this link](https://usethis.r-lib.org/reference/index.html#package-setup).
+> 2. In the root directory of your project, which files have changed? How have they changed? 
+> 3. Change the license of your package to the license you want to use. Which function did you use?
+> 
+> > ## Solution
+> > 1. We can use 
+> > ~~~r
+> > usethis::use_apache_license()
+> > ~~~
+> > {: .source}
+> > 
+> > 2. The function `usethis::use_apache_license()` edits two files. The full text in `LICENSE.md` changed. And the used license reported in `DESCRIPTION.md` changed.
+> {: .solution}
+{: .challenge}
 
 
 {% include links.md %}
