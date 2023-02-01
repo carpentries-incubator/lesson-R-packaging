@@ -60,6 +60,14 @@ Then, head to [choosealicense.com](https://choosealicense.com/), and choose a li
 ## How do I add a license to my R package?
 It is easy to apply your license using the `usethis` package.
 
+~~~r
+usethis::use_apache_license()
+~~~
+{: .source}
+
+Two files are edited with this command:
+- `DESCRIPTION`
+- `license.MD`
 
 > ## Adding and changing the license of the package
 > 1. Using the `usethis` package, apply an Apache license to your package. For help, see [this link](https://usethis.r-lib.org/reference/index.html#package-setup).
