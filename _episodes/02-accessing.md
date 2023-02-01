@@ -141,16 +141,23 @@ We can use GitHub to find packages or to make our own packages publicly availabl
 Contrary to CRAN, packages in GitHub are not reviewed.
 This has an advantage: you can have your package published there immediately.
 
-Let's imagine we want to install a package from GitHub, such as [github.com/PabRod/kinematics](https://github.com/PabRod/kinematics).
-The package we installed before, `devtools`, allows us to install easily using:
 
-```r
-devtools::install_github("PabRod/kinematics")
-```
+> ## Find a package on github, bitbucket, or gitlab and install it with devtools.
+> If you have trouble finding a package, try [github.com/PabRod/kinematics](https://github.com/PabRod/kinematics).
+> If you know how to install from github already, try a package from gitlab. For instance, try [gitlab.com/r-packages/psyverse](https://gitlab.com/r-packages/psyverse).
+>
+> > ## Solution
+> > ```
+    devtools::install_github("PabRod/kinematics")
+    devtools::install_gitlab("r-packages/psyverse")
+    # or
+    devtools::install_git("https://gitlab.com/r-packages/psyverse") 
+    ```
+> {: .solution}
+{: .challenge}
 
 Learning how to publish your package on GitHub is out of the scope of the present course.
-But, if you are interested, we encourage you to take the course on [Version control with Git and GitHub](https://swcarpentry.github.io/git-novice/).
-
+But, if you are interested, we encourage you to take the course on [Version control with Git and GitHub](https://swcarpentry.github.io/git-novice/) (note [this supplemental on Git with Rstudio](https://swcarpentry.github.io/git-novice/14-supplemental-rstudio/index.html)), and this lesson chapter on [Collaborating via Github](https://carpentries-incubator.github.io/Reproducible-Publications-with-RStudio/10-github/index.html)).
 > ## Why would you want to install a package from GitHub?
 > Can you think of a situation where you'll rather install from GitHub than from CRAN?
 > > ## Solution
