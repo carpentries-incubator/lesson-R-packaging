@@ -84,6 +84,7 @@ Look for the tag ![good_first_issue](https://img.shields.io/badge/-good%20first%
 Current maintainers of this lesson are
 
 * Pablo Rodríguez-Sánchez [@PabRod](https://github.com/PabRod/)
+- Barbara Vreede [@bvreede](https://github.com/bvreede)
 * Lieke de Boer [@liekelotte](https://github.com/liekelotte)
 ## Authors
 
