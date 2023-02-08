@@ -162,7 +162,6 @@ More specifically, we can see that a version equal or higher than `3.0.0` is sug
 > >  return(out)
 > >}
 > >~~~
-> {: .source}
 > >
 > {: .solution}
 {: .challenge}
