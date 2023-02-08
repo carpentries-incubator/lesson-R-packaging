@@ -113,7 +113,6 @@ More specifically, we can see that a version equal or higher than `3.0.0` is sug
 > #'
 > #' @param names The vector of names
 > #'
-> #'
 > #' @return A data frame with re-arranged names in groups and assigned coffee time.
 > #' @export
 > #'
@@ -123,7 +122,9 @@ More specifically, we can see that a version equal or higher than `3.0.0` is sug
 >   possible_times <- c("09:30", "10:00", "15:15", "15:45")
 >   groups_and_time <- dplyr::mutate(
 >     groups,
->     coffee_time = sample(possible_times, size = nrow(df), replace = TRUE)
+>     coffee_time = sample(possible_times, 
+>                          size = nrow(groups), 
+>                          replace = TRUE)
 >   )
 >   return(groups_and_time)
 > }
@@ -136,32 +137,11 @@ More specifically, we can see that a version equal or higher than `3.0.0` is sug
 > > ## Solution
 > > From running `devtools::check()` we get:
 > >~~~r
-> > '::' or ':::' imports not declared from:
-> >  ‘tidyr’ ‘tidyselect’
-> > 
-> > checking R code for possible problems ... NOTE
-> > reshape_groups: no visible global function definition for ‘%>%’
-> > Undefined global functions or variables:
-> >   %>%
+> > W  checking dependencies in R code ...
+> >  '::' or ':::' import not declared from: ‘dplyr’
 > >~~~
-> > 
-> > We first add the `tidyr` dependency with `usethis::use_package("tidyr", type = "imports")`, and do the same for `tidyselect`. We can verify that the `DESCRIPTION` is updated.
-> >
-> > One way to resolve the missing import for `%>%` is with `usethis::use_pipe()`---this creates a new file `R/utils-pipe.R`. Another way, if using `roxygen`, is to declare `magrittr` in the `Imports`, and declare `@importFrom magrittr "%>%"` in the file `reshape_groups.R` as follows:
-> >
-> >~~~r
-> >#' reshape groups
-> >#'
-> >#' @param names person names
-> >#' @importFrom magrittr "%>%"
-> >#' @return a dataframe with two columns: group membership and person name
-> > reshape_groups <- function(names) {
-> >  df <- data.frame(make_groups(names))
-> >  names(df) <- c("group1", "group2")
-> >  out <- df %>% tidyr::pivot_longer(cols = tidyselect::starts_with("group"))
-> >  return(out)
-> >}
-> >~~~
+> > {: .output}
+> > We can add the `dplyr` dependency with `usethis::use_package("dplyr", type = "imports")`. This updates the `DESCRIPTION`. 
 > >
 > {: .solution}
 {: .challenge}
