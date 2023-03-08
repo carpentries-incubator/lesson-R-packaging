@@ -3,7 +3,7 @@ title: "Managing dependencies"
 teaching: 15
 exercises: 5
 questions:
-- "How can I make my package as easy to install as possible"
+- "How can I make my package as easy to install as possible?"
 objectives:
 - "Use the `DESCRIPTION` file for declaring dependencies"
 keypoints:
