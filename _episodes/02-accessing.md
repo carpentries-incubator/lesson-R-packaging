@@ -143,17 +143,20 @@ Contrary to CRAN, packages in GitHub are not reviewed.
 This has an advantage: you can have your package published there immediately.
 
 
-> ## Find a package on github, bitbucket, or gitlab and install it with devtools.
+> ## Find a package on github, bitbucket, or gitlab and install it with devtools
 > If you have trouble finding a package, try [github.com/PabRod/kinematics](https://github.com/PabRod/kinematics).
-> If you know how to install from github already, try a package from gitlab. For instance, try [gitlab.com/r-packages/psyverse](https://gitlab.com/r-packages/psyverse).
+>
+> If you know how to install from GitHub already, try a package from GitLab. For instance, try [gitlab.com/r-packages/psyverse](https://gitlab.com/r-packages/psyverse).
 >
 > > ## Solution
 > > ```
-    devtools::install_github("PabRod/kinematics")
-    devtools::install_gitlab("r-packages/psyverse")
-    # or
-    devtools::install_git("https://gitlab.com/r-packages/psyverse") 
-    ```
+> > devtools::install_github("PabRod/kinematics")
+> > devtools::install_gitlab("r-packages/psyverse")
+> >
+> > # or
+> >
+> > devtools::install_git("https://gitlab.com/r-packages/psyverse") 
+> > ```
 > {: .solution}
 {: .challenge}
 
