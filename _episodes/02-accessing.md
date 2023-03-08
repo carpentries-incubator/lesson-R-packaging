@@ -3,13 +3,13 @@ title: "Accessing packages"
 teaching: 20
 exercises: 10
 questions:
-- "How do I use my package?"
 - "How do I use someone else's package?"
+- "How do I use my own package?"
 - "What is the difference between installing and attaching?"
 objectives:
-- "Build, install and attach your own packages"
-- "Install and attach packages from GitHub"
 - "Install and attach packages from CRAN"
+- "Install and attach packages from GitHub"
+- "Build, install and attach your own packages"
 keypoints:
 - "To use a package you have to install and attach it"
 - "To use a homemade package, you also have to build it"
