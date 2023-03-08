@@ -13,7 +13,7 @@ objectives:
 keypoints:
 - "To use a package you have to install and attach it"
 - "To use a homemade package, you also have to build it"
-- "The (build,) install and attach process is usually automated by RStudio"
+- "The build, install and attach process is usually automated by RStudio"
 - "There are several ways of installing a package"
 - "The best way of installing packages is dependent on the developer and user needs"
 ---
@@ -197,7 +197,7 @@ By pressing _Install and restart_ three things will happen:
 > Can you think of a situation where you'll need to install and attach a package from source?
 > > ## Solution
 > > The most common situation is while you are developing a package.
-> > Every now and then, you'll want to re-install and re-load it to check that everything is working as expected.
+> > Every now and then, you'll want to re-install and re-attach it to check that everything is working as expected.
 > >
 > {: .solution}
 {: .challenge}
@@ -206,7 +206,7 @@ By pressing _Install and restart_ three things will happen:
 > It is useful to keep in mind these three concepts:
 >
 > 1. **Build**: converts a local package into an installable package.
-> 2. **Install**: adds the packages to your local library, so it is ready to be _attached_ when desired.
+> 2. **Install**: adds the package to your local library, so it is ready to be _attached_ when desired.
 > 3. **Attach**: loads the package's functions to your workspace, making them ready to be used.
 >
 > When you press _Install and restart_, the three events happen in sequence.
