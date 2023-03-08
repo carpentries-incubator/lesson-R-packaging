@@ -113,11 +113,10 @@ Other packages, such as `stringi`, `stringr` or `svglite`, are installed but not
 > ```
 > Keep in mind that for this to work, `dplyr` has to be installed.
 >
-> **Note**: We'll learn more about packages that depend on other packages on a [later episode](../07-dependencies).
 {: .callout}
 
 > ## To attach or not to attach?
-> If you are developing a package that depends on other packages, it means you need to call functions from other packages. These will be used in the functions of your own package. When you do this, it is strongly recommended to call functions from the other packages using the syntax `<package>::<function>`. Conversely, it is strongly advised to not use `library(<package>)` inside a package.
+> If you are developing a package that depends on other packages, you'll need to call functions from other packages. These functions will be used in the functions of your own package. When you do this, it is strongly recommended to call functions from the other packages using the syntax `<package>::<function>`. Conversely, it is strongly advised to not use `library(<package>)` inside a package.
 > 
 > Do you have any idea why?
 > 
@@ -130,6 +129,8 @@ Other packages, such as `stringi`, `stringr` or `svglite`, are installed but not
 > > We want our package to do its work and leave no trace behind.
 > > Using `library(<package>)` inside the package will attach the package without you realizing.
 > > And when you're finished with your function, the package will still be attached.
+> >
+> > We'll learn more about packages that depend on other packages on a [later episode](../07-dependencies).
 > {: .solution}
 {: .discussion}
 
