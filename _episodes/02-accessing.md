@@ -137,7 +137,7 @@ Other packages, such as `stringi`, `stringr` or `svglite`, are installed but not
 ## Install a package from GitHub
 
 Although CRAN is the official repository for R packages, it is not the only one you can use.
-A very interesting alternative is GitHub, the most popular open code repository.
+A very interesting alternative is [GitHub](https://github.com), the most popular open code repository.
 We can use GitHub to find packages or to make our own packages publicly available.
 Contrary to CRAN, packages in GitHub are not reviewed.
 This has an advantage: you can have your package published there immediately.
