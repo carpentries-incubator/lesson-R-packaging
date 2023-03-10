@@ -7,10 +7,7 @@ This lesson assumes you have reasonably up-to-date versions of the following sof
 
 - the [R software](https://cran.r-project.org/mirrors.html) itself, and
 - [RStudio Desktop](https://www.rstudio.com/products/rstudio/download/#download)
-
-If you are using Windows, we'll also need you to install:
-
-- [Rtools](https://cran.r-project.org/bin/windows/Rtools/).
+- and for Windows users only, [Rtools](https://cran.r-project.org/bin/windows/Rtools/).
 
 ## Required R Packages
 
