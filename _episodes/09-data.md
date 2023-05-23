@@ -28,29 +28,16 @@ This can be very useful to ship the data together with the package, in an easy t
 > Instead, consider using [Figshare](https://figshare.com/) or similar services.
 {: .callout}
 
-### Where to store the data?
+## Using R data files
 
-Data are stored in different locations, depending on their format and purpose:
-
-```mermaid
-flowchart LR
-    id1(Does the user need access?) --Yes--> id6(Store it in data/)
-    id3(Is the data in .Rda format?)--Yes--> id1
-    id1 --No, but tests do--> id5(Store it in tests/)
-    id1 --No, but functions do--> id4(Store it in R/sysdata.Rda*)
-    id3 --No--> id8(But can it be?)
-    id8 --Yes, with some work --> id9(Document the process in data-raw/**)
-    id8 --No, it shouldn't--> id7(Store it in inst/extdata)
-```
-*) R/sysdata.Rda is a file dedicated to (larger) data needed by your functions. Read more about it [here](https://r-pkgs.org/Data.html#sec-data-sysdata). **) data-raw/ is a folder dedicated to the origin and cleanup of your data. Read more about it [here](https://r-pkgs.org/Data.html#sec-data-data-raw).
-
-
-## Adding data with `.rda` or `.RData` extensions
+R has its own native data format, the R data file.
+These files are recognizable by their extensions: `.rda` or `.RData`.
+Using R data files is the simplest approach to data management inside R Packages.
 
 ### Step 1: let R know that you'll use data
 
-The easiest way of adding data to our project is by letting the package `usethis` help us.
-In the snippet below we generate some data, and then we use `usethis` to store it as part of the package:
+We can add data to our project by letting the package `usethis` help us.
+In the snippet below, we generate some data and then we use `usethis` to store it as part of the package:
 
 ~~~r
 example_names <- c("Luke", "Vader", "Leia", "Chewbacca", "Solo", "R2D2")
@@ -118,28 +105,51 @@ We'll save this text in `R/example_names.R`, and we are ready to go.
 {: .callout}
 
 
-## Using data with extensions other than `.rda` or `.RData`
+## Using raw data
+
+Sometimes you need to use data in formats other than `.rda`. 
+Examples of this are `.csv` or `.txt` files.
+
+In order to store raw data in your package, you have to follow a slightly different procedure.
+Namely:
+
+1. Create a folder `inst/extdata/`, and save files there. Note that a user will have access to these data.
+2. When loading the data, do not describe the path as you usually would. Instead, use something like:
+
+~~~r
+filepath <- system.file("extdata", "names.csv", package = "mysterycoffee")
+names <- read.csv(filepath)
+~~~
+{: .code}
 
 > ## Discussion
 > When do you think is it useful for a package to include data that do not have the `.rda` or `.RData` extensions?
 > > ## Solution
 > > Having files without the _R_ extensions is useful when one of the main purposes of the package is to read external files. For instance, the  [readr](https://readr.tidyverse.org/) package loads rectangular data from files where the values are comma- or tab-separated. 
 > {: .solution}
-> 
-> If you were to store some raw data in your package, where would you store them? How would you load them? 
-> > ## Solution
-> > 1. Create a folder `inst/extdata/`, and save files there. Note that a user will have access to these data.
-> > 2. When loading the data, do not describe the path as you usually would. Instead, use something like: 
-> > 
-> > ```R
-> > filepath <- system.file("extdata", "names.csv", package = "mysterycoffee")
-> > names <- read.csv(filepath)
-> > ``` 
-> > [Here](https://r-pkgs.org/Data.html#sec-data-extdata) you can read more about using raw data in your package.
-> > {: .code}
-> {: .solution}
-> 
 {: .discussion}
+
+## Summary
+
+Data handling inside R packages can be a bit tricky.
+The diagram below summarizes the most common cases:
+
+```mermaid
+flowchart LR
+    id1(Does the user need access?) --Yes--> id6(Store it in data/)
+    id3(Is the data in .Rda format?)--Yes--> id1
+    id1 --No, but tests do--> id5(Store it in tests/)
+    id1 --No, but functions do--> id4(Store it in R/sysdata.Rda*)
+    id3 --No--> id8(But can it be?)
+    id8 --Yes, with some work --> id9(Document the process in data-raw/**)
+    id8 --No, it shouldn't--> id7(Store it in inst/extdata)
+```
+
+*) `R/sysdata.Rda` is a file dedicated to (larger) data needed by your functions. Read more about it [here](https://r-pkgs.org/Data.html#sec-data-sysdata). 
+
+**) `data-raw/` is a folder dedicated to the origin and cleanup of your data. Read more about it [here](https://r-pkgs.org/Data.html#sec-data-data-raw).
+
+If you need further help, please take a look at [section 14.3](https://r-pkgs.org/data.html) of the excellent [R Packages tutorial](https://r-pkgs.org/index.html) by Hadley Wickham.
 
 
 {% include links.md %}
