@@ -28,7 +28,24 @@ This can be very useful to ship the data together with the package, in an easy t
 > Instead, consider using [Figshare](https://figshare.com/) or similar services.
 {: .callout}
 
-## Adding data
+### Where to store the data?
+
+Data are stored in different locations, depending on their format and purpose:
+
+```mermaid
+flowchart LR
+    id1(Does the user need access?) --Yes--> id6(Store it in data/)
+    id3(Is the data in .Rda format?)--Yes--> id1
+    id1 --No, but tests do--> id5(Store it in tests/)
+    id1 --No, but functions do--> id4(Store it in R/sysdata.Rda*)
+    id3 --No--> id8(But can it be?)
+    id8 --Yes, with some work --> id9(Document the process in data-raw/**)
+    id8 --No, it shouldn't--> id7(Store it in inst/extdata)
+```
+*) R/sysdata.Rda is a file dedicated to (larger) data needed by your functions. Read more about it [here](https://r-pkgs.org/Data.html#sec-data-sysdata). **) data-raw/ is a folder dedicated to the origin and cleanup of your data. Read more about it [here](https://r-pkgs.org/Data.html#sec-data-data-raw).
+
+
+## Adding data with `.rda` or `.RData` extensions
 
 ### Step 1: let R know that you'll use data
 
@@ -100,10 +117,29 @@ We'll save this text in `R/example_names.R`, and we are ready to go.
 > Tip: if not, make sure that you activated `Generate documentation with Roxygen` in the `Build/More/Configure build tools` tab.
 {: .callout}
 
-## A note about raw data
 
-It should be noted that the way of dealing with data we just described will **only** work with _R_ data files, that is, those with `.rda` or `.RData` extensions.
+## Using data with extensions other than `.rda` or `.RData`
 
-If you need to include raw data inside your package, please take a look at [section 14.3](https://r-pkgs.org/data.html) of the excellent [R Packages tutorial](https://r-pkgs.org/index.html) by Hadley Wickham.
+> ## Discussion
+> When do you think is it useful for a package to include data that do not have the `.rda` or `.RData` extensions?
+> > ## Solution
+> > Having files without the _R_ extensions is useful when one of the main purposes of the package is to read external files. For instance, the  [readr](https://readr.tidyverse.org/) package loads rectangular data from files where the values are comma- or tab-separated. 
+> {: .solution}
+> 
+> If you were to store some raw data in your package, where would you store them? How would you load them? 
+> > ## Solution
+> > 1. Create a folder `inst/extdata/`, and save files there. Note that a user will have access to these data.
+> > 2. When loading the data, do not describe the path as you usually would. Instead, use something like: 
+> > 
+> > ```R
+> > filepath <- system.file("extdata", "names.csv", package = "mysterycoffee")
+> > names <- read.csv(filepath)
+> > ``` 
+> > [Here](https://r-pkgs.org/Data.html#sec-data-extdata) you can read more about using raw data in your package.
+> > {: .code}
+> {: .solution}
+> 
+{: .discussion}
+
 
 {% include links.md %}
