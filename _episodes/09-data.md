@@ -123,7 +123,7 @@ We'll save this text in `R/example_names.R`, and we are ready to go.
 > ## Discussion
 > When do you think is it useful for a package to include data that do not have the `.rda` or `.RData` extensions?
 > > ## Solution
-> > Having files without the _R_ extensions is when one of the main purposes of the package is to read external files. For instance, the  [readr](https://readr.tidyverse.org/) package loads rectangular data from files where the values are comma- or tab-separated. 
+> > Having files without the _R_ extensions is useful when one of the main purposes of the package is to read external files. For instance, the  [readr](https://readr.tidyverse.org/) package loads rectangular data from files where the values are comma- or tab-separated. 
 > {: .solution}
 > 
 > If you were to store some raw data in your package, where would you store them? How would you load them? 
