@@ -90,4 +90,61 @@ More specifically, we can see that a version equal or higher than `3.0.0` is sug
 {: .challenge}
 
 
+> ## Using and running `devtools::check()` for dependencies
+>
+> `devtools::check()` checks for many different things, but here we want to see it in action for dependencies. 
+>
+> Let's start by adding a function that depends on another package.
+> We use `usethis::use_r()` to initiate a file for this function:
+> 
+>~~~r
+> usethis::use_r("make_groups_and_time")
+>~~~
+> {: .code}
+>
+> Then add the following function to the file `make_groups_and_time.R`:
+>~~~r
+> #' Make groups of 2 persons and coffee time
+> #'
+> #' Randomly arranges a vector of names into a data frame with
+> #' 3 columns and whatever number of rows is required. The first
+> #' two columns are the two persons that meet for the coffee; 
+> #' the last column is the randomly sampled time at which they meet.
+> #'
+> #' @param names The vector of names
+> #'
+> #' @return A data frame with re-arranged names in groups and assigned coffee time.
+> #' @export
+> #'
+> make_groups_and_time <- function(names) {
+>   groups <- data.frame(make_groups(names))
+>   names(groups) <- c("person1", "person2")
+>   possible_times <- c("09:30", "10:00", "15:15", "15:45")
+>   groups_and_time <- dplyr::mutate(
+>     groups,
+>     coffee_time = sample(possible_times, 
+>                          size = nrow(groups), 
+>                          replace = TRUE)
+>   )
+>   return(groups_and_time)
+> }
+>~~~
+> {: .code}
+> 
+> With this in place, or with your own package, do the following.
+> Run `devtools::check()` (or `Build > Check`). What messages do you get about dependencies?
+> Optionally, you can address the messages by changing the code, and re-run `devtools::check()` to see if you were successful. 
+> > ## Solution
+> > From running `devtools::check()` we get:
+> >~~~r
+> > W  checking dependencies in R code ...
+> >  '::' or ':::' import not declared from: ‘dplyr’
+> >~~~
+> > {: .output}
+> > We can add the `dplyr` dependency with `usethis::use_package("dplyr", type = "imports")`. This updates the `DESCRIPTION`. 
+> >
+> {: .solution}
+{: .challenge}
+
+
 {% include links.md %}
