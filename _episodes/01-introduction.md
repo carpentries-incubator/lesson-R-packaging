@@ -6,19 +6,19 @@ questions:
 - "What is a package?"
 - "Why do we want a package?"
 objectives:
-- "Understand what is a package"
+- "Understand what a package is"
 - "Understand why a package is useful"
-- "Understand the tools are about to use"
+- "Understand the tools you are about to use"
 keypoints:
-- "An R package is a research project in a specific folder structure"
-- "The value of packages is in applying a standard to this folder structure"
+- "An R package is a project in a standardized folder structure"
+- "An R package centers around R functions"
 - "RStudio is a useful editor that helps you package your project"
 ---
 
 Picture yourself starting a new programming project.
-Most likely, your first step will consist of creating a new folder, a folder that later you'll populate with files.
-If the project is long and complex, you'll need several files and also some subfolders.
-The folder structure can eventually become pretty complex and difficult to maintain, specially if your project has multiple authors.
+Most likely, your first step will consist of creating a new folder, a folder that later you will populate with files.
+If the project is long and complex, you will need several files and also some subfolders.
+The folder structure can eventually become pretty complex and difficult to maintain, especially if your project has multiple authors.
 
 Wait a moment!
 Long and complex projects, multiple authors, ... this sounds like **any** scientific project!
@@ -27,9 +27,12 @@ The answer is yes, and the way is by structuring our work as a software package.
 
 ## What is a package and what is it good for?
 
-A package is no more and no less than a standard way of structuring your project.
-Doesn't sound very impressive, but don't let the simplicity of the idea deceive you.
-We'll see that structuring our projects as packages has several advantages, such as increased:
+A package may sound complex, but it is simply a standard way of structuring your project.
+This standardized structure applies to the files and (sub)folders of your project, but also to your code:
+in an R package, the code consists of functions only.
+These will be the access points for anyone who wants to use your code.
+
+Structuring our projects as packages has several advantages, such as increased:
 
 - Robustness
 - Reproducibility
@@ -38,8 +41,6 @@ We'll see that structuring our projects as packages has several advantages, such
 - Usability
 - Maintainability
 
-And after all, you need a folder structure anyways.
-Why not use one of proven quality?
 
 > ## A thought about standards
 > Standards are more valuable that you may think.
@@ -55,20 +56,20 @@ Why not use one of proven quality?
 > Other developers or collaborators can use your software easier, but you can also use theirs.
 >
 > Indeed, most likely you are already part of this "conversation".
-> Did you ever used a library (such as `knitr`, `lubridate` or `stringi`)?
+> Did you ever use a library (such as `knitr`, `lubridate` or `stringi`)?
 > If the answer is yes, you are already using packages.
 > Packages written by someone else.
 >
-> In this lesson we'll show you how to write your own, so you can participate actively in the R community.
+> In this lesson we will show you how to write your own, so you can actively participate in the R community.
 {: .callout}
 
 > ## How can this course help me?
-> 
-> As we'll see during this course, the apparently dull objective of working on a tidier environment comes with several unexpected perks.
+>
+> As we will see during this course, applying a standardized structure comes with several unexpected benefits.
 > Let me ask you a few questions:
-> 
-> - Did you ever have problems running research software written by a colleague?
-> - Did you ever have problems running your own software?
+>
+> - Did you ever have problems running a script written by a colleague?
+> - Did you ever have problems running your own code?
 > - Are you sometimes scared of editing your code, just in case you "break" it?
 > - Did you ever have to re-do all the figures in your paper manually?
 > - Do you suspect that some parts of your code may not be working as you want them to?
@@ -84,7 +85,7 @@ Why not use one of proven quality?
 > Have you ever written an `R` function?
 > If the answer is yes, then you are ready to take this course.
 > If the answer is no, we recommend you read [this episode](https://swcarpentry.github.io/r-novice-inflammation/02-func-R/index.html) of the [Programming with R](https://swcarpentry.github.io/r-novice-inflammation/) course.
-> 
+>
 {: .prereq}
 > ## Why R?
 > The practice of software packaging is applicable to many programming languages.
@@ -98,14 +99,14 @@ Why not use one of proven quality?
 > ## Why RStudio?
 > RStudio is an Integrated Development Environment (IDE) specifically designed for `R`.
 > As many IDEs, it contains some menus and buttons arranged in an intuitive interface.
-> This will relieve a lot of mental space, as we don't have to remember the commands for common operations such as _building_, _saving_, _knitting_ and so on.
+> This will relieve a lot of mental space, as we do not have to remember the commands for common operations such as _building_, _saving_, _knitting_ and so on.
 > In this course we will make extensive use of it.
 >
 > **Pro tip**: when you hover over a button in RStudio, a textbox will be displayed. Among other things, this textbox will contain the equivalent key combination (for instance, `Ctrl/Cmd + S` for saving).
-> Paying attention to these text boxes is a perfect way of getting used, and ultimately remembering by heart those key combinations.
+> Paying attention to these text boxes is a perfect way of getting used to, and ultimately remembering by heart, those key combinations.
 >
 > Additionally, after pressing a button, some commands will be executed in the console.
-> It is always very instructive to take a look at what commands did the button trigger.
+> It is always very instructive to take a look at what commands the button triggered.
 {: .callout}
 
 {% include links.md %}
