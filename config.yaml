@@ -8,26 +8,26 @@
 # lc: Library Carpentry
 # cp: Carpentries (to use for instructor training for instance)
 # incubator: The Carpentries Incubator
-carpentry: 'incubator'
+carpentry: 'swc'
 
 # Overall title for pages.
-title: 'Lesson Title'
+title: 'R Packaging'
 
 # Date the lesson was created (YYYY-MM-DD, this is empty by default)
-created: '2023-05-26'
+created: '2021-02-19'
 
 # Comma-separated list of keywords for the lesson
-keywords: 'software, data, lesson, The Carpentries'
+keywords: 'software, data, lesson, The Carpentries, R, packaging, r-package, reproducibility, testing, testthat, documentation, roxygen, data, vignette'
 
 # Life cycle stage of the lesson
 # possible values: pre-alpha, alpha, beta, stable
-life_cycle: 'pre-alpha'
+life_cycle: 'beta'
 
 # License of the lesson materials (recommended CC-BY 4.0)
 license: 'CC-BY 4.0'
 
 # Link to the source repository for this lesson
-source: 'https://github.com/bvreede/lesson-R-packaging'
+source: 'https://github.com/carpentries-incubator/lesson-R-packaging'
 
 # Default branch of your lesson
 branch: 'main'
@@ -60,6 +60,15 @@ contact: 'team@carpentries.org'
 # Order of episodes in your lesson
 episodes: 
 - introduction.Rmd
+- accessing.Rmd
+- getting_started.Rmd
+- functions.Rmd
+- licenses.Rmd
+- testing.Rmd
+- dependencies.Rmd
+- documentation.Rmd
+- data.Rmd
+- vignettes.Rmd
 
 # Information for Learners
 learners: 
