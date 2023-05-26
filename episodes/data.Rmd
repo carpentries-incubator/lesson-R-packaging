@@ -25,12 +25,13 @@ According to [the package description](https://cran.r-project.org/web/packages/b
 In this chapter we will learn how to include some data in our package.
 This can be very useful to ship the data together with the package, in an easy to install way.
 
-> ## Is your data too big?
-> Packages are typically not larger than a few megabytes.
->
-> If you need to deal with large datasets, adding them to the package is not an advisable solution.
-> Instead, consider using [Figshare](https://figshare.com/) or similar services.
-{: .callout}
+::: callout
+## Is your data too big?
+Packages are typically not larger than a few megabytes.
+
+If you need to deal with large datasets, adding them to the package is not an advisable solution.
+Instead, consider using [Figshare](https://figshare.com/) or similar services.
+:::
 
 ## Using R data files
 
@@ -43,50 +44,48 @@ Using R data files is the simplest approach to data management inside R Packages
 We can add data to our project by letting the package `usethis` help us.
 In the snippet below, we generate some data and then we use `usethis` to store it as part of the package:
 
-~~~r
+```r
 example_names <- c("Luke", "Vader", "Leia", "Chewbacca", "Solo", "R2D2")
 
 usethis::use_data(example_names)
-~~~ 
-{:. code}
+```
 
-> ## What happened?
-> Type and execute in your console the code we just showed.
-> What does it do?
-> Does it require any further action from our side?
-> > ## Solution
-> > It provides a very informative output.
-> > Probably you'll see something like this:
-> > ~~~
-> > ✔ Setting active project to '<working folder>/mysterycoffee'
-> > ✔ Saving 'example_names' to 'data/example_names.rda'
-> > • Document your data (see 'https://r-pkgs.org/data.html')
-> > ~~~
-> > {: .code}
-> >
-> >
-> > So, what happened is that it created the file `example_names.rda` inside the `data` folder.
-> > Additionally, it activated the project, but that's not very relevant because most likely the project was already active.
-> >
-> > The last element in the list shows something that **didn't** happen: the data documentation.
-> > Actually, we are asked to do it ourselves.
-> > `usethis` is kind enough to provide us with a link with further information, in case we need it.
-> >
-> > So let's move to the second (and last) step, and document our data.
-> > 
-> {: .solution}
-{: .challenge}
+::: challenge
+## What happened?
+Type and execute in your console the code we just showed.
+What does it do?
+Does it require any further action from our side?
+
+::: solution
+It provides a very informative output.
+Probably you'll see something like this:
+```output
+✔ Setting active project to '<working folder>/mysterycoffee'
+✔ Saving 'example_names' to 'data/example_names.rda'
+• Document your data (see 'https://r-pkgs.org/data.html')
+```
+
+So, what happened is that it created the file `example_names.rda` inside the `data` folder.
+Additionally, it activated the project, but that's not very relevant because most likely the project was already active.
+
+The last element in the list shows something that **didn't** happen: the data documentation.
+Actually, we are asked to do it ourselves.
+`usethis` is kind enough to provide us with a link with further information, in case we need it.
+
+So let's move to the second (and last) step, and document our data.
+:::
+:::
 
 ### Step 2: document your data
 
 Everything you put inside your package needs some documentation.
 Data is no exception.
 But, how to document it?
-The answer is easy: not very differently as did with functions in [episode 6](../06-documentation).
+The answer is easy: not very differently as did with functions in [the documentation episode](documentation.Rmd).
 
 An example documentation string for our data could be:
 
-~~~txt
+```
 #' Example names
 #'
 #' An example data set containing six names from the Star Wars universe
@@ -94,20 +93,17 @@ An example documentation string for our data could be:
 #' @format A vector of strings
 #' @source Star Wars
 "example_names"
-~~~
-{: .code}
+```
 
-We'll save this text in `R/example_names.R`, and we are ready to go.
+We will save this text in `R/example_names.R`, and we are ready to go.
 
-> ## Checking that everything went ok
->
-> In the build panel, press install and restart.
-> Now, type `?example_names` in the console.
-> Do you see some information about the dataset?
->
-> Tip: if not, make sure that you activated `Generate documentation with Roxygen` in the `Build/More/Configure build tools` tab.
-{: .callout}
+## Checking that everything went ok
 
+In the build panel, press install and restart.
+Now, type `?example_names` in the console.
+Do you see some information about the dataset?
+
+Tip: if not, make sure that you activated `Generate documentation with Roxygen` in the `Build/More/Configure build tools` tab.
 
 ## Using raw data
 
@@ -120,23 +116,29 @@ Namely:
 1. Create a folder `inst/extdata/`, and save files there. Note that a user will have access to these data.
 2. When loading the data, do not describe the path as you usually would. Instead, use something like:
 
-~~~r
+```r
 filepath <- system.file("extdata", "names.csv", package = "mysterycoffee")
 names <- read.csv(filepath)
-~~~
-{: .code}
+```
 
-> ## Discussion
-> When do you think is it useful for a package to include data that do not have the `.rda` or `.RData` extensions?
-> > ## Solution
-> > Having files without the _R_ extensions is useful when one of the main purposes of the package is to read external files. For instance, the  [readr](https://readr.tidyverse.org/) package loads rectangular data from files where the values are comma- or tab-separated. 
-> {: .solution}
-{: .discussion}
+::: discussion
+When do you think is it useful for a package to include data that do not have the `.rda` or `.RData` extensions?
+:::
+
+:::: solution
+Having files without the _R_ extensions is useful when one of the main purposes of the package is to read external files. For instance, the  [readr](https://readr.tidyverse.org/) package loads rectangular data from files where the values are comma- or tab-separated. 
+::::
 
 ## Summary
 
 Data handling inside R packages can be a bit tricky.
 The diagram below summarizes the most common cases:
+
+![](fig/mermaid-data.png)
+
+::: instructor
+
+The diagram was created with mermaid. This is the original code:
 
 ```mermaid
 flowchart LR
@@ -148,6 +150,7 @@ flowchart LR
     id8 --Yes, with some work --> id9(Document the process in data-raw/**)
     id8 --No, it shouldn't--> id7(Store it in inst/extdata)
 ```
+:::
 
 *) `R/sysdata.Rda` is a file dedicated to (larger) data needed by your functions. Read more about it [here](https://r-pkgs.org/Data.html#sec-data-sysdata). 
 
