@@ -59,19 +59,20 @@ contact: 'team@carpentries.org'
 
 # Order of episodes in your lesson
 episodes: 
-- introduction.Rmd
-- accessing.Rmd
-- getting_started.Rmd
-- functions.Rmd
-- licenses.Rmd
-- testing.Rmd
-- dependencies.Rmd
-- documentation.Rmd
-- data.Rmd
-- vignettes.Rmd
+# - introduction.Rmd
+# - accessing.Rmd
+# - getting_started.Rmd
+# - functions.Rmd
+# - licenses.Rmd
+# - testing.Rmd
+# - dependencies.Rmd
+# - documentation.Rmd
+# - data.Rmd
+# - vignettes.Rmd
 
 # Information for Learners
-learners: 
+learners:
+- setup.md
 
 # Information for Instructors
 instructors: 
