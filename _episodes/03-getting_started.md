@@ -73,7 +73,7 @@ Now we are ready to press `Create Project`.
 > ## The `hello.R` file
 > Let's take a look at the `hello.R` file.
 > You'll see that it contains a tiny function and some comments.
-> The comments are actually more important that the function itself.
+> The comments are actually more important than the function itself.
 > They contain very useful tips about how to install, check and test the package.
 >
 > As a rule of thumb: always read the contents of the example files RStudio creates for you.
@@ -82,25 +82,47 @@ Now we are ready to press `Create Project`.
 ## Play with the package
 
 Believe it or not, this package is ready to be installed.
-Just go to the upper right corner and press `Build > Install and Restart`.
+Just go to the upper right corner and press `Build > Install and Restart` (or, in newer versions of RStudio, press `Build > Install > Clean and install`).
 
 ![Install and restart](../fig/install-and-restart.gif)
 
-This will install and attach the package.
-Now, you can use `hello`, the only function that this package contains so far.
-If you try it by using:
+This will install and attach the package. The package contains only one function so far: `hello()`. 
 
-~~~r
-hello()
-~~~
-{: .source}
-
-it should print:
-
-~~~r
-# Hello, world!
-~~~
-{: .output}
+> ## Try out the `hello()` function. Edit it, and reload the package.
+> 1. What does it print? 
+> 2. Change this function to generate a different output. (Have fun with it, perhaps add an argument or two!)
+> 3. Build and install the package, and call the function again to see that it works differently.
+> > ## Solution 
+> >    ~~~r
+> >    mysterycoffee::hello() 
+> >    ~~~
+> >    {: .source}
+> > 
+> >    ~~~r
+> >    [1] Hello, world!
+> >    ~~~
+> >    {: .output}
+> > 
+> >    We can add an argument like this:
+> >    ~~~r
+> >    hello <- function(name) {
+> >        print(paste0("Hello, ", name, "!"))
+> >    }
+> >    ~~~
+> >    {: .source}
+> > 
+> >    To use the updated function available in RStudio, we can use either 
+> >    ~~~r
+> >    devtools::load_all() # then call with hello("Luke")
+> >    devtools::install() # then call with mysterycoffee::hello("Luke")
+> >    ~~~
+> >    {: .source}
+> > 
+> >    Alternatively, we can also use the graphical user interface as above: `Build > Install and Restart`.
+> > 
+> >    *Note*: `load_all()` simulates installing and attaching the package. In larger projects, it allows us to iterate more quickly between changing functions and testing them in the console. 
+> {: .solution}
+{: .challenge}
 
 > ## Tell me how you load your functions
 > There are many ways of using functions, but all of them involve loading them into the workspace.
