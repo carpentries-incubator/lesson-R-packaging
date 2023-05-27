@@ -1,37 +1,35 @@
 ---
-layout: lesson
-root: .  # Is the only page that doesn't follow the pattern /:path/index.html
-permalink: index.html  # Is the only page that doesn't follow the pattern /:path/index.html
+site: sandpaper::sandpaper_site
 ---
 
-Picture yourself starting a new programming project in R.
-Most likely, your first step will consist of creating a new folder, a folder that later you'll populate with files.
-If the project is long and complex, you'll need several files and also some subfolders.
-The folder structure can eventually become pretty complex and difficult to maintain, specially if your project has multiple authors.
+Chances are that you **used** _R_ packages before but, did you know you can **write** your own? Even more, did you know that this can be a brilliant idea? Packaging helps you creating a more robust, more reproducible and more enjoyable scientific coding experience. And who knows?, perhaps you'll see your package published in _CRAN_ one day!
 
-Wait a moment!
-Long and complex projects, multiple authors, ... this sounds like **any** scientific project!
-Is there a way of making this process easier?
-The answer is yes, and the way is by structuring our work as a software package.
+This workshop will provide you with the basics for writing your own packages in R.
 
-As we will see, this comes with unexpected advantages: packaging makes your code more robust, more predictable, shareable, easier to read and, most importantly, more enjoyable to write!
+R packages are no more and no less than a standard way of structuring your work. You'll have a folder for code, a folder for tests, a folder for data, a folder for documents, and so on. The standardization makes packages easily installable and shareable.
 
-This workshop will teach you the first steps in creating your own R package.
+Even if you are not planning to publish your package, structuring your research as one is also a very good idea. It enforces, in a relatively effortless manner, the implementation of software development best practices. This will lead to a safer, more robust, more manageable and more enjoyable working experience.
 
-<!-- this is an html comment -->
+### Syllabus
 
-{% comment %} This is a comment in Liquid {% endcomment %}
+In this lesson you will find episodes on:
 
-> ## Prerequisites
->
-> In order to follow this lesson you'll need:
->
-> - To be able to understand simple `R` code.
-> - To understand the concept of an `R` function.
->
-> In case you are not familiar with the abovementioned topics, please follow first one of [our lessons about R](https://swcarpentry.github.io/r-novice-inflammation/).
->
-> Additionally, please visit our [setup section](setup.md) to make sure you installed all the required software.
-{: .prereq}
+- Introduction to packages
+- Setup of a package
+- Installing packages
+- Testing packages
+- Documenting packages
+- Writing vignettes
 
-{% include links.md %}
+
+::: callout
+## Prerequisites
+
+In order to follow this lesson you will need:
+
+- To be able to understand simple `R` code.
+- To understand the concept of an `R` function.
+
+In case you are not familiar with the abovementioned topics, please follow first one of [our lessons about R](https://swcarpentry.github.io/r-novice-inflammation/).
+
+:::
