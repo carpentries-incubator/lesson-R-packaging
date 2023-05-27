@@ -99,7 +99,7 @@ As always, it is instructive to read the message (in this case, the file) that R
 We realize that:
 
 - Several formatting options are present as examples (so we don't have to remember them!).
-- Code blocks are surrounded by the symbol \`\`\``{r <name>, <optional parameters>}` and end with \`\`\`.
+- Code blocks are surrounded by the symbol ```` ```{r <name>, <optional parameters>} ```` and end with ```` ``` ````.
 - There is something called **knit** that seems to be important.
 
 _"Knitting"_ is the process of generating a reader-friendly document.
