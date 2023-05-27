@@ -5,7 +5,6 @@ on:
     branches:
       - main
       - master
-      - migrate-to-workbench
   schedule:
     - cron: '0 0 * * 2'
   workflow_dispatch:
@@ -58,5 +57,5 @@ jobs:
         run: |
           reset <- "${{ github.event.inputs.reset }}" == "true"
           sandpaper::package_cache_trigger(TRUE)
-          sandpaper:::ci_deploy(reset = reset, site_branch = "gh-pages-test")
+          sandpaper:::ci_deploy(reset = reset)
         shell: Rscript {0}
