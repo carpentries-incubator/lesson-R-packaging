@@ -68,7 +68,7 @@ episodes:
 - dependencies.Rmd
 - documentation.Rmd
 - data.Rmd
-- vignettes.Rmd
+# - vignettes.Rmd
 
 # Information for Learners
 learners:
