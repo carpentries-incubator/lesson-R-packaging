@@ -5,6 +5,7 @@ on:
     branches:
       - main
       - master
+      - migrate-to-workbench
   schedule:
     - cron: '0 0 * * 2'
   workflow_dispatch:
