@@ -35,7 +35,7 @@ How can we check that it works as expected?
 One possibility could be trying the function in the console.
 For instance:
 
-```r
+```{verbatim, lang = "r", eval=FALSE}
 library(mysterycoffee)
 
 names <- c("Luke", "Vader", "Leia", "Chewbacca", "Solo", "R2D2")

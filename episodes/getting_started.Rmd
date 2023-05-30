@@ -99,7 +99,7 @@ This will install and attach the package. The package contains only one function
 3. Build and install the package, and call the function again to see that it works differently.
 
 :::: solution
-```r
+```{verbatim, lang = "r", eval=FALSE}
 mysterycoffee::hello() 
 ```
 
