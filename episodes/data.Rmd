@@ -107,7 +107,7 @@ Tip: if not, make sure that you activated `Generate documentation with Roxygen` 
 
 ## Using raw data
 
-Sometimes you need to use data in formats other than `.rda`. 
+Sometimes you need to use data in formats other than `.rda`.
 Examples of this are `.csv` or `.txt` files.
 
 In order to store raw data in your package, you have to follow a slightly different procedure.
@@ -116,7 +116,7 @@ Namely:
 1. Create a folder `inst/extdata/`, and save files there. Note that a user will have access to these data.
 2. When loading the data, do not describe the path as you usually would. Instead, use something like:
 
-```r
+```{verbatim, lang = "r"}
 filepath <- system.file("extdata", "names.csv", package = "mysterycoffee")
 names <- read.csv(filepath)
 ```
@@ -126,7 +126,7 @@ When do you think is it useful for a package to include data that do not have th
 :::
 
 :::: solution
-Having files without the _R_ extensions is useful when one of the main purposes of the package is to read external files. For instance, the  [readr](https://readr.tidyverse.org/) package loads rectangular data from files where the values are comma- or tab-separated. 
+Having files without the _R_ extensions is useful when one of the main purposes of the package is to read external files. For instance, the  [readr](https://readr.tidyverse.org/) package loads rectangular data from files where the values are comma- or tab-separated.
 ::::
 
 ## Summary
@@ -152,7 +152,7 @@ flowchart LR
 ```
 :::
 
-*) `R/sysdata.Rda` is a file dedicated to (larger) data needed by your functions. Read more about it [here](https://r-pkgs.org/Data.html#sec-data-sysdata). 
+*) `R/sysdata.Rda` is a file dedicated to (larger) data needed by your functions. Read more about it [here](https://r-pkgs.org/Data.html#sec-data-sysdata).
 
 **) `data-raw/` is a folder dedicated to the origin and cleanup of your data. Read more about it [here](https://r-pkgs.org/Data.html#sec-data-data-raw).
 

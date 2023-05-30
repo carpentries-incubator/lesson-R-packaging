@@ -58,17 +58,17 @@ contact: 'team@carpentries.org'
 # - another-learner.md
 
 # Order of episodes in your lesson
-episodes: 
+episodes:
 - introduction.Rmd
 - accessing.Rmd
 - getting_started.Rmd
 - functions.Rmd
 - licenses.Rmd
-# - testing.Rmd
+- testing.Rmd
 - dependencies.Rmd
 - documentation.Rmd
 - data.Rmd
-# - vignettes.Rmd
+- vignettes.Rmd
 
 # Information for Learners
 learners:
@@ -76,10 +76,10 @@ learners:
 - reference.md
 
 # Information for Instructors
-instructors: 
+instructors:
 
 # Learner Profiles
-profiles: 
+profiles:
 
 # Customisation ---------------------------------------------
 #

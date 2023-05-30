@@ -54,7 +54,7 @@ Notice that:
 
 - We gave the package a name: `mysterycoffee`.
 - I created my package on my `~/Desktop` folder, but you can use another location if you prefer.
-- We left `Create git repository` unticked. If you want to know more about `git`, please refer to our courses on [Version control](https://swcarpentry.github.io/git-novice/). Integrating packages with Git is very useful, but we will not talk about it in this lesson. 
+- We left `Create git repository` unticked. If you want to know more about `git`, please refer to our courses on [Version control](https://swcarpentry.github.io/git-novice/). Integrating packages with Git is very useful, but we will not talk about it in this lesson.
 - We left `Use renv with this project unticked`.
 - We ticked `Open in new session`.
 
@@ -90,17 +90,17 @@ Just go to the upper right corner and press `Build > Install and Restart` (or, i
 
 ![Install and restart](fig/install-and-restart.gif)
 
-This will install and attach the package. The package contains only one function so far: `hello()`. 
+This will install and attach the package. The package contains only one function so far: `hello()`.
 
 ::: challenge
 ## Try out the `hello()` function. Edit it, and reload the package.
-1. What does it print? 
+1. What does it print?
 2. Change this function to generate a different output. (Have fun with it, perhaps add an argument or two!)
 3. Build and install the package, and call the function again to see that it works differently.
 
 :::: solution
-```r
-mysterycoffee::hello() 
+```{verbatim, lang = "r"}
+mysterycoffee::hello()
 ```
 
 ```output
@@ -114,7 +114,7 @@ hello <- function(name) {
 }
 ```
 
-To use the updated function available in RStudio, we can use either 
+To use the updated function available in RStudio, we can use either
 ```r
 devtools::load_all() # then call with hello("Luke")
 devtools::install() # then call with mysterycoffee::hello("Luke")
@@ -122,7 +122,7 @@ devtools::install() # then call with mysterycoffee::hello("Luke")
 
 Alternatively, we can also use the graphical user interface as above: `Build Install and Restart`.
 
-*Note*: `load_all()` simulates installing and attaching the package. In larger projects, it allows us to iterate more quickly between changing functions and testing them in the console. 
+*Note*: `load_all()` simulates installing and attaching the package. In larger projects, it allows us to iterate more quickly between changing functions and testing them in the console.
 ::::
 :::
 

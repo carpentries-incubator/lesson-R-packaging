@@ -35,7 +35,7 @@ How can we check that it works as expected?
 One possibility could be trying the function in the console.
 For instance:
 
-```r
+```{verbatim, lang = "r"}
 library(mysterycoffee)
 
 names <- c("Luke", "Vader", "Leia", "Chewbacca", "Solo", "R2D2")
@@ -48,9 +48,9 @@ print(grouped_names)
 The output should look similar to this:
 
 ```output
-     [,1]    [,2]       
+     [,1]    [,2]
 [1,] "Luke"  "Chewbacca"
-[2,] "Vader" "Solo"     
+[2,] "Vader" "Solo"
 [3,] "Leia"  "R2D2"
 ```
 
@@ -105,7 +105,7 @@ This a system file that rarely has to be manually edited.
 
 ::: discussion
 ## Why are we not attaching `usethis`?
-In the example above, we used: 
+In the example above, we used:
 
 ```r
 usethis::use_testthat() # Recommended
@@ -122,7 +122,7 @@ Do you have any idea why? Are the two code snippets above not equivalent?
 
 ::: solution
 When we are developing a package, we'd like to keep our working space as clean and isolated as possible.
-The first, recommended snippet, is bringing exactly one function from the `usethis` package to our environment. 
+The first, recommended snippet, is bringing exactly one function from the `usethis` package to our environment.
 The second one, on the contrary, is bringing **each and every** function contained in `usethis` to our environment.
 :::
 
@@ -175,7 +175,7 @@ Take 10 minutes to:
 2. Write another test, just below this one, that checks that addition also works. Tip: you can copy-paste and edit the current test.
 
 :::: solution
-The first argument to `test_that` is simply the name of your test, that you choose. 
+The first argument to `test_that` is simply the name of your test, that you choose.
 Beyond that, the test is checking that 2 times 2 equals 4.
 This may sound silly, but actually something quite interesting is happening.
 The test checks that the `*` operator in _R_ works and your human interpretation of multiplication are aligned.
@@ -196,7 +196,7 @@ test_that("addition works", {
 
 ::: callout
 ## Expectations vs results
-Notice that the _assertions_, also known in R as _expect functions_ often look like: 
+Notice that the _assertions_, also known in R as _expect functions_ often look like:
 
 ```r
 expect_equal(<actual result>, <expected result>)
@@ -298,8 +298,8 @@ After the tests are performed, a handy summary table will be displayed:
 ℹ Loading mysterycoffee
 ℹ Testing mysterycoffee
 ✓ |  OK F W S | Context
-✓ |   2       | functions                                    
-✓ |   3       | make_groups                                  
+✓ |   2       | functions
+✓ |   3       | make_groups
 
 ══ Results ══════════════════════════════════════════════════
 [ FAIL 0 | WARN 0 | SKIP 0 | PASS 5 ]
@@ -374,8 +374,8 @@ After we run the test, we get an ugly message:
 ℹ Loading mysterycoffee
 ℹ Testing mysterycoffee
 ✓ |  OK F W S | Context
-✓ |   2       | functions                  
-✓ |   3   1   | make_groups                
+✓ |   2       | functions
+✓ |   3   1   | make_groups
 ───────────────────────────────────────────
 Warning (test-make_groups.R:18:3): uneven number of elements
 data length [7] is not a sub-multiple or multiple of the number of rows [4]
