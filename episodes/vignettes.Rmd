@@ -167,12 +167,9 @@ Luckily, our R package `mysterycoffee` is here to help.
 ## How to use it
 
 Well, first you'll have to attach the package.
-````
 
-I am adding a new chunk.
-````{verbatim, lang = "markdown"}
-```{r install}
-mysterycoffee::make_groups()
+```r
+library(mysterycoffee)
 ```
 
 Afterwards, the package will need the names of your colleagues. These are mine:
