@@ -48,7 +48,7 @@ Suggests:
 
 The most important keywords to declare dependencies are:
 
-- `Suggests`: for **recommended** dependencies, such as the ones required for testing, creating vignettes (see [episode 9](../09-vignettes)) or plotting.
+- `Suggests`: for **recommended** dependencies, such as the ones required for testing, creating vignettes (see [this episode](vignettes.Rmd)) or plotting.
 - `Imports`: for **mandatory** dependencies, that is, required for the basic functionality of the package.
 
 As we can see in our `DESCRIPTION` file, the last two lines already contain a dependency statement.

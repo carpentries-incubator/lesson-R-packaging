@@ -151,7 +151,7 @@ We may also need a chunk to actually display the groups formed after knitting.
 This is what I wrote.
 Of course, your text, and even your code, will most likely be different.
 
-````{verbatim, lang = "markdown"}
+````{verbatim, lang = "markdown", eval=FALSE}
 ---
 title: "Example of usage"
 author: "Pablo Rodriguez"
