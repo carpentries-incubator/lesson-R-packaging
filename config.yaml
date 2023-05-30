@@ -64,7 +64,7 @@ episodes:
 - getting_started.Rmd
 - functions.Rmd
 - licenses.Rmd
-- testing.Rmd
+# - testing.Rmd
 - dependencies.Rmd
 - documentation.Rmd
 - data.Rmd
