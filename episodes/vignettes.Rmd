@@ -169,7 +169,7 @@ Luckily, our R package `mysterycoffee` is here to help.
 Well, first you'll have to attach the package.
 
 ```{r install}
-# library(mysterycoffee)
+mysterycoffee::make_groups()
 ```
 
 Afterwards, the package will need the names of your colleagues. These are mine:
