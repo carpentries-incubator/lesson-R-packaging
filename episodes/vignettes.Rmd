@@ -168,8 +168,8 @@ Luckily, our R package `mysterycoffee` is here to help.
 
 Well, first you'll have to attach the package.
 
-```r
-library(mysterycoffee)
+```{r install}
+# library(mysterycoffee) # uncomment this line in the vignette
 ```
 
 Afterwards, the package will need the names of your colleagues. These are mine:
@@ -196,6 +196,16 @@ print(groups)
 ```
 ````
 ::::
+:::
+
+::: instructor
+
+In the solution above, the line `library(mysterycoffee)` is commented out.
+This is a technical choice: due to the Carpentries Lesson Template being written in Rmarkdown,
+this line caused the CI to attempt to install `mysterycoffee`... which of course does not exist.
+Please make sure to point out when sharing this solution that the line must be uncommented
+in a functional vignette.
+
 :::
 
 ::: challenge
