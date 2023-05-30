@@ -61,7 +61,7 @@ contact: 'team@carpentries.org'
 episodes:
 - introduction.Rmd
 - accessing.Rmd
-# - getting_started.Rmd
+- getting_started.Rmd
 - functions.Rmd
 - licenses.Rmd
 # - testing.Rmd
