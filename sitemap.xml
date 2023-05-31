@@ -13,6 +13,9 @@
     <loc>https://carpentries-incubator.github.io/lesson-R-packaging/accessing.html</loc>
   </url>
   <url>
+    <loc>https://carpentries-incubator.github.io/lesson-R-packaging/aio.html</loc>
+  </url>
+  <url>
     <loc>https://carpentries-incubator.github.io/lesson-R-packaging/data.html</loc>
   </url>
   <url>
@@ -26,6 +29,9 @@
   </url>
   <url>
     <loc>https://carpentries-incubator.github.io/lesson-R-packaging/getting_started.html</loc>
+  </url>
+  <url>
+    <loc>https://carpentries-incubator.github.io/lesson-R-packaging/images.html</loc>
   </url>
   <url>
     <loc>https://carpentries-incubator.github.io/lesson-R-packaging/index.html</loc>
@@ -43,6 +49,9 @@
     <loc>https://carpentries-incubator.github.io/lesson-R-packaging/instructor/accessing.html</loc>
   </url>
   <url>
+    <loc>https://carpentries-incubator.github.io/lesson-R-packaging/instructor/aio.html</loc>
+  </url>
+  <url>
     <loc>https://carpentries-incubator.github.io/lesson-R-packaging/instructor/data.html</loc>
   </url>
   <url>
@@ -58,10 +67,19 @@
     <loc>https://carpentries-incubator.github.io/lesson-R-packaging/instructor/getting_started.html</loc>
   </url>
   <url>
+    <loc>https://carpentries-incubator.github.io/lesson-R-packaging/instructor/images.html</loc>
+  </url>
+  <url>
     <loc>https://carpentries-incubator.github.io/lesson-R-packaging/instructor/index.html</loc>
   </url>
   <url>
+    <loc>https://carpentries-incubator.github.io/lesson-R-packaging/instructor/instructor-notes.html</loc>
+  </url>
+  <url>
     <loc>https://carpentries-incubator.github.io/lesson-R-packaging/instructor/introduction.html</loc>
+  </url>
+  <url>
+    <loc>https://carpentries-incubator.github.io/lesson-R-packaging/instructor/key-points.html</loc>
   </url>
   <url>
     <loc>https://carpentries-incubator.github.io/lesson-R-packaging/instructor/licenses.html</loc>
@@ -79,7 +97,13 @@
     <loc>https://carpentries-incubator.github.io/lesson-R-packaging/instructor/vignettes.html</loc>
   </url>
   <url>
+    <loc>https://carpentries-incubator.github.io/lesson-R-packaging/instructor-notes.html</loc>
+  </url>
+  <url>
     <loc>https://carpentries-incubator.github.io/lesson-R-packaging/introduction.html</loc>
+  </url>
+  <url>
+    <loc>https://carpentries-incubator.github.io/lesson-R-packaging/key-points.html</loc>
   </url>
   <url>
     <loc>https://carpentries-incubator.github.io/lesson-R-packaging/licenses.html</loc>
