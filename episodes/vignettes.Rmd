@@ -147,9 +147,9 @@ Don't forget to insert explanatory text in between the chunks.
 
 We may also need a chunk to actually display the groups formed after knitting.
 
-```{r install mysterycoffee, echo = FALSE}
-if(system.file(package='mysterycoffee') != ""){
-  devtools::install_github("pabrod/mysterycoffee")
+```{r hack_for_mysterycoffee, echo = FALSE}
+if(system.file(package='mysterycoffee') == ""){
+  devtools::install_github("bvreede/mysterycoffee")
 }
 ```
 
