@@ -20,6 +20,9 @@ Source [here](https://drive.google.com/file/d/1v4s5pZE6unPlrqsB5DLN1kGLkrVNBX8e/
 ## Activity log
 
 ### May 2023
+- Update the materials to use the new [Carpentries Workbench](https://carpentries.github.io/workbench/).
+
+### April 2022
 - Transfer the materials to the [Carpentries Incubator](https://github.com/carpentries-incubator/lesson-R-packaging).
 
 ### March 2022
