@@ -147,8 +147,6 @@ Don't forget to insert explanatory text in between the chunks.
 
 We may also need a chunk to actually display the groups formed after knitting.
 
-
-
 :::: solution
 This is what I wrote.
 Of course, your text, and even your code, will most likely be different.
@@ -172,7 +170,7 @@ Luckily, our R package `mysterycoffee` is here to help.
 Well, first you'll have to attach the package.
 
 ```{r install}
-library(mysterycoffee) # uncomment this line in the vignette
+# library(mysterycoffee) # uncomment this line in the vignette
 ```
 
 Afterwards, the package will need the names of your colleagues. These are mine:
