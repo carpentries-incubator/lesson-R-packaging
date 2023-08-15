@@ -1,0 +1,25 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: lesson-R-packaging
+message: >-
+  If you use this software, please cite it using the
+  metadata from this file.
+type: software
+authors:
+  - given-names: Pablo
+    family-names: Rodriguez-Sanchez
+    email: p.rodriguez-sanchez@esciencecenter.nl
+  - given-names: Barbara
+    family-names: Vreede
+    email: b.vreede@esciencecenter.nl
+  - given-names: Like
+    family-names: de Boer
+    email: l.deboer@esciencecenter.nl
+repository-code: >-
+  https://github.com/carpentries-incubator/lesson-R-packaging
+url: >-
+  https://carpentries-incubator.github.io/lesson-R-packaging/
+abstract: A Software Carpentries lesson on R packaging
+license: CC-BY-4.0
