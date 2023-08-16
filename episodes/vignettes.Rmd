@@ -131,7 +131,7 @@ This is fenced by so-called back-ticks: (```` ``` ````), as well as information 
 ````
 
 This is called a 'code chunk'.
-The `setup` here is the name of the code chunk.
+The word `setup` here is the name of the code chunk.
 It can be useful to name code chunks, but it is optional.
 
 Whenever we want to include code, we will need to do so inside a chunk like this.
@@ -154,31 +154,28 @@ _"Knitting"_ is the process of generating a reader-friendly document.
 And RStudio has a button for that.
 Let's press it and see what happens.
 
-![Knitting](fig/knit.gif)
+![Knitting an R Markdown document](fig/knit.gif)
 
-
-## Our vignette
+## Making the vignette complete
 
 The template vignette we just created works fine, but it doesn't give any useful information about our package.
-In this section we'll fix that.
+In this section we will fix that.
 We will create a report including some examples to show how great our package is!
 
 ::: challenge
 ## A vignette about `mysterycoffee`
-Open the default vignette we created in the previous section.
-Use it as a template (for instance, editing and removing parts of it) to turn it into a vignette about `mysterycoffee`, the package we created during this course.
 
-What can you write?
-Just let me give you a few suggestions:
+For this exercise, add code chunks and markdown text to make the vignette complete.
+Think about what a user may want to know when first encountering the `mysterycoffee` package.
 
+You can think about the following elements:
 
-
-Now, a **how to use it** section will be ideal.
-It will require some code chunks:
-A chunk to attach the package, a chunk to load some names and a chunk to make the groups.
-Don't forget to insert explanatory text in between the chunks.
-
-We may also need a chunk to actually display the groups formed after knitting.
+- Describe the purpose of the package (markdown)
+- Show how to attach the package (a code chunk)
+- Show how to load some names (a code chunk)
+- Use the `make_groups` function on the names, to make the groups (a code chunk)
+- Display the groups formed after running `make_groups` (a code chunk)
+- Explanatory text in between the chunks, to narrate the process (markdown)
 
 :::: solution
 This is what I wrote.
@@ -186,10 +183,12 @@ Of course, your text, and even your code, will most likely be different.
 
 ````{verbatim, lang = "markdown"}
 ---
-title: "Example of usage"
-author: "Pablo Rodriguez"
-date: "12/8/2021"
-output: html_document
+title: "Examples of usage"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{test}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
 ---
 ## Introduction
 
@@ -199,13 +198,13 @@ Luckily, our R package `mysterycoffee` is here to help.
 
 ## How to use it
 
-Well, first you'll have to attach the package.
+Well, first you will have to attach the package.
 
 ```{r install}
 # library(mysterycoffee) # uncomment this line in the vignette
 ```
 
-Afterwards, the package will need the names of your colleagues. These are mine:
+The package will need the names of your colleagues. These are mine:
 
 ```{r names}
 names <- c("Pablo Rodríguez",
@@ -241,23 +240,26 @@ in a functional vignette.
 
 :::
 
-::: challenge
+::: callout
 ## Hiding chunks
+
 Sometimes you don't want the content of the code chunk to be printed in the knitted document, but only its results.
-How can you control this?
+This can be done by adding options to the code chunk.
+The menu in the upper right corner of each chunk allows you to access the options.
+You can choose to execute or not execute the chunk, to display the code, the output, or nothing.
 
-Hint: take a look at the menu that appears at the right upper corner of each chunk.
+As you change the options, you see the text change in the header of the code chunk.
+When you choose, for instance, _show output only_, the parameter `echo=FALSE` will be added to the chunk header.
 
-:::: solution
-The menu in the upper corner of each chunk allows you to do multiple things.
-Among them, it allows you to fine-control what will happen to every chunk.
-You can comfortably choose among a combination of execute or not execute the chunk, display the code, the output, or nothing.
-
-By the way, did you notice the effect of choosing one of these options in the file itself?
-When yoy choose, for instance, _show output only_, the parameter `echo=FALSE` will be added to the chunk header.
-::::
+[Take a look at this page on `knitr` to learn more about chunk options.](https://yihui.org/knitr/options/)
 :::
 
+## Viewing our vignette
+
+
+
 ::: keypoints
-- Reports can be part of the package
+- Show how to use your functions in a vignette
+- With RMarkdown, we can combine text, code, and output to a single document
+- Vignettes are an integral part of an R package.
 :::
