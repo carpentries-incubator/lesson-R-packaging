@@ -20,7 +20,8 @@ As a postdoc she is incredibly busy, and finds it hard to find time to get back 
 **Mzkizi Johnson** is an environmental scientist who is used to working with Python.
 He’s getting involved in a new project that has a lot of R and he needs to learn the ins and outs of it (best practices, etc.).
 
-Mzkizi was born in South Africa but has been living in Germany ever since his under-graduates. He likes cricket and has to do with watching streams, since the level of cricket competition is abismal in Germany.
+Mzkizi was born in South Africa but has been living in Germany ever since his undergraduate studies.
+He likes cricket and has to make do with watching streams, since the level of cricket competition is abysmal in Germany.
 
 **Teun de Graaf** is a middle-aged statistician who has a permanent position as research support at the department of veterinary sciences.
 He is often called to help students and PhD candidates with their R scripts.
