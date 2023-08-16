@@ -14,4 +14,10 @@ As a postdoc she is incredibly busy, and finds it hard to find time to get back 
 
 Mzkizi was born in South Africa but has been living in Germany ever since his under-graduates. He likes cricket and has to do with watching streams, since the level of cricket competition is abismal in Germany.
 
-**Teun de Graaf** is a middle-aged statistician who has a permanent position as research support at the department of veterinary sciences. He is often called to help students and PhD candidates with their R scripts. He enjoys wrangling their data, mostly applying his expertise to make sure they choose the right tests for their question. He is self-taught in R and works mostly on a metaphorical island with students who rarely know anything about R. He does not have direct colleagues with whom he can discuss R with. He does know that there is more to R than scripting analyses, but rarely gets to develop this knowledge further, as the questions he gets from students are mostly straightforward and require a simple script to answer. However, he is interested in improving his workflow, and has the gnawing feeling he is often repeating himself when he writes yet another script for yet another student.
+**Teun de Graaf** is a middle-aged statistician who has a permanent position as research support at the department of veterinary sciences.
+He is often called to help students and PhD candidates with their R scripts.
+He enjoys wrangling their data, mostly applying his expertise to make sure they choose the right tests for their question.
+He is self-taught in R and works mostly on a metaphorical island with students and researchers who rarely know anything about R.
+He does not have direct colleagues with whom he can discuss R.
+He does know that there is more to R than scripting analyses, but rarely gets to develop this knowledge further, as the questions he gets are mostly straightforward and require a simple script to answer.
+However, he is interested in improving his workflow, and has the gnawing feeling he is often repeating himself when he writes yet another script for yet another student.
