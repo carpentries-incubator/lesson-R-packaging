@@ -5,61 +5,75 @@ exercises: 20
 ---
 
 ::: questions
-- How can I use R packages to write my research?
+- I have written my functions in my package, can I also use them?
+- How can I write a tutorial or paper as part of my package?
 :::
 
 ::: objectives
-- Learn how to write reports in the form of a vignette
+- Learn how to use write reports in the form of a vignette, using R Markdown.
 :::
 
+## Accessing vignettes
 
+Your package now contains functions, and perhaps data.
+Others can easily install your package, and use the functionality you created.
+But, how do they know where to start?
 
-## Vignettes
+Vignettes are a great way to create a guidebook or tutorial to your package.
+You have probably already seen vignettes, as you were exploring a new package you were interested in using.
 
-If you are reading this, chances are that you are using R for doing research.
-And if you are a researcher, probably you spend a lot of time writing.
-Did you know that you can write your reports, and even your papers, directly from R?
+You can take a look at the vignettes that are available for a package with the function `browseVignettes`.
+For example, this shows you the available vignettes for the `dplyr` package:
 
-We'll do this with vignettes.
-Vignettes are plain-text files that combine enriched text and code.
-Typically, the enriched text is displayed and the code is hidden and executed.
+```r
+browseVignettes("dplyr")
+```
 
-Think about it for a moment.
+You can also directly open a vignette, if you know its name:
+
+```r
+vignette("dplyr", package="dplyr")
+```
+
+::: challenge
+## Explore vignettes
+
+Take some time to explore the vignette(s) of your favorite package(s).
+What things do you notice?
+What properties of vignettes stand out to you?
+
+:::: solution
+There are many things that can stand out about vignettes.
+Some things that may be mentioned:
+
+- Vignettes combine text with code, to give a comprehensive overview of the possibilities of a package.
+- Not all packages have vignettes.
+- Some packages have more than one vignette
+- Vignettes can perform many different functions: they can be tutorials, clarify a specific purpose of a package, or even be a scientific report.
+- Code inside a vignette may be executed: the vignette can also contain the results of this code run.
+::::
+:::
+
+## Making a vignette
+
 A vignette will take code from your package, execute it, generate the figures for you, and put everything together and in context.
 The resulting document would be a human readable website, pdf file or even Microsoft Word file.
 
-::: challenge
-## Why would you want to do that?!
-Writing your reports directly in R Studio may sound like an overkill, and it is certainly a bit harder than writing on an external word processor.
-Can you think of a couple of reasons for making the effort worth it?
+:::: callout
+There are several reasons that make vignettes an excellent way to write up research.
 
-:::: solution
-There are several reasons that make the use of vignettes a very good idea for writing research.
 For instance:
 - It keeps all the work tidy in a single project folder.
 - The document describes and performs the calculations, instead of only describing them.
 - The document can be read as a text, but interested enough readers can also execute it, test it. In short: reproduce it.
 ::::
-:::
 
-::: callout
-## Why is everybody talking about reproducibility?
-Probably you've heard about it.
-The [reproducibility crisis](https://en.wikipedia.org/wiki/Replication_crisis) has been in the headlines recently.
-In short, reproducibility crisis means that the results of many scientific studies are difficult or impossible to reproduce in an independent lab (and often even at the same lab they were produced!).
-
-And why is this relevant?
-Because reproducibility is a cornerstone of the scientific method.
-It can be argued that non-reproducible results are literally not scientific.
-:::
 
 ## `Rmarkdown` files
 
 In `R`, vignettes are typically written using `.Rmd` (a shortening of `Rmarkdown`) files.
 The name is self-descriptive: it is a file that combines **code** (in `R`) and **text** (in `markdown`).
 
-::: callout
-## What is markdown?
 Markdown is a way of creating formatted text using a plain-text editor.
 Actually, it looks a lot like plain text, but with some special symbols every now and then indicating aesthetic details such as bold typeface, links, tables, ...
 Markdown files can be rendered to reading-friendly formats, such as `html` or `pdf`.
@@ -72,10 +86,7 @@ In `R`, vignettes are typically written using `.Rmd` (a shortening of `Rmarkdown
 The name is self-descriptive: it is a file that combines **code** (in `R`) and **text** (in `markdown`).
 ```
 
-The good news is you don't have to learn by hearth all these symbols.
-As we'll see below, RStudio is going to help you a lot in this regard.
-Additionally, there are lots of good [cheat sheets](https://www.markdownguide.org/cheat-sheet/) available online.
-:::
+Learning Markdown is not complex, and there are lots of good [cheat sheets](https://www.markdownguide.org/cheat-sheet/) available online.
 
 We can easily create our first vignette using the RStudio menus.
 Click on `File/New file/R Markdown`, and you'll see a window like the one below:
