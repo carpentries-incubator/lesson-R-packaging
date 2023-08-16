@@ -6,7 +6,9 @@ title: Learner profiles
 
 Eventually she became the acclaimed R authority in her lab. Since then, she has developed several scripts for her colleagues. This is a double-edged sword, because sometimes her colleagues underestimate the effort this takes. Nor does her supervisor fully appreciate the work it takes to write reusable R code. She finds it hard to get support; she has some friends she contacts with questions about R, but there is no one in her direct professional environment who can take the time to work deeply through an issue and spend time on her code to improve it.
 
-Often, she sees herself struggling with coding problems. That’s ok, just life, but she has this annoying feeling... this voice in the back of her head that says: “There should be an easier way for doing this...”. As a postdoc she is incredibly busy, and finds it hard to find time to get back to improving her old projects, although she knows she probably should.
+Often, she sees herself struggling with coding problems.
+That’s ok, just life, but she has this annoying feeling... this voice in the back of her head that says: “There should be an easier way to do this...”.
+As a postdoc she is incredibly busy, and finds it hard to find time to get back to improving her old projects, although she knows she probably should.
 
 **Mzkizi Johnson** is an environmental scientist who is used to working with Python. He’s getting involved in a new project that has a lot of R and he needs to learn the ins and outs of it (best practices, etc.).
 
