@@ -63,9 +63,11 @@ The resulting document would be a human readable website, pdf file or even Micro
 There are several reasons that make vignettes an excellent way to write up research.
 
 For instance:
+
 - It keeps all the work tidy in a single project folder.
 - The document describes and performs the calculations, instead of only describing them.
 - The document can be read as a text, but interested enough readers can also execute it, test it. In short: they can reproduce the work.
+
 ::::
 
 ## `Rmarkdown` files
@@ -101,12 +103,14 @@ This will do the following:
 1. Create the file `example.Rmd` inside this directory
 1. If necessary, add dependencies to the `DESCRIPTION` file
 
-#### Editing the vignette
+### Editing the vignette
 
 The file `example.Rmd` can now be edited.
-Replace the title with a little more information:
 
-```{verbatim, language="yaml"}
+Let's start with the header.
+We can replace the title with a little more information:
+
+```{verbatim, lang="yaml"}
 ---
 title: "Examples of usage"
 output: rmarkdown::html_vignette
@@ -118,26 +122,39 @@ vignette: >
 ```
 
 Scrolling down, we see that there is some R code in our vignette already.
-This is fenced by so-called back-ticks: ```` ``` ```` as well as information about the programming language used: ````{r <name>, <optional parameters>} ````.
+This is fenced by so-called back-ticks: (```` ``` ````), as well as information about the programming language used: R.
+
+````{verbatim}
+```{r setup} 
+
+```
+````
 
 This is called a 'code chunk'.
-Outside of this code chunk, we can start writing some Markdown.
+The `setup` here is the name of the code chunk.
+It can be useful to name code chunks, but it is optional.
 
-What about beginning with a tiny **introduction** section?
-Let's write something along the lines of: _"Working from home can be boring. Luckily, `mysterycoffee` is here to help"_.
+Whenever we want to include code, we will need to do so inside a chunk like this.
+Later, when we generate the final document, the code inside will be executed, and the results will be included in the vignette.
 
-#### Knitting the vignette
+However, before we start writing code, we should start with an introduction.
+How about:
 
+```{verbatim, lang = "Markdown"}
+## Introduction
+
+Working from home can be lonely. Do you miss the random chats at the coffee machine? Certainly we do!
+
+Luckily, our R package `mysterycoffee` is here to help.
+```
+
+### Knitting the vignette
 
 _"Knitting"_ is the process of generating a reader-friendly document.
 And RStudio has a button for that.
 Let's press it and see what happens.
 
 ![Knitting](fig/knit.gif)
-
-Great, isn't it?
-
-
 
 
 ## Our vignette
