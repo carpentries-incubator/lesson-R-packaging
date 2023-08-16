@@ -17,7 +17,8 @@ Often, she sees herself struggling with coding problems.
 That’s ok, just life, but she has this annoying feeling... this voice in the back of her head that says: “There should be an easier way to do this...”.
 As a postdoc she is incredibly busy, and finds it hard to find time to get back to improving her old projects, although she knows she probably should.
 
-**Mzkizi Johnson** is an environmental scientist who is used to working with Python. He’s getting involved in a new project that has a lot of R and he needs to learn the ins and outs of it (best practices, etc.).
+**Mzkizi Johnson** is an environmental scientist who is used to working with Python.
+He’s getting involved in a new project that has a lot of R and he needs to learn the ins and outs of it (best practices, etc.).
 
 Mzkizi was born in South Africa but has been living in Germany ever since his under-graduates. He likes cricket and has to do with watching streams, since the level of cricket competition is abismal in Germany.
 
