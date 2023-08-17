@@ -54,8 +54,10 @@ Some things that may be mentioned:
 ::::
 :::
 
-A vignette will take code from your package, execute it, generate the figures for you, and put everything together and in context.
-The resulting document would be a human readable website, pdf file or even Microsoft Word file.
+A vignette will take code from your package, execute it, and allow you to provide context and instructions around the functionality you created.
+The resulting document would be a human readable website or a pdf file.
+The possible applications for this are endless.
+It can be a tutorial, a report, or even a scientific paper.
 
 :::: callout
 ## Vignettes as research reports
@@ -66,7 +68,7 @@ For instance:
 
 - It keeps all the work tidy in a single project folder.
 - The document describes and performs the calculations, instead of only describing them.
-- The document can be read as a text, but interested enough readers can also execute it, test it. In short: they can reproduce the work.
+- The document can be read as a text, but interested readers can also execute it, test it. In short: they can reproduce the work.
 
 ::::
 
@@ -80,7 +82,7 @@ Actually, it looks a lot like plain text, but with some special symbols every no
 Markdown files can be rendered to reading-friendly formats, such as `html` or `pdf`.
 
 This website is written in markdown.
-Below you can the source for the last paragraph of the previous section.
+Below you can see the source for the last paragraph of the previous section.
 
 ```markdown
 In `R`, vignettes are typically written using `.Rmd` (the extension of `Rmarkdown`) files.
