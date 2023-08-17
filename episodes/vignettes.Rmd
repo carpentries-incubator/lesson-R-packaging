@@ -256,6 +256,36 @@ When you choose, for instance, _show output only_, the parameter `echo=FALSE` wi
 
 ## Viewing our vignette
 
+We can always render the vignette simply by knitting the document.
+However, should you want to view the vignette in the same way as you access another package's vignette, you need to take an extra step.
+We need to explicitly build the vignette on installing the package:
+
+```r
+devtools::install(build_vignettes = TRUE)
+```
+
+Note that clicking the "Install" button does not build the vignette in a way that allows access through the `vignette()` and `browseVignettes()` functions.
+
+::: callout
+## Viewing vignettes from a GitHub installation
+
+If you have made a vignette, but your package is only accessible on GitHub, it is important to give explicit installation instructions for the vignette.
+You use the same argument (`build_vignettes`) as with the local install:
+
+```r
+devtools::install_github(build_vignettes = TRUE)
+```
+
+Without this argument, the vignettes will not be included in the package installation.
+
+:::
+
+Now we can take a look at our own vignette!
+
+```r
+vignette("example", package="mysterycoffee")
+```
+
 
 
 ::: keypoints
