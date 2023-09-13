@@ -2,6 +2,8 @@
 title: Setup
 ---
 
+::: checklist
+
 ## Required software
 
 This lesson assumes you have reasonably up-to-date versions of the following software installed on your computer:
@@ -10,7 +12,11 @@ This lesson assumes you have reasonably up-to-date versions of the following sof
 - [RStudio Desktop](https://www.rstudio.com/products/rstudio/download/#download),
 - [Rtools](https://cran.r-project.org/bin/windows/Rtools/) (Windows users only).
 
-## Required R Packages
+:::
+
+::: checklist
+
+## Required R packages
 
 You will also need to install the following R packages:
 
@@ -24,5 +30,4 @@ They can be installed by executing the code below in your R console:
 install.packages(c("devtools", "rmarkdown", "roxygen2"))
 ```
 
-
-
+:::
