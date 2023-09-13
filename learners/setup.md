@@ -2,17 +2,22 @@
 title: Setup
 ---
 
-## Required software
+::: checklist
+
+## Software requirements
 
 This lesson assumes you have reasonably up-to-date versions of the following software installed on your computer:
 
 - the [R software](https://cran.r-project.org/mirrors.html) itself,
 - [RStudio Desktop](https://www.rstudio.com/products/rstudio/download/#download),
 - [Rtools](https://cran.r-project.org/bin/windows/Rtools/) (Windows users only).
+:::
 
-## Required R Packages
+::: checklist
 
-You will also need to install the following R packages:
+## R packages
+
+You will also need to install the following packages:
 
 - `devtools`
 - `rmarkdown`
@@ -24,5 +29,4 @@ They can be installed by executing the code below in your R console:
 install.packages(c("devtools", "rmarkdown", "roxygen2"))
 ```
 
-
-
+:::

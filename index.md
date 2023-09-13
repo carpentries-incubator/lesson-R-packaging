@@ -28,14 +28,17 @@ In this lesson you will find episodes on:
 - Managing dependencies
 - Writing documentation and vignettes
 
-::: callout
+::: prereq
+
 ## Prerequisites
 
-In order to follow this lesson you will need:
+In order to follow this lesson you will need to:
 
-- To be able to understand simple `R` code.
-- To understand the concept of an `R` function.
+- be able to understand simple `R` code,
+- understand the concept of an `R` function.
 
-In case you are not familiar with these topics, please follow first one of [our lessons about R](https://swcarpentry.github.io/r-novice-inflammation/).
+In case you are not familiar with these topics, please follow one of [our lessons about R](https://swcarpentry.github.io/r-novice-inflammation/).
+
+For a refresher on R functions, head to [this episode specifically](https://swcarpentry.github.io/r-novice-inflammation/02-func-R/index.html).
 
 :::
