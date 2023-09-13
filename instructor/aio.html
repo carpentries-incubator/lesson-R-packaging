@@ -352,7 +352,7 @@
         
 <section id="aio-introduction"><p>Content from <a href="introduction.html">Introduction</a></p>
 <hr>
-<p> Last updated on 2023-09-12 | 
+<p> Last updated on 2023-09-13 | 
         
         <a href="https://github.com/carpentries-incubator/lesson-R-packaging/edit/main/episodes/introduction.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time <i aria-hidden="true" data-feather="clock"></i> 30 minutes </p>
@@ -367,8 +367,8 @@
 <div class="inner">
 <h3 class="card-title">Questions</h3>
 <ul>
-<li>“What is a package?”</li>
-<li>“Why do we want a package?”</li>
+<li>What is a package?</li>
+<li>Why do we want a package?</li>
 </ul>
 </div>
 </div>
@@ -378,9 +378,9 @@
 <div class="inner bordered">
 <h3 class="card-title">Objectives</h3>
 <ul>
-<li>“Understand what a package is”</li>
-<li>“Understand why a package is useful”</li>
-<li>“Understand the tools you are about to use”</li>
+<li>Understand what a package is.</li>
+<li>Understand why a package is useful.</li>
+<li>Understand the tools you are about to use.</li>
 </ul>
 </div>
 </div>
@@ -392,11 +392,25 @@ your first step will consist of creating a new folder, a folder that you
 will later populate with files. If the project is long and complex, you
 will need several files and also some subfolders. The folder structure
 can eventually become pretty complex and difficult to maintain,
-especially if your project has multiple authors.</p>
-<p>Wait a moment! Long and complex projects, multiple authors… this
-sounds like <strong>any</strong> scientific project! Is there a way of
-making this process easier? The answer is yes, and the way is by
-structuring our work as a software package.</p>
+especially if your project has multiple authors. Fortunately, you can
+make this process a lot easier by structuring our work as a software
+package.</p>
+<div id="prerequisites" class="callout prereq">
+<div class="callout-square">
+<i class="callout-icon" data-feather="check"></i>
+</div>
+<div id="prerequisites" class="callout-inner">
+<h3 class="callout-title">Prerequisites<a class="anchor" aria-label="anchor" href="#prerequisites"></a>
+</h3>
+<div class="callout-content">
+<p>Have you ever written an <code>R</code> function? If the answer is
+yes, then you are ready to take this course. If the answer is no, we
+recommend you go through <a href="https://swcarpentry.github.io/r-novice-inflammation/02-func-R/index.html" class="external-link">this
+episode</a> of the <a href="https://swcarpentry.github.io/r-novice-inflammation/" class="external-link">Programming
+with R</a> course.</p>
+</div>
+</div>
+</div>
 <section id="what-is-a-package-and-what-is-it-good-for"><h2 class="section-heading">What is a package and what is it good for?<a class="anchor" aria-label="anchor" href="#what-is-a-package-and-what-is-it-good-for"></a>
 </h2>
 <hr class="half-width">
@@ -405,7 +419,7 @@ structuring your project. This standardized structure applies to the
 files and (sub)folders of your project, but also to your code: in an R
 package, the code consists of functions only. These will be the access
 points for anyone who wants to use your code.</p>
-<p>Structuring our projects as packages has several advantages, such as
+<p>Structuring your project as a package has several advantages, such as
 increased:</p>
 <ul>
 <li>Robustness</li>
@@ -415,35 +429,13 @@ increased:</p>
 <li>Usability</li>
 <li>Maintainability</li>
 </ul>
-<div id="a-thought-about-standards" class="callout callout">
-<div class="callout-square">
-<i class="callout-icon" data-feather="bell"></i>
-</div>
-<div id="a-thought-about-standards" class="callout-inner">
-<h3 class="callout-title">A thought about standards<a class="anchor" aria-label="anchor" href="#a-thought-about-standards"></a>
-</h3>
-<div class="callout-content">
-<p>Standards are more valuable that you may think.</p>
-<p>The fact that we are teaching this course in English, for instance,
-rests on the assumption that you can read English. None of the authors
-of this guide has English as their mother tongue. Using English was a
-<strong>choice</strong>, aimed at maximizing the amount of people able
-to read this guide. And all of this rests on the fact that English is,
-nowadays, the standard language of science.</p>
-<p>Something similar happens with R packages. Structuring your R
-projects as an R package is a way of making them available to a huge
-pool of people who “speak” R. And the communication goes both ways.
-Other developers or collaborators can use your software easier, but you
-can also use theirs.</p>
-<p>Indeed, most likely you are already part of this “conversation”. Did
-you ever use a library (such as <code>knitr</code>,
+<p>Structuring your R project as a package is a way of making them
+easily available to other R users. You probably know this process
+already: did you ever use a library (such as <code>knitr</code>,
 <code>lubridate</code> or <code>stringi</code>)? If the answer is yes,
 you are already using packages. Packages written by someone else.</p>
 <p>In this lesson we will show you how to write your own, so you can
 actively participate in the R community.</p>
-</div>
-</div>
-</div>
 <div id="how-can-this-course-help-me" class="callout discussion">
 <div class="callout-square">
 <i class="callout-icon" data-feather="message-circle"></i>
@@ -461,8 +453,6 @@ colleague?</li>
 <li>Did you ever have problems running your own code?</li>
 <li>Are you sometimes scared of editing your code, just in case you
 “break” it?</li>
-<li>Did you ever have to re-do all the figures in your paper
-manually?</li>
 <li>Do you suspect that some parts of your code may not be working as
 you want them to?</li>
 <li>Do you feel that you are losing control about how your code is
@@ -476,22 +466,12 @@ work?</p>
 </div>
 </div>
 </div>
-</section><section id="prerequisites"><h2 class="section-heading">Prerequisites<a class="anchor" aria-label="anchor" href="#prerequisites"></a>
+</section><section id="the-tools-we-will-use"><h2 class="section-heading">The tools we will use<a class="anchor" aria-label="anchor" href="#the-tools-we-will-use"></a>
 </h2>
 <hr class="half-width">
-<p>Have you ever written an <code>R</code> function? If the answer is
-yes, then you are ready to take this course. If the answer is no, we
-recommend you read <a href="https://swcarpentry.github.io/r-novice-inflammation/02-func-R/index.html" class="external-link">this
-episode</a> of the <a href="https://swcarpentry.github.io/r-novice-inflammation/" class="external-link">Programming
-with R</a> course.</p>
-<div id="why-r" class="callout callout">
-<div class="callout-square">
-<i class="callout-icon" data-feather="bell"></i>
-</div>
-<div id="why-r" class="callout-inner">
-<h3 class="callout-title">Why R?<a class="anchor" aria-label="anchor" href="#why-r"></a>
+<div class="section level3">
+<h3 id="why-r">Why R?<a class="anchor" aria-label="anchor" href="#why-r"></a>
 </h3>
-<div class="callout-content">
 <p>The practice of software packaging is applicable to many programming
 languages. The language of choice for this course is R. Is there any
 reason for that?</p>
@@ -499,25 +479,15 @@ reason for that?</p>
 form of packages. This makes R the ideal language for getting started
 with packaging.</p>
 </div>
-</div>
-</div>
-<div id="why-rstudio" class="callout callout">
-<div class="callout-square">
-<i class="callout-icon" data-feather="bell"></i>
-</div>
-<div id="why-rstudio" class="callout-inner">
-<h3 class="callout-title">Why RStudio?<a class="anchor" aria-label="anchor" href="#why-rstudio"></a>
+<div class="section level3">
+<h3 id="why-rstudio">Why RStudio?<a class="anchor" aria-label="anchor" href="#why-rstudio"></a>
 </h3>
-<div class="callout-content">
 <p>RStudio is an Integrated Development Environment (IDE) specifically
 designed for <code>R</code>. As many IDEs, it contains some menus and
 buttons arranged in an intuitive interface. This will relieve a lot of
 mental space, as we do not have to remember the commands for common
 operations such as <em>building</em>, <em>saving</em>, <em>knitting</em>
 and so on. In this course we will make extensive use of it.</p>
-</div>
-</div>
-</div>
 <div id="pro-tip" class="callout callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
@@ -530,11 +500,10 @@ and so on. In this course we will make extensive use of it.</p>
 Among other things, this textbox will contain the equivalent key
 combination (for instance, <code>Ctrl/Cmd + S</code> for saving). Paying
 attention to these text boxes is a perfect way of getting used to, and
-ultimately remembering by heart, those key combinations.</p>
+ultimately remembering, those key combinations.</p>
 <p>Additionally, after pressing a button, some commands will be executed
-in the console.</p>
-<p>It is always very instructive to take a look at what commands the
-button triggered.</p>
+in the console. It is always very instructive to take a look at the
+console to see what commands the button triggered.</p>
 </div>
 </div>
 </div>
@@ -547,10 +516,9 @@ button triggered.</p>
 </h3>
 <div class="callout-content">
 <ul>
-<li>“An R package is a project in a standardized folder structure”</li>
-<li>“An R package centers around R functions”</li>
-<li>“RStudio is a useful editor that helps you package your
-project”</li>
+<li>An R package is a project in a standardized folder structure.</li>
+<li>An R package centers around R functions.</li>
+<li>RStudio is a useful editor that helps you package your project.</li>
 </ul>
 </div>
 </div>
@@ -559,12 +527,13 @@ project”</li>
 Place links that you need to refer to multiple times across pages here. Delete
 any links that you are not going to use. 
  -->
+</div>
 </section></section><section id="aio-accessing"><p>Content from <a href="accessing.html">Accessing packages</a></p>
 <hr>
-<p> Last updated on 2023-09-12 | 
+<p> Last updated on 2023-09-13 | 
         
         <a href="https://github.com/carpentries-incubator/lesson-R-packaging/edit/main/episodes/accessing.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
-<p>Estimated time <i aria-hidden="true" data-feather="clock"></i> 30 minutes </p>
+<p>Estimated time <i aria-hidden="true" data-feather="clock"></i> 45 minutes </p>
 <div class="text-end">
           <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right"> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
         </div>
@@ -588,8 +557,8 @@ any links that you are not going to use.
 <div class="inner bordered">
 <h3 class="card-title">Objectives</h3>
 <ul>
-<li>Install and attach packages from CRAN</li>
-<li>Install and attach packages from GitHub</li>
+<li>Install packages from CRAN</li>
+<li>Install packages from other locations, such as GitHub</li>
 <li>Build, install and attach your own packages</li>
 </ul>
 </div>
@@ -597,53 +566,74 @@ any links that you are not going to use.
 </div>
 </div>
 </div>
-<p>One of the advantages of packages is that they can be
-<strong>installed</strong>. This allows us to use the functions
-contained in the package from anywhere.</p>
-<p>There are many ways of accessing a package in order to start using
-it. In this section, we will look at the most common ones. It’s very
-likely that you already know at least one of these methods if you are a
-regular R user.</p>
-<p>At the end of this episode, we’ll describe briefly some alternatives
-that may be useful in some cases.</p>
-<section id="install-a-package-from-cran"><h2 class="section-heading">Install a package from CRAN<a class="anchor" aria-label="anchor" href="#install-a-package-from-cran"></a>
+<div id="accordionInstructor1" class="accordion instructor-note accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button instructor-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstructor1" aria-expanded="false" aria-controls="collapseInstructor1">
+  <h3 class="accordion-header" id="headingInstructor1">
+  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div>
+  Instructor Note
+  </h3>
+</button>
+<div id="collapseInstructor1" class="accordion-collapse collapse" aria-labelledby="headingInstructor1" data-bs-parent="#accordionInstructor1">
+<div class="accordion-body">
+<p>To most learners of this lesson, installation instructions are common
+knowledge. This part of the lesson may therefore be experienced as
+somewhat slow, and we encourage you to be sensitive to this. We have
+chosen to be comprehensive in this episode, and include installation
+instructions from CRAN alongside those from other platforms. This
+provides context to some new functionality; functionality that is quite
+essential when distributing a first package (which is easiest done
+through e.g. GitHub).</p>
+</div>
+</div>
+</div>
+</div>
+<section id="installing-packages"><h2 class="section-heading">Installing packages<a class="anchor" aria-label="anchor" href="#installing-packages"></a>
 </h2>
 <hr class="half-width">
+<p>To use any R package, it must first be <strong>installed</strong>.
+This means that the package is saved to our system in a standard
+location, and a usable way. This allows us to use the functions
+contained in the package.</p>
+<p>There are many ways of installing packages to our system. In this
+section, we will look at the most common ones.</p>
+<div class="section level3">
+<h3 id="install-a-package-from-cran">Install a package from CRAN<a class="anchor" aria-label="anchor" href="#install-a-package-from-cran"></a>
+</h3>
 <p><a href="https://cran.r-project.org/" class="external-link">CRAN</a> is the official
 repository for R Packages. It stands for the <em>Comprehensive R Archive
 Network</em>. It is an awesome collection of high quality resources
 written by other R users just like you.</p>
-<p>Installing a package from CRAN is particularly easy. Let’s imagine we
-need to install a package with tools for R developers. We can start by
-browsing to our favorite search engine, and make a search like: <em>R
-developers tools</em>. Almost certainly it will point us to a package
-called <code>devtools</code>. This package contains, among other things,
-functions to easily install from sources other than CRAN. It will be
-useful in the next section. The package can be installed by opening
-RStudio and browsing to the <em>Packages</em> tab:</p>
-<figure><img src="../fig/packages.png" alt="" class="figure mx-auto d-block"><figcaption>Packages tab</figcaption></figure><p>After pressing <em>Install</em>, a window like this will appear:</p>
-<figure><img src="../fig/install.png" alt="" class="figure mx-auto d-block"><figcaption>Install prompt</figcaption></figure><p>We write <code>devtools</code> in the prompt, and press install. This
-operation will download and install the package and the required
-dependencies. Depending on the package, it may take a while, ranging
-from a few seconds to a few minutes.</p>
-</section><section id="the-same-but-with-a-command"><h2 class="section-heading">The same, but with a command<a class="anchor" aria-label="anchor" href="#the-same-but-with-a-command"></a>
-</h2>
-<hr class="half-width">
-<p>Some people may prefer using code instead of a graphical user
-interface to install a package. Are you one of them? Then, you’ll like
-to know that all the above is equivalent to typing:</p>
+<p>Installing a package from CRAN is particularly easy. For example, we
+would like to install the package <code>devtools</code>. The package can
+be installed by opening RStudio and browsing to the <em>Packages</em>
+tab:</p>
+<figure><img src="../fig/packages.png" alt="a screenshot of the Packages tab in Rstudio" class="figure mx-auto d-block"><figcaption>Packages tab</figcaption></figure><p>This tab has a button, <em>Install</em>. After pressing this button,
+a window will appear:</p>
+<figure><img src="../fig/install.png" alt="A screenshot of a window dialog in Rstudio, labeled 'Install Packages'" class="figure mx-auto d-block"><figcaption>Install prompt</figcaption></figure><p>We write <code>devtools</code> in the field labeled
+<em>Packages</em>, and make sure to check the box labeled <em>Install
+dependencies</em>. When we press <em>Install</em>, Rstudio will download
+and install the package, as well as the required dependencies. Depending
+on the package, this may take a while, ranging from a few seconds to a
+few minutes.</p>
+</div>
+<div class="section level3">
+<h3 id="the-same-but-with-a-command">The same, but with a command<a class="anchor" aria-label="anchor" href="#the-same-but-with-a-command"></a>
+</h3>
+<p>We can achieve the same result by typing code into the console:</p>
 <div class="codewrapper sourceCode" id="cb1">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu">install.packages</span><span class="op">(</span><span class="st">"devtools"</span><span class="op">)</span></span></code></pre>
 </div>
-<p>As often happens with RStudio, you don’t have to remember this
-command by heart. You can keep using the graphical user interface and
-<strong>observe</strong> what happens in the console. RStudio will build
-and execute the command for you.</p>
-<p>After installing, the new package should appear in the
-<em>Packages</em> tab.</p>
+<p>If you used the graphical interface, you may have noticed that
+Rstudio put this same command into the console. This happens often with
+RStudio, and is a useful feature: while you use the graphical interface,
+RStudio will build and execute the corresponding command for you.</p>
+<p>You can confirm that the installation was successful by checking the
+<em>Packages</em> tab. The newly installed package should appear
+there.</p>
 <div id="something-went-wrong" class="callout callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
@@ -652,61 +642,95 @@ and execute the command for you.</p>
 <h3 class="callout-title">Something went wrong?<a class="anchor" aria-label="anchor" href="#something-went-wrong"></a>
 </h3>
 <div class="callout-content">
-<p>Sometimes, an installation may fail. If that’s the case, take a look
+<p>Sometimes, an installation may fail. If that is the case, take a look
 at the output message in the console. It will contain very useful
-information, and direct suggestions about how to fix the problem.</p>
+information, and often contains direct suggestions about how to fix the
+problem.</p>
 </div>
 </div>
 </div>
-<div id="can-i-publish-my-package-in-cran" class="callout callout">
+</div>
+<div class="section level3">
+<h3 id="install-a-package-from-github">Install a package from GitHub<a class="anchor" aria-label="anchor" href="#install-a-package-from-github"></a>
+</h3>
+<p>Although CRAN is the official repository for R packages, it is not
+the only one you can use. A very interesting alternative is <a href="https://github.com" class="external-link">GitHub</a>, a popular open code repository. We
+can use GitHub to find packages or to make our own packages publicly
+available. Contrary to CRAN, packages in GitHub are not reviewed. This
+has an advantage: you can have your package published there
+immediately.</p>
+<p>To install a package from GitHub, we need the package
+<code>devtools</code>, which we have just installed.
+<code>devtools</code> contains functionality to install packages from
+many different sources.</p>
+<p>To install a package from GitHub, we will use the following
+function:</p>
+<div class="codewrapper sourceCode" id="cb2">
+<h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu">devtools</span><span class="fu">::</span><span class="fu">install_github</span><span class="op">(</span><span class="st">"PabRod/kinematics"</span><span class="op">)</span></span></code></pre>
+</div>
+<p>This installs the package <code>kinematics</code> from the github
+page <a href="https://github.com/PabRod/kinematics" class="external-link">github.com/PabRod/kinematics</a>.</p>
+<div id="removing-packages" class="callout callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div id="can-i-publish-my-package-in-cran" class="callout-inner">
-<h3 class="callout-title">Can I publish my package in CRAN?<a class="anchor" aria-label="anchor" href="#can-i-publish-my-package-in-cran"></a>
+<div id="removing-packages" class="callout-inner">
+<h3 class="callout-title">Removing packages<a class="anchor" aria-label="anchor" href="#removing-packages"></a>
 </h3>
 <div class="callout-content">
-<p>The answer is yes, and it is easier than you may think. Most
-developers of CRAN packages are R users just like you and me. If you
-have a package you are proud of, and you think it may be useful for
-someone else, consider <a href="https://cran.r-project.org/web/packages/submission_checklist.html" class="external-link">submitting
-it</a>.</p>
+<p>Of course, you can also undo the installation of a package. Using the
+<em>Packages</em> tab in Rstudio, you can click on the <code>x</code>
+icon next to a package to delete it from your system. In the console,
+the function <code>remove.packages()</code> does the same. For example,
+to remove <code>kinematics</code>:</p>
+<div class="codewrapper sourceCode" id="cb3">
+<h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu">remove.packages</span><span class="op">(</span><span class="st">"kinematics"</span><span class="op">)</span></span></code></pre>
 </div>
 </div>
 </div>
-<p>In the sections below we’ll see how to install a package from other
-sources than CRAN. But first, let’s see how can we actually use our
-freshly installed package!</p>
-</section><section id="using-an-installed-package"><h2 class="section-heading">Using an installed package<a class="anchor" aria-label="anchor" href="#using-an-installed-package"></a>
-</h2>
-<hr class="half-width">
-<p>If you have used packages before, you may know that installing the
-package is not enough to start using it immediately. In order to use an
-installed package, you need to load it into workspace. In <code>R</code>
-jargon this is known as <em>attaching</em> the package. This means that
-its functions and data will become available in your working session, so
-you can use them in your console and your scripts. Additionally, the
-functions in your package will be added to the search path.</p>
-<p>The easiest way to attach an installed package is by using the
-<em>Packages</em> tab. If you click on the package’s name, the package’s
-help menu will open. If you click on the checkbox by the package’s name
-(see figure below), the package will be attached.</p>
-<figure><img src="../fig/loaded.png" class="figure mx-auto d-block"></figure><p>The figure above shows that the package <code>testthat</code> is
-installed and attached. Other packages, such as <code>stringi</code>,
-<code>stringr</code> or <code>svglite</code>, are installed but not
-attached.</p>
-<div id="what-if-we-want-to-attach-a-package-from-the-console" class="callout challenge">
+</div>
+<p>There are several other functions available in the
+<code>devtools</code> package to install a package from other locations
+than GitHub. They all start with <code>devtools::install_</code>.</p>
+<div id="install-a-package-from-a-repository" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
-<div id="what-if-we-want-to-attach-a-package-from-the-console" class="callout-inner">
-<h3 class="callout-title">What if we want to attach a package from the
-console?<a class="anchor" aria-label="anchor" href="#what-if-we-want-to-attach-a-package-from-the-console"></a>
+<div id="install-a-package-from-a-repository" class="callout-inner">
+<h3 class="callout-title">Install a package from a repository<a class="anchor" aria-label="anchor" href="#install-a-package-from-a-repository"></a>
 </h3>
 <div class="callout-content">
-<p>How would you attach an installed R package using the console?</p>
-<p>Tip: As always with RStudio, it is a good idea to look at the console
-while we are performing operations in the graphical user interface.</p>
+<p>Find an R package on a public repository, such as <a href="https://github.com" class="external-link">GitHub</a> or <a href="https://gitlab.com" class="external-link">GitLab</a>, and install it with devtools.</p>
+<p>If you have trouble finding a package, you can try:</p>
+<ul>
+<li>From GitHub: <a href="https://github.com/Lchiffon/wordcloud2" class="external-link">github.com/Lchiffon/wordcloud2</a>
+</li>
+<li>From GitLab: <a href="https://gitlab.com/r-packages/psyverse" class="external-link">gitlab.com/r-packages/psyverse</a>
+</li>
+</ul>
+<p>For an extra challenge: try to install them using different
+functions.</p>
+</div>
+</div>
+</div>
+<div id="accordionHint1" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button hint-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHint1" aria-expanded="false" aria-controls="collapseHint1">
+  <h4 class="accordion-header" id="headingHint1">
+  Give me a hint
+  </h4>
+</button>
+<div id="collapseHint1" class="accordion-collapse collapse" aria-labelledby="headingHint1" data-bs-parent="#accordionHint1">
+<div class="accordion-body">
+<p>Hint: the function <code>devtools::install_git()</code> applies to
+any git repository.</p>
+</div>
 </div>
 </div>
 </div>
@@ -719,43 +743,36 @@ while we are performing operations in the graphical user interface.</p>
 </button>
 <div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
-<p>Use <code>library(&lt;package name&gt;)</code></p>
-</div>
-</div>
-</div>
-</div>
-</section><section id="using-a-function-without-attaching-the-package"><h2 class="section-heading">Using a function without attaching the package<a class="anchor" aria-label="anchor" href="#using-a-function-without-attaching-the-package"></a>
-</h2>
-<hr class="half-width">
-<p>In some situations it can be a good idea to load individual functions
-from a given package, but not the package itself. This can be done using
-the syntax: <code>&lt;package&gt;::&lt;function&gt;</code>.</p>
-<p>For instance, if we want to use the function <code>filter</code> from
-the package <code>dplyr</code> we can call it directly as:</p>
-<div class="codewrapper sourceCode" id="cb2">
+<div class="codewrapper sourceCode" id="cb4">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu">dplyr</span><span class="fu">::</span><span class="fu">filter</span><span class="op">(</span><span class="op">)</span></span></code></pre>
+<code class="sourceCode R"><span><span class="fu">devtools</span><span class="fu">::</span><span class="fu">install_github</span><span class="op">(</span><span class="st">"Lchiffon/wordcloud2"</span><span class="op">)</span></span>
+<span><span class="fu">devtools</span><span class="fu">::</span><span class="fu">install_gitlab</span><span class="op">(</span><span class="st">"r-packages/psyverse"</span><span class="op">)</span></span></code></pre>
 </div>
-<p>Keep in mind that for this to work, <code>dplyr</code> has to be
-installed.</p>
-<div id="to-attach-or-not-to-attach" class="callout challenge">
+<p>or</p>
+<div class="codewrapper sourceCode" id="cb5">
+<h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu">devtools</span><span class="fu">::</span><span class="fu">install_git</span><span class="op">(</span><span class="st">"https://github.com/Lchiffon/wordcloud2"</span><span class="op">)</span> </span>
+<span><span class="fu">devtools</span><span class="fu">::</span><span class="fu">install_git</span><span class="op">(</span><span class="st">"https://gitlab.com/r-packages/psyverse"</span><span class="op">)</span> </span></code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="why-would-you-want-to-install-a-package-from-github" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
-<div id="to-attach-or-not-to-attach" class="callout-inner">
-<h3 class="callout-title">To attach or not to attach?<a class="anchor" aria-label="anchor" href="#to-attach-or-not-to-attach"></a>
+<div id="why-would-you-want-to-install-a-package-from-github" class="callout-inner">
+<h3 class="callout-title">Why would you want to install a package from
+GitHub?<a class="anchor" aria-label="anchor" href="#why-would-you-want-to-install-a-package-from-github"></a>
 </h3>
 <div class="callout-content">
-<p>If you are developing a package that depends on other packages,
-you’ll need to call functions from other packages. These functions will
-be used in the functions of your own package. When you do this, it is
-strongly recommended to call functions from the other packages using the
-syntax <code>&lt;package&gt;::&lt;function&gt;</code>. Conversely, it is
-strongly advised to not use <code>library(&lt;package&gt;)</code> inside
-a package.</p>
-<p>Do you have any idea why?</p>
+<p>Can you think of a situation where you would rather install from
+GitHub than from CRAN?</p>
 </div>
 </div>
 </div>
@@ -768,152 +785,59 @@ a package.</p>
 </button>
 <div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
-<p>The dependencies of a package can become tricky. A common problem is
-that two packages may contain two functions with the same name. The more
-explicit the naming, the better.</p>
-<p>Additionally, we have to keep our potential users in mind. We want
-our package to do its work and leave no trace behind. Using
-<code>library(&lt;package&gt;)</code> inside the package will attach the
-package without you realizing. And when you’re finished with your
-function, the package will still be attached.</p>
-<p>We’ll learn more about packages that depend on other packages in the
-episode <a href="dependencies.html">Dependencies</a>).</p>
-</div>
-</div>
-</div>
-</div>
-</section><section id="install-a-package-from-github"><h2 class="section-heading">Install a package from GitHub<a class="anchor" aria-label="anchor" href="#install-a-package-from-github"></a>
-</h2>
-<hr class="half-width">
-<p>Although CRAN is the official repository for R packages, it is not
-the only one you can use. A very interesting alternative is <a href="https://github.com" class="external-link">GitHub</a>, the most popular open code
-repository. We can use GitHub to find packages or to make our own
-packages publicly available. Contrary to CRAN, packages in GitHub are
-not reviewed. This has an advantage: you can have your package published
-there immediately.</p>
-<div id="find-a-package-on-github-bitbucket-or-gitlab-and-install-it-with-devtools" class="callout challenge">
-<div class="callout-square">
-<i class="callout-icon" data-feather="zap"></i>
-</div>
-<div id="find-a-package-on-github-bitbucket-or-gitlab-and-install-it-with-devtools" class="callout-inner">
-<h3 class="callout-title">Find a package on github, bitbucket, or gitlab
-and install it with devtools<a class="anchor" aria-label="anchor" href="#find-a-package-on-github-bitbucket-or-gitlab-and-install-it-with-devtools"></a>
-</h3>
-<div class="callout-content">
-<p>If you have trouble finding a package, try <a href="https://github.com/PabRod/kinematics" class="external-link">github.com/PabRod/kinematics</a>.</p>
-<p>If you know how to install from GitHub already, try a package from
-GitLab. For instance, try <a href="https://gitlab.com/r-packages/psyverse" class="external-link">gitlab.com/r-packages/psyverse</a>.</p>
-</div>
-</div>
-</div>
-<div id="accordionSolution3" class="accordion challenge-accordion accordion-flush">
-<div class="accordion-item">
-<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution3" aria-expanded="false" aria-controls="collapseSolution3">
-  <h4 class="accordion-header" id="headingSolution3">
-  Show me the solution
-  </h4>
-</button>
-<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
-<div class="accordion-body">
-<pre><code><span><span class="fu">devtools</span><span class="fu">::</span><span class="fu">install_github</span><span class="op">(</span><span class="st">"PabRod/kinematics"</span><span class="op">)</span></span>
-<span><span class="fu">devtools</span><span class="fu">::</span><span class="fu">install_gitlab</span><span class="op">(</span><span class="st">"r-packages/psyverse"</span><span class="op">)</span></span>
-<span></span>
-<span><span class="co"># or</span></span>
-<span></span>
-<span><span class="fu">devtools</span><span class="fu">::</span><span class="fu">install_git</span><span class="op">(</span><span class="st">"https://gitlab.com/r-packages/psyverse"</span><span class="op">)</span> </span></code></pre>
-</div>
-</div>
-</div>
-</div>
-<p>Learning how to publish your package on GitHub is out of the scope of
-the present course. But, if you are interested, we encourage you to take
-the course on <a href="https://swcarpentry.github.io/git-novice/" class="external-link">Version control with
-Git and GitHub</a> (note <a href="https://swcarpentry.github.io/git-novice/14-supplemental-rstudio/index.html" class="external-link">this
-supplemental on Git with Rstudio</a>), and this lesson chapter on <a href="https://carpentries-incubator.github.io/Reproducible-Publications-with-RStudio/10-github/index.html" class="external-link">Collaborating
-via Github</a>).</p>
-<div id="why-would-you-want-to-install-a-package-from-github" class="callout challenge">
-<div class="callout-square">
-<i class="callout-icon" data-feather="zap"></i>
-</div>
-<div id="why-would-you-want-to-install-a-package-from-github" class="callout-inner">
-<h3 class="callout-title">Why would you want to install a package from
-GitHub?<a class="anchor" aria-label="anchor" href="#why-would-you-want-to-install-a-package-from-github"></a>
-</h3>
-<div class="callout-content">
-<p>Can you think of a situation where you’ll rather install from GitHub
-than from CRAN?</p>
-</div>
-</div>
-</div>
-<div id="accordionSolution4" class="accordion challenge-accordion accordion-flush">
-<div class="accordion-item">
-<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution4" aria-expanded="false" aria-controls="collapseSolution4">
-  <h4 class="accordion-header" id="headingSolution4">
-  Show me the solution
-  </h4>
-</button>
-<div id="collapseSolution4" class="accordion-collapse collapse" aria-labelledby="headingSolution4" data-bs-parent="#accordionSolution4">
-<div class="accordion-body">
-<p>There are two common situations where you’ll want to use GitHub
+<p>There are two common situations where you would want to use GitHub
 instead of CRAN:</p>
 <p>The first and most obvious one is when <strong>the package you want
-doesn’t exist on CRAN</strong>. This can happen for many reasons. Maybe
-the package is still work in progress, or doesn’t pass the CRAN quality
-checklist. Or perhaps the authors just don’t want to publish it on
+does not exist on CRAN</strong>. This can happen for many reasons. Maybe
+the package is still work in progress, or does not pass the CRAN quality
+checklist. Or perhaps the authors just do not want to publish it on
 CRAN.</p>
 <p>The second situation is when <strong>you need a cutting edge version
 of the package</strong>. R developers usually use GitHub for their
-everyday work, and only apply to CRAN when they have accumulated changes
-enough. If you need a very particular version of the package, usually
-GitHub is the place to go.</p>
+everyday work, and only submit a new version to CRAN when they have
+accumulated enough changes. If you need a very particular version of the
+package, usually GitHub is the place to go.</p>
 </div>
 </div>
 </div>
 </div>
-</section><section id="install-a-package-from-source"><h2 class="section-heading">Install a package from source<a class="anchor" aria-label="anchor" href="#install-a-package-from-source"></a>
-</h2>
-<hr class="half-width">
-<p>What if the package is only available in your computer? This is the
-case of the one we are building during this lesson.</p>
-<p>The easiest way to install a package from source is by opening the
-package project and using the <em>Build</em> tab:</p>
-<figure><img src="../fig/install-and-restart.gif" alt="" class="figure mx-auto d-block"><figcaption>Build</figcaption></figure><p>By pressing <em>Install and restart</em> three things will
+</div>
+<div class="section level3">
+<h3 id="install-a-package-from-source">Install a package from source<a class="anchor" aria-label="anchor" href="#install-a-package-from-source"></a>
+</h3>
+<p>Finally, what if the package is only available on your computer?</p>
+<p>Here, too, <code>devtools</code> can be used. You can use
+<code>devtools::install_local()</code> to install a package from a zip
+file or a local directory.</p>
+<p>However, most likely you will need to install a local package because
+it is the one you are building yourself. This will be the case with the
+one we are building during this lesson.</p>
+<div id="accordionInstructor2" class="accordion instructor-note accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button instructor-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstructor2" aria-expanded="false" aria-controls="collapseInstructor2">
+  <h3 class="accordion-header" id="headingInstructor2">
+  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div>
+  Instructor Note
+  </h3>
+</button>
+<div id="collapseInstructor2" class="accordion-collapse collapse" aria-labelledby="headingInstructor2" data-bs-parent="#accordionInstructor2">
+<div class="accordion-body">
+<p>The local installation will be very easy to do once everyone has
+their first package set up. It is advised to wait with showing this
+workflow until this stage in the lesson: the chapter <a href="getting_started.html">Getting Started</a>.</p>
+</div>
+</div>
+</div>
+</div>
+<p>In this case, you can use the <em>Build</em> tab of your R
+project:</p>
+<figure><img src="../fig/install-and-restart.gif" alt="A moving image that shows a user clicking the Install and Restart button in Rstudio and starting the installation process" class="figure mx-auto d-block"><figcaption>Build</figcaption></figure><p>By pressing <em>Install and restart</em> three things will
 happen:</p>
 <ol style="list-style-type: decimal">
 <li>The package will be, indeed, installed.</li>
 <li>The R session will be restarted.</li>
 <li>The package will be attached.</li>
 </ol>
-<div id="why-would-you-want-to-load-a-package-from-source" class="callout challenge">
-<div class="callout-square">
-<i class="callout-icon" data-feather="zap"></i>
-</div>
-<div id="why-would-you-want-to-load-a-package-from-source" class="callout-inner">
-<h3 class="callout-title">Why would you want to load a package from
-source<a class="anchor" aria-label="anchor" href="#why-would-you-want-to-load-a-package-from-source"></a>
-</h3>
-<div class="callout-content">
-<p>Can you think of a situation where you’ll need to install and attach
-a package from source?</p>
-</div>
-</div>
-</div>
-<div id="accordionSolution5" class="accordion challenge-accordion accordion-flush">
-<div class="accordion-item">
-<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution5" aria-expanded="false" aria-controls="collapseSolution5">
-  <h4 class="accordion-header" id="headingSolution5">
-  Show me the solution
-  </h4>
-</button>
-<div id="collapseSolution5" class="accordion-collapse collapse" aria-labelledby="headingSolution5" data-bs-parent="#accordionSolution5">
-<div class="accordion-body">
-<p>The most common situation is while you are developing a package.
-Every now and then, you’ll want to re-install and re-attach it to check
-that everything is working as expected.</p>
-</div>
-</div>
-</div>
-</div>
 <div id="a-short-glossary" class="callout callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
@@ -939,22 +863,164 @@ in sequence.</p>
 </div>
 </div>
 </div>
-<div id="keypoints1" class="callout keypoints">
+</div>
+</section><section id="using-packages"><h2 class="section-heading">Using packages<a class="anchor" aria-label="anchor" href="#using-packages"></a>
+</h2>
+<hr class="half-width">
+<div class="section level3">
+<h3 id="attaching-a-package">Attaching a package<a class="anchor" aria-label="anchor" href="#attaching-a-package"></a>
+</h3>
+<p>If you have used packages before, you may know that in order to start
+using an installed package, you can load it into workspace. In
+<code>R</code> jargon this is known as <em>attaching</em> the package.
+This means that its functions and data will become available in your
+working session, so you can use them directly in your console and your
+scripts.</p>
+<p>We can attach an installed package with the function
+<code>library(&lt;package name&gt;)</code>. For example, after
+installing <code>devtools</code>, we can attach it to our workspace as
+follows:</p>
+<div class="codewrapper sourceCode" id="cb6">
+<h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="kw">library</span><span class="op">(</span><span class="va">devtools</span><span class="op">)</span></span></code></pre>
+</div>
+<p>From this moment on, all the functions in <code>devtools</code> are
+directly available, and we can refer to them by name. For example, the
+function <code>install_github()</code> inside the package, can be called
+directly with its name:</p>
+<div class="codewrapper sourceCode" id="cb7">
+<h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu">install_github</span><span class="op">(</span><span class="op">)</span></span></code></pre>
+</div>
+</div>
+</section><section id="using-a-function-without-attaching-the-package"><h2 class="section-heading">Using a function without attaching the package<a class="anchor" aria-label="anchor" href="#using-a-function-without-attaching-the-package"></a>
+</h2>
+<hr class="half-width">
+<p>Another way to use functions from installed packages, is with the
+syntax: <code>&lt;package&gt;::&lt;function&gt;</code>.</p>
+<p>For instance, if we want to use the function
+<code>install_github</code> from the package <code>devtools</code> we
+can call it directly as:</p>
+<div class="codewrapper sourceCode" id="cb8">
+<h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu">devtools</span><span class="fu">::</span><span class="fu">install_github</span><span class="op">(</span><span class="op">)</span></span></code></pre>
+</div>
+<p>This way, you make sure that there is no confusion between functions
+with the same name from different packages.</p>
+<div id="callout4" class="callout callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<div class="callout-inner">
+<h3 class="callout-title">Callout<a class="anchor" aria-label="anchor" href="#callout4"></a>
+</h3>
+<div class="callout-content">
+<p>Have you ever gotten an error because you wanted to use
+<code>filter()</code> from the <code>dplyr</code> package, but because
+the <code>dplyr</code> package was not attached, R used the
+<code>filter()</code> function from <code>stats</code> instead?</p>
+<p>(I have!)</p>
+<p>That would not have happened had I used <code>dplyr::filter()</code>
+directly!</p>
+</div>
+</div>
+</div>
+<div id="to-attach-or-not-to-attach" class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<div id="to-attach-or-not-to-attach" class="callout-inner">
+<h3 class="callout-title">To attach or not to attach?<a class="anchor" aria-label="anchor" href="#to-attach-or-not-to-attach"></a>
+</h3>
+<div class="callout-content">
+<p>If you are developing a package that depends on other packages, you
+will probably need to call functions from other packages. These
+functions will be used in the functions of your own package. When you do
+this, you should call functions from the other packages using the syntax
+<code>&lt;package&gt;::&lt;function&gt;</code>, and <em>not</em> by
+using <code>library(&lt;package&gt;)</code> inside a package.</p>
+<p>Do you have any idea why?</p>
+</div>
+</div>
+</div>
+<div id="accordionSolution3" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution3" aria-expanded="false" aria-controls="collapseSolution3">
+  <h4 class="accordion-header" id="headingSolution3">
+  Show me the solution
+  </h4>
+</button>
+<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
+<div class="accordion-body">
+<p>We want our package to do its work and leave no trace behind. Using
+<code>library(&lt;package&gt;)</code> somewhere inside the package will
+attach the package without the user realizing. Suddenly, additional
+functions are available to their workspace, and this may have unintended
+consequences.</p>
+<p>Additionally, a common problem is that two packages may contain two
+functions with the same name. Explicitly naming the package when calling
+the function prevents this confusion, and it ensures that the right
+function is used.</p>
+</div>
+</div>
+</div>
+</div>
+<div id="callout5" class="callout callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<div class="callout-inner">
+<div class="section level3 callout-title">
+<h3 class="callout-title" id="out-of-scope-publishing-your-own-package">Out of scope: publishing your own package<a class="anchor" aria-label="anchor" href="#out-of-scope-publishing-your-own-package"></a>
+</h3>
+</div>
+<div class="callout-content">
+<div class="section level3">
+<h3 id="distributing-your-package-on-github">Distributing your package on GitHub<a class="anchor" aria-label="anchor" href="#distributing-your-package-on-github"></a>
+</h3>
+<p>After you have set up your package, you can share it online in a
+public repository such as GitHub. GitHub and Rstudio work well together
+with the version control system Git. While this is out of the scope of
+the present course, if you are interested, we encourage you to take the
+course on <a href="https://swcarpentry.github.io/git-novice/" class="external-link">Version
+control with Git and GitHub</a> (note <a href="https://swcarpentry.github.io/git-novice/14-supplemental-rstudio/index.html" class="external-link">this
+supplemental on Git with Rstudio</a>), and this lesson chapter on <a href="https://carpentries-incubator.github.io/Reproducible-Publications-with-RStudio/10-github/index.html" class="external-link">Collaborating
+via Github</a>).</p>
+</div>
+<div class="section level3">
+<h3 id="can-i-publish-my-package-on-cran">Can I publish my package on CRAN?<a class="anchor" aria-label="anchor" href="#can-i-publish-my-package-on-cran"></a>
+</h3>
+<p>Most developers of CRAN packages are R users just like you and me. If
+you have a package you are proud of, and you think it may be useful for
+someone else, consider <a href="https://cran.r-project.org/web/packages/submission_checklist.html" class="external-link">submitting
+it</a>.</p>
+</div>
+</div>
+</div>
+</div>
+<div id="something-went-wrong" class="callout keypoints">
 <div class="callout-square">
 <i class="callout-icon" data-feather="key"></i>
 </div>
 <div class="callout-inner">
-<h3 class="callout-title">Keypoints<a class="anchor" aria-label="anchor" href="#keypoints1"></a>
+<h3 class="callout-title">Keypoints<a class="anchor" aria-label="anchor" href="#callout5"></a>
 </h3>
 <div class="callout-content">
 <ul>
-<li>To use a package you have to install and attach it</li>
+<li>To use a package you have to install it</li>
+<li>There are several ways of installing a package</li>
 <li>To use a homemade package, you also have to build it</li>
 <li>The build, install and attach process is usually automated by
 RStudio</li>
-<li>There are several ways of installing a package</li>
-<li>The best way of installing packages is dependent on the developer
-and user needs</li>
+<li>Functions used inside your package are best referred to with their
+full name: <code>&lt;package&gt;::&lt;function&gt;()</code>
+</li>
 </ul>
 </div>
 </div>
@@ -965,7 +1031,7 @@ any links that you are not going to use.
  -->
 </section></section><section id="aio-getting_started"><p>Content from <a href="getting_started.html">Getting started</a></p>
 <hr>
-<p> Last updated on 2023-09-12 | 
+<p> Last updated on 2023-09-13 | 
         
         <a href="https://github.com/carpentries-incubator/lesson-R-packaging/edit/main/episodes/getting_started.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time <i aria-hidden="true" data-feather="clock"></i> 25 minutes </p>
@@ -1235,7 +1301,7 @@ any links that you are not going to use.
  -->
 </section></section><section id="aio-functions"><p>Content from <a href="functions.html">Writing our own functions</a></p>
 <hr>
-<p> Last updated on 2023-09-12 | 
+<p> Last updated on 2023-09-13 | 
         
         <a href="https://github.com/carpentries-incubator/lesson-R-packaging/edit/main/episodes/functions.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time <i aria-hidden="true" data-feather="clock"></i> 30 minutes </p>
@@ -1494,7 +1560,7 @@ any links that you are not going to use.
 </div>
 </section></section><section id="aio-licenses"><p>Content from <a href="licenses.html">Licenses</a></p>
 <hr>
-<p> Last updated on 2023-09-12 | 
+<p> Last updated on 2023-09-13 | 
         
         <a href="https://github.com/carpentries-incubator/lesson-R-packaging/edit/main/episodes/licenses.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time <i aria-hidden="true" data-feather="clock"></i> 25 minutes </p>
@@ -1697,7 +1763,7 @@ any links that you are not going to use.
  -->
 </section></section><section id="aio-testing"><p>Content from <a href="testing.html">Testing</a></p>
 <hr>
-<p> Last updated on 2023-09-12 | 
+<p> Last updated on 2023-09-13 | 
         
         <a href="https://github.com/carpentries-incubator/lesson-R-packaging/edit/main/episodes/testing.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time <i aria-hidden="true" data-feather="clock"></i> 90 minutes </p>
@@ -1819,7 +1885,7 @@ needed).</p>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <p>The command above took care of all the folder structure regarding
 tests. It also printed some useful information on the console:</p>
@@ -1871,7 +1937,7 @@ equivalent?</p>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 <p>When we are developing a package, we’d like to keep our working space
 as clean and isolated as possible. The first, recommended snippet, is
@@ -1973,7 +2039,7 @@ test.</p>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
 <div class="accordion-body">
 <p>The first argument to <code>test_that</code> is simply the name of
 your test, that you choose. Beyond that, the test is checking that 2
@@ -2078,7 +2144,7 @@ did at the beginning of this episode. What differences do you see?</p>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution4" class="accordion-collapse collapse" data-bs-parent="#accordionSolution4" aria-labelledby="headingSolution4">
+<div id="collapseSolution4" class="accordion-collapse collapse" aria-labelledby="headingSolution4" data-bs-parent="#accordionSolution4">
 <div class="accordion-body">
 <p>There are two main differences.</p>
 <p>One is small: we don’t have to attach the library. The file
@@ -2117,7 +2183,7 @@ in handy.</p>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution5" class="accordion-collapse collapse" data-bs-parent="#accordionSolution5" aria-labelledby="headingSolution5">
+<div id="collapseSolution5" class="accordion-collapse collapse" aria-labelledby="headingSolution5" data-bs-parent="#accordionSolution5">
 <div class="accordion-body">
 <p>The new test should look similar to:</p>
 <div class="codewrapper sourceCode" id="cb15">
@@ -2239,7 +2305,7 @@ it, don’t delete it.</p>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution6" class="accordion-collapse collapse" data-bs-parent="#accordionSolution6" aria-labelledby="headingSolution6">
+<div id="collapseSolution6" class="accordion-collapse collapse" aria-labelledby="headingSolution6" data-bs-parent="#accordionSolution6">
 <div class="accordion-body">
 <p>We can add a seventh, annoying and troublemaking character, to our
 list. The test will look as below. Note that we gave this test a
@@ -2339,7 +2405,7 @@ effort than just running them interactively in the console.</p>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution7" class="accordion-collapse collapse" data-bs-parent="#accordionSolution7" aria-labelledby="headingSolution7">
+<div id="collapseSolution7" class="accordion-collapse collapse" aria-labelledby="headingSolution7" data-bs-parent="#accordionSolution7">
 <div class="accordion-body">
 <p>There are several reasons why storing your tests is a good idea. Some
 of them are:</p>
@@ -2432,7 +2498,7 @@ instead? When would you test, and when would you check?</p>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution8" class="accordion-collapse collapse" data-bs-parent="#accordionSolution8" aria-labelledby="headingSolution8">
+<div id="collapseSolution8" class="accordion-collapse collapse" aria-labelledby="headingSolution8" data-bs-parent="#accordionSolution8">
 <div class="accordion-body">
 <p>Checking is usually significantly slower than testing. For small
 changes in the code, it is usually a good idea to test. For larger
@@ -2465,7 +2531,7 @@ any links that you are not going to use.
  -->
 </section></section><section id="aio-dependencies"><p>Content from <a href="dependencies.html">Managing dependencies</a></p>
 <hr>
-<p> Last updated on 2023-09-12 | 
+<p> Last updated on 2023-09-13 | 
         
         <a href="https://github.com/carpentries-incubator/lesson-R-packaging/edit/main/episodes/dependencies.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time <i aria-hidden="true" data-feather="clock"></i> 20 minutes </p>
@@ -2594,7 +2660,7 @@ to add:</p>
   Give me a hint
   </h4>
 </button>
-<div id="collapseHint1" class="accordion-collapse collapse" aria-labelledby="headingHint1" data-bs-parent="#accordionHint1">
+<div id="collapseHint1" class="accordion-collapse collapse" data-bs-parent="#accordionHint1" aria-labelledby="headingHint1">
 <div class="accordion-body">
 <p>Tip: take a look at the help menu of
 <code>usethis::use_package()</code>.</p>
@@ -2609,7 +2675,7 @@ to add:</p>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <p>We can add the new dependencies by:</p>
 <pre><code><span><span class="fu">usethis</span><span class="fu">::</span><span class="fu">use_package</span><span class="op">(</span><span class="st">"knitr"</span>, type <span class="op">=</span> <span class="st">"Imports"</span><span class="op">)</span></span>
@@ -2699,7 +2765,7 @@ to see if you were successful.</p>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <p>From running <code>devtools::check()</code> we get:</p>
 <div class="codewrapper">
@@ -2736,7 +2802,7 @@ any links that you are not going to use.
  -->
 </section></section><section id="aio-documentation"><p>Content from <a href="documentation.html">Documenting your package</a></p>
 <hr>
-<p> Last updated on 2023-09-12 | 
+<p> Last updated on 2023-09-13 | 
         
         <a href="https://github.com/carpentries-incubator/lesson-R-packaging/edit/main/episodes/documentation.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time <i aria-hidden="true" data-feather="clock"></i> 60 minutes </p>
@@ -2927,7 +2993,7 @@ particular:</p>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <p>The documentation should look approximately like this:</p>
 <div class="codewrapper sourceCode" id="cb1">
@@ -2983,7 +3049,7 @@ idea?</p>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <p>Sometimes packages use auxiliary functions that perform intermediate
 operations. Writing functions for these operations can be very useful
@@ -3025,7 +3091,7 @@ Can you open it and describe what do you see? What does it mean?</p>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
 <div class="accordion-body">
 <p>The <code>NAMESPACE</code> file should look like:</p>
 <div class="codewrapper sourceCode" id="cb2">
@@ -3082,7 +3148,7 @@ any links that you are not going to use.
  -->
 </section></section><section id="aio-data"><p>Content from <a href="data.html">Data</a></p>
 <hr>
-<p> Last updated on 2023-09-12 | 
+<p> Last updated on 2023-09-13 | 
         
         <a href="https://github.com/carpentries-incubator/lesson-R-packaging/edit/main/episodes/data.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time <i aria-hidden="true" data-feather="clock"></i> 60 minutes </p>
@@ -3183,7 +3249,7 @@ it do? Does it require any further action from our side?</p>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <p>It provides a very informative output. Probably you’ll see something
 like this:</p>
@@ -3277,7 +3343,7 @@ not have the <code>.rda</code> or <code>.RData</code> extensions?</p>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <p>Having files without the <em>R</em> extensions is useful when one of
 the main purposes of the package is to read external files. For
@@ -3301,7 +3367,7 @@ below summarizes the most common cases:</p>
   Instructor Note
   </h3>
 </button>
-<div id="collapseInstructor1" class="accordion-collapse collapse" aria-labelledby="headingInstructor1" data-bs-parent="#accordionInstructor1">
+<div id="collapseInstructor1" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor1" aria-labelledby="headingInstructor1">
 <div class="accordion-body">
 <p>The diagram was created with mermaid. This is the original code:</p>
 <pre class="mermaid"><code>flowchart LR
@@ -3342,7 +3408,7 @@ any links that you are not going to use.
  -->
 </section></section><section id="aio-vignettes"><p>Content from <a href="vignettes.html">Vignettes</a></p>
 <hr>
-<p> Last updated on 2023-09-12 | 
+<p> Last updated on 2023-09-13 | 
         
         <a href="https://github.com/carpentries-incubator/lesson-R-packaging/edit/main/episodes/vignettes.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time <i aria-hidden="true" data-feather="clock"></i> 60 minutes </p>
@@ -3423,7 +3489,7 @@ stand out to you?</p>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <p>There are many things that can stand out about vignettes. Some things
 that may be mentioned:</p>
@@ -3608,7 +3674,7 @@ code chunk)</li>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <p>This is what I wrote. Of course, your text, and even your code, will
 most likely be different.</p>
@@ -3672,7 +3738,7 @@ most likely be different.</p>
   Instructor Note
   </h3>
 </button>
-<div id="collapseInstructor1" class="accordion-collapse collapse" aria-labelledby="headingInstructor1" data-bs-parent="#accordionInstructor1">
+<div id="collapseInstructor1" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor1" aria-labelledby="headingInstructor1">
 <div class="accordion-body">
 <p>In the solution above, the line <code>library(mysterycoffee)</code>
 is commented out. This is a technical choice: due to the Carpentries
@@ -3824,8 +3890,8 @@ any links that you are not going to use.
   "url": "https://carpentries-incubator.github.io/lesson-R-packaging/instructor/aio.html",
   "identifier": "https://carpentries-incubator.github.io/lesson-R-packaging/instructor/aio.html",
   "dateCreated": "2021-02-19",
-  "dateModified": "2023-09-12",
-  "datePublished": "2023-09-12"
+  "dateModified": "2023-09-13",
+  "datePublished": "2023-09-13"
 }
 
   </script><script>

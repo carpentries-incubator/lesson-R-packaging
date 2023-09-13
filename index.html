@@ -138,20 +138,12 @@
                   <div class="accordion accordion-flush" id="accordionFlushcurrent">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-headingcurrent">
-      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsecurrent" aria-expanded="true" aria-controls="flush-collapsecurrent">
         <span class="visually-hidden">Current Chapter</span>
         <span class="current-chapter">
         Summary and Setup
         </span>
-      </button>
+      
     </div><!--/div.accordion-header-->
-        
-    <div id="flush-collapsecurrent" class="accordion-collapse collapse show" aria-labelledby="flush-headingcurrent" data-bs-parent="#accordionFlushcurrent">
-      <div class="accordion-body">
-        <ul><li><a href="#required-software">Required software</a></li>
-<li><a href="#required-r-packages">Required R Packages</a></li>
-        </ul></div><!--/div.accordion-body-->
-    </div><!--/div.accordion-collapse-->
         
   </div><!--/div.accordion-item-->
 </div><!--/div.accordion-flush-->
@@ -297,46 +289,48 @@
       <hr></nav><main id="main-content" class="main-content"><h1 class="schedule-heading">Summary and Setup</h1>
       
 
-<p>Chances are that you <strong>used</strong> <em>R</em> packages before
-but, did you know you can <strong>write</strong> your own? Even more,
-did you know that this can be a brilliant idea? Packaging helps you
-creating a more robust, more reproducible and more enjoyable scientific
-coding experience. And who knows?, perhaps you’ll see your package
-published in <em>CRAN</em> one day!</p>
+<p>Chances are that you <strong>used</strong> <em>R</em> packages
+before, but did you know you can <strong>write</strong> your own?
+Moreover, did you know that this can be a brilliant idea? Packaging
+helps you creating a more robust, more reproducible, and more enjoyable
+scientific coding experience. And by contributing a package, you will
+add to the ever growing capabilities of the R language!</p>
 <p>This workshop will provide you with the basics for writing your own
 packages in R.</p>
-<p>R packages are no more and no less than a standard way of structuring
-your work. You’ll have a folder for code, a folder for tests, a folder
-for data, a folder for documents, and so on. The standardization makes
-packages easily installable and shareable.</p>
+<p>R packages are first and foremost a standard way of structuring your
+work. You have a folder for code, a folder for tests, a folder for data,
+a folder for documents, and so on. The standardization makes packages
+easily installable and shareable.</p>
 <p>Even if you are not planning to publish your package, structuring
-your research as one is also a very good idea. It enforces, in a
-relatively effortless manner, the implementation of software development
-best practices. This will lead to a safer, more robust, more manageable
-and more enjoyable working experience.</p>
+your work as one is also a very good idea. It enforces, in a relatively
+effortless manner, the implementation of software development best
+practices. This will lead to a safer and more robust working experience,
+and result in more accurate and reproducible work.</p>
 <div class="section level3">
 <h3 id="syllabus">Syllabus<a class="anchor" aria-label="anchor" href="#syllabus"></a></h3>
 <p>In this lesson you will find episodes on:</p>
-<ul><li>Introduction to packages</li>
-<li>Setup of a package</li>
-<li>Installing packages</li>
-<li>Testing packages</li>
-<li>Documenting packages</li>
-<li>Writing vignettes</li>
-</ul><div id="prerequisites" class="callout callout">
+<ul><li>Installing packages</li>
+<li>Setting up your first package</li>
+<li>Testing code</li>
+<li>Adding data to a package</li>
+<li>Managing dependencies</li>
+<li>Writing documentation and vignettes</li>
+</ul><div id="prerequisites" class="callout prereq">
 <div class="callout-square">
-<i class="callout-icon" data-feather="bell"></i>
+<i class="callout-icon" data-feather="check"></i>
 </div>
 <div id="prerequisites" class="callout-inner">
 <h3 class="callout-title">Prerequisites<a class="anchor" aria-label="anchor" href="#prerequisites"></a>
 </h3>
 <div class="callout-content">
-<p>In order to follow this lesson you will need:</p>
-<ul><li>To be able to understand simple <code>R</code> code.</li>
-<li>To understand the concept of an <code>R</code> function.</li>
-</ul><p>In case you are not familiar with the abovementioned topics, please
-follow first one of <a href="https://swcarpentry.github.io/r-novice-inflammation/" class="external-link">our lessons
-about R</a>.</p>
+<p>In order to follow this lesson you will need to:</p>
+<ul><li>be able to understand simple <code>R</code> code,</li>
+<li>understand the concept of an <code>R</code> function.</li>
+</ul><p>In case you are not familiar with these topics, please follow one of
+<a href="https://swcarpentry.github.io/r-novice-inflammation/" class="external-link">our
+lessons about R</a>.</p>
+<p>For a refresher on R functions, head to <a href="https://swcarpentry.github.io/r-novice-inflammation/02-func-R/index.html" class="external-link">this
+episode specifically</a>.</p>
 </div>
 </div>
 </div>
@@ -347,9 +341,15 @@ any links that you are not going to use.
 </div>
 
 
-      <section id="setup"><section id="required-software"><h2 class="section-heading">Required software<a class="anchor" aria-label="anchor" href="#required-software"></a>
-</h2>
-<hr class="half-width"><p>This lesson assumes you have reasonably up-to-date versions of the
+      <section id="setup"><div id="required-software" class="callout checklist">
+<div class="callout-square">
+<i class="callout-icon" data-feather="check-square"></i>
+</div>
+<div id="required-software" class="callout-inner">
+<h3 class="callout-title">Required software<a class="anchor" aria-label="anchor" href="#required-software"></a>
+</h3>
+<div class="callout-content">
+<p>This lesson assumes you have reasonably up-to-date versions of the
 following software installed on your computer:</p>
 <ul><li>the <a href="https://cran.r-project.org/mirrors.html" class="external-link">R software</a>
 itself,</li>
@@ -359,9 +359,18 @@ Desktop</a>,</li>
 <li>
 <a href="https://cran.r-project.org/bin/windows/Rtools/" class="external-link">Rtools</a>
 (Windows users only).</li>
-</ul></section><section id="required-r-packages"><h2 class="section-heading">Required R Packages<a class="anchor" aria-label="anchor" href="#required-r-packages"></a>
-</h2>
-<hr class="half-width"><p>You will also need to install the following R packages:</p>
+</ul></div>
+</div>
+</div>
+<div id="required-r-packages" class="callout checklist">
+<div class="callout-square">
+<i class="callout-icon" data-feather="check-square"></i>
+</div>
+<div id="required-r-packages" class="callout-inner">
+<h3 class="callout-title">Required R packages<a class="anchor" aria-label="anchor" href="#required-r-packages"></a>
+</h3>
+<div class="callout-content">
+<p>You will also need to install the following R packages:</p>
 <ul><li><code>devtools</code></li>
 <li><code>rmarkdown</code></li>
 <li><code>roxygen2</code></li>
@@ -373,11 +382,16 @@ console:</p>
 <pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu">install.packages</span><span class="op">(</span><span class="fu">c</span><span class="op">(</span><span class="st">"devtools"</span>, <span class="st">"rmarkdown"</span>, <span class="st">"roxygen2"</span><span class="op">)</span><span class="op">)</span></span></code></pre>
 </div>
+</div>
+</div>
+</div>
 <!-- 
 Place links that you need to refer to multiple times across pages here. Delete
 any links that you are not going to use. 
  -->
-</section></section></main><nav class="bottom-pagination mx-md-4" aria-label="Next Chapter"><!-- content for small screens --><div class="d-block d-sm-block d-md-none">
+
+
+      </section></main><nav class="bottom-pagination mx-md-4" aria-label="Next Chapter"><!-- content for small screens --><div class="d-block d-sm-block d-md-none">
         <a class="chapter-link float-end" href="introduction.html">Next<i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i></a>
       </div>
       <!-- content for large screens -->
@@ -427,8 +441,8 @@ any links that you are not going to use.
   "url": "https://carpentries-incubator.github.io/lesson-R-packaging/index.html",
   "identifier": "https://carpentries-incubator.github.io/lesson-R-packaging/index.html",
   "dateCreated": "2021-02-19",
-  "dateModified": "2023-09-12",
-  "datePublished": "2023-09-12"
+  "dateModified": "2023-09-13",
+  "datePublished": "2023-09-13"
 }
 
   </script><script>
