@@ -49,19 +49,11 @@ Suggests:
 The most important keywords to declare dependencies are:
 
 - `Suggests`: for **recommended** dependencies, such as the ones required for testing, creating vignettes (see [this episode](vignettes.Rmd)) or plotting.
-- `Imports`: for **mandatory** dependencies, that is, required for the basic functionality of the package.
+- `Imports`: for **mandatory** dependencies, that is, required for the basic functionality of the package. Such dependencies will be automatically installed along with the package you are developing.
 
 As we can see in our `DESCRIPTION` file, the last two lines already contain a dependency statement.
 Under the category `Suggests` we can see the package `testthat`.
 More specifically, we can see that a version equal or higher than `3.0.0` is suggested.
-
-::: callout
-## What do you mean mandatory?
-Please note that, even if we tag a dependency as **mandatory** using the `Imports` key, it will never be automatically installed by our new package.
-We have to do install it ourselves.
-What is then the use of tagging it as **mandatory**?
-That now our package is aware that the dependency **should be** installed, and it is going to throw an error if that's not the case.
-:::
 
 ::: challenge
 ## Add some dependencies
