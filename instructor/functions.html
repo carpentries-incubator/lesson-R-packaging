@@ -304,7 +304,7 @@
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Writing our own functions</h1>
-        <p>Last updated on 2024-02-27 |
+        <p>Last updated on 2024-03-05 |
         
         <a href="https://github.com/carpentries-incubator/lesson-R-packaging/edit/main/episodes/functions.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
         
@@ -428,32 +428,32 @@ to:</p>
 <div class="codewrapper sourceCode" id="cb1">
 <h3 class="code-label">TXT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode txt" tabindex="0"><code class="sourceCode default"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>Package: mysterycoffee</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>Type: Package</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>Title: Simulation of random encounters between couples of persons</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>Version: 0.1.0</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>Author: Pablo Rodriguez-Sanchez</span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>Maintainer: Pablo Rodriguez-Sanchez &lt;p.rodriguez-sanchez@esciencecenter.nl</span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>Description: Simulates random encounters between couples of persons</span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>    This package was inspired by the need to mitigate social isolation in remote </span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>    working environments. The idea is to simulate random encounters at the office's</span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>    coffee machine... when there is no such an office.</span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>License: What license is it under?</span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>Encoding: UTF-8</span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>LazyData: true</span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>RoxygenNote: 7.1.1</span></code></pre>
+<pre class="sourceCode txt" tabindex="0"><code class="sourceCode default"><span id="cb1-1"><a href="#cb1-1" tabindex="-1"></a>Package: mysterycoffee</span>
+<span id="cb1-2"><a href="#cb1-2" tabindex="-1"></a>Type: Package</span>
+<span id="cb1-3"><a href="#cb1-3" tabindex="-1"></a>Title: Simulation of random encounters between couples of persons</span>
+<span id="cb1-4"><a href="#cb1-4" tabindex="-1"></a>Version: 0.1.0</span>
+<span id="cb1-5"><a href="#cb1-5" tabindex="-1"></a>Author: Pablo Rodriguez-Sanchez</span>
+<span id="cb1-6"><a href="#cb1-6" tabindex="-1"></a>Maintainer: Pablo Rodriguez-Sanchez &lt;p.rodriguez-sanchez@esciencecenter.nl</span>
+<span id="cb1-7"><a href="#cb1-7" tabindex="-1"></a>Description: Simulates random encounters between couples of persons</span>
+<span id="cb1-8"><a href="#cb1-8" tabindex="-1"></a>    This package was inspired by the need to mitigate social isolation in remote </span>
+<span id="cb1-9"><a href="#cb1-9" tabindex="-1"></a>    working environments. The idea is to simulate random encounters at the office's</span>
+<span id="cb1-10"><a href="#cb1-10" tabindex="-1"></a>    coffee machine... when there is no such an office.</span>
+<span id="cb1-11"><a href="#cb1-11" tabindex="-1"></a>License: What license is it under?</span>
+<span id="cb1-12"><a href="#cb1-12" tabindex="-1"></a>Encoding: UTF-8</span>
+<span id="cb1-13"><a href="#cb1-13" tabindex="-1"></a>LazyData: true</span>
+<span id="cb1-14"><a href="#cb1-14" tabindex="-1"></a>RoxygenNote: 7.1.1</span></code></pre>
 </div>
 </div>
 </div>
 </div>
 </div>
-<div id="more-on-description" class="callout callout">
+<div id="callout1" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div id="more-on-description" class="callout-inner">
-<h3 class="callout-title">More on<code>DESCRIPTION</code><a class="anchor" aria-label="anchor" href="#more-on-description"></a>
-</h3>
+<div class="section level3 callout-title callout-inner">
+<h3 class="callout-title" id="more-on-description">More on <code>DESCRIPTION</code>
+<a class="anchor" aria-label="anchor" href="#more-on-description"></a></h3>
 <div class="callout-content">
 <p>In the previous exercise we deliberately ignored some of the fields
 in the <code>DESCRIPTION</code> file. Two of them are particularly
@@ -502,13 +502,12 @@ random grouping:</p>
 <p>Please, open an editor, copy the function above and save it as
 <code>R/functions.R</code>. All the functions of the package have to be
 in <code>R</code> files inside the <code>R/</code> folder.</p>
-<div id="on-the-art-of-being-tidy" class="callout callout">
+<div id="callout2" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div id="on-the-art-of-being-tidy" class="callout-inner">
-<h3 class="callout-title">On the art of being tidy<a class="anchor" aria-label="anchor" href="#on-the-art-of-being-tidy"></a>
-</h3>
+<div class="section level3 callout-title callout-inner">
+<h3 class="callout-title" id="on-the-art-of-being-tidy">On the art of being tidy<a class="anchor" aria-label="anchor" href="#on-the-art-of-being-tidy"></a></h3>
 <div class="callout-content">
 <p>So far, our package only has one function, and we have chosen a very
 boring name for the file where it is stored
@@ -608,8 +607,8 @@ any links that you are not going to use.
   "url": "https://carpentries-incubator.github.io/lesson-R-packaging/instructor/functions.html",
   "identifier": "https://carpentries-incubator.github.io/lesson-R-packaging/instructor/functions.html",
   "dateCreated": "2021-02-19",
-  "dateModified": "2024-02-27",
-  "datePublished": "2024-02-27"
+  "dateModified": "2024-03-05",
+  "datePublished": "2024-03-05"
 }
 
   </script><script>

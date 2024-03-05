@@ -307,7 +307,7 @@
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Documenting your package</h1>
-        <p>Last updated on 2024-02-27 |
+        <p>Last updated on 2024-03-05 |
         
         <a href="https://github.com/carpentries-incubator/lesson-R-packaging/edit/main/episodes/documentation.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
         
@@ -382,13 +382,12 @@ default README.md file.</p>
 </div>
 </div>
 </div>
-<div id="optional-readme-rendering" class="callout callout">
+<div id="callout1" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div id="optional-readme-rendering" class="callout-inner">
-<h3 class="callout-title">(Optional) Readme rendering<a class="anchor" aria-label="anchor" href="#optional-readme-rendering"></a>
-</h3>
+<div class="section level3 callout-title callout-inner">
+<h3 class="callout-title" id="optional-readme-rendering">(Optional) Readme rendering<a class="anchor" aria-label="anchor" href="#optional-readme-rendering"></a></h3>
 <div class="callout-content">
 <p>One of the advantages of having a <code>README.md</code> is that most
 code repositories render this file as a nicely-formatted reader-friendly
@@ -445,7 +444,8 @@ will appear: <img src="fig/roxygen-options.png" alt="Project options" class="fig
 the steps in the animation below. Please note that, before pressing
 <code>Code &gt; Insert Roxygen skeleton</code> your cursor has to be
 inside the function’s body.</p>
-<figure><img src="fig/roxygen-skeleton.gif" alt="" class="figure mx-auto d-block"><figcaption>Roxygen skeleton</figcaption></figure><p>Let’s take a look at the <em>skeleton</em>. It contains:</p>
+<figure><img src="fig/roxygen-skeleton.gif" alt="Roxygen skeleton" class="figure mx-auto d-block"><div class="figcaption">Roxygen skeleton</div>
+</figure><p>Let’s take a look at the <em>skeleton</em>. It contains:</p>
 <ul><li>A <code>Title</code> section, where you can write what your function
 does. You can use add more comment lines below for a long
 description.</li>
@@ -490,24 +490,24 @@ particular:</p>
 <div class="codewrapper sourceCode" id="cb1">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode r" tabindex="0"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">#' Make groups of 2 persons</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co">#'</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co">#' Randomly arranges a vector of names into a matrix with 2 columns and</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co">#' whatever number of columns is required</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co">#'</span></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="co">#' @param names The vector of names</span></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="co">#'</span></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="co">#' @return The re-arranged matrix of names</span></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="co">#' @export</span></span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="co">#'</span></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>make_groups <span class="ot">&lt;-</span> <span class="cf">function</span>(names) {</span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Shuffle the names</span></span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>  names_shuffled <span class="ot">&lt;-</span> <span class="fu">sample</span>(names)</span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Arrange it as a two-columns matrix</span></span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>  names_coupled <span class="ot">&lt;-</span> <span class="fu">matrix</span>(names, <span class="at">ncol =</span> <span class="dv">2</span>)</span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(names_coupled)</span></code></pre>
+<pre class="sourceCode r" tabindex="0"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" tabindex="-1"></a><span class="co">#' Make groups of 2 persons</span></span>
+<span id="cb1-2"><a href="#cb1-2" tabindex="-1"></a><span class="co">#'</span></span>
+<span id="cb1-3"><a href="#cb1-3" tabindex="-1"></a><span class="co">#' Randomly arranges a vector of names into a matrix with 2 columns and</span></span>
+<span id="cb1-4"><a href="#cb1-4" tabindex="-1"></a><span class="co">#' whatever number of columns is required</span></span>
+<span id="cb1-5"><a href="#cb1-5" tabindex="-1"></a><span class="co">#'</span></span>
+<span id="cb1-6"><a href="#cb1-6" tabindex="-1"></a><span class="co">#' @param names The vector of names</span></span>
+<span id="cb1-7"><a href="#cb1-7" tabindex="-1"></a><span class="co">#'</span></span>
+<span id="cb1-8"><a href="#cb1-8" tabindex="-1"></a><span class="co">#' @return The re-arranged matrix of names</span></span>
+<span id="cb1-9"><a href="#cb1-9" tabindex="-1"></a><span class="co">#' @export</span></span>
+<span id="cb1-10"><a href="#cb1-10" tabindex="-1"></a><span class="co">#'</span></span>
+<span id="cb1-11"><a href="#cb1-11" tabindex="-1"></a>make_groups <span class="ot">&lt;-</span> <span class="cf">function</span>(names) {</span>
+<span id="cb1-12"><a href="#cb1-12" tabindex="-1"></a>  <span class="co"># Shuffle the names</span></span>
+<span id="cb1-13"><a href="#cb1-13" tabindex="-1"></a>  names_shuffled <span class="ot">&lt;-</span> <span class="fu">sample</span>(names)</span>
+<span id="cb1-14"><a href="#cb1-14" tabindex="-1"></a></span>
+<span id="cb1-15"><a href="#cb1-15" tabindex="-1"></a>  <span class="co"># Arrange it as a two-columns matrix</span></span>
+<span id="cb1-16"><a href="#cb1-16" tabindex="-1"></a>  names_coupled <span class="ot">&lt;-</span> <span class="fu">matrix</span>(names, <span class="at">ncol =</span> <span class="dv">2</span>)</span>
+<span id="cb1-17"><a href="#cb1-17" tabindex="-1"></a></span>
+<span id="cb1-18"><a href="#cb1-18" tabindex="-1"></a>  <span class="fu">return</span>(names_coupled)</span></code></pre>
 </div>
 <p>Please note that the documentation is even longer than the code.
 There is nothing wrong about this, to the contrary. If you have to
@@ -559,7 +559,8 @@ documentation will be generated every time you press <em>“Install and
 restart”</em> in the <em>“Build”</em> menu at the upper right side of
 <code>RStudio</code>. The tab will also contain a <em>“Document”</em>
 only:</p>
-<figure><img src="fig/document.gif" alt="" class="figure mx-auto d-block"><figcaption>Document</figcaption></figure><div id="writing-the-namespace" class="callout challenge">
+<figure><img src="fig/document.gif" alt="Document" class="figure mx-auto d-block"><div class="figcaption">Document</div>
+</figure><div id="writing-the-namespace" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
@@ -583,9 +584,9 @@ Can you open it and describe what do you see? What does it mean?</p>
 <div class="codewrapper sourceCode" id="cb2">
 <h3 class="code-label">TXT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode txt" tabindex="0"><code class="sourceCode default"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a># Generated by roxygen2: do not edit by hand</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>export(make_groups)</span></code></pre>
+<pre class="sourceCode txt" tabindex="0"><code class="sourceCode default"><span id="cb2-1"><a href="#cb2-1" tabindex="-1"></a># Generated by roxygen2: do not edit by hand</span>
+<span id="cb2-2"><a href="#cb2-2" tabindex="-1"></a></span>
+<span id="cb2-3"><a href="#cb2-3" tabindex="-1"></a>export(make_groups)</span></code></pre>
 </div>
 <p>The <code>export</code> command guarantees that the function
 <code>make_groups</code> will be available for the final users of the
@@ -609,7 +610,8 @@ function we are interested in:</p>
 <code class="sourceCode R"><span><span class="op">?</span><span class="va">make_groups</span></span></code></pre>
 </div>
 <p>The help menu will open and show something like this:</p>
-<figure><img src="fig/help.png" alt="" class="figure mx-auto d-block"><figcaption>Help</figcaption></figure><div id="keypoints1" class="callout keypoints">
+<figure><img src="fig/help.png" alt="Help" class="figure mx-auto d-block"><div class="figcaption">Help</div>
+</figure><div id="keypoints1" class="callout keypoints">
 <div class="callout-square">
 <i class="callout-icon" data-feather="key"></i>
 </div>
@@ -687,8 +689,8 @@ any links that you are not going to use.
   "url": "https://carpentries-incubator.github.io/lesson-R-packaging/documentation.html",
   "identifier": "https://carpentries-incubator.github.io/lesson-R-packaging/documentation.html",
   "dateCreated": "2021-02-19",
-  "dateModified": "2024-02-27",
-  "datePublished": "2024-02-27"
+  "dateModified": "2024-03-05",
+  "datePublished": "2024-03-05"
 }
 
   </script><script>

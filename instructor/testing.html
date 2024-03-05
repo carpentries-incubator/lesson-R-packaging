@@ -312,7 +312,7 @@
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Testing</h1>
-        <p>Last updated on 2024-02-27 |
+        <p>Last updated on 2024-03-05 |
         
         <a href="https://github.com/carpentries-incubator/lesson-R-packaging/edit/main/episodes/testing.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
         
@@ -518,13 +518,12 @@ file <code>tests/testthat/test-&lt;name&gt;.R</code>. Our functions live
 in a file called <code>functions.R</code>, so choosing
 <code>functions</code> as the name for the tests file is a good
 idea.</p>
-<div id="callout1" class="callout callout">
+<div id="callout1" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div class="callout-inner">
-<h3 class="callout-title">Callout<a class="anchor" aria-label="anchor" href="#callout1"></a>
-</h3>
+<div class="section level3 callout-title callout-inner">
+<h3 class="callout-title">Callout</h3>
 <div class="callout-content">
 <p>Don’t forget that projects may grow, and in the future perhaps you’ll
 have several files containing different functions (for instance, one
@@ -603,20 +602,19 @@ multiplication are aligned.</p>
 </div>
 </div>
 </div>
-<div id="expectations-vs-results" class="callout callout">
+<div id="callout2" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div id="expectations-vs-results" class="callout-inner">
-<h3 class="callout-title">Expectations vs results<a class="anchor" aria-label="anchor" href="#expectations-vs-results"></a>
-</h3>
+<div class="section level3 callout-title callout-inner">
+<h3 class="callout-title" id="expectations-vs-results">Expectations vs results<a class="anchor" aria-label="anchor" href="#expectations-vs-results"></a></h3>
 <div class="callout-content">
 <p>Notice that the <em>assertions</em>, also known in R as <em>expect
 functions</em> often look like:</p>
 <div class="codewrapper sourceCode" id="cb11">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode r" tabindex="0"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">expect_equal</span>(<span class="sc">&lt;</span>actual result<span class="sc">&gt;</span>, <span class="sc">&lt;</span>expected result<span class="sc">&gt;</span>)</span></code></pre>
+<pre class="sourceCode r" tabindex="0"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" tabindex="-1"></a><span class="fu">expect_equal</span>(<span class="sc">&lt;</span>actual result<span class="sc">&gt;</span>, <span class="sc">&lt;</span>expected result<span class="sc">&gt;</span>)</span></code></pre>
 </div>
 <p>Where the actual result is obtained using software, and the expected
 result is provided via expert knowledge.</p>
@@ -624,9 +622,9 @@ result is provided via expert knowledge.</p>
 <div class="codewrapper sourceCode" id="cb12">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode r" tabindex="0"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="fu">expect_true</span>(<span class="sc">&lt;</span>statement we expect to be true<span class="sc">&gt;</span>)</span>
-<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="fu">expect_false</span>(<span class="sc">&lt;</span>statement we expect to be false<span class="sc">&gt;</span>)</span>
-<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a><span class="fu">expect_error</span>(<span class="sc">&lt;</span>code we expect to fail<span class="sc">&gt;</span>)</span></code></pre>
+<pre class="sourceCode r" tabindex="0"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" tabindex="-1"></a><span class="fu">expect_true</span>(<span class="sc">&lt;</span>statement we expect to be true<span class="sc">&gt;</span>)</span>
+<span id="cb12-2"><a href="#cb12-2" tabindex="-1"></a><span class="fu">expect_false</span>(<span class="sc">&lt;</span>statement we expect to be false<span class="sc">&gt;</span>)</span>
+<span id="cb12-3"><a href="#cb12-3" tabindex="-1"></a><span class="fu">expect_error</span>(<span class="sc">&lt;</span>code we expect to fail<span class="sc">&gt;</span>)</span></code></pre>
 </div>
 <p>Please refer to <a href="https://testthat.r-lib.org/reference/index.html" class="external-link"><code>testthat</code>
 documentation</a> for a thorough list of <em>expect functions</em>.</p>
@@ -742,7 +740,8 @@ in handy.</p>
 right corner. Just press <code>More Test package</code>. The menu will
 also show you the hotkey, typically
 <code>Ctrl / Cmd + Alt + T</code>.</p>
-<figure><img src="../fig/test.gif" alt="" class="figure mx-auto d-block"><figcaption>Test package</figcaption></figure><p>After the tests are performed, a handy summary table will be
+<figure><img src="../fig/test.gif" alt="Test package" class="figure mx-auto d-block"><div class="figcaption">Test package</div>
+</figure><p>After the tests are performed, a handy summary table will be
 displayed:</p>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -951,13 +950,12 @@ appears, the tests will help discovering it.</li>
 </div>
 </section><section id="some-caveats"><h2 class="section-heading">Some caveats<a class="anchor" aria-label="anchor" href="#some-caveats"></a>
 </h2>
-<hr class="half-width"><div id="testing-plotting-functions" class="callout callout">
+<hr class="half-width"><div id="callout3" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div id="testing-plotting-functions" class="callout-inner">
-<h3 class="callout-title">Testing plotting functions<a class="anchor" aria-label="anchor" href="#testing-plotting-functions"></a>
-</h3>
+<div class="section level3 callout-title callout-inner">
+<h3 class="callout-title" id="testing-plotting-functions">Testing plotting functions<a class="anchor" aria-label="anchor" href="#testing-plotting-functions"></a></h3>
 <div class="callout-content">
 <p>Very often, research packages contain plotting functions. The way to
 manually check that these functions work correctly is, usually, to
@@ -973,7 +971,8 @@ produces a plot object… even if nobody checks if it looks nice.</p>
 </h2>
 <hr class="half-width"><p>Also in the build tab there is a button with the text
 <code>Check</code> on it.</p>
-<figure><img src="../fig/check.gif" alt="" class="figure mx-auto d-block"><figcaption>Check package</figcaption></figure><p>This button can be understood as an extended version of testing. When
+<figure><img src="../fig/check.gif" alt="Check package" class="figure mx-auto d-block"><div class="figcaption">Check package</div>
+</figure><p>This button can be understood as an extended version of testing. When
 pressed, several things will happen:</p>
 <ul><li>It will attach the package.</li>
 <li>It will check that all dependencies are installed.</li>
@@ -981,13 +980,12 @@ pressed, several things will happen:</p>
 <li>It will perform the tests.</li>
 <li>And most importantly, it will show an error with a descriptive
 message if something failed.</li>
-</ul><div id="lets-check" class="callout callout">
+</ul><div id="callout4" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div id="lets-check" class="callout-inner">
-<h3 class="callout-title">Let’s check!<a class="anchor" aria-label="anchor" href="#lets-check"></a>
-</h3>
+<div class="section level3 callout-title callout-inner">
+<h3 class="callout-title" id="lets-check">Let’s check!<a class="anchor" aria-label="anchor" href="#lets-check"></a></h3>
 <div class="callout-content">
 <p>Press check, and discuss what happens.</p>
 <p>Do not worry at all if you get some warnings and errors. Actually,
@@ -1102,8 +1100,8 @@ any links that you are not going to use.
   "url": "https://carpentries-incubator.github.io/lesson-R-packaging/instructor/testing.html",
   "identifier": "https://carpentries-incubator.github.io/lesson-R-packaging/instructor/testing.html",
   "dateCreated": "2021-02-19",
-  "dateModified": "2024-02-27",
-  "datePublished": "2024-02-27"
+  "dateModified": "2024-03-05",
+  "datePublished": "2024-03-05"
 }
 
   </script><script>

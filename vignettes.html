@@ -307,7 +307,7 @@
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Vignettes</h1>
-        <p>Last updated on 2024-02-27 |
+        <p>Last updated on 2024-03-05 |
         
         <a href="https://github.com/carpentries-incubator/lesson-R-packaging/edit/main/episodes/vignettes.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
         
@@ -386,7 +386,7 @@ stand out to you?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1">Show me the solution</h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <p>There are many things that can stand out about vignettes. Some things
 that may be mentioned:</p>
@@ -408,13 +408,12 @@ you to provide context and instructions around the functionality you
 created. The resulting document would be a human readable website or a
 pdf file. The possible applications for this are endless. It can be a
 tutorial, a report, or even a scientific paper.</p>
-<div id="vignettes-as-research-reports" class="callout callout">
+<div id="callout1" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div id="vignettes-as-research-reports" class="callout-inner">
-<h3 class="callout-title">Vignettes as research reports<a class="anchor" aria-label="anchor" href="#vignettes-as-research-reports"></a>
-</h3>
+<div class="section level3 callout-title callout-inner">
+<h3 class="callout-title" id="vignettes-as-research-reports">Vignettes as research reports<a class="anchor" aria-label="anchor" href="#vignettes-as-research-reports"></a></h3>
 <div class="callout-content">
 <p>There are several reasons that make vignettes an excellent way to
 write up research.</p>
@@ -446,8 +445,8 @@ the last paragraph of the previous section.</p>
 <div class="codewrapper sourceCode" id="cb3">
 <h3 class="code-label">MARKDOWN<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode markdown" tabindex="0"><code class="sourceCode markdown"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>In <span class="in">`R`</span>, vignettes are typically written using <span class="in">`.Rmd`</span> (the extension of <span class="in">`Rmarkdown`</span>) files.</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>The name is self-descriptive: it is a file that combines **code** (in `R`) and **text** (in <span class="in">`markdown`</span>).</span></code></pre>
+<pre class="sourceCode markdown" tabindex="0"><code class="sourceCode markdown"><span id="cb3-1"><a href="#cb3-1" tabindex="-1"></a>In <span class="in">`R`</span>, vignettes are typically written using <span class="in">`.Rmd`</span> (the extension of <span class="in">`Rmarkdown`</span>) files.</span>
+<span id="cb3-2"><a href="#cb3-2" tabindex="-1"></a>The name is self-descriptive: it is a file that combines **code** (in `R`) and **text** (in <span class="in">`markdown`</span>).</span></code></pre>
 </div>
 <p>Learning Markdown is not complex, and there are lots of good <a href="https://www.markdownguide.org/cheat-sheet/" class="external-link">cheat sheets</a>
 available online.</p>
@@ -475,14 +474,14 @@ more information:</p>
 <div class="codewrapper sourceCode" id="cb5">
 <h3 class="code-label">YAML<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode yaml" tabindex="0"><code class="sourceCode yaml"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"Examples of usage"</span></span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="fu">output</span><span class="kw">:</span><span class="at"> rmarkdown::html_vignette</span></span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="fu">vignette</span><span class="kw">: </span><span class="ch">&gt;</span></span>
-<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>  %\VignetteIndexEntry{test}</span>
-<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>  %\VignetteEngine{knitr::rmarkdown}</span>
-<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>  %\VignetteEncoding{UTF-8}</span>
-<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span></code></pre>
+<pre class="sourceCode yaml" tabindex="0"><code class="sourceCode yaml"><span id="cb5-1"><a href="#cb5-1" tabindex="-1"></a><span class="pp">---</span></span>
+<span id="cb5-2"><a href="#cb5-2" tabindex="-1"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"Examples of usage"</span></span>
+<span id="cb5-3"><a href="#cb5-3" tabindex="-1"></a><span class="fu">output</span><span class="kw">:</span><span class="at"> rmarkdown::html_vignette</span></span>
+<span id="cb5-4"><a href="#cb5-4" tabindex="-1"></a><span class="fu">vignette</span><span class="kw">: </span><span class="ch">&gt;</span></span>
+<span id="cb5-5"><a href="#cb5-5" tabindex="-1"></a>  %\VignetteIndexEntry{test}</span>
+<span id="cb5-6"><a href="#cb5-6" tabindex="-1"></a>  %\VignetteEngine{knitr::rmarkdown}</span>
+<span id="cb5-7"><a href="#cb5-7" tabindex="-1"></a>  %\VignetteEncoding{UTF-8}</span>
+<span id="cb5-8"><a href="#cb5-8" tabindex="-1"></a><span class="pp">---</span></span></code></pre>
 </div>
 <p>Scrolling down, we see that there is some R code in our vignette
 already. This is fenced by so-called back-ticks: (<code>```</code>), as
@@ -490,9 +489,9 @@ well as information about the programming language used: R.</p>
 <div class="codewrapper sourceCode" id="cb6">
 <h3 class="code-label">DEFAULT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode default" tabindex="0"><code class="sourceCode default"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>```{r setup} </span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>```</span></code></pre>
+<pre class="sourceCode default" tabindex="0"><code class="sourceCode default"><span id="cb6-1"><a href="#cb6-1" tabindex="-1"></a>```{r setup} </span>
+<span id="cb6-2"><a href="#cb6-2" tabindex="-1"></a></span>
+<span id="cb6-3"><a href="#cb6-3" tabindex="-1"></a>```</span></code></pre>
 </div>
 <p>This is called a ‘code chunk’. The word <code>setup</code> here is
 the name of the code chunk. It can be useful to name code chunks, but it
@@ -506,11 +505,11 @@ introduction. How about:</p>
 <div class="codewrapper sourceCode" id="cb7">
 <h3 class="code-label">MARKDOWN<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode markdown" tabindex="0"><code class="sourceCode markdown"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">## Introduction</span></span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>Working from home can be lonely. Do you miss the random chats at the coffee machine? Certainly we do!</span>
-<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>Luckily, our R package <span class="in">`mysterycoffee`</span> is here to help.</span></code></pre>
+<pre class="sourceCode markdown" tabindex="0"><code class="sourceCode markdown"><span id="cb7-1"><a href="#cb7-1" tabindex="-1"></a><span class="fu">## Introduction</span></span>
+<span id="cb7-2"><a href="#cb7-2" tabindex="-1"></a></span>
+<span id="cb7-3"><a href="#cb7-3" tabindex="-1"></a>Working from home can be lonely. Do you miss the random chats at the coffee machine? Certainly we do!</span>
+<span id="cb7-4"><a href="#cb7-4" tabindex="-1"></a></span>
+<span id="cb7-5"><a href="#cb7-5" tabindex="-1"></a>Luckily, our R package <span class="in">`mysterycoffee`</span> is here to help.</span></code></pre>
 </div>
 </div>
 <div class="section level3">
@@ -518,7 +517,8 @@ introduction. How about:</p>
 <p><em>“Knitting”</em> is the process of generating a reader-friendly
 document. And RStudio has a button for that. Let’s press it and see what
 happens.</p>
-<figure><img src="fig/knit.gif" alt="" class="figure mx-auto d-block"><figcaption>Knitting an R Markdown document</figcaption></figure></div>
+<figure><img src="fig/knit.gif" alt="Knitting an R Markdown document" class="figure mx-auto d-block"><div class="figcaption">Knitting an R Markdown document</div>
+</figure></div>
 </section><section id="making-the-vignette-complete"><h2 class="section-heading">Making the vignette complete<a class="anchor" aria-label="anchor" href="#making-the-vignette-complete"></a>
 </h2>
 <hr class="half-width"><p>The template vignette we just created works fine, but it doesn’t give
@@ -554,70 +554,69 @@ code chunk)</li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2">Show me the solution</h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <p>This is what I wrote. Of course, your text, and even your code, will
 most likely be different.</p>
 <div class="codewrapper sourceCode" id="cb8">
 <h3 class="code-label">MARKDOWN<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode markdown" tabindex="0"><code class="sourceCode markdown"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Examples of usage"</span></span>
-<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="an">output:</span><span class="co"> rmarkdown::html_vignette</span></span>
-<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a><span class="an">vignette:</span><span class="co"> &gt;</span></span>
-<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a><span class="co">  %\VignetteIndexEntry{test}</span></span>
-<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a><span class="co">  %\VignetteEngine{knitr::rmarkdown}</span></span>
-<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a><span class="co">  %\VignetteEncoding{UTF-8}</span></span>
-<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a><span class="fu">## Introduction</span></span>
-<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a>Working from home can be lonely. Do you miss the random chats at the coffee machine? Certainly we do!</span>
-<span id="cb8-12"><a href="#cb8-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-13"><a href="#cb8-13" aria-hidden="true" tabindex="-1"></a>Luckily, our R package <span class="in">`mysterycoffee`</span> is here to help.</span>
-<span id="cb8-14"><a href="#cb8-14" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-15"><a href="#cb8-15" aria-hidden="true" tabindex="-1"></a><span class="fu">## How to use it</span></span>
-<span id="cb8-16"><a href="#cb8-16" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-17"><a href="#cb8-17" aria-hidden="true" tabindex="-1"></a>Well, first you will have to attach the package.</span>
-<span id="cb8-18"><a href="#cb8-18" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-19"><a href="#cb8-19" aria-hidden="true" tabindex="-1"></a><span class="in">```{r install}</span></span>
-<span id="cb8-20"><a href="#cb8-20" aria-hidden="true" tabindex="-1"></a><span class="in"># library(mysterycoffee) # uncomment this line in the vignette</span></span>
-<span id="cb8-21"><a href="#cb8-21" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb8-22"><a href="#cb8-22" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-23"><a href="#cb8-23" aria-hidden="true" tabindex="-1"></a>The package will need the names of your colleagues. These are mine:</span>
-<span id="cb8-24"><a href="#cb8-24" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-25"><a href="#cb8-25" aria-hidden="true" tabindex="-1"></a><span class="in">```{r names}</span></span>
-<span id="cb8-26"><a href="#cb8-26" aria-hidden="true" tabindex="-1"></a><span class="in">names &lt;- c("Pablo Rodríguez",</span></span>
-<span id="cb8-27"><a href="#cb8-27" aria-hidden="true" tabindex="-1"></a><span class="in">           "Lieke de Boer",</span></span>
-<span id="cb8-28"><a href="#cb8-28" aria-hidden="true" tabindex="-1"></a><span class="in">           "Barbara Vreede",</span></span>
-<span id="cb8-29"><a href="#cb8-29" aria-hidden="true" tabindex="-1"></a><span class="in">           "President Obama",</span></span>
-<span id="cb8-30"><a href="#cb8-30" aria-hidden="true" tabindex="-1"></a><span class="in">           "General Sun Tzu",</span></span>
-<span id="cb8-31"><a href="#cb8-31" aria-hidden="true" tabindex="-1"></a><span class="in">           "Pharaoh Hatshepsut")</span></span>
-<span id="cb8-32"><a href="#cb8-32" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb8-33"><a href="#cb8-33" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-34"><a href="#cb8-34" aria-hidden="true" tabindex="-1"></a>Now we just have to use the function <span class="in">`make_groups`</span> to assign the random coffee partners:</span>
-<span id="cb8-35"><a href="#cb8-35" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-36"><a href="#cb8-36" aria-hidden="true" tabindex="-1"></a><span class="in">```{r assign}</span></span>
-<span id="cb8-37"><a href="#cb8-37" aria-hidden="true" tabindex="-1"></a><span class="in">groups &lt;- make_groups(names)</span></span>
-<span id="cb8-38"><a href="#cb8-38" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb8-39"><a href="#cb8-39" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-40"><a href="#cb8-40" aria-hidden="true" tabindex="-1"></a>And here you have the result!</span>
-<span id="cb8-41"><a href="#cb8-41" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-42"><a href="#cb8-42" aria-hidden="true" tabindex="-1"></a><span class="in">```{r print, echo=FALSE}</span></span>
-<span id="cb8-43"><a href="#cb8-43" aria-hidden="true" tabindex="-1"></a><span class="in">print(groups)</span></span>
-<span id="cb8-44"><a href="#cb8-44" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code></pre>
+<pre class="sourceCode markdown" tabindex="0"><code class="sourceCode markdown"><span id="cb8-1"><a href="#cb8-1" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb8-2"><a href="#cb8-2" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Examples of usage"</span></span>
+<span id="cb8-3"><a href="#cb8-3" tabindex="-1"></a><span class="an">output:</span><span class="co"> rmarkdown::html_vignette</span></span>
+<span id="cb8-4"><a href="#cb8-4" tabindex="-1"></a><span class="an">vignette:</span><span class="co"> &gt;</span></span>
+<span id="cb8-5"><a href="#cb8-5" tabindex="-1"></a><span class="co">  %\VignetteIndexEntry{test}</span></span>
+<span id="cb8-6"><a href="#cb8-6" tabindex="-1"></a><span class="co">  %\VignetteEngine{knitr::rmarkdown}</span></span>
+<span id="cb8-7"><a href="#cb8-7" tabindex="-1"></a><span class="co">  %\VignetteEncoding{UTF-8}</span></span>
+<span id="cb8-8"><a href="#cb8-8" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb8-9"><a href="#cb8-9" tabindex="-1"></a><span class="fu">## Introduction</span></span>
+<span id="cb8-10"><a href="#cb8-10" tabindex="-1"></a></span>
+<span id="cb8-11"><a href="#cb8-11" tabindex="-1"></a>Working from home can be lonely. Do you miss the random chats at the coffee machine? Certainly we do!</span>
+<span id="cb8-12"><a href="#cb8-12" tabindex="-1"></a></span>
+<span id="cb8-13"><a href="#cb8-13" tabindex="-1"></a>Luckily, our R package <span class="in">`mysterycoffee`</span> is here to help.</span>
+<span id="cb8-14"><a href="#cb8-14" tabindex="-1"></a></span>
+<span id="cb8-15"><a href="#cb8-15" tabindex="-1"></a><span class="fu">## How to use it</span></span>
+<span id="cb8-16"><a href="#cb8-16" tabindex="-1"></a></span>
+<span id="cb8-17"><a href="#cb8-17" tabindex="-1"></a>Well, first you will have to attach the package.</span>
+<span id="cb8-18"><a href="#cb8-18" tabindex="-1"></a></span>
+<span id="cb8-19"><a href="#cb8-19" tabindex="-1"></a><span class="in">```{r install}</span></span>
+<span id="cb8-20"><a href="#cb8-20" tabindex="-1"></a><span class="in"># library(mysterycoffee) # uncomment this line in the vignette</span></span>
+<span id="cb8-21"><a href="#cb8-21" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb8-22"><a href="#cb8-22" tabindex="-1"></a></span>
+<span id="cb8-23"><a href="#cb8-23" tabindex="-1"></a>The package will need the names of your colleagues. These are mine:</span>
+<span id="cb8-24"><a href="#cb8-24" tabindex="-1"></a></span>
+<span id="cb8-25"><a href="#cb8-25" tabindex="-1"></a><span class="in">```{r names}</span></span>
+<span id="cb8-26"><a href="#cb8-26" tabindex="-1"></a><span class="in">names &lt;- c("Pablo Rodríguez",</span></span>
+<span id="cb8-27"><a href="#cb8-27" tabindex="-1"></a><span class="in">           "Lieke de Boer",</span></span>
+<span id="cb8-28"><a href="#cb8-28" tabindex="-1"></a><span class="in">           "Barbara Vreede",</span></span>
+<span id="cb8-29"><a href="#cb8-29" tabindex="-1"></a><span class="in">           "President Obama",</span></span>
+<span id="cb8-30"><a href="#cb8-30" tabindex="-1"></a><span class="in">           "General Sun Tzu",</span></span>
+<span id="cb8-31"><a href="#cb8-31" tabindex="-1"></a><span class="in">           "Pharaoh Hatshepsut")</span></span>
+<span id="cb8-32"><a href="#cb8-32" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb8-33"><a href="#cb8-33" tabindex="-1"></a></span>
+<span id="cb8-34"><a href="#cb8-34" tabindex="-1"></a>Now we just have to use the function <span class="in">`make_groups`</span> to assign the random coffee partners:</span>
+<span id="cb8-35"><a href="#cb8-35" tabindex="-1"></a></span>
+<span id="cb8-36"><a href="#cb8-36" tabindex="-1"></a><span class="in">```{r assign}</span></span>
+<span id="cb8-37"><a href="#cb8-37" tabindex="-1"></a><span class="in">groups &lt;- make_groups(names)</span></span>
+<span id="cb8-38"><a href="#cb8-38" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb8-39"><a href="#cb8-39" tabindex="-1"></a></span>
+<span id="cb8-40"><a href="#cb8-40" tabindex="-1"></a>And here you have the result!</span>
+<span id="cb8-41"><a href="#cb8-41" tabindex="-1"></a></span>
+<span id="cb8-42"><a href="#cb8-42" tabindex="-1"></a><span class="in">```{r print, echo=FALSE}</span></span>
+<span id="cb8-43"><a href="#cb8-43" tabindex="-1"></a><span class="in">print(groups)</span></span>
+<span id="cb8-44"><a href="#cb8-44" tabindex="-1"></a><span class="in">```</span></span></code></pre>
 </div>
 </div>
 </div>
 </div>
 </div>
 
-<div id="hiding-chunks" class="callout callout">
+<div id="callout2" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div id="hiding-chunks" class="callout-inner">
-<h3 class="callout-title">Hiding chunks<a class="anchor" aria-label="anchor" href="#hiding-chunks"></a>
-</h3>
+<div class="section level3 callout-title callout-inner">
+<h3 class="callout-title" id="hiding-chunks">Hiding chunks<a class="anchor" aria-label="anchor" href="#hiding-chunks"></a></h3>
 <div class="callout-content">
 <p>Sometimes you don’t want the content of the code chunk to be printed
 in the knitted document, but only its results. This can be done by
@@ -649,14 +648,13 @@ need to explicitly build the vignette on installing the package:</p>
 <p>Note that clicking the “Install” button does not build the vignette
 in a way that allows access through the <code>vignette()</code> and
 <code>browseVignettes()</code> functions.</p>
-<div id="viewing-vignettes-from-a-github-installation" class="callout callout">
+<div id="callout3" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div id="viewing-vignettes-from-a-github-installation" class="callout-inner">
-<h3 class="callout-title">Viewing vignettes from a GitHub
-installation<a class="anchor" aria-label="anchor" href="#viewing-vignettes-from-a-github-installation"></a>
-</h3>
+<div class="section level3 callout-title callout-inner">
+<h3 class="callout-title" id="viewing-vignettes-from-a-github-installation">Viewing vignettes from a GitHub
+installation<a class="anchor" aria-label="anchor" href="#viewing-vignettes-from-a-github-installation"></a></h3>
 <div class="callout-content">
 <p>If you have made a vignette, but your package is only accessible on
 GitHub, it is important to give explicit installation instructions for
@@ -757,8 +755,8 @@ any links that you are not going to use.
   "url": "https://carpentries-incubator.github.io/lesson-R-packaging/vignettes.html",
   "identifier": "https://carpentries-incubator.github.io/lesson-R-packaging/vignettes.html",
   "dateCreated": "2021-02-19",
-  "dateModified": "2024-02-27",
-  "datePublished": "2024-02-27"
+  "dateModified": "2024-03-05",
+  "datePublished": "2024-03-05"
 }
 
   </script><script>

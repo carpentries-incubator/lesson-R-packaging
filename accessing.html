@@ -305,7 +305,7 @@
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Accessing packages</h1>
-        <p>Last updated on 2024-02-27 |
+        <p>Last updated on 2024-03-05 |
         
         <a href="https://github.com/carpentries-incubator/lesson-R-packaging/edit/main/episodes/accessing.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
         
@@ -361,9 +361,11 @@ written by other R users just like you.</p>
 would like to install the package <code>devtools</code>. The package can
 be installed by opening RStudio and browsing to the <em>Packages</em>
 tab:</p>
-<figure><img src="fig/packages.png" alt="a screenshot of the Packages tab in Rstudio" class="figure mx-auto d-block"><figcaption>Packages tab</figcaption></figure><p>This tab has a button, <em>Install</em>. After pressing this button,
+<figure><img src="fig/packages.png" alt="a screenshot of the Packages tab in Rstudio" class="figure mx-auto d-block"><div class="figcaption">Packages tab</div>
+</figure><p>This tab has a button, <em>Install</em>. After pressing this button,
 a window will appear:</p>
-<figure><img src="fig/install.png" alt="A screenshot of a window dialog in Rstudio, labeled 'Install Packages'" class="figure mx-auto d-block"><figcaption>Install prompt</figcaption></figure><p>We write <code>devtools</code> in the field labeled
+<figure><img src="fig/install.png" alt="A screenshot of a window dialog in Rstudio, labeled 'Install Packages'" class="figure mx-auto d-block"><div class="figcaption">Install prompt</div>
+</figure><p>We write <code>devtools</code> in the field labeled
 <em>Packages</em>, and make sure to check the box labeled <em>Install
 dependencies</em>. When we press <em>Install</em>, Rstudio will download
 and install the package, as well as the required dependencies. Depending
@@ -386,13 +388,12 @@ RStudio will build and execute the corresponding command for you.</p>
 <p>You can confirm that the installation was successful by checking the
 <em>Packages</em> tab. The newly installed package should appear
 there.</p>
-<div id="something-went-wrong" class="callout callout">
+<div id="callout1" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div id="something-went-wrong" class="callout-inner">
-<h3 class="callout-title">Something went wrong?<a class="anchor" aria-label="anchor" href="#something-went-wrong"></a>
-</h3>
+<div class="section level3 callout-title callout-inner">
+<h3 class="callout-title" id="something-went-wrong">Something went wrong?<a class="anchor" aria-label="anchor" href="#something-went-wrong"></a></h3>
 <div class="callout-content">
 <p>Sometimes, an installation may fail. If that is the case, take a look
 at the output message in the console. It will contain very useful
@@ -424,13 +425,12 @@ function:</p>
 </div>
 <p>This installs the package <code>kinematics</code> from the github
 page <a href="https://github.com/PabRod/kinematics" class="external-link">github.com/PabRod/kinematics</a>.</p>
-<div id="removing-packages" class="callout callout">
+<div id="callout2" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div id="removing-packages" class="callout-inner">
-<h3 class="callout-title">Removing packages<a class="anchor" aria-label="anchor" href="#removing-packages"></a>
-</h3>
+<div class="section level3 callout-title callout-inner">
+<h3 class="callout-title" id="removing-packages">Removing packages<a class="anchor" aria-label="anchor" href="#removing-packages"></a></h3>
 <div class="callout-content">
 <p>Of course, you can also undo the installation of a package. Using the
 <em>Packages</em> tab in Rstudio, you can click on the <code>x</code>
@@ -473,7 +473,7 @@ functions.</p>
 <button class="accordion-button hint-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHint1" aria-expanded="false" aria-controls="collapseHint1">
   <h4 class="accordion-header" id="headingHint1">Give me a hint</h4>
 </button>
-<div id="collapseHint1" class="accordion-collapse collapse" aria-labelledby="headingHint1" data-bs-parent="#accordionHint1">
+<div id="collapseHint1" class="accordion-collapse collapse" data-bs-parent="#accordionHint1" aria-labelledby="headingHint1">
 <div class="accordion-body">
 <p>Hint: the function <code>devtools::install_git()</code> applies to
 any git repository.</p>
@@ -486,7 +486,7 @@ any git repository.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1">Show me the solution</h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb4">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -526,7 +526,7 @@ GitHub than from CRAN?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2">Show me the solution</h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <p>There are two common situations where you would want to use GitHub
 instead of CRAN:</p>
@@ -557,18 +557,18 @@ one we are building during this lesson.</p>
 
 <p>In this case, you can use the <em>Build</em> tab of your R
 project:</p>
-<figure><img src="fig/install-and-restart.gif" alt="A moving image that shows a user clicking the Install and Restart button in Rstudio and starting the installation process" class="figure mx-auto d-block"><figcaption>Build</figcaption></figure><p>By pressing <em>Install and restart</em> three things will
+<figure><img src="fig/install-and-restart.gif" alt="A moving image that shows a user clicking the Install and Restart button in Rstudio and starting the installation process" class="figure mx-auto d-block"><div class="figcaption">Build</div>
+</figure><p>By pressing <em>Install and restart</em> three things will
 happen:</p>
 <ol style="list-style-type: decimal"><li>The package will be, indeed, installed.</li>
 <li>The R session will be restarted.</li>
 <li>The package will be attached.</li>
-</ol><div id="a-short-glossary" class="callout callout">
+</ol><div id="callout3" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div id="a-short-glossary" class="callout-inner">
-<h3 class="callout-title">A short glossary<a class="anchor" aria-label="anchor" href="#a-short-glossary"></a>
-</h3>
+<div class="section level3 callout-title callout-inner">
+<h3 class="callout-title" id="a-short-glossary">A short glossary<a class="anchor" aria-label="anchor" href="#a-short-glossary"></a></h3>
 <div class="callout-content">
 <p>It is useful to keep in mind these three concepts:</p>
 <ol style="list-style-type: decimal"><li>
@@ -632,13 +632,12 @@ can call it directly as:</p>
 </div>
 <p>This way, you make sure that there is no confusion between functions
 with the same name from different packages.</p>
-<div id="callout4" class="callout callout">
+<div id="callout4" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div class="callout-inner">
-<h3 class="callout-title">Callout<a class="anchor" aria-label="anchor" href="#callout4"></a>
-</h3>
+<div class="section level3 callout-title callout-inner">
+<h3 class="callout-title">Callout</h3>
 <div class="callout-content">
 <p>Have you ever gotten an error because you wanted to use
 <code>filter()</code> from the <code>dplyr</code> package, but because
@@ -673,7 +672,7 @@ using <code>library(&lt;package&gt;)</code> inside a package.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution3" aria-expanded="false" aria-controls="collapseSolution3">
   <h4 class="accordion-header" id="headingSolution3">Show me the solution</h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
 <div class="accordion-body">
 <p>We want our package to do its work and leave no trace behind. Using
 <code>library(&lt;package&gt;)</code> somewhere inside the package will
@@ -688,7 +687,7 @@ function is used.</p>
 </div>
 </div>
 </div>
-<div id="callout5" class="callout callout">
+<div id="callout5" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
@@ -718,12 +717,12 @@ it</a>.</p>
 </div>
 </div>
 </div>
-<div id="something-went-wrong" class="callout keypoints">
+<div id="keypoints1" class="callout keypoints">
 <div class="callout-square">
 <i class="callout-icon" data-feather="key"></i>
 </div>
 <div class="callout-inner">
-<h3 class="callout-title">Key Points<a class="anchor" aria-label="anchor" href="#callout5"></a>
+<h3 class="callout-title">Key Points<a class="anchor" aria-label="anchor" href="#keypoints1"></a>
 </h3>
 <div class="callout-content">
 <ul><li>To use a package you have to install it</li>
@@ -799,8 +798,8 @@ any links that you are not going to use.
   "url": "https://carpentries-incubator.github.io/lesson-R-packaging/accessing.html",
   "identifier": "https://carpentries-incubator.github.io/lesson-R-packaging/accessing.html",
   "dateCreated": "2021-02-19",
-  "dateModified": "2024-02-27",
-  "datePublished": "2024-02-27"
+  "dateModified": "2024-03-05",
+  "datePublished": "2024-03-05"
 }
 
   </script><script>

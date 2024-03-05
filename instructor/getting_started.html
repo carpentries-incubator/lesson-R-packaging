@@ -306,7 +306,7 @@
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Getting started</h1>
-        <p>Last updated on 2024-02-27 |
+        <p>Last updated on 2024-03-05 |
         
         <a href="https://github.com/carpentries-incubator/lesson-R-packaging/edit/main/episodes/getting_started.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
         
@@ -370,10 +370,12 @@ minimal of packages. Let’s open <code>RStudio</code> and look at the
 upper left corner. We will press
 <code>File &gt; New project &gt; New directory</code>, and see a menu
 like this:</p>
-<figure><img src="../fig/new-project.png" alt="" class="figure mx-auto d-block"><figcaption>New project menu</figcaption></figure><p>As you can guess, we will now press <code>R package</code>. The new
+<figure><img src="../fig/new-project.png" alt="New project menu" class="figure mx-auto d-block"><div class="figcaption">New project menu</div>
+</figure><p>As you can guess, we will now press <code>R package</code>. The new
 menu asks us to fill in some information. For the moment, bear with me
 and fill in the following:</p>
-<figure><img src="../fig/create-package.png" alt="" class="figure mx-auto d-block"><figcaption>New project menu</figcaption></figure><p>Notice that:</p>
+<figure><img src="../fig/create-package.png" alt="New project menu" class="figure mx-auto d-block"><div class="figcaption">New project menu</div>
+</figure><p>Notice that:</p>
 <ul><li>We gave the package a name: <code>mysterycoffee</code>.</li>
 <li>I created my package on my <code>~/Desktop</code> folder, but you
 can use another location if you prefer.</li>
@@ -384,32 +386,31 @@ it in this lesson.</li>
 <li>We left <code>Use renv with this project unticked</code>.</li>
 <li>We ticked <code>Open in new session</code>.</li>
 </ul><p>Now we are ready to press <code>Create Project</code>.</p>
-<div id="what-just-happened" class="callout callout">
+<div id="callout1" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div id="what-just-happened" class="callout-inner">
-<h3 class="callout-title">What just happened?<a class="anchor" aria-label="anchor" href="#what-just-happened"></a>
-</h3>
+<div class="section level3 callout-title callout-inner">
+<h3 class="callout-title" id="what-just-happened">What just happened?<a class="anchor" aria-label="anchor" href="#what-just-happened"></a></h3>
 <div class="callout-content">
 <p>After pressing <code>Create Project</code>, a new
 <code>RStudio</code> window should have appeared. The working folder
 should be <code>mysterycoffee</code>, and it should already have some
 contents:</p>
-<figure><img src="../fig/contents.png" alt="" class="figure mx-auto d-block"><figcaption>New project menu</figcaption></figure><p>Also, the file <code>./R/hello.R</code> would appear open in the
+<figure><img src="../fig/contents.png" alt="New project menu" class="figure mx-auto d-block"><div class="figcaption">New project menu</div>
+</figure><p>Also, the file <code>./R/hello.R</code> would appear open in the
 editor. This is an example file that contains a toy function. Its only
 functionality is to, well, to say <em>“hello”</em>. This may sound
 silly, but it will help you writing your first packaged R functions.</p>
 </div>
 </div>
 </div>
-<div id="the-hello.r-file" class="callout callout">
+<div id="callout2" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div id="the-hello.r-file" class="callout-inner">
-<h3 class="callout-title">The<code>hello.R</code>file<a class="anchor" aria-label="anchor" href="#the-hello.r-file"></a>
-</h3>
+<div class="section level3 callout-title callout-inner">
+<h3 class="callout-title" id="the-hello-r-file">The <code>hello.R</code> file<a class="anchor" aria-label="anchor" href="#the-hello-r-file"></a></h3>
 <div class="callout-content">
 <p>Let’s take a look at the <code>hello.R</code> file. You’ll see that
 it contains a tiny function and some comments. The comments are actually
@@ -427,7 +428,8 @@ the upper right corner and press
 <code>Build &gt; Install and Restart</code> (or, in newer versions of
 RStudio, press
 <code>Build &gt; Install &gt; Clean and install</code>).</p>
-<figure><img src="../fig/install-and-restart.gif" alt="" class="figure mx-auto d-block"><figcaption>Install and restart</figcaption></figure><p>This will install and attach the package. The package contains only
+<figure><img src="../fig/install-and-restart.gif" alt="Install and restart" class="figure mx-auto d-block"><div class="figcaption">Install and restart</div>
+</figure><p>This will install and attach the package. The package contains only
 one function so far: <code>hello()</code>.</p>
 <div id="try-out-the-hello-function.-edit-it-and-reload-the-package." class="callout challenge">
 <div class="callout-square">
@@ -451,7 +453,7 @@ that it works differently.</li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1">Show me the solution</h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb2">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -620,8 +622,8 @@ any links that you are not going to use.
   "url": "https://carpentries-incubator.github.io/lesson-R-packaging/instructor/getting_started.html",
   "identifier": "https://carpentries-incubator.github.io/lesson-R-packaging/instructor/getting_started.html",
   "dateCreated": "2021-02-19",
-  "dateModified": "2024-02-27",
-  "datePublished": "2024-02-27"
+  "dateModified": "2024-03-05",
+  "datePublished": "2024-03-05"
 }
 
   </script><script>

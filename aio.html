@@ -354,7 +354,7 @@
         
 <section id="aio-introduction"><p>Content from <a href="introduction.html">Introduction</a></p>
 <hr>
-<p>Last updated on 2024-02-27 |
+<p>Last updated on 2024-03-05 |
         
         <a href="https://github.com/carpentries-incubator/lesson-R-packaging/edit/main/episodes/introduction.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
@@ -489,12 +489,12 @@ buttons arranged in an intuitive interface. This will relieve a lot of
 mental space, as we do not have to remember the commands for common
 operations such as <em>building</em>, <em>saving</em>, <em>knitting</em>
 and so on. In this course we will make extensive use of it.</p>
-<div id="pro-tip" class="callout callout">
+<div id="callout1" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div id="pro-tip" class="callout-inner">
-<h3 class="callout-title">Pro-tip<a class="anchor" aria-label="anchor" href="#pro-tip"></a>
+<div class="section level3 callout-title callout-inner">
+<h3 class="callout-title" id="pro-tip">Pro-tip<a class="anchor" aria-label="anchor" href="#pro-tip"></a>
 </h3>
 <div class="callout-content">
 <p>When you hover over a button in RStudio, a textbox will be displayed.
@@ -531,7 +531,7 @@ any links that you are not going to use.
 </div>
 </section></section><section id="aio-accessing"><p>Content from <a href="accessing.html">Accessing packages</a></p>
 <hr>
-<p>Last updated on 2024-02-27 |
+<p>Last updated on 2024-03-05 |
         
         <a href="https://github.com/carpentries-incubator/lesson-R-packaging/edit/main/episodes/accessing.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
@@ -586,9 +586,11 @@ written by other R users just like you.</p>
 would like to install the package <code>devtools</code>. The package can
 be installed by opening RStudio and browsing to the <em>Packages</em>
 tab:</p>
-<figure><img src="fig/packages.png" alt="a screenshot of the Packages tab in Rstudio" class="figure mx-auto d-block"><figcaption>Packages tab</figcaption></figure><p>This tab has a button, <em>Install</em>. After pressing this button,
+<figure><img src="fig/packages.png" alt="a screenshot of the Packages tab in Rstudio" class="figure mx-auto d-block"><div class="figcaption">Packages tab</div>
+</figure><p>This tab has a button, <em>Install</em>. After pressing this button,
 a window will appear:</p>
-<figure><img src="fig/install.png" alt="A screenshot of a window dialog in Rstudio, labeled 'Install Packages'" class="figure mx-auto d-block"><figcaption>Install prompt</figcaption></figure><p>We write <code>devtools</code> in the field labeled
+<figure><img src="fig/install.png" alt="A screenshot of a window dialog in Rstudio, labeled 'Install Packages'" class="figure mx-auto d-block"><div class="figcaption">Install prompt</div>
+</figure><p>We write <code>devtools</code> in the field labeled
 <em>Packages</em>, and make sure to check the box labeled <em>Install
 dependencies</em>. When we press <em>Install</em>, Rstudio will download
 and install the package, as well as the required dependencies. Depending
@@ -612,12 +614,12 @@ RStudio will build and execute the corresponding command for you.</p>
 <p>You can confirm that the installation was successful by checking the
 <em>Packages</em> tab. The newly installed package should appear
 there.</p>
-<div id="something-went-wrong" class="callout callout">
+<div id="callout1" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div id="something-went-wrong" class="callout-inner">
-<h3 class="callout-title">Something went wrong?<a class="anchor" aria-label="anchor" href="#something-went-wrong"></a>
+<div class="section level3 callout-title callout-inner">
+<h3 class="callout-title" id="something-went-wrong">Something went wrong?<a class="anchor" aria-label="anchor" href="#something-went-wrong"></a>
 </h3>
 <div class="callout-content">
 <p>Sometimes, an installation may fail. If that is the case, take a look
@@ -651,12 +653,12 @@ function:</p>
 </div>
 <p>This installs the package <code>kinematics</code> from the github
 page <a href="https://github.com/PabRod/kinematics" class="external-link">github.com/PabRod/kinematics</a>.</p>
-<div id="removing-packages" class="callout callout">
+<div id="callout2" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div id="removing-packages" class="callout-inner">
-<h3 class="callout-title">Removing packages<a class="anchor" aria-label="anchor" href="#removing-packages"></a>
+<div class="section level3 callout-title callout-inner">
+<h3 class="callout-title" id="removing-packages">Removing packages<a class="anchor" aria-label="anchor" href="#removing-packages"></a>
 </h3>
 <div class="callout-content">
 <p>Of course, you can also undo the installation of a package. Using the
@@ -702,7 +704,7 @@ functions.</p>
 <button class="accordion-button hint-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHint1" aria-expanded="false" aria-controls="collapseHint1">
   <h4 class="accordion-header" id="headingHint1">Give me a hint</h4>
 </button>
-<div id="collapseHint1" class="accordion-collapse collapse" aria-labelledby="headingHint1" data-bs-parent="#accordionHint1">
+<div id="collapseHint1" class="accordion-collapse collapse" data-bs-parent="#accordionHint1" aria-labelledby="headingHint1">
 <div class="accordion-body">
 <p>Hint: the function <code>devtools::install_git()</code> applies to
 any git repository.</p>
@@ -715,7 +717,7 @@ any git repository.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1">Show me the solution</h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb4">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -755,7 +757,7 @@ GitHub than from CRAN?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2">Show me the solution</h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <p>There are two common situations where you would want to use GitHub
 instead of CRAN:</p>
@@ -787,19 +789,20 @@ one we are building during this lesson.</p>
 
 <p>In this case, you can use the <em>Build</em> tab of your R
 project:</p>
-<figure><img src="fig/install-and-restart.gif" alt="A moving image that shows a user clicking the Install and Restart button in Rstudio and starting the installation process" class="figure mx-auto d-block"><figcaption>Build</figcaption></figure><p>By pressing <em>Install and restart</em> three things will
+<figure><img src="fig/install-and-restart.gif" alt="A moving image that shows a user clicking the Install and Restart button in Rstudio and starting the installation process" class="figure mx-auto d-block"><div class="figcaption">Build</div>
+</figure><p>By pressing <em>Install and restart</em> three things will
 happen:</p>
 <ol style="list-style-type: decimal">
 <li>The package will be, indeed, installed.</li>
 <li>The R session will be restarted.</li>
 <li>The package will be attached.</li>
 </ol>
-<div id="a-short-glossary" class="callout callout">
+<div id="callout3" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div id="a-short-glossary" class="callout-inner">
-<h3 class="callout-title">A short glossary<a class="anchor" aria-label="anchor" href="#a-short-glossary"></a>
+<div class="section level3 callout-title callout-inner">
+<h3 class="callout-title" id="a-short-glossary">A short glossary<a class="anchor" aria-label="anchor" href="#a-short-glossary"></a>
 </h3>
 <div class="callout-content">
 <p>It is useful to keep in mind these three concepts:</p>
@@ -869,13 +872,12 @@ can call it directly as:</p>
 </div>
 <p>This way, you make sure that there is no confusion between functions
 with the same name from different packages.</p>
-<div id="callout4" class="callout callout">
+<div id="callout4" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div class="callout-inner">
-<h3 class="callout-title">Callout<a class="anchor" aria-label="anchor" href="#callout4"></a>
-</h3>
+<div class="section level3 callout-title callout-inner">
+<h3 class="callout-title">Callout</h3>
 <div class="callout-content">
 <p>Have you ever gotten an error because you wanted to use
 <code>filter()</code> from the <code>dplyr</code> package, but because
@@ -910,7 +912,7 @@ using <code>library(&lt;package&gt;)</code> inside a package.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution3" aria-expanded="false" aria-controls="collapseSolution3">
   <h4 class="accordion-header" id="headingSolution3">Show me the solution</h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
 <div class="accordion-body">
 <p>We want our package to do its work and leave no trace behind. Using
 <code>library(&lt;package&gt;)</code> somewhere inside the package will
@@ -925,7 +927,7 @@ function is used.</p>
 </div>
 </div>
 </div>
-<div id="callout5" class="callout callout">
+<div id="callout5" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
@@ -958,12 +960,12 @@ it</a>.</p>
 </div>
 </div>
 </div>
-<div id="something-went-wrong" class="callout keypoints">
+<div id="keypoints1" class="callout keypoints">
 <div class="callout-square">
 <i class="callout-icon" data-feather="key"></i>
 </div>
 <div class="callout-inner">
-<h3 class="callout-title">Key Points<a class="anchor" aria-label="anchor" href="#callout5"></a>
+<h3 class="callout-title">Key Points<a class="anchor" aria-label="anchor" href="#keypoints1"></a>
 </h3>
 <div class="callout-content">
 <ul>
@@ -985,7 +987,7 @@ any links that you are not going to use.
  -->
 </section></section><section id="aio-getting_started"><p>Content from <a href="getting_started.html">Getting started</a></p>
 <hr>
-<p>Last updated on 2024-02-27 |
+<p>Last updated on 2024-03-05 |
         
         <a href="https://github.com/carpentries-incubator/lesson-R-packaging/edit/main/episodes/getting_started.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
@@ -1048,10 +1050,12 @@ minimal of packages. Let’s open <code>RStudio</code> and look at the
 upper left corner. We will press
 <code>File &gt; New project &gt; New directory</code>, and see a menu
 like this:</p>
-<figure><img src="fig/new-project.png" alt="" class="figure mx-auto d-block"><figcaption>New project menu</figcaption></figure><p>As you can guess, we will now press <code>R package</code>. The new
+<figure><img src="fig/new-project.png" alt="New project menu" class="figure mx-auto d-block"><div class="figcaption">New project menu</div>
+</figure><p>As you can guess, we will now press <code>R package</code>. The new
 menu asks us to fill in some information. For the moment, bear with me
 and fill in the following:</p>
-<figure><img src="fig/create-package.png" alt="" class="figure mx-auto d-block"><figcaption>New project menu</figcaption></figure><p>Notice that:</p>
+<figure><img src="fig/create-package.png" alt="New project menu" class="figure mx-auto d-block"><div class="figcaption">New project menu</div>
+</figure><p>Notice that:</p>
 <ul>
 <li>We gave the package a name: <code>mysterycoffee</code>.</li>
 <li>I created my package on my <code>~/Desktop</code> folder, but you
@@ -1064,31 +1068,32 @@ it in this lesson.</li>
 <li>We ticked <code>Open in new session</code>.</li>
 </ul>
 <p>Now we are ready to press <code>Create Project</code>.</p>
-<div id="what-just-happened" class="callout callout">
+<div id="callout1" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div id="what-just-happened" class="callout-inner">
-<h3 class="callout-title">What just happened?<a class="anchor" aria-label="anchor" href="#what-just-happened"></a>
+<div class="section level3 callout-title callout-inner">
+<h3 class="callout-title" id="what-just-happened">What just happened?<a class="anchor" aria-label="anchor" href="#what-just-happened"></a>
 </h3>
 <div class="callout-content">
 <p>After pressing <code>Create Project</code>, a new
 <code>RStudio</code> window should have appeared. The working folder
 should be <code>mysterycoffee</code>, and it should already have some
 contents:</p>
-<figure><img src="fig/contents.png" alt="" class="figure mx-auto d-block"><figcaption>New project menu</figcaption></figure><p>Also, the file <code>./R/hello.R</code> would appear open in the
+<figure><img src="fig/contents.png" alt="New project menu" class="figure mx-auto d-block"><div class="figcaption">New project menu</div>
+</figure><p>Also, the file <code>./R/hello.R</code> would appear open in the
 editor. This is an example file that contains a toy function. Its only
 functionality is to, well, to say <em>“hello”</em>. This may sound
 silly, but it will help you writing your first packaged R functions.</p>
 </div>
 </div>
 </div>
-<div id="the-hello.r-file" class="callout callout">
+<div id="callout2" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div id="the-hello.r-file" class="callout-inner">
-<h3 class="callout-title">The<code>hello.R</code>file<a class="anchor" aria-label="anchor" href="#the-hello.r-file"></a>
+<div class="section level3 callout-title callout-inner">
+<h3 class="callout-title" id="the-hello-r-file">The <code>hello.R</code> file<a class="anchor" aria-label="anchor" href="#the-hello-r-file"></a>
 </h3>
 <div class="callout-content">
 <p>Let’s take a look at the <code>hello.R</code> file. You’ll see that
@@ -1108,7 +1113,8 @@ the upper right corner and press
 <code>Build &gt; Install and Restart</code> (or, in newer versions of
 RStudio, press
 <code>Build &gt; Install &gt; Clean and install</code>).</p>
-<figure><img src="fig/install-and-restart.gif" alt="" class="figure mx-auto d-block"><figcaption>Install and restart</figcaption></figure><p>This will install and attach the package. The package contains only
+<figure><img src="fig/install-and-restart.gif" alt="Install and restart" class="figure mx-auto d-block"><div class="figcaption">Install and restart</div>
+</figure><p>This will install and attach the package. The package contains only
 one function so far: <code>hello()</code>.</p>
 <div id="try-out-the-hello-function.-edit-it-and-reload-the-package." class="callout challenge">
 <div class="callout-square">
@@ -1134,7 +1140,7 @@ that it works differently.</li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1">Show me the solution</h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb2">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1252,7 +1258,7 @@ any links that you are not going to use.
  -->
 </section></section><section id="aio-functions"><p>Content from <a href="functions.html">Writing our own functions</a></p>
 <hr>
-<p>Last updated on 2024-02-27 |
+<p>Last updated on 2024-03-05 |
         
         <a href="https://github.com/carpentries-incubator/lesson-R-packaging/edit/main/episodes/functions.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
@@ -1381,31 +1387,32 @@ to:</p>
 <div class="codewrapper sourceCode" id="cb1">
 <h3 class="code-label">TXT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode txt" tabindex="0"><code class="sourceCode default"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>Package: mysterycoffee</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>Type: Package</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>Title: Simulation of random encounters between couples of persons</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>Version: 0.1.0</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>Author: Pablo Rodriguez-Sanchez</span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>Maintainer: Pablo Rodriguez-Sanchez &lt;p.rodriguez-sanchez@esciencecenter.nl</span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>Description: Simulates random encounters between couples of persons</span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>    This package was inspired by the need to mitigate social isolation in remote </span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>    working environments. The idea is to simulate random encounters at the office's</span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>    coffee machine... when there is no such an office.</span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>License: What license is it under?</span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>Encoding: UTF-8</span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>LazyData: true</span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>RoxygenNote: 7.1.1</span></code></pre>
+<pre class="sourceCode txt" tabindex="0"><code class="sourceCode default"><span id="cb1-1"><a href="#cb1-1" tabindex="-1"></a>Package: mysterycoffee</span>
+<span id="cb1-2"><a href="#cb1-2" tabindex="-1"></a>Type: Package</span>
+<span id="cb1-3"><a href="#cb1-3" tabindex="-1"></a>Title: Simulation of random encounters between couples of persons</span>
+<span id="cb1-4"><a href="#cb1-4" tabindex="-1"></a>Version: 0.1.0</span>
+<span id="cb1-5"><a href="#cb1-5" tabindex="-1"></a>Author: Pablo Rodriguez-Sanchez</span>
+<span id="cb1-6"><a href="#cb1-6" tabindex="-1"></a>Maintainer: Pablo Rodriguez-Sanchez &lt;p.rodriguez-sanchez@esciencecenter.nl</span>
+<span id="cb1-7"><a href="#cb1-7" tabindex="-1"></a>Description: Simulates random encounters between couples of persons</span>
+<span id="cb1-8"><a href="#cb1-8" tabindex="-1"></a>    This package was inspired by the need to mitigate social isolation in remote </span>
+<span id="cb1-9"><a href="#cb1-9" tabindex="-1"></a>    working environments. The idea is to simulate random encounters at the office's</span>
+<span id="cb1-10"><a href="#cb1-10" tabindex="-1"></a>    coffee machine... when there is no such an office.</span>
+<span id="cb1-11"><a href="#cb1-11" tabindex="-1"></a>License: What license is it under?</span>
+<span id="cb1-12"><a href="#cb1-12" tabindex="-1"></a>Encoding: UTF-8</span>
+<span id="cb1-13"><a href="#cb1-13" tabindex="-1"></a>LazyData: true</span>
+<span id="cb1-14"><a href="#cb1-14" tabindex="-1"></a>RoxygenNote: 7.1.1</span></code></pre>
 </div>
 </div>
 </div>
 </div>
 </div>
-<div id="more-on-description" class="callout callout">
+<div id="callout1" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div id="more-on-description" class="callout-inner">
-<h3 class="callout-title">More on<code>DESCRIPTION</code><a class="anchor" aria-label="anchor" href="#more-on-description"></a>
+<div class="section level3 callout-title callout-inner">
+<h3 class="callout-title" id="more-on-description">More on <code>DESCRIPTION</code>
+<a class="anchor" aria-label="anchor" href="#more-on-description"></a>
 </h3>
 <div class="callout-content">
 <p>In the previous exercise we deliberately ignored some of the fields
@@ -1456,12 +1463,12 @@ random grouping:</p>
 <p>Please, open an editor, copy the function above and save it as
 <code>R/functions.R</code>. All the functions of the package have to be
 in <code>R</code> files inside the <code>R/</code> folder.</p>
-<div id="on-the-art-of-being-tidy" class="callout callout">
+<div id="callout2" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div id="on-the-art-of-being-tidy" class="callout-inner">
-<h3 class="callout-title">On the art of being tidy<a class="anchor" aria-label="anchor" href="#on-the-art-of-being-tidy"></a>
+<div class="section level3 callout-title callout-inner">
+<h3 class="callout-title" id="on-the-art-of-being-tidy">On the art of being tidy<a class="anchor" aria-label="anchor" href="#on-the-art-of-being-tidy"></a>
 </h3>
 <div class="callout-content">
 <p>So far, our package only has one function, and we have chosen a very
@@ -1508,7 +1515,7 @@ any links that you are not going to use.
 </div>
 </section></section><section id="aio-licenses"><p>Content from <a href="licenses.html">Licenses</a></p>
 <hr>
-<p>Last updated on 2024-02-27 |
+<p>Last updated on 2024-03-05 |
         
         <a href="https://github.com/carpentries-incubator/lesson-R-packaging/edit/main/episodes/licenses.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
@@ -1603,12 +1610,12 @@ choice?</li>
 <p>Then, head to <a href="https://choosealicense.com/" class="external-link">choosealicense.com</a>, and choose a
 license. Make sure that all copyright holders for your package agree
 with your choice.</p>
-<div id="copyleft-and-dependencies-in-r" class="callout callout">
+<div id="callout1" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div id="copyleft-and-dependencies-in-r" class="callout-inner">
-<h3 class="callout-title">Copyleft and dependencies in R<a class="anchor" aria-label="anchor" href="#copyleft-and-dependencies-in-r"></a>
+<div class="section level3 callout-title callout-inner">
+<h3 class="callout-title" id="copyleft-and-dependencies-in-r">Copyleft and dependencies in R<a class="anchor" aria-label="anchor" href="#copyleft-and-dependencies-in-r"></a>
 </h3>
 <div class="callout-content">
 <p>R is licensed with the copyleft license <em>GPL</em>. Does this mean
@@ -1708,7 +1715,7 @@ any links that you are not going to use.
  -->
 </section></section><section id="aio-testing"><p>Content from <a href="testing.html">Testing</a></p>
 <hr>
-<p>Last updated on 2024-02-27 |
+<p>Last updated on 2024-03-05 |
         
         <a href="https://github.com/carpentries-incubator/lesson-R-packaging/edit/main/episodes/testing.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
@@ -1916,13 +1923,12 @@ file <code>tests/testthat/test-&lt;name&gt;.R</code>. Our functions live
 in a file called <code>functions.R</code>, so choosing
 <code>functions</code> as the name for the tests file is a good
 idea.</p>
-<div id="callout1" class="callout callout">
+<div id="callout1" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div class="callout-inner">
-<h3 class="callout-title">Callout<a class="anchor" aria-label="anchor" href="#callout1"></a>
-</h3>
+<div class="section level3 callout-title callout-inner">
+<h3 class="callout-title">Callout</h3>
 <div class="callout-content">
 <p>Don’t forget that projects may grow, and in the future perhaps you’ll
 have several files containing different functions (for instance, one
@@ -2001,12 +2007,12 @@ multiplication are aligned.</p>
 </div>
 </div>
 </div>
-<div id="expectations-vs-results" class="callout callout">
+<div id="callout2" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div id="expectations-vs-results" class="callout-inner">
-<h3 class="callout-title">Expectations vs results<a class="anchor" aria-label="anchor" href="#expectations-vs-results"></a>
+<div class="section level3 callout-title callout-inner">
+<h3 class="callout-title" id="expectations-vs-results">Expectations vs results<a class="anchor" aria-label="anchor" href="#expectations-vs-results"></a>
 </h3>
 <div class="callout-content">
 <p>Notice that the <em>assertions</em>, also known in R as <em>expect
@@ -2014,7 +2020,7 @@ functions</em> often look like:</p>
 <div class="codewrapper sourceCode" id="cb11">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode r" tabindex="0"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">expect_equal</span>(<span class="sc">&lt;</span>actual result<span class="sc">&gt;</span>, <span class="sc">&lt;</span>expected result<span class="sc">&gt;</span>)</span></code></pre>
+<pre class="sourceCode r" tabindex="0"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" tabindex="-1"></a><span class="fu">expect_equal</span>(<span class="sc">&lt;</span>actual result<span class="sc">&gt;</span>, <span class="sc">&lt;</span>expected result<span class="sc">&gt;</span>)</span></code></pre>
 </div>
 <p>Where the actual result is obtained using software, and the expected
 result is provided via expert knowledge.</p>
@@ -2022,9 +2028,9 @@ result is provided via expert knowledge.</p>
 <div class="codewrapper sourceCode" id="cb12">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode r" tabindex="0"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="fu">expect_true</span>(<span class="sc">&lt;</span>statement we expect to be true<span class="sc">&gt;</span>)</span>
-<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="fu">expect_false</span>(<span class="sc">&lt;</span>statement we expect to be false<span class="sc">&gt;</span>)</span>
-<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a><span class="fu">expect_error</span>(<span class="sc">&lt;</span>code we expect to fail<span class="sc">&gt;</span>)</span></code></pre>
+<pre class="sourceCode r" tabindex="0"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" tabindex="-1"></a><span class="fu">expect_true</span>(<span class="sc">&lt;</span>statement we expect to be true<span class="sc">&gt;</span>)</span>
+<span id="cb12-2"><a href="#cb12-2" tabindex="-1"></a><span class="fu">expect_false</span>(<span class="sc">&lt;</span>statement we expect to be false<span class="sc">&gt;</span>)</span>
+<span id="cb12-3"><a href="#cb12-3" tabindex="-1"></a><span class="fu">expect_error</span>(<span class="sc">&lt;</span>code we expect to fail<span class="sc">&gt;</span>)</span></code></pre>
 </div>
 <p>Please refer to <a href="https://testthat.r-lib.org/reference/index.html" class="external-link"><code>testthat</code>
 documentation</a> for a thorough list of <em>expect functions</em>.</p>
@@ -2142,7 +2148,8 @@ in handy.</p>
 right corner. Just press <code>More Test package</code>. The menu will
 also show you the hotkey, typically
 <code>Ctrl / Cmd + Alt + T</code>.</p>
-<figure><img src="fig/test.gif" alt="" class="figure mx-auto d-block"><figcaption>Test package</figcaption></figure><p>After the tests are performed, a handy summary table will be
+<figure><img src="fig/test.gif" alt="Test package" class="figure mx-auto d-block"><div class="figcaption">Test package</div>
+</figure><p>After the tests are performed, a handy summary table will be
 displayed:</p>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -2358,12 +2365,12 @@ appears, the tests will help discovering it.</li>
 </section><section id="some-caveats"><h2 class="section-heading">Some caveats<a class="anchor" aria-label="anchor" href="#some-caveats"></a>
 </h2>
 <hr class="half-width">
-<div id="testing-plotting-functions" class="callout callout">
+<div id="callout3" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div id="testing-plotting-functions" class="callout-inner">
-<h3 class="callout-title">Testing plotting functions<a class="anchor" aria-label="anchor" href="#testing-plotting-functions"></a>
+<div class="section level3 callout-title callout-inner">
+<h3 class="callout-title" id="testing-plotting-functions">Testing plotting functions<a class="anchor" aria-label="anchor" href="#testing-plotting-functions"></a>
 </h3>
 <div class="callout-content">
 <p>Very often, research packages contain plotting functions. The way to
@@ -2381,7 +2388,8 @@ produces a plot object… even if nobody checks if it looks nice.</p>
 <hr class="half-width">
 <p>Also in the build tab there is a button with the text
 <code>Check</code> on it.</p>
-<figure><img src="fig/check.gif" alt="" class="figure mx-auto d-block"><figcaption>Check package</figcaption></figure><p>This button can be understood as an extended version of testing. When
+<figure><img src="fig/check.gif" alt="Check package" class="figure mx-auto d-block"><div class="figcaption">Check package</div>
+</figure><p>This button can be understood as an extended version of testing. When
 pressed, several things will happen:</p>
 <ul>
 <li>It will attach the package.</li>
@@ -2391,12 +2399,12 @@ pressed, several things will happen:</p>
 <li>And most importantly, it will show an error with a descriptive
 message if something failed.</li>
 </ul>
-<div id="lets-check" class="callout callout">
+<div id="callout4" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div id="lets-check" class="callout-inner">
-<h3 class="callout-title">Let’s check!<a class="anchor" aria-label="anchor" href="#lets-check"></a>
+<div class="section level3 callout-title callout-inner">
+<h3 class="callout-title" id="lets-check">Let’s check!<a class="anchor" aria-label="anchor" href="#lets-check"></a>
 </h3>
 <div class="callout-content">
 <p>Press check, and discuss what happens.</p>
@@ -2458,7 +2466,7 @@ any links that you are not going to use.
  -->
 </section></section><section id="aio-dependencies"><p>Content from <a href="dependencies.html">Managing dependencies</a></p>
 <hr>
-<p>Last updated on 2024-02-27 |
+<p>Last updated on 2024-03-05 |
         
         <a href="https://github.com/carpentries-incubator/lesson-R-packaging/edit/main/episodes/dependencies.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
@@ -2510,22 +2518,22 @@ approximately like this:</p>
 <div class="codewrapper sourceCode" id="cb1">
 <h3 class="code-label">TXT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode txt" tabindex="0"><code class="sourceCode default"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>Package: mysterycoffee</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>Type: Package</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>Title: Simulation of random encounters between couples of persons</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>Version: 0.1.0</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>Author: Pablo Rodriguez-Sanchez</span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>Maintainer: Pablo Rodriguez-Sanchez &lt;p.rodriguez-sanchez@esciencecenter.nl&gt;</span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>Description: Simulates random encounters between couples of persons</span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>    This package was inspired by the need to mitigate social isolation in remote</span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>    working environments. The idea is to simulate random encounters at the office's</span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>    coffee machine... when there is no such an office.</span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>License: What license is it under?</span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>Encoding: UTF-8</span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>LazyData: true</span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>RoxygenNote: 7.1.1</span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>Suggests:</span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>    testthat (&gt;= 3.0.0)</span></code></pre>
+<pre class="sourceCode txt" tabindex="0"><code class="sourceCode default"><span id="cb1-1"><a href="#cb1-1" tabindex="-1"></a>Package: mysterycoffee</span>
+<span id="cb1-2"><a href="#cb1-2" tabindex="-1"></a>Type: Package</span>
+<span id="cb1-3"><a href="#cb1-3" tabindex="-1"></a>Title: Simulation of random encounters between couples of persons</span>
+<span id="cb1-4"><a href="#cb1-4" tabindex="-1"></a>Version: 0.1.0</span>
+<span id="cb1-5"><a href="#cb1-5" tabindex="-1"></a>Author: Pablo Rodriguez-Sanchez</span>
+<span id="cb1-6"><a href="#cb1-6" tabindex="-1"></a>Maintainer: Pablo Rodriguez-Sanchez &lt;p.rodriguez-sanchez@esciencecenter.nl&gt;</span>
+<span id="cb1-7"><a href="#cb1-7" tabindex="-1"></a>Description: Simulates random encounters between couples of persons</span>
+<span id="cb1-8"><a href="#cb1-8" tabindex="-1"></a>    This package was inspired by the need to mitigate social isolation in remote</span>
+<span id="cb1-9"><a href="#cb1-9" tabindex="-1"></a>    working environments. The idea is to simulate random encounters at the office's</span>
+<span id="cb1-10"><a href="#cb1-10" tabindex="-1"></a>    coffee machine... when there is no such an office.</span>
+<span id="cb1-11"><a href="#cb1-11" tabindex="-1"></a>License: What license is it under?</span>
+<span id="cb1-12"><a href="#cb1-12" tabindex="-1"></a>Encoding: UTF-8</span>
+<span id="cb1-13"><a href="#cb1-13" tabindex="-1"></a>LazyData: true</span>
+<span id="cb1-14"><a href="#cb1-14" tabindex="-1"></a>RoxygenNote: 7.1.1</span>
+<span id="cb1-15"><a href="#cb1-15" tabindex="-1"></a>Suggests:</span>
+<span id="cb1-16"><a href="#cb1-16" tabindex="-1"></a>    testthat (&gt;= 3.0.0)</span></code></pre>
 </div>
 <p>The most important keywords to declare dependencies are:</p>
 <ul>
@@ -2542,12 +2550,12 @@ lines already contain a dependency statement. Under the category
 <code>Suggests</code> we can see the package <code>testthat</code>. More
 specifically, we can see that a version equal or higher than
 <code>3.0.0</code> is suggested.</p>
-<div id="what-do-you-mean-mandatory" class="callout callout">
+<div id="callout1" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div id="what-do-you-mean-mandatory" class="callout-inner">
-<h3 class="callout-title">What do you mean mandatory?<a class="anchor" aria-label="anchor" href="#what-do-you-mean-mandatory"></a>
+<div class="section level3 callout-title callout-inner">
+<h3 class="callout-title" id="what-do-you-mean-mandatory">What do you mean mandatory?<a class="anchor" aria-label="anchor" href="#what-do-you-mean-mandatory"></a>
 </h3>
 <div class="callout-content">
 <p>Please note that, even if we tag a dependency as
@@ -2584,7 +2592,7 @@ to add:</p>
 <button class="accordion-button hint-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHint1" aria-expanded="false" aria-controls="collapseHint1">
   <h4 class="accordion-header" id="headingHint1">Give me a hint</h4>
 </button>
-<div id="collapseHint1" class="accordion-collapse collapse" aria-labelledby="headingHint1" data-bs-parent="#accordionHint1">
+<div id="collapseHint1" class="accordion-collapse collapse" data-bs-parent="#accordionHint1" aria-labelledby="headingHint1">
 <div class="accordion-body">
 <p>Tip: take a look at the help menu of
 <code>usethis::use_package()</code>.</p>
@@ -2597,7 +2605,7 @@ to add:</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1">Show me the solution</h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <p>We can add the new dependencies by:</p>
 <pre><code><span><span class="fu">usethis</span><span class="fu">::</span><span class="fu">use_package</span><span class="op">(</span><span class="st">"knitr"</span>, type <span class="op">=</span> <span class="st">"Imports"</span><span class="op">)</span></span>
@@ -2606,11 +2614,11 @@ to add:</p>
 <div class="codewrapper sourceCode" id="cb3">
 <h3 class="code-label">TXT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode txt" tabindex="0"><code class="sourceCode default"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>Suggests:</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>  tidyr,</span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>  testthat (&gt;= 3.0.0)</span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>Imports:</span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>  knitr</span></code></pre>
+<pre class="sourceCode txt" tabindex="0"><code class="sourceCode default"><span id="cb3-1"><a href="#cb3-1" tabindex="-1"></a>Suggests:</span>
+<span id="cb3-2"><a href="#cb3-2" tabindex="-1"></a>  tidyr,</span>
+<span id="cb3-3"><a href="#cb3-3" tabindex="-1"></a>  testthat (&gt;= 3.0.0)</span>
+<span id="cb3-4"><a href="#cb3-4" tabindex="-1"></a>Imports:</span>
+<span id="cb3-5"><a href="#cb3-5" tabindex="-1"></a>  knitr</span></code></pre>
 </div>
 <p>If you prefer, you can also add the dependencies by directly editing
 the <code>DESCRIPTION</code> file. But using
@@ -2685,7 +2693,7 @@ to see if you were successful.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2">Show me the solution</h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <p>From running <code>devtools::check()</code> we get:</p>
 <div class="codewrapper">
@@ -2722,7 +2730,7 @@ any links that you are not going to use.
  -->
 </section></section><section id="aio-documentation"><p>Content from <a href="documentation.html">Documenting your package</a></p>
 <hr>
-<p>Last updated on 2024-02-27 |
+<p>Last updated on 2024-03-05 |
         
         <a href="https://github.com/carpentries-incubator/lesson-R-packaging/edit/main/episodes/documentation.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
@@ -2799,12 +2807,12 @@ default README.md file.</p>
 </div>
 </div>
 </div>
-<div id="optional-readme-rendering" class="callout callout">
+<div id="callout1" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div id="optional-readme-rendering" class="callout-inner">
-<h3 class="callout-title">(Optional) Readme rendering<a class="anchor" aria-label="anchor" href="#optional-readme-rendering"></a>
+<div class="section level3 callout-title callout-inner">
+<h3 class="callout-title" id="optional-readme-rendering">(Optional) Readme rendering<a class="anchor" aria-label="anchor" href="#optional-readme-rendering"></a>
 </h3>
 <div class="callout-content">
 <p>One of the advantages of having a <code>README.md</code> is that most
@@ -2867,7 +2875,8 @@ will appear: <img src="fig/roxygen-options.png" alt="Project options" class="fig
 the steps in the animation below. Please note that, before pressing
 <code>Code &gt; Insert Roxygen skeleton</code> your cursor has to be
 inside the function’s body.</p>
-<figure><img src="fig/roxygen-skeleton.gif" alt="" class="figure mx-auto d-block"><figcaption>Roxygen skeleton</figcaption></figure><p>Let’s take a look at the <em>skeleton</em>. It contains:</p>
+<figure><img src="fig/roxygen-skeleton.gif" alt="Roxygen skeleton" class="figure mx-auto d-block"><div class="figcaption">Roxygen skeleton</div>
+</figure><p>Let’s take a look at the <em>skeleton</em>. It contains:</p>
 <ul>
 <li>A <code>Title</code> section, where you can write what your function
 does. You can use add more comment lines below for a long
@@ -2916,24 +2925,24 @@ particular:</p>
 <div class="codewrapper sourceCode" id="cb1">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode r" tabindex="0"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">#' Make groups of 2 persons</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co">#'</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co">#' Randomly arranges a vector of names into a matrix with 2 columns and</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co">#' whatever number of columns is required</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co">#'</span></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="co">#' @param names The vector of names</span></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="co">#'</span></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="co">#' @return The re-arranged matrix of names</span></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="co">#' @export</span></span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="co">#'</span></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>make_groups <span class="ot">&lt;-</span> <span class="cf">function</span>(names) {</span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Shuffle the names</span></span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>  names_shuffled <span class="ot">&lt;-</span> <span class="fu">sample</span>(names)</span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Arrange it as a two-columns matrix</span></span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>  names_coupled <span class="ot">&lt;-</span> <span class="fu">matrix</span>(names, <span class="at">ncol =</span> <span class="dv">2</span>)</span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(names_coupled)</span></code></pre>
+<pre class="sourceCode r" tabindex="0"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" tabindex="-1"></a><span class="co">#' Make groups of 2 persons</span></span>
+<span id="cb1-2"><a href="#cb1-2" tabindex="-1"></a><span class="co">#'</span></span>
+<span id="cb1-3"><a href="#cb1-3" tabindex="-1"></a><span class="co">#' Randomly arranges a vector of names into a matrix with 2 columns and</span></span>
+<span id="cb1-4"><a href="#cb1-4" tabindex="-1"></a><span class="co">#' whatever number of columns is required</span></span>
+<span id="cb1-5"><a href="#cb1-5" tabindex="-1"></a><span class="co">#'</span></span>
+<span id="cb1-6"><a href="#cb1-6" tabindex="-1"></a><span class="co">#' @param names The vector of names</span></span>
+<span id="cb1-7"><a href="#cb1-7" tabindex="-1"></a><span class="co">#'</span></span>
+<span id="cb1-8"><a href="#cb1-8" tabindex="-1"></a><span class="co">#' @return The re-arranged matrix of names</span></span>
+<span id="cb1-9"><a href="#cb1-9" tabindex="-1"></a><span class="co">#' @export</span></span>
+<span id="cb1-10"><a href="#cb1-10" tabindex="-1"></a><span class="co">#'</span></span>
+<span id="cb1-11"><a href="#cb1-11" tabindex="-1"></a>make_groups <span class="ot">&lt;-</span> <span class="cf">function</span>(names) {</span>
+<span id="cb1-12"><a href="#cb1-12" tabindex="-1"></a>  <span class="co"># Shuffle the names</span></span>
+<span id="cb1-13"><a href="#cb1-13" tabindex="-1"></a>  names_shuffled <span class="ot">&lt;-</span> <span class="fu">sample</span>(names)</span>
+<span id="cb1-14"><a href="#cb1-14" tabindex="-1"></a></span>
+<span id="cb1-15"><a href="#cb1-15" tabindex="-1"></a>  <span class="co"># Arrange it as a two-columns matrix</span></span>
+<span id="cb1-16"><a href="#cb1-16" tabindex="-1"></a>  names_coupled <span class="ot">&lt;-</span> <span class="fu">matrix</span>(names, <span class="at">ncol =</span> <span class="dv">2</span>)</span>
+<span id="cb1-17"><a href="#cb1-17" tabindex="-1"></a></span>
+<span id="cb1-18"><a href="#cb1-18" tabindex="-1"></a>  <span class="fu">return</span>(names_coupled)</span></code></pre>
 </div>
 <p>Please note that the documentation is even longer than the code.
 There is nothing wrong about this, to the contrary. If you have to
@@ -2986,7 +2995,8 @@ documentation will be generated every time you press <em>“Install and
 restart”</em> in the <em>“Build”</em> menu at the upper right side of
 <code>RStudio</code>. The tab will also contain a <em>“Document”</em>
 only:</p>
-<figure><img src="fig/document.gif" alt="" class="figure mx-auto d-block"><figcaption>Document</figcaption></figure><div id="writing-the-namespace" class="callout challenge">
+<figure><img src="fig/document.gif" alt="Document" class="figure mx-auto d-block"><div class="figcaption">Document</div>
+</figure><div id="writing-the-namespace" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
@@ -3010,9 +3020,9 @@ Can you open it and describe what do you see? What does it mean?</p>
 <div class="codewrapper sourceCode" id="cb2">
 <h3 class="code-label">TXT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode txt" tabindex="0"><code class="sourceCode default"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a># Generated by roxygen2: do not edit by hand</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>export(make_groups)</span></code></pre>
+<pre class="sourceCode txt" tabindex="0"><code class="sourceCode default"><span id="cb2-1"><a href="#cb2-1" tabindex="-1"></a># Generated by roxygen2: do not edit by hand</span>
+<span id="cb2-2"><a href="#cb2-2" tabindex="-1"></a></span>
+<span id="cb2-3"><a href="#cb2-3" tabindex="-1"></a>export(make_groups)</span></code></pre>
 </div>
 <p>The <code>export</code> command guarantees that the function
 <code>make_groups</code> will be available for the final users of the
@@ -3037,7 +3047,8 @@ function we are interested in:</p>
 <code class="sourceCode R"><span><span class="op">?</span><span class="va">make_groups</span></span></code></pre>
 </div>
 <p>The help menu will open and show something like this:</p>
-<figure><img src="fig/help.png" alt="" class="figure mx-auto d-block"><figcaption>Help</figcaption></figure><div id="keypoints1" class="callout keypoints">
+<figure><img src="fig/help.png" alt="Help" class="figure mx-auto d-block"><div class="figcaption">Help</div>
+</figure><div id="keypoints1" class="callout keypoints">
 <div class="callout-square">
 <i class="callout-icon" data-feather="key"></i>
 </div>
@@ -3061,7 +3072,7 @@ any links that you are not going to use.
  -->
 </section></section><section id="aio-data"><p>Content from <a href="data.html">Data</a></p>
 <hr>
-<p>Last updated on 2024-02-27 |
+<p>Last updated on 2024-03-05 |
         
         <a href="https://github.com/carpentries-incubator/lesson-R-packaging/edit/main/episodes/data.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
@@ -3105,12 +3116,12 @@ SSA”</em>.</p>
 <p>In this chapter we will learn how to include some data in our
 package. This can be very useful to ship the data together with the
 package, in an easy to install way.</p>
-<div id="is-your-data-too-big" class="callout callout">
+<div id="callout1" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div id="is-your-data-too-big" class="callout-inner">
-<h3 class="callout-title">Is your data too big?<a class="anchor" aria-label="anchor" href="#is-your-data-too-big"></a>
+<div class="section level3 callout-title callout-inner">
+<h3 class="callout-title" id="is-your-data-too-big">Is your data too big?<a class="anchor" aria-label="anchor" href="#is-your-data-too-big"></a>
 </h3>
 <div class="callout-content">
 <p>Packages are typically not larger than a few megabytes.</p>
@@ -3293,7 +3304,7 @@ any links that you are not going to use.
  -->
 </section></section><section id="aio-vignettes"><p>Content from <a href="vignettes.html">Vignettes</a></p>
 <hr>
-<p>Last updated on 2024-02-27 |
+<p>Last updated on 2024-03-05 |
         
         <a href="https://github.com/carpentries-incubator/lesson-R-packaging/edit/main/episodes/vignettes.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
@@ -3371,7 +3382,7 @@ stand out to you?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1">Show me the solution</h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <p>There are many things that can stand out about vignettes. Some things
 that may be mentioned:</p>
@@ -3395,12 +3406,12 @@ you to provide context and instructions around the functionality you
 created. The resulting document would be a human readable website or a
 pdf file. The possible applications for this are endless. It can be a
 tutorial, a report, or even a scientific paper.</p>
-<div id="vignettes-as-research-reports" class="callout callout">
+<div id="callout1" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div id="vignettes-as-research-reports" class="callout-inner">
-<h3 class="callout-title">Vignettes as research reports<a class="anchor" aria-label="anchor" href="#vignettes-as-research-reports"></a>
+<div class="section level3 callout-title callout-inner">
+<h3 class="callout-title" id="vignettes-as-research-reports">Vignettes as research reports<a class="anchor" aria-label="anchor" href="#vignettes-as-research-reports"></a>
 </h3>
 <div class="callout-content">
 <p>There are several reasons that make vignettes an excellent way to
@@ -3436,8 +3447,8 @@ the last paragraph of the previous section.</p>
 <div class="codewrapper sourceCode" id="cb3">
 <h3 class="code-label">MARKDOWN<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode markdown" tabindex="0"><code class="sourceCode markdown"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>In <span class="in">`R`</span>, vignettes are typically written using <span class="in">`.Rmd`</span> (the extension of <span class="in">`Rmarkdown`</span>) files.</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>The name is self-descriptive: it is a file that combines **code** (in `R`) and **text** (in <span class="in">`markdown`</span>).</span></code></pre>
+<pre class="sourceCode markdown" tabindex="0"><code class="sourceCode markdown"><span id="cb3-1"><a href="#cb3-1" tabindex="-1"></a>In <span class="in">`R`</span>, vignettes are typically written using <span class="in">`.Rmd`</span> (the extension of <span class="in">`Rmarkdown`</span>) files.</span>
+<span id="cb3-2"><a href="#cb3-2" tabindex="-1"></a>The name is self-descriptive: it is a file that combines **code** (in `R`) and **text** (in <span class="in">`markdown`</span>).</span></code></pre>
 </div>
 <p>Learning Markdown is not complex, and there are lots of good <a href="https://www.markdownguide.org/cheat-sheet/" class="external-link">cheat sheets</a>
 available online.</p>
@@ -3469,14 +3480,14 @@ more information:</p>
 <div class="codewrapper sourceCode" id="cb5">
 <h3 class="code-label">YAML<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode yaml" tabindex="0"><code class="sourceCode yaml"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"Examples of usage"</span></span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="fu">output</span><span class="kw">:</span><span class="at"> rmarkdown::html_vignette</span></span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="fu">vignette</span><span class="kw">: </span><span class="ch">&gt;</span></span>
-<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>  %\VignetteIndexEntry{test}</span>
-<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>  %\VignetteEngine{knitr::rmarkdown}</span>
-<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>  %\VignetteEncoding{UTF-8}</span>
-<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span></code></pre>
+<pre class="sourceCode yaml" tabindex="0"><code class="sourceCode yaml"><span id="cb5-1"><a href="#cb5-1" tabindex="-1"></a><span class="pp">---</span></span>
+<span id="cb5-2"><a href="#cb5-2" tabindex="-1"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"Examples of usage"</span></span>
+<span id="cb5-3"><a href="#cb5-3" tabindex="-1"></a><span class="fu">output</span><span class="kw">:</span><span class="at"> rmarkdown::html_vignette</span></span>
+<span id="cb5-4"><a href="#cb5-4" tabindex="-1"></a><span class="fu">vignette</span><span class="kw">: </span><span class="ch">&gt;</span></span>
+<span id="cb5-5"><a href="#cb5-5" tabindex="-1"></a>  %\VignetteIndexEntry{test}</span>
+<span id="cb5-6"><a href="#cb5-6" tabindex="-1"></a>  %\VignetteEngine{knitr::rmarkdown}</span>
+<span id="cb5-7"><a href="#cb5-7" tabindex="-1"></a>  %\VignetteEncoding{UTF-8}</span>
+<span id="cb5-8"><a href="#cb5-8" tabindex="-1"></a><span class="pp">---</span></span></code></pre>
 </div>
 <p>Scrolling down, we see that there is some R code in our vignette
 already. This is fenced by so-called back-ticks: (<code>```</code>), as
@@ -3484,9 +3495,9 @@ well as information about the programming language used: R.</p>
 <div class="codewrapper sourceCode" id="cb6">
 <h3 class="code-label">DEFAULT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode default" tabindex="0"><code class="sourceCode default"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>```{r setup} </span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>```</span></code></pre>
+<pre class="sourceCode default" tabindex="0"><code class="sourceCode default"><span id="cb6-1"><a href="#cb6-1" tabindex="-1"></a>```{r setup} </span>
+<span id="cb6-2"><a href="#cb6-2" tabindex="-1"></a></span>
+<span id="cb6-3"><a href="#cb6-3" tabindex="-1"></a>```</span></code></pre>
 </div>
 <p>This is called a ‘code chunk’. The word <code>setup</code> here is
 the name of the code chunk. It can be useful to name code chunks, but it
@@ -3500,11 +3511,11 @@ introduction. How about:</p>
 <div class="codewrapper sourceCode" id="cb7">
 <h3 class="code-label">MARKDOWN<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode markdown" tabindex="0"><code class="sourceCode markdown"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">## Introduction</span></span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>Working from home can be lonely. Do you miss the random chats at the coffee machine? Certainly we do!</span>
-<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>Luckily, our R package <span class="in">`mysterycoffee`</span> is here to help.</span></code></pre>
+<pre class="sourceCode markdown" tabindex="0"><code class="sourceCode markdown"><span id="cb7-1"><a href="#cb7-1" tabindex="-1"></a><span class="fu">## Introduction</span></span>
+<span id="cb7-2"><a href="#cb7-2" tabindex="-1"></a></span>
+<span id="cb7-3"><a href="#cb7-3" tabindex="-1"></a>Working from home can be lonely. Do you miss the random chats at the coffee machine? Certainly we do!</span>
+<span id="cb7-4"><a href="#cb7-4" tabindex="-1"></a></span>
+<span id="cb7-5"><a href="#cb7-5" tabindex="-1"></a>Luckily, our R package <span class="in">`mysterycoffee`</span> is here to help.</span></code></pre>
 </div>
 </div>
 <div class="section level3">
@@ -3513,7 +3524,8 @@ introduction. How about:</p>
 <p><em>“Knitting”</em> is the process of generating a reader-friendly
 document. And RStudio has a button for that. Let’s press it and see what
 happens.</p>
-<figure><img src="fig/knit.gif" alt="" class="figure mx-auto d-block"><figcaption>Knitting an R Markdown document</figcaption></figure>
+<figure><img src="fig/knit.gif" alt="Knitting an R Markdown document" class="figure mx-auto d-block"><div class="figcaption">Knitting an R Markdown document</div>
+</figure>
 </div>
 </section><section id="making-the-vignette-complete"><h2 class="section-heading">Making the vignette complete<a class="anchor" aria-label="anchor" href="#making-the-vignette-complete"></a>
 </h2>
@@ -3553,69 +3565,69 @@ code chunk)</li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2">Show me the solution</h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <p>This is what I wrote. Of course, your text, and even your code, will
 most likely be different.</p>
 <div class="codewrapper sourceCode" id="cb8">
 <h3 class="code-label">MARKDOWN<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode markdown" tabindex="0"><code class="sourceCode markdown"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Examples of usage"</span></span>
-<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="an">output:</span><span class="co"> rmarkdown::html_vignette</span></span>
-<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a><span class="an">vignette:</span><span class="co"> &gt;</span></span>
-<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a><span class="co">  %\VignetteIndexEntry{test}</span></span>
-<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a><span class="co">  %\VignetteEngine{knitr::rmarkdown}</span></span>
-<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a><span class="co">  %\VignetteEncoding{UTF-8}</span></span>
-<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a><span class="fu">## Introduction</span></span>
-<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a>Working from home can be lonely. Do you miss the random chats at the coffee machine? Certainly we do!</span>
-<span id="cb8-12"><a href="#cb8-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-13"><a href="#cb8-13" aria-hidden="true" tabindex="-1"></a>Luckily, our R package <span class="in">`mysterycoffee`</span> is here to help.</span>
-<span id="cb8-14"><a href="#cb8-14" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-15"><a href="#cb8-15" aria-hidden="true" tabindex="-1"></a><span class="fu">## How to use it</span></span>
-<span id="cb8-16"><a href="#cb8-16" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-17"><a href="#cb8-17" aria-hidden="true" tabindex="-1"></a>Well, first you will have to attach the package.</span>
-<span id="cb8-18"><a href="#cb8-18" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-19"><a href="#cb8-19" aria-hidden="true" tabindex="-1"></a><span class="in">```{r install}</span></span>
-<span id="cb8-20"><a href="#cb8-20" aria-hidden="true" tabindex="-1"></a><span class="in"># library(mysterycoffee) # uncomment this line in the vignette</span></span>
-<span id="cb8-21"><a href="#cb8-21" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb8-22"><a href="#cb8-22" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-23"><a href="#cb8-23" aria-hidden="true" tabindex="-1"></a>The package will need the names of your colleagues. These are mine:</span>
-<span id="cb8-24"><a href="#cb8-24" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-25"><a href="#cb8-25" aria-hidden="true" tabindex="-1"></a><span class="in">```{r names}</span></span>
-<span id="cb8-26"><a href="#cb8-26" aria-hidden="true" tabindex="-1"></a><span class="in">names &lt;- c("Pablo Rodríguez",</span></span>
-<span id="cb8-27"><a href="#cb8-27" aria-hidden="true" tabindex="-1"></a><span class="in">           "Lieke de Boer",</span></span>
-<span id="cb8-28"><a href="#cb8-28" aria-hidden="true" tabindex="-1"></a><span class="in">           "Barbara Vreede",</span></span>
-<span id="cb8-29"><a href="#cb8-29" aria-hidden="true" tabindex="-1"></a><span class="in">           "President Obama",</span></span>
-<span id="cb8-30"><a href="#cb8-30" aria-hidden="true" tabindex="-1"></a><span class="in">           "General Sun Tzu",</span></span>
-<span id="cb8-31"><a href="#cb8-31" aria-hidden="true" tabindex="-1"></a><span class="in">           "Pharaoh Hatshepsut")</span></span>
-<span id="cb8-32"><a href="#cb8-32" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb8-33"><a href="#cb8-33" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-34"><a href="#cb8-34" aria-hidden="true" tabindex="-1"></a>Now we just have to use the function <span class="in">`make_groups`</span> to assign the random coffee partners:</span>
-<span id="cb8-35"><a href="#cb8-35" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-36"><a href="#cb8-36" aria-hidden="true" tabindex="-1"></a><span class="in">```{r assign}</span></span>
-<span id="cb8-37"><a href="#cb8-37" aria-hidden="true" tabindex="-1"></a><span class="in">groups &lt;- make_groups(names)</span></span>
-<span id="cb8-38"><a href="#cb8-38" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb8-39"><a href="#cb8-39" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-40"><a href="#cb8-40" aria-hidden="true" tabindex="-1"></a>And here you have the result!</span>
-<span id="cb8-41"><a href="#cb8-41" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-42"><a href="#cb8-42" aria-hidden="true" tabindex="-1"></a><span class="in">```{r print, echo=FALSE}</span></span>
-<span id="cb8-43"><a href="#cb8-43" aria-hidden="true" tabindex="-1"></a><span class="in">print(groups)</span></span>
-<span id="cb8-44"><a href="#cb8-44" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code></pre>
+<pre class="sourceCode markdown" tabindex="0"><code class="sourceCode markdown"><span id="cb8-1"><a href="#cb8-1" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb8-2"><a href="#cb8-2" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Examples of usage"</span></span>
+<span id="cb8-3"><a href="#cb8-3" tabindex="-1"></a><span class="an">output:</span><span class="co"> rmarkdown::html_vignette</span></span>
+<span id="cb8-4"><a href="#cb8-4" tabindex="-1"></a><span class="an">vignette:</span><span class="co"> &gt;</span></span>
+<span id="cb8-5"><a href="#cb8-5" tabindex="-1"></a><span class="co">  %\VignetteIndexEntry{test}</span></span>
+<span id="cb8-6"><a href="#cb8-6" tabindex="-1"></a><span class="co">  %\VignetteEngine{knitr::rmarkdown}</span></span>
+<span id="cb8-7"><a href="#cb8-7" tabindex="-1"></a><span class="co">  %\VignetteEncoding{UTF-8}</span></span>
+<span id="cb8-8"><a href="#cb8-8" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb8-9"><a href="#cb8-9" tabindex="-1"></a><span class="fu">## Introduction</span></span>
+<span id="cb8-10"><a href="#cb8-10" tabindex="-1"></a></span>
+<span id="cb8-11"><a href="#cb8-11" tabindex="-1"></a>Working from home can be lonely. Do you miss the random chats at the coffee machine? Certainly we do!</span>
+<span id="cb8-12"><a href="#cb8-12" tabindex="-1"></a></span>
+<span id="cb8-13"><a href="#cb8-13" tabindex="-1"></a>Luckily, our R package <span class="in">`mysterycoffee`</span> is here to help.</span>
+<span id="cb8-14"><a href="#cb8-14" tabindex="-1"></a></span>
+<span id="cb8-15"><a href="#cb8-15" tabindex="-1"></a><span class="fu">## How to use it</span></span>
+<span id="cb8-16"><a href="#cb8-16" tabindex="-1"></a></span>
+<span id="cb8-17"><a href="#cb8-17" tabindex="-1"></a>Well, first you will have to attach the package.</span>
+<span id="cb8-18"><a href="#cb8-18" tabindex="-1"></a></span>
+<span id="cb8-19"><a href="#cb8-19" tabindex="-1"></a><span class="in">```{r install}</span></span>
+<span id="cb8-20"><a href="#cb8-20" tabindex="-1"></a><span class="in"># library(mysterycoffee) # uncomment this line in the vignette</span></span>
+<span id="cb8-21"><a href="#cb8-21" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb8-22"><a href="#cb8-22" tabindex="-1"></a></span>
+<span id="cb8-23"><a href="#cb8-23" tabindex="-1"></a>The package will need the names of your colleagues. These are mine:</span>
+<span id="cb8-24"><a href="#cb8-24" tabindex="-1"></a></span>
+<span id="cb8-25"><a href="#cb8-25" tabindex="-1"></a><span class="in">```{r names}</span></span>
+<span id="cb8-26"><a href="#cb8-26" tabindex="-1"></a><span class="in">names &lt;- c("Pablo Rodríguez",</span></span>
+<span id="cb8-27"><a href="#cb8-27" tabindex="-1"></a><span class="in">           "Lieke de Boer",</span></span>
+<span id="cb8-28"><a href="#cb8-28" tabindex="-1"></a><span class="in">           "Barbara Vreede",</span></span>
+<span id="cb8-29"><a href="#cb8-29" tabindex="-1"></a><span class="in">           "President Obama",</span></span>
+<span id="cb8-30"><a href="#cb8-30" tabindex="-1"></a><span class="in">           "General Sun Tzu",</span></span>
+<span id="cb8-31"><a href="#cb8-31" tabindex="-1"></a><span class="in">           "Pharaoh Hatshepsut")</span></span>
+<span id="cb8-32"><a href="#cb8-32" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb8-33"><a href="#cb8-33" tabindex="-1"></a></span>
+<span id="cb8-34"><a href="#cb8-34" tabindex="-1"></a>Now we just have to use the function <span class="in">`make_groups`</span> to assign the random coffee partners:</span>
+<span id="cb8-35"><a href="#cb8-35" tabindex="-1"></a></span>
+<span id="cb8-36"><a href="#cb8-36" tabindex="-1"></a><span class="in">```{r assign}</span></span>
+<span id="cb8-37"><a href="#cb8-37" tabindex="-1"></a><span class="in">groups &lt;- make_groups(names)</span></span>
+<span id="cb8-38"><a href="#cb8-38" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb8-39"><a href="#cb8-39" tabindex="-1"></a></span>
+<span id="cb8-40"><a href="#cb8-40" tabindex="-1"></a>And here you have the result!</span>
+<span id="cb8-41"><a href="#cb8-41" tabindex="-1"></a></span>
+<span id="cb8-42"><a href="#cb8-42" tabindex="-1"></a><span class="in">```{r print, echo=FALSE}</span></span>
+<span id="cb8-43"><a href="#cb8-43" tabindex="-1"></a><span class="in">print(groups)</span></span>
+<span id="cb8-44"><a href="#cb8-44" tabindex="-1"></a><span class="in">```</span></span></code></pre>
 </div>
 </div>
 </div>
 </div>
 </div>
 
-<div id="hiding-chunks" class="callout callout">
+<div id="callout2" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div id="hiding-chunks" class="callout-inner">
-<h3 class="callout-title">Hiding chunks<a class="anchor" aria-label="anchor" href="#hiding-chunks"></a>
+<div class="section level3 callout-title callout-inner">
+<h3 class="callout-title" id="hiding-chunks">Hiding chunks<a class="anchor" aria-label="anchor" href="#hiding-chunks"></a>
 </h3>
 <div class="callout-content">
 <p>Sometimes you don’t want the content of the code chunk to be printed
@@ -3649,12 +3661,12 @@ need to explicitly build the vignette on installing the package:</p>
 <p>Note that clicking the “Install” button does not build the vignette
 in a way that allows access through the <code>vignette()</code> and
 <code>browseVignettes()</code> functions.</p>
-<div id="viewing-vignettes-from-a-github-installation" class="callout callout">
+<div id="callout3" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div id="viewing-vignettes-from-a-github-installation" class="callout-inner">
-<h3 class="callout-title">Viewing vignettes from a GitHub
+<div class="section level3 callout-title callout-inner">
+<h3 class="callout-title" id="viewing-vignettes-from-a-github-installation">Viewing vignettes from a GitHub
 installation<a class="anchor" aria-label="anchor" href="#viewing-vignettes-from-a-github-installation"></a>
 </h3>
 <div class="callout-content">
@@ -3749,8 +3761,8 @@ any links that you are not going to use.
   "url": "https://carpentries-incubator.github.io/lesson-R-packaging/aio.html",
   "identifier": "https://carpentries-incubator.github.io/lesson-R-packaging/aio.html",
   "dateCreated": "2021-02-19",
-  "dateModified": "2024-02-27",
-  "datePublished": "2024-02-27"
+  "dateModified": "2024-03-05",
+  "datePublished": "2024-03-05"
 }
 
   </script><script>
