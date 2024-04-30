@@ -1,5 +1,8 @@
 # Packaging with R
 
+## ⚠️ Looking for maintainers! ⚠️
+Unfortunately, this lesson has no maintainers at the moment. There are some people that wish to contribute but we need someone to pull the cart! Create an issue or contact training@esciencecenter.nl if you are interested.
+
 [![Create a Slack Account with us](https://img.shields.io/badge/Create_Slack_Account-The_Carpentries-071159.svg)](https://swc-slack-invite.herokuapp.com/)
 
 **Thanks for contributing to The Carpentries Incubator!**
