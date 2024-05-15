@@ -100,7 +100,7 @@ This will install and attach the package. The package contains only one function
 
 :::: solution
 
-```r
+``` r
 mysterycoffee::hello()
 ```
 

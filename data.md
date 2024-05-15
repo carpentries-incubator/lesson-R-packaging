@@ -117,7 +117,7 @@ Namely:
 2. When loading the data, do not describe the path as you usually would. Instead, use something like:
 
 
-```r
+``` r
 filepath <- system.file("extdata", "names.csv", package = "mysterycoffee")
 names <- read.csv(filepath)
 ```

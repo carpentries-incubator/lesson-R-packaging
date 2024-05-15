@@ -113,7 +113,7 @@ Let's start with the header.
 We can replace the title with a little more information:
 
 
-```yaml
+``` yaml
 ---
 title: "Examples of usage"
 output: rmarkdown::html_vignette
@@ -128,7 +128,7 @@ Scrolling down, we see that there is some R code in our vignette already.
 This is fenced by so-called back-ticks: (```` ``` ````), as well as information about the programming language used: R.
 
 
-````default
+```` default
 ```{r setup} 
 
 ```
@@ -145,7 +145,7 @@ However, before we start writing code, we should start with an introduction.
 How about:
 
 
-```markdown
+``` markdown
 ## Introduction
 
 Working from home can be lonely. Do you miss the random chats at the coffee machine? Certainly we do!
@@ -187,7 +187,7 @@ This is what I wrote.
 Of course, your text, and even your code, will most likely be different.
 
 
-````markdown
+```` markdown
 ---
 title: "Examples of usage"
 output: rmarkdown::html_vignette

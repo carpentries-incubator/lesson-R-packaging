@@ -36,7 +36,7 @@ One possibility could be trying the function in the console.
 For instance:
 
 
-```r
+``` r
 library(mysterycoffee)
 
 names <- c("Luke", "Vader", "Leia", "Chewbacca", "Solo", "R2D2")
