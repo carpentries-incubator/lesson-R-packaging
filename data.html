@@ -410,7 +410,7 @@ it do? Does it require any further action from our side?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1">Show me the solution</h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <p>It provides a very informative output. Probably you’ll see something
 like this:</p>
@@ -466,18 +466,29 @@ about the dataset?</p>
 <hr class="half-width"><p>Sometimes you need to use data in formats other than
 <code>.rda</code>. Examples of this are <code>.csv</code> or
 <code>.txt</code> files.</p>
-<p>In order to store raw data in your package, you have to follow a
-slightly different procedure. Namely:</p>
-<ol style="list-style-type: decimal"><li>Create a folder <code>inst/extdata/</code>, and save files there.
-Note that a user will have access to these data.</li>
-<li>When loading the data, do not describe the path as you usually
-would. Instead, use something like:</li>
-</ol><div class="codewrapper sourceCode" id="cb4">
+<p>In order to store raw data in your package, you have to save them in
+<code>inst/extdata</code>. For example, we can add our example names
+vector here as a text file:</p>
+<div class="codewrapper sourceCode" id="cb4">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="va">filepath</span> <span class="op">&lt;-</span> <span class="fu">system.file</span><span class="op">(</span><span class="st">"extdata"</span>, <span class="st">"names.csv"</span>, package <span class="op">=</span> <span class="st">"mysterycoffee"</span><span class="op">)</span></span>
-<span><span class="va">names</span> <span class="op">&lt;-</span> <span class="fu">read.csv</span><span class="op">(</span><span class="va">filepath</span><span class="op">)</span></span></code></pre>
+<code class="sourceCode R"><span><span class="fu">dir.create</span><span class="op">(</span><span class="st">"inst/extdata"</span>, recursive <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span>
+<span><span class="fu">writeLines</span><span class="op">(</span><span class="va">example_names</span>, <span class="st">"inst/extdata/names.txt"</span><span class="op">)</span></span></code></pre>
+</div>
+<div class="codewrapper">
+<h3 class="code-label">ERROR<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="error" tabindex="0"><code>Error in eval(expr, envir, enclos): object 'example_names' not found</code></pre>
+</div>
+<p>Then, after we reload the package, our users will be able to access
+this file path using <code>system.file</code>:</p>
+<div class="codewrapper sourceCode" id="cb6">
+<h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="va">filepath</span> <span class="op">&lt;-</span> <span class="fu">system.file</span><span class="op">(</span><span class="st">"extdata"</span>, <span class="st">"names.txt"</span>, package <span class="op">=</span> <span class="st">"mysterycoffee"</span><span class="op">)</span></span>
+<span><span class="va">names</span> <span class="op">&lt;-</span> <span class="fu">readLines</span><span class="op">(</span><span class="va">filepath</span><span class="op">)</span></span></code></pre>
 </div>
 <div id="discussion1" class="callout discussion">
 <div class="callout-square">
@@ -497,7 +508,7 @@ not have the <code>.rda</code> or <code>.RData</code> extensions?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2">Show me the solution</h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 <p>Having files without the <em>R</em> extensions is useful when one of
 the main purposes of the package is to read external files. For
