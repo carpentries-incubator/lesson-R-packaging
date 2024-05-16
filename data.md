@@ -110,16 +110,24 @@ Tip: if not, make sure that you activated `Generate documentation with Roxygen` 
 Sometimes you need to use data in formats other than `.rda`.
 Examples of this are `.csv` or `.txt` files.
 
-In order to store raw data in your package, you have to follow a slightly different procedure.
-Namely:
-
-1. Create a folder `inst/extdata/`, and save files there. Note that a user will have access to these data.
-2. When loading the data, do not describe the path as you usually would. Instead, use something like:
+In order to store raw data in your package, you have to save them in `inst/extdata`.
+For example, we can add our example names vector here as a text file:
 
 
 ``` r
-filepath <- system.file("extdata", "names.csv", package = "mysterycoffee")
-names <- read.csv(filepath)
+dir.create("inst/extdata", recursive = TRUE)
+writeLines(example_names, "inst/extdata/names.txt")
+```
+
+``` error
+Error in eval(expr, envir, enclos): object 'example_names' not found
+```
+
+Then, after we reload the package, our users will be able to access this file path using `system.file`:
+
+``` r
+filepath <- system.file("extdata", "names.txt", package = "mysterycoffee")
+names <- readLines(filepath)
 ```
 
 ::: discussion
