@@ -114,14 +114,15 @@ In order to store raw data in your package, you have to save them in `inst/extda
 For example, we can add our example names vector here as a text file:
 
 ```{r}
-dir.create("inst/extdata", recursive=TRUE)
+dir.create("inst/extdata", recursive = TRUE)
 writeLines(example_names, "inst/extdata/names.txt")
 ```
 
 Then, after we reload the package, our users will be able to access this file path using `system.file`:
-```{verbatim, lang = "r"}
-filepath <- system.file("extdata", "names.csv", package = "mysterycoffee")
-names <- read.csv(filepath)
+```{r}
+#| eval=FALSE
+filepath <- system.file("extdata", "names.txt", package = "mysterycoffee")
+names <- readLines(filepath)
 ```
 
 ::: discussion
