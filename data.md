@@ -44,9 +44,12 @@ Using R data files is the simplest approach to data management inside R Packages
 We can add data to our project by letting the package `usethis` help us.
 In the snippet below, we generate some data and then we use `usethis` to store it as part of the package:
 
-```r
-example_names <- c("Luke", "Vader", "Leia", "Chewbacca", "Solo", "R2D2")
 
+``` r
+example_names <- c("Luke", "Vader", "Leia", "Chewbacca", "Solo", "R2D2")
+```
+
+``` r
 usethis::use_data(example_names)
 ```
 
@@ -119,15 +122,15 @@ dir.create("inst/extdata", recursive = TRUE)
 writeLines(example_names, "inst/extdata/names.txt")
 ```
 
-``` error
-Error in eval(expr, envir, enclos): object 'example_names' not found
-```
-
 Then, after we reload the package, our users will be able to access this file path using `system.file`:
 
 ``` r
 filepath <- system.file("extdata", "names.txt", package = "mysterycoffee")
-names <- readLines(filepath)
+readLines(filepath)
+```
+
+``` output
+[1] "Luke"      "Vader"     "Leia"      "Chewbacca" "Solo"      "R2D2"     
 ```
 
 ::: discussion
