@@ -1,18 +1,5 @@
 # Packaging with R
 
-## ⚠️ Looking for maintainers! ⚠️
-Unfortunately, this lesson has no maintainers at the moment. There are some people that wish to contribute but we need someone to pull the cart! Create an issue or contact training@esciencecenter.nl if you are interested.
-
-[![Create a Slack Account with us](https://img.shields.io/badge/Create_Slack_Account-The_Carpentries-071159.svg)](https://swc-slack-invite.herokuapp.com/)
-
-**Thanks for contributing to The Carpentries Incubator!**
-This repository provides a blank starting point for lessons to be developed here.
-
-A member of the [Carpentries Curriculum Team](https://carpentries.org/team/)
-will work with you to get your lesson listed on the
-[Community Developed Lessons page][community-lessons]
-and make sure you have everything you need to begin developing your new lesson.
-
 ## Current status
 
 ![Progress diagram](episodes/fig/progress.png)
@@ -91,8 +78,10 @@ Look for the tag ![good_first_issue](https://img.shields.io/badge/-good%20first%
 Current maintainers of this lesson are
 
 * Pablo Rodríguez-Sánchez [@PabRod](https://github.com/PabRod/)
-- Barbara Vreede [@bvreede](https://github.com/bvreede)
 * Lieke de Boer [@liekelotte](https://github.com/liekelotte)
+* Michael Milton [@multimeric](https://github.com/multimeric)
+* Sven van der Burg [@svenvanderburg](https://github.com/svenvanderburg)
+
 ## Authors
 
 A list of contributors to the lesson can be found in [AUTHORS](AUTHORS)
