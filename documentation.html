@@ -312,10 +312,10 @@
               </div>
             </div>
 
-            <hr class="half-width"><div class="accordion accordion-flush resources" id="accordionFlush12">
+            <hr class="half-width"><div class="accordion accordion-flush lesson-resources" id="accordionFlush12">
               <div class="accordion-item">
                 <h2 class="accordion-header" id="flush-headingTwelve">
-                  <button class="accordion-button collapsed" id="resources" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwelve" aria-expanded="false" aria-controls="flush-collapseTwelve">
+                  <button class="accordion-button collapsed" id="lesson-resources" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwelve" aria-expanded="false" aria-controls="flush-collapseTwelve">
                     RESOURCES
                   </button>
                 </h2>
@@ -335,7 +335,7 @@
                 </div>
               </div>
             </div>
-            <hr class="half-width resources"><a href="aio.html">See all in one page</a>
+            <hr class="half-width lesson-resources"><a href="aio.html">See all in one page</a>
 
 
             <hr class="d-none d-sm-block d-md-none"><div class="d-grid gap-1">
@@ -366,7 +366,7 @@
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Documenting your package</h1>
-        <p>Last updated on 2024-08-20 |
+        <p>Last updated on 2024-08-27 |
 
         <a href="https://github.com/carpentries-incubator/lesson-R-packaging/edit/main/episodes/documentation.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 
@@ -401,8 +401,7 @@
 </div>
 </div>
 </div>
-<section><h2 class="section-heading" id="why-documenting">Why documenting?<a class="anchor" aria-label="anchor" href="#why-documenting"></a>
-<a class="anchor" aria-label="anchor" href="#why-documenting"></a></h2>
+<section><h2 class="section-heading" id="why-documenting">Why documenting?<a class="anchor" aria-label="anchor" href="#why-documenting"></a></h2>
 <hr class="half-width"><p>Your code is going to be read by people, for instance:</p>
 <ul><li>People interested in your research.</li>
 <li>Potential users of your code.</li>
@@ -410,8 +409,7 @@
 <li>Yourself, in the future, after you forgot all the tiny details.</li>
 </ul><p>For this and other reasons, it is a very good idea to invest some
 time in writing good documentation.</p>
-</section><section><h2 class="section-heading" id="the-readme">The README<a class="anchor" aria-label="anchor" href="#the-readme"></a>
-<a class="anchor" aria-label="anchor" href="#the-readme"></a></h2>
+</section><section><h2 class="section-heading" id="the-readme">The README<a class="anchor" aria-label="anchor" href="#the-readme"></a></h2>
 <hr class="half-width"><p>The first, and perhaps most important document of any coding project
 is the readme file. This file typically has the name
 <code>README.md</code> and is located at the root folder, just at the
@@ -423,8 +421,7 @@ potential users.</p>
 <i class="callout-icon" data-feather="message-circle"></i>
 </div>
 <div id="what-do-you-want-to-tell-your-potential-users" class="callout-inner">
-<h3 class="callout-title">What do you want to tell your potential users?<a class="anchor" aria-label="anchor" href="#what-do-you-want-to-tell-your-potential-users"></a>
-</h3>
+<h3 class="callout-title">What do you want to tell your potential users?</h3>
 <div class="callout-content">
 <p>Try to put yourself in the shoes of your potential users. They can be
 collaborators, people who found you code on the internet, …</p>
@@ -445,8 +442,7 @@ default README.md file.</p>
 <i class="callout-icon" data-feather="bell"></i>
 </div>
 <div id="optional-readme-rendering" class="callout-inner">
-<h3 class="callout-title">(Optional) Readme rendering<a class="anchor" aria-label="anchor" href="#optional-readme-rendering"></a>
-</h3>
+<h3 class="callout-title">(Optional) Readme rendering</h3>
 <div class="callout-content">
 <p>One of the advantages of having a <code>README.md</code> is that most
 code repositories render this file as a nicely-formatted reader-friendly
@@ -460,7 +456,7 @@ Control</a>.</p>
 </div>
 </div>
 </div>
-</section><section><h2 class="section-heading" id="documenting-your-functions-with-roxygen2">Documenting your functions with <code>roxygen2</code><a class="anchor" aria-label="anchor" href="#documenting-your-functions-with-roxygen2"></a>
+</section><section><h2 class="section-heading" id="documenting-your-functions-with-roxygen2">Documenting your functions with <code>roxygen2</code>
 <a class="anchor" aria-label="anchor" href="#documenting-your-functions-with-roxygen2"></a></h2>
 <hr class="half-width"><p>As we saw, the purpose of the readme is to <em>welcome</em> whoever
 happens to be looking at your project. This means that it is rarely the
@@ -482,8 +478,7 @@ Please follow these steps:</p>
 </div>
 <div id="using-roxygen2-for-the-first-time" class="callout-inner">
 <h3 class="callout-title">Using <code>roxygen2</code> for the first
-time<a class="anchor" aria-label="anchor" href="#using-roxygen2-for-the-first-time"></a>
-</h3>
+time</h3>
 <div class="callout-content">
 <ul><li>Delete <code>NAMESPACE</code>. <code>roxygen2</code> will create a
 new one for you.</li>
@@ -524,8 +519,7 @@ documentation</a>.</li>
 <i class="callout-icon" data-feather="zap"></i>
 </div>
 <div id="write-the-docs" class="callout-inner">
-<h3 class="callout-title">Write the docs<a class="anchor" aria-label="anchor" href="#write-the-docs"></a>
-</h3>
+<h3 class="callout-title">Write the docs</h3>
 <div class="callout-content">
 <p>Take 5 minutes to edit the skeleton with real documentation. In
 particular:</p>
@@ -543,7 +537,7 @@ particular:</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <p>The documentation should look approximately like this:</p>
 <div class="codewrapper sourceCode" id="cb1">
@@ -581,8 +575,7 @@ without hesitation.</p>
 <i class="callout-icon" data-feather="zap"></i>
 </div>
 <div id="the-export-field" class="callout-inner">
-<h3 class="callout-title">The <code>export</code> field<a class="anchor" aria-label="anchor" href="#the-export-field"></a>
-</h3>
+<h3 class="callout-title">The <code>export</code> field</h3>
 <div class="callout-content">
 <p>In case you don’t want your function to be directly accessible for
 users of your package, you just have to delete the <code>@export</code>
@@ -597,7 +590,7 @@ idea?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <p>Sometimes packages use auxiliary functions that perform intermediate
 operations. Writing functions for these operations can be very useful
@@ -610,8 +603,7 @@ only internally available.</p>
 </div>
 <p>Now that we have written the documentation, we are ready to build it.
 As you will see, the process is quite automatic.</p>
-</section><section><h2 class="section-heading" id="building-the-documentation">Building the documentation<a class="anchor" aria-label="anchor" href="#building-the-documentation"></a>
-<a class="anchor" aria-label="anchor" href="#building-the-documentation"></a></h2>
+</section><section><h2 class="section-heading" id="building-the-documentation">Building the documentation<a class="anchor" aria-label="anchor" href="#building-the-documentation"></a></h2>
 <hr class="half-width"><p>If you configured <code>roxygen2</code> as we suggested in section
 <em>“Using <code>roxygen2</code> for the first time”</em>, the
 documentation will be generated every time you press <em>“Install and
@@ -624,7 +616,7 @@ only:</p>
 <i class="callout-icon" data-feather="zap"></i>
 </div>
 <div id="writing-the-namespace" class="callout-inner">
-<h3 class="callout-title">Writing the <code>NAMESPACE</code><a class="anchor" aria-label="anchor" href="#writing-the-namespace"></a>
+<h3 class="callout-title">Writing the <code>NAMESPACE</code>
 </h3>
 <div class="callout-content">
 <p>The documentation build also created the <code>NAMESPACE</code> file.
@@ -637,7 +629,7 @@ Can you open it and describe what do you see? What does it mean?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution3" aria-expanded="false" aria-controls="collapseSolution3">
   <h4 class="accordion-header" id="headingSolution3"> Show me the solution </h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
 <div class="accordion-body">
 <p>The <code>NAMESPACE</code> file should look like:</p>
 <div class="codewrapper sourceCode" id="cb2">
@@ -656,8 +648,7 @@ hand; <code>roxygen2</code> will take care of it.</p>
 </div>
 </div>
 </div>
-</section><section><h2 class="section-heading" id="reading-the-documentation">Reading the documentation<a class="anchor" aria-label="anchor" href="#reading-the-documentation"></a>
-<a class="anchor" aria-label="anchor" href="#reading-the-documentation"></a></h2>
+</section><section><h2 class="section-heading" id="reading-the-documentation">Reading the documentation<a class="anchor" aria-label="anchor" href="#reading-the-documentation"></a></h2>
 <hr class="half-width"><p>After generating the documentation and installing the package, the
 documentation generated by <code>roxygen2</code> can be accessed as
 usual in <code>R</code> using a question mark and the name of the
@@ -675,8 +666,7 @@ function we are interested in:</p>
 <i class="callout-icon" data-feather="key"></i>
 </div>
 <div class="callout-inner">
-<h3 class="callout-title">Key Points<a class="anchor" aria-label="anchor" href="#keypoints1"></a>
-</h3>
+<h3 class="callout-title">Key Points</h3>
 <div class="callout-content">
 <ul><li>Documentation is not optional</li>
 <li>All coding projects need a readme file</li>
@@ -726,7 +716,7 @@ any links that you are not going to use.
         <p>Materials licensed under <a href="LICENSE.html">CC-BY 4.0</a> by the authors</p>
 
         <p>Template licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/" class="external-link">CC-BY 4.0</a> by <a href="https://carpentries.org/" class="external-link">The Carpentries</a></p>
-        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/0.16.5" class="external-link">sandpaper (0.16.5)</a>, <a href="https://github.com/carpentries/pegboard/tree/0.7.6" class="external-link">pegboard (0.7.6)</a>, and <a href="https://github.com/carpentries/varnish/tree/1.0.3" class="external-link">varnish (1.0.3)</a></p>
+        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/0.16.6" class="external-link">sandpaper (0.16.6)</a>, <a href="https://github.com/carpentries/pegboard/tree/0.7.6" class="external-link">pegboard (0.7.6)</a>, and <a href="https://github.com/carpentries/varnish/tree/1.0.4" class="external-link">varnish (1.0.4)</a></p>
 			</div>
 		</footer></div> <!-- / div.container -->
 	<div id="to-top">
@@ -748,8 +738,8 @@ any links that you are not going to use.
   "url": "https://carpentries-incubator.github.io/lesson-R-packaging/documentation.html",
   "identifier": "https://carpentries-incubator.github.io/lesson-R-packaging/documentation.html",
   "dateCreated": "2021-02-19",
-  "dateModified": "2024-08-20",
-  "datePublished": "2024-08-20"
+  "dateModified": "2024-08-27",
+  "datePublished": "2024-08-27"
 }
 
   </script><script>

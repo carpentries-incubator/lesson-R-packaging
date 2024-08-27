@@ -310,10 +310,10 @@
               </div>
             </div>
 
-            <hr class="half-width"><div class="accordion accordion-flush resources" id="accordionFlush12">
+            <hr class="half-width"><div class="accordion accordion-flush lesson-resources" id="accordionFlush12">
               <div class="accordion-item">
                 <h2 class="accordion-header" id="flush-headingTwelve">
-                  <button class="accordion-button collapsed" id="resources" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwelve" aria-expanded="false" aria-controls="flush-collapseTwelve">
+                  <button class="accordion-button collapsed" id="lesson-resources" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwelve" aria-expanded="false" aria-controls="flush-collapseTwelve">
                     RESOURCES
                   </button>
                 </h2>
@@ -333,7 +333,7 @@
                 </div>
               </div>
             </div>
-            <hr class="half-width resources"><a href="../instructor/aio.html">See all in one page</a>
+            <hr class="half-width lesson-resources"><a href="../instructor/aio.html">See all in one page</a>
 
 
             <hr class="d-none d-sm-block d-md-none"><div class="d-grid gap-1">
@@ -364,7 +364,7 @@
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Managing dependencies</h1>
-        <p>Last updated on 2024-08-20 |
+        <p>Last updated on 2024-08-27 |
 
         <a href="https://github.com/carpentries-incubator/lesson-R-packaging/edit/main/episodes/dependencies.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 
@@ -400,8 +400,7 @@ dependencies</li>
 </div>
 </div>
 </div>
-<section><h2 class="section-heading" id="what-are-dependencies">What are dependencies?<a class="anchor" aria-label="anchor" href="#what-are-dependencies"></a>
-<a class="anchor" aria-label="anchor" href="#what-are-dependencies"></a></h2>
+<section><h2 class="section-heading" id="what-are-dependencies">What are dependencies?<a class="anchor" aria-label="anchor" href="#what-are-dependencies"></a></h2>
 <hr class="half-width"><p>Very often, our own code uses functions from a different package. For
 instance, we used some functions from the package <code>testthat</code>
 in our <a href="testing.html">episode about testing</a>. When that’s the
@@ -411,8 +410,7 @@ sub-packages, are the dependencies of our package.</p>
 <p>Providing a list of dependencies will greatly simplify the task of
 installing our package. And the <code>DESCRIPTION</code> file provides a
 simple and handy way of creating this list.</p>
-</section><section><h2 class="section-heading" id="using-the-description-file">Using the <code>DESCRIPTION</code> file<a class="anchor" aria-label="anchor" href="#using-the-description-file"></a>
-<a class="anchor" aria-label="anchor" href="#using-the-description-file"></a></h2>
+</section><section><h2 class="section-heading" id="using-the-description-file">Using the <code>DESCRIPTION</code> file<a class="anchor" aria-label="anchor" href="#using-the-description-file"></a></h2>
 <hr class="half-width"><p>At this moment, our <code>DESCRIPTION</code> file should look
 approximately like this:</p>
 <div class="codewrapper sourceCode" id="cb1">
@@ -455,8 +453,7 @@ specifically, we can see that a version equal or higher than
 <i class="callout-icon" data-feather="zap"></i>
 </div>
 <div id="add-some-dependencies" class="callout-inner">
-<h3 class="callout-title">Add some dependencies<a class="anchor" aria-label="anchor" href="#add-some-dependencies"></a>
-</h3>
+<h3 class="callout-title">Add some dependencies</h3>
 <div class="callout-content">
 <p>Let’s add some dependencies to this list. Particularly, we want you
 to add:</p>
@@ -507,7 +504,7 @@ the <code>DESCRIPTION</code> file. But using
 </div>
 </div>
 </div>
-</section><section><h2 class="section-heading" id="running-devtoolscheck">Running <code>devtools::check()</code><a class="anchor" aria-label="anchor" href="#running-devtoolscheck"></a>
+</section><section><h2 class="section-heading" id="running-devtoolscheck">Running <code>devtools::check()</code>
 <a class="anchor" aria-label="anchor" href="#running-devtoolscheck"></a></h2>
 <hr class="half-width"><p><code>devtools::check()</code> checks for many different things, but
 here we want to see it in action for dependencies.</p>
@@ -556,8 +553,7 @@ function:</p>
 <i class="callout-icon" data-feather="zap"></i>
 </div>
 <div class="callout-inner">
-<h3 class="callout-title">Challenge<a class="anchor" aria-label="anchor" href="#challenge2"></a>
-</h3>
+<h3 class="callout-title">Challenge</h3>
 <div class="callout-content">
 <p>With this in place, or with your own package, do the following. Run
 <code>devtools::check()</code> (or click [ Build ] &gt; [ Check ]). What
@@ -593,8 +589,7 @@ updates the <code>DESCRIPTION</code>.</p>
 <i class="callout-icon" data-feather="key"></i>
 </div>
 <div class="callout-inner">
-<h3 class="callout-title">Key Points<a class="anchor" aria-label="anchor" href="#keypoints1"></a>
-</h3>
+<h3 class="callout-title">Key Points</h3>
 <div class="callout-content">
 <ul><li>The <code>DESCRIPTION</code> file helps us keeping track of our
 package’s dependencies</li>
@@ -641,7 +636,7 @@ any links that you are not going to use.
         <p>Materials licensed under <a href="LICENSE.html">CC-BY 4.0</a> by the authors</p>
 
         <p>Template licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/" class="external-link">CC-BY 4.0</a> by <a href="https://carpentries.org/" class="external-link">The Carpentries</a></p>
-        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/0.16.5" class="external-link">sandpaper (0.16.5)</a>, <a href="https://github.com/carpentries/pegboard/tree/0.7.6" class="external-link">pegboard (0.7.6)</a>, and <a href="https://github.com/carpentries/varnish/tree/1.0.3" class="external-link">varnish (1.0.3)</a></p>
+        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/0.16.6" class="external-link">sandpaper (0.16.6)</a>, <a href="https://github.com/carpentries/pegboard/tree/0.7.6" class="external-link">pegboard (0.7.6)</a>, and <a href="https://github.com/carpentries/varnish/tree/1.0.4" class="external-link">varnish (1.0.4)</a></p>
 			</div>
 		</footer></div> <!-- / div.container -->
 	<div id="to-top">
@@ -663,8 +658,8 @@ any links that you are not going to use.
   "url": "https://carpentries-incubator.github.io/lesson-R-packaging/instructor/dependencies.html",
   "identifier": "https://carpentries-incubator.github.io/lesson-R-packaging/instructor/dependencies.html",
   "dateCreated": "2021-02-19",
-  "dateModified": "2024-08-20",
-  "datePublished": "2024-08-20"
+  "dateModified": "2024-08-27",
+  "datePublished": "2024-08-27"
 }
 
   </script><script>
