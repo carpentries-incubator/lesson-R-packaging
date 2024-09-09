@@ -97,6 +97,9 @@
     <loc>https://carpentries-incubator.github.io/lesson-R-packaging/instructor/vignettes.html</loc>
   </url>
   <url>
+    <loc>https://carpentries-incubator.github.io/lesson-R-packaging/instructor/workshops.html</loc>
+  </url>
+  <url>
     <loc>https://carpentries-incubator.github.io/lesson-R-packaging/instructor-notes.html</loc>
   </url>
   <url>
@@ -119,5 +122,8 @@
   </url>
   <url>
     <loc>https://carpentries-incubator.github.io/lesson-R-packaging/vignettes.html</loc>
+  </url>
+  <url>
+    <loc>https://carpentries-incubator.github.io/lesson-R-packaging/workshops.html</loc>
   </url>
 </urlset>
