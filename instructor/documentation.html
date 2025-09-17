@@ -20,7 +20,7 @@
       <div class="large-logo">
         <img id="swc-logo" alt="Software Carpentry" src="../assets/images/software-logo.svg"><span class="badge text-bg-info">
           <abbr title="This lesson is in the beta phase, which means that it is ready for teaching by instructors outside of the original author team.">
-            <a href="https://cdh.carpentries.org/the-lesson-life-cycle.html#polishing-beta-stage" class="external-link alert-link">
+            <a href="https://docs.carpentries.org/resources/curriculum/lesson-life-cycle.html" class="external-link alert-link">
               <i aria-hidden="true" class="icon" data-feather="alert-circle" style="border-radius: 5px"></i>
               Beta
             </a>
@@ -366,7 +366,7 @@
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Documenting your package</h1>
-        <p>Last updated on 2024-12-03 |
+        <p>Last updated on 2025-09-17 |
 
         <a href="https://github.com/carpentries-incubator/lesson-R-packaging/edit/main/episodes/documentation.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 
@@ -422,8 +422,10 @@ potential users.</p>
 <div class="callout-square">
 <i class="callout-icon" data-feather="message-circle"></i>
 </div>
+<span class="callout-header">Discussion</span>
 <div id="what-do-you-want-to-tell-your-potential-users" class="callout-inner">
-<h3 class="callout-title">What do you want to tell your potential users?</h3>
+<h3 class="callout-title">What do you want to tell your potential
+users?</h3>
 <div class="callout-content">
 <p>Try to put yourself in the shoes of your potential users. They can be
 collaborators, people who found you code on the internet, …</p>
@@ -443,6 +445,7 @@ default README.md file.</p>
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
+<span class="callout-header">Callout</span>
 <div id="optional-readme-rendering" class="callout-inner">
 <h3 class="callout-title">(Optional) Readme rendering</h3>
 <div class="callout-content">
@@ -478,6 +481,7 @@ Please follow these steps:</p>
 <div class="callout-square">
 <i class="callout-icon" data-feather="check-square"></i>
 </div>
+<span class="callout-header">Checklist</span>
 <div id="using-roxygen2-for-the-first-time" class="callout-inner">
 <h3 class="callout-title">Using <code>roxygen2</code> for the first
 time</h3>
@@ -520,6 +524,7 @@ documentation</a>.</li>
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
+<span class="callout-header">Challenge</span>
 <div id="write-the-docs" class="callout-inner">
 <h3 class="callout-title">Write the docs</h3>
 <div class="callout-content">
@@ -539,7 +544,7 @@ particular:</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <p>The documentation should look approximately like this:</p>
 <div class="codewrapper sourceCode" id="cb1">
@@ -576,6 +581,7 @@ without hesitation.</p>
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
+<span class="callout-header">Challenge</span>
 <div id="the-export-field" class="callout-inner">
 <h3 class="callout-title">The <code>export</code> field</h3>
 <div class="callout-content">
@@ -592,7 +598,7 @@ idea?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 <p>Sometimes packages use auxiliary functions that perform intermediate
 operations. Writing functions for these operations can be very useful
@@ -617,6 +623,7 @@ only:</p>
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
+<span class="callout-header">Challenge</span>
 <div id="writing-the-namespace" class="callout-inner">
 <h3 class="callout-title">Writing the <code>NAMESPACE</code>
 </h3>
@@ -631,7 +638,7 @@ Can you open it and describe what do you see? What does it mean?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution3" aria-expanded="false" aria-controls="collapseSolution3">
   <h4 class="accordion-header" id="headingSolution3"> Show me the solution </h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
 <div class="accordion-body">
 <p>The <code>NAMESPACE</code> file should look like:</p>
 <div class="codewrapper sourceCode" id="cb2">
@@ -667,8 +674,8 @@ function we are interested in:</p>
 <div class="callout-square">
 <i class="callout-icon" data-feather="key"></i>
 </div>
+<span class="callout-header">Key Points</span>
 <div class="callout-inner">
-<h3 class="callout-title">Key Points</h3>
 <div class="callout-content">
 <ul><li>Documentation is not optional</li>
 <li>All coding projects need a readme file</li>
@@ -718,7 +725,7 @@ any links that you are not going to use.
         <p>Materials licensed under <a href="LICENSE.html">CC-BY 4.0</a> by the authors</p>
 
         <p>Template licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/" class="external-link">CC-BY 4.0</a> by <a href="https://carpentries.org/" class="external-link">The Carpentries</a></p>
-        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/0.16.10" class="external-link">sandpaper (0.16.10)</a>, <a href="https://github.com/carpentries/pegboard/tree/0.7.7" class="external-link">pegboard (0.7.7)</a>, and <a href="https://github.com/carpentries/varnish/tree/1.0.5" class="external-link">varnish (1.0.5)</a></p>
+        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/0.17.1" class="external-link">sandpaper (0.17.1)</a>, <a href="https://github.com/carpentries/pegboard/tree/0.7.9" class="external-link">pegboard (0.7.9)</a>, and <a href="https://github.com/carpentries/varnish/tree/1.0.7" class="external-link">varnish (1.0.7)</a></p>
 			</div>
 		</footer></div> <!-- / div.container -->
 	<div id="to-top">
@@ -729,10 +736,10 @@ any links that you are not going to use.
   <script type="application/ld+json">
     {
   "@context": "https://schema.org",
-  "@type": "TrainingMaterial",
+  "@type": "LearningResource",
   "@id": "https://carpentries-incubator.github.io/lesson-R-packaging/instructor/documentation.html",
   "inLanguage": "en",
-  "dct:conformsTo": "https://bioschemas.org/profiles/TrainingMaterial/1.0-RELEASE",
+  "dct:conformsTo": "https://bioschemas.org/profiles/LearningResource/1.0-RELEASE",
   "description": "A Carpentries Lesson teaching foundational data and coding skills to researchers worldwide",
   "keywords": "software, data, lesson, The Carpentries, R, packaging, r-package, reproducibility, testing, testthat, documentation, roxygen, data, vignette",
   "name": "Documenting your package",
@@ -740,8 +747,8 @@ any links that you are not going to use.
   "url": "https://carpentries-incubator.github.io/lesson-R-packaging/instructor/documentation.html",
   "identifier": "https://carpentries-incubator.github.io/lesson-R-packaging/instructor/documentation.html",
   "dateCreated": "2021-02-19",
-  "dateModified": "2024-12-03",
-  "datePublished": "2024-12-03"
+  "dateModified": "2025-09-17",
+  "datePublished": "2025-09-17"
 }
 
   </script><script>

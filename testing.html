@@ -20,7 +20,7 @@
       <div class="large-logo">
         <img id="swc-logo" alt="Software Carpentry" src="assets/images/software-logo.svg"><span class="badge text-bg-info">
           <abbr title="This lesson is in the beta phase, which means that it is ready for teaching by instructors outside of the original author team.">
-            <a href="https://cdh.carpentries.org/the-lesson-life-cycle.html#polishing-beta-stage" class="external-link alert-link">
+            <a href="https://docs.carpentries.org/resources/curriculum/lesson-life-cycle.html" class="external-link alert-link">
               <i aria-hidden="true" class="icon" data-feather="alert-circle" style="border-radius: 5px"></i>
               Beta
             </a>
@@ -371,7 +371,7 @@
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Testing</h1>
-        <p>Last updated on 2024-12-03 |
+        <p>Last updated on 2025-09-17 |
 
         <a href="https://github.com/carpentries-incubator/lesson-R-packaging/edit/main/episodes/testing.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 
@@ -470,6 +470,7 @@ create the folder structure for us:</p>
 <div class="callout-square">
 <i class="callout-icon" data-feather="message-circle"></i>
 </div>
+<span class="callout-header">Discussion</span>
 <div id="what-happened" class="callout-inner">
 <h3 class="callout-title">What happened?</h3>
 <div class="callout-content">
@@ -485,7 +486,7 @@ needed).</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <p>The command above took care of all the folder structure regarding
 tests. It also printed some useful information on the console:</p>
@@ -505,6 +506,7 @@ system file that rarely has to be manually edited.</p>
 <div class="callout-square">
 <i class="callout-icon" data-feather="message-circle"></i>
 </div>
+<span class="callout-header">Discussion</span>
 <div id="why-are-we-not-attaching-usethis" class="callout-inner">
 <h3 class="callout-title">Why are we not attaching
 <code>usethis</code>?</h3>
@@ -534,7 +536,7 @@ equivalent?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 <p>When we are developing a package, we’d like to keep our working space
 as clean and isolated as possible. The first, recommended snippet, is
@@ -575,8 +577,8 @@ idea.</p>
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
+<span class="callout-header">Callout</span>
 <div class="callout-inner">
-<h3 class="callout-title">Callout</h3>
 <div class="callout-content">
 <p>Don’t forget that projects may grow, and in the future perhaps you’ll
 have several files containing different functions (for instance, one
@@ -600,6 +602,7 @@ in the <code>testthat</code> package, and have names starting by
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
+<span class="callout-header">Challenge</span>
 <div id="write-your-own-test" class="callout-inner">
 <h3 class="callout-title">Write your own test</h3>
 <div class="callout-content">
@@ -629,7 +632,7 @@ test.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution3" aria-expanded="false" aria-controls="collapseSolution3">
   <h4 class="accordion-header" id="headingSolution3"> Show me the solution </h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
 <div class="accordion-body">
 <p>The first argument to <code>test_that</code> is simply the name of
 your test, that you choose. Beyond that, the test is checking that 2
@@ -658,6 +661,7 @@ multiplication are aligned.</p>
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
+<span class="callout-header">Callout</span>
 <div id="expectations-vs-results" class="callout-inner">
 <h3 class="callout-title">Expectations vs results</h3>
 <div class="callout-content">
@@ -715,6 +719,7 @@ the number of elements in the output equals 6:</p>
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
+<span class="callout-header">Challenge</span>
 <div id="automated-vs-manual-testing" class="callout-inner">
 <h3 class="callout-title">Automated vs manual testing</h3>
 <div class="callout-content">
@@ -728,7 +733,7 @@ did at the beginning of this episode. What differences do you see?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution4" aria-expanded="false" aria-controls="collapseSolution4">
   <h4 class="accordion-header" id="headingSolution4"> Show me the solution </h4>
 </button>
-<div id="collapseSolution4" class="accordion-collapse collapse" data-bs-parent="#accordionSolution4" aria-labelledby="headingSolution4">
+<div id="collapseSolution4" class="accordion-collapse collapse" aria-labelledby="headingSolution4" data-bs-parent="#accordionSolution4">
 <div class="accordion-body">
 <p>There are two main differences.</p>
 <p>One is small: we don’t have to attach the library. The file
@@ -747,6 +752,7 @@ ouput should be 6. (Remember the structure
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
+<span class="callout-header">Challenge</span>
 <div id="test-shape" class="callout-inner">
 <h3 class="callout-title">Test shape</h3>
 <div class="callout-content">
@@ -764,7 +770,7 @@ in handy.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution5" aria-expanded="false" aria-controls="collapseSolution5">
   <h4 class="accordion-header" id="headingSolution5"> Show me the solution </h4>
 </button>
-<div id="collapseSolution5" class="accordion-collapse collapse" data-bs-parent="#accordionSolution5" aria-labelledby="headingSolution5">
+<div id="collapseSolution5" class="accordion-collapse collapse" aria-labelledby="headingSolution5" data-bs-parent="#accordionSolution5">
 <div class="accordion-body">
 <p>The new test should look similar to:</p>
 <div class="codewrapper sourceCode" id="cb15">
@@ -859,6 +865,7 @@ test for testing that.</p>
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
+<span class="callout-header">Challenge</span>
 <div id="uneven-mysterycoffee" class="callout-inner">
 <h3 class="callout-title">Uneven mysterycoffee</h3>
 <div class="callout-content">
@@ -877,7 +884,7 @@ it, don’t delete it.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution6" aria-expanded="false" aria-controls="collapseSolution6">
   <h4 class="accordion-header" id="headingSolution6"> Show me the solution </h4>
 </button>
-<div id="collapseSolution6" class="accordion-collapse collapse" data-bs-parent="#accordionSolution6" aria-labelledby="headingSolution6">
+<div id="collapseSolution6" class="accordion-collapse collapse" aria-labelledby="headingSolution6" data-bs-parent="#accordionSolution6">
 <div class="accordion-body">
 <p>We can add a seventh, annoying and troublemaking character, to our
 list. The test will look as below. Note that we gave this test a
@@ -931,6 +938,7 @@ lines in those files where something went wrong.</p>
 <div class="callout-square">
 <i class="callout-icon" data-feather="message-circle"></i>
 </div>
+<span class="callout-header">Discussion</span>
 <div id="what-shall-we-do-now" class="callout-inner">
 <h3 class="callout-title">What shall we do now?</h3>
 <div class="callout-content">
@@ -956,8 +964,10 @@ Let’s reflect for five minutes about this relevant topic.</p>
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
+<span class="callout-header">Challenge</span>
 <div id="what-is-the-added-value-of-automated-testing" class="callout-inner">
-<h3 class="callout-title">What is the added value of automated testing?</h3>
+<h3 class="callout-title">What is the added value of automated
+testing?</h3>
 <div class="callout-content">
 <p>Storing tests in the form of a script takes a bit more time and
 effort than just running them interactively in the console.</p>
@@ -970,7 +980,7 @@ effort than just running them interactively in the console.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution7" aria-expanded="false" aria-controls="collapseSolution7">
   <h4 class="accordion-header" id="headingSolution7"> Show me the solution </h4>
 </button>
-<div id="collapseSolution7" class="accordion-collapse collapse" data-bs-parent="#accordionSolution7" aria-labelledby="headingSolution7">
+<div id="collapseSolution7" class="accordion-collapse collapse" aria-labelledby="headingSolution7" data-bs-parent="#accordionSolution7">
 <div class="accordion-body">
 <p>There are several reasons why storing your tests is a good idea. Some
 of them are:</p>
@@ -994,6 +1004,7 @@ appears, the tests will help discovering it.</li>
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
+<span class="callout-header">Callout</span>
 <div id="testing-plotting-functions" class="callout-inner">
 <h3 class="callout-title">Testing plotting functions</h3>
 <div class="callout-content">
@@ -1023,6 +1034,7 @@ message if something failed.</li>
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
+<span class="callout-header">Callout</span>
 <div id="lets-check" class="callout-inner">
 <h3 class="callout-title">Let’s check!</h3>
 <div class="callout-content">
@@ -1037,6 +1049,7 @@ news.</p>
 <div class="callout-square">
 <i class="callout-icon" data-feather="message-circle"></i>
 </div>
+<span class="callout-header">Discussion</span>
 <div id="checking-vs-testing" class="callout-inner">
 <h3 class="callout-title">Checking vs testing</h3>
 <div class="callout-content">
@@ -1051,7 +1064,7 @@ instead? When would you test, and when would you check?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution8" aria-expanded="false" aria-controls="collapseSolution8">
   <h4 class="accordion-header" id="headingSolution8"> Show me the solution </h4>
 </button>
-<div id="collapseSolution8" class="accordion-collapse collapse" data-bs-parent="#accordionSolution8" aria-labelledby="headingSolution8">
+<div id="collapseSolution8" class="accordion-collapse collapse" aria-labelledby="headingSolution8" data-bs-parent="#accordionSolution8">
 <div class="accordion-body">
 <p>Checking is usually significantly slower than testing. For small
 changes in the code, it is usually a good idea to test. For larger
@@ -1066,8 +1079,8 @@ check.</p>
 <div class="callout-square">
 <i class="callout-icon" data-feather="key"></i>
 </div>
+<span class="callout-header">Key Points</span>
 <div class="callout-inner">
-<h3 class="callout-title">Key Points</h3>
 <div class="callout-content">
 <ul><li>Tests help you write a reliable package</li>
 <li>A failing test provides a lot of valuable information</li>
@@ -1115,7 +1128,7 @@ any links that you are not going to use.
         <p>Materials licensed under <a href="LICENSE.html">CC-BY 4.0</a> by the authors</p>
 
         <p>Template licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/" class="external-link">CC-BY 4.0</a> by <a href="https://carpentries.org/" class="external-link">The Carpentries</a></p>
-        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/0.16.10" class="external-link">sandpaper (0.16.10)</a>, <a href="https://github.com/carpentries/pegboard/tree/0.7.7" class="external-link">pegboard (0.7.7)</a>, and <a href="https://github.com/carpentries/varnish/tree/1.0.5" class="external-link">varnish (1.0.5)</a></p>
+        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/0.17.1" class="external-link">sandpaper (0.17.1)</a>, <a href="https://github.com/carpentries/pegboard/tree/0.7.9" class="external-link">pegboard (0.7.9)</a>, and <a href="https://github.com/carpentries/varnish/tree/1.0.7" class="external-link">varnish (1.0.7)</a></p>
 			</div>
 		</footer></div> <!-- / div.container -->
 	<div id="to-top">
@@ -1126,10 +1139,10 @@ any links that you are not going to use.
   <script type="application/ld+json">
     {
   "@context": "https://schema.org",
-  "@type": "TrainingMaterial",
+  "@type": "LearningResource",
   "@id": "https://carpentries-incubator.github.io/lesson-R-packaging/testing.html",
   "inLanguage": "en",
-  "dct:conformsTo": "https://bioschemas.org/profiles/TrainingMaterial/1.0-RELEASE",
+  "dct:conformsTo": "https://bioschemas.org/profiles/LearningResource/1.0-RELEASE",
   "description": "A Carpentries Lesson teaching foundational data and coding skills to researchers worldwide",
   "keywords": "software, data, lesson, The Carpentries, R, packaging, r-package, reproducibility, testing, testthat, documentation, roxygen, data, vignette",
   "name": "Testing",
@@ -1137,8 +1150,8 @@ any links that you are not going to use.
   "url": "https://carpentries-incubator.github.io/lesson-R-packaging/testing.html",
   "identifier": "https://carpentries-incubator.github.io/lesson-R-packaging/testing.html",
   "dateCreated": "2021-02-19",
-  "dateModified": "2024-12-03",
-  "datePublished": "2024-12-03"
+  "dateModified": "2025-09-17",
+  "datePublished": "2025-09-17"
 }
 
   </script><script>
